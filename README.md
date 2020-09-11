@@ -13,6 +13,6 @@ This collaboration includes scientists spanning the North American West Coast. F
 7. **Moss Landing Marine Laboratories:** Scott Hamilton
 8. **The Nature Conservancy:** Jono Wilson, Lyall Bellquist
 9. **University of California, Santa Barbara:** Chris Free, Steve Gaines
-10. **NOAA Southwest Fisheries Science Center:** Andrew Thompson, Barbara Muhling, Will Satterthwaite, Desiree Tommasi
+10. **NOAA Southwest Fisheries Science Center:** Andrew Thompson, Barbara Muhling, Desiree Tommasi, Will Satterthwaite
 11. **Scripps Institution of Oceanography:** Brice Semmens, Stuart Sandin
 12. **Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE):** Oscar Sosa-Nishizaki
