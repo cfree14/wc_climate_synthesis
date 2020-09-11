@@ -1,6 +1,8 @@
 ## West Coast fisheries and climate change impacts synthesis
 
-This is the GitHub repository for a project synthesizing the economic impacts of climate change on the marine fisheries of the North American West Coast from 2013-2020 (i.e., during the marine heatwave). This collaboration includes scientists spanning the North American West Coast. From North to South, they are:
+This is the GitHub repository for a project synthesizing the economic impacts of climate change on the marine fisheries of the North American West Coast from 2013-2020 (i.e., during the marine heatwave). 
+
+This collaboration includes scientists spanning the North American West Coast. From North to South, they are:
 
 1. **NOAA Alaska Fisheries Science Center:** Kirstin Holsman, Lauren Rogers
 2. **University of Alaska Southeast:** Michael Navarro
