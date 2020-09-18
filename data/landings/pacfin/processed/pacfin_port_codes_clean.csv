@@ -1,235 +1,235 @@
-"port_code","port_name","port_desc","agency","state","port_name_long"
-"4R","Adak","Adak / W. Aleutians","ADFG","Alaska","Adak, Alaska"
-"ALM","Alameda","Alameda","CDFW","California","Alameda, California"
-"ANT","Alaska At Sea, non-tribal","At Sea Non-Tribal - Pmfc","AFSC","Alaska","Alaska At Sea, non-tribal, Alaska"
-"ASP","Alaska At Sea, PFMC","At Sea Processors - Pfmc","AFSC","Alaska","Alaska At Sea, PFMC, Alaska"
-"APP","Alaska At Sea, PFMC (CP/floating) ","At Sea Processors - Pfmc (Cp Or Floating)","AFSC","Alaska","Alaska At Sea, PFMC (CP/floating) , Alaska"
-"TAS","Alaska At Sea, tribal","Tribal At Sea","AFSC","Alaska","Alaska At Sea, tribal, Alaska"
-"FDP","Alaska Floating Domestic Processors 1","Adfg Floating Domestic Processors (Mother Ships)","ADFG","Alaska","Alaska Floating Domestic Processors 1, Alaska"
-"FP1","Alaska Floating Domestic Processors 2","Adfg Floating Domestic Processors (Mother Ships)","ADFG","Alaska","Alaska Floating Domestic Processors 2, Alaska"
-"IF1","Alaska Inshore Floating Processors 1","Inshore Floating Processor","ADFG","Alaska","Alaska Inshore Floating Processors 1, Alaska"
-"IFP","Alaska Inshore Floating Processors 2","Inshore Floating Processor","ADFG","Alaska","Alaska Inshore Floating Processors 2, Alaska"
-"4M","Alaska Peninsula","Alaska Peninsula","ADFG","Alaska","Alaska Peninsula, Alaska"
-"FM1","Alaska-Joint Venture 1","Foreign Nation Mother Ship (Jv In State Waters)","ADFG","Alaska","Alaska-Joint Venture 1, Alaska"
-"FMS","Alaska-Joint Venture 2","Foreign Nation Mother Ship (Jv In State Waters)","ADFG","Alaska","Alaska-Joint Venture 2, Alaska"
-"ALB","Albion","Albion","CDFW","California","Albion, California"
-"AAL","All Alaska ports","All Alaska Ports","ADFG","Alaska","All Alaska ports, Alaska"
-"ACA","All California ports","All California Ports","CDFW","California","All California ports, California"
-"ACN","All Countries 1","All Countries","NWAFC","Foreign","All Countries 1, Foreign"
-"ANW","All Countries 2","All Countries And Joint-Ventures","NWAFC","Foreign","All Countries 2, Foreign"
-"AJV","All Joint Ventures","All Joint-Ventures","NWAFC","Foreign","All Joint Ventures, Foreign"
-"AOR","All Oregon ports","All Oregon Ports","ODFW","Oregon","All Oregon ports, Oregon"
-"ALL","All Source","All U.s. Catch: Domestic + Jv + Foreign","GLOB","Other","All Source, Other"
-"AWA","All Washington ports","All Washington Ports","WDFW","Washington","All Washington ports, Washington"
-"ANA","Anacortes","Anacortes","WDFW","Washington","Anacortes, Washington"
-"AYK","Arctic-Yukon-Kuskokwim (A-Y-K) Region ports","A-Y-K Region","ADFG","Alaska","Arctic-Yukon-Kuskokwim (A-Y-K) Region ports, Alaska"
-"AST","Astoria","Astoria","ODFW","Oregon","Astoria, Oregon"
-"AVL","Avila/Port San Luis","Avila","CDFW","California","Avila/Port San Luis, California"
-"BDN","Bandon","Bandon","ODFW","Oregon","Bandon, Oregon"
-"BLL","Bellingham Bay","Bellingham Bay","WDFW","Washington","Bellingham Bay, Washington"
-"4Q","Bering Sea","Bering Sea","ADFG","Alaska","Bering Sea, Alaska"
-"BKL","Berkeley","Berkeley","CDFW","California","Berkeley, California"
-"BCR","Big Creek","Big Creek","CDFW","California","Big Creek, California"
-"BLN","Blaine","Blaine","WDFW","Washington","Blaine, Washington"
-"BDG","Bodega Bay","Bodega Bay","CDFW","California","Bodega Bay, California"
-"BDA","Bodega Bay Area ports","Bodega Bay Area Ports","CDFW","California","Bodega Bay Area ports, California"
-"BOL","Bolinas","Bolinas","CDFW","California","Bolinas, California"
-"2T","Bristol Bay (Central)","Bristol Bay (Central)","ADFG","Alaska","Bristol Bay (Central), Alaska"
-"4S","Bristol Bay (W)","Bristol Bay","ADFG","Alaska","Bristol Bay (W), Alaska"
-"BRK","Brookings","Brookings","ODFW","Oregon","Brookings, Oregon"
-"BRA","Brookings Area ports","Brookings Area Ports","ODFW","Oregon","Brookings Area ports, Oregon"
-"BLG","Bulgaria","Bulgaria","NWAFC","Foreign","Bulgaria, Foreign"
-"JVB","Bulgaria-JV","Usa-Bulgaria Joint Ventures","NWAFC","Foreign","Bulgaria-JV, Foreign"
-"AS2","California At Sea 1","Fish At Sea, California","CDFW","California","California At Sea 1, California"
-"ASC","California At Sea 2","Fish At Sea, California","CDFW","California","California At Sea 2, California"
-"AFO","Canada","All Canadian Landings (Canadian And U.s. Ports)","DFO - CANADA","Other","Canada, Other"
-"1","Canadian","Dfo,Canada Port Group 1 (Canadian)","DFO - CANADA","Other","Canadian, Other"
-"DF1","Canadian 1","Dfo,Canada Port Group 1 (Canadian)","DFO - CANADA","Other","Canadian 1, Other"
-"CNB","Cannon Beach","Cannon Beach","ODFW","Oregon","Cannon Beach, Oregon"
-"CEN","Central Region ports","Central Region","ADFG","Alaska","Central Region ports, Alaska"
-"4L","Chignik","Chignik","ADFG","Alaska","Chignik, Alaska"
-"CHN","China","China","NWAFC","Foreign","China, Foreign"
-"CWA","Coastal Washington ports","Washington Coastal Ports","WDFW","Washington","Coastal Washington ports, Washington"
-"CRV","Columbia River","Psuedo Port Code For Columbia River","ODFW","Oregon","Columbia River, Oregon"
-"CLO","Columbia River Area ports - Oregon","Columbia River Ports (Oregon)","ODFW","Oregon","Columbia River Area ports - Oregon, Oregon"
-"CLW","Columbia River Area ports - Washington","Columbia River Ports (Washington)","WDFW","Washington","Columbia River Area ports - Washington, Washington"
-"CAB","Columbia River-above Bonneville Dam","Columbia River Above Bonneville Dam","ODFW","Oregon","Columbia River-above Bonneville Dam, Oregon"
-"CBB","Columbia River-below Bonneville Dam","Columbia River Below Bonneville Dam","ODFW","Oregon","Columbia River-below Bonneville Dam, Oregon"
-"2H","Cook Inlet","Cook Inlet","ADFG","Alaska","Cook Inlet, Alaska"
-"COS","Coos Bay","Charleston (Coos Bay)","ODFW","Oregon","Coos Bay, Oregon"
-"CBA","Coos Bay Area ports","Coos Bay Area Ports","ODFW","Oregon","Coos Bay Area ports, Oregon"
-"CPL","Copalis Beach","Copalis Beach","WDFW","Washington","Copalis Beach, Washington"
-"4RC","CP-Adak","Adak / W. Aleutians (Catcher Processor)","ADFG","Alaska","CP-Adak, Alaska"
-"AS1","CP-Alaska At Sea 1","Adfg Catcher Processors Unloading At Sea (Catcher Processor)","ADFG","Alaska","CP-Alaska At Sea 1, Alaska"
-"ASA","CP-Alaska At Sea 2","Adfg Catcher Processors Unloading At Sea (Catcher Processor)","ADFG","Alaska","CP-Alaska At Sea 2, Alaska"
-"4MC","CP-Alaska Peninsula","Alaska Peninsula (Catcher Processor)","ADFG","Alaska","CP-Alaska Peninsula, Alaska"
-"4QC","CP-Bering Sea","Bering Sea (Catcher Processor)","ADFG","Alaska","CP-Bering Sea, Alaska"
-"4SC","CP-Bristol Bay","Bristol Bay (Catcher Processor)","ADFG","Alaska","CP-Bristol Bay, Alaska"
-"2TC","CP-Bristol Bay (Central)","Bristol Bay (Central) (Catcher Processor)","ADFG","Alaska","CP-Bristol Bay (Central), Alaska"
-"4LC","CP-Chignik","Chignik (Catcher Processor)","ADFG","Alaska","CP-Chignik, Alaska"
-"2HC","CP-Cook Inlet","Cook Inlet (Catcher Processor)","ADFG","Alaska","CP-Cook Inlet, Alaska"
-"4OC","CP-Dutch Harbor","Dutch Harbor (Catcher Processor)","ADFG","Alaska","CP-Dutch Harbor, Alaska"
-"1AC","CP-Juneau","Juneau (Catcher Processor)","ADFG","Alaska","CP-Juneau, Alaska"
-"1BC","CP-Ketchikan","Ketchikan (Catcher Processor)","ADFG","Alaska","CP-Ketchikan, Alaska"
-"4KC","CP-Kodiak","Kodiak (Catcher Processor)","ADFG","Alaska","CP-Kodiak, Alaska"
-"3XC","CP-Kotzebue","Kotzebue (Catcher Processor)","ADFG","Alaska","CP-Kotzebue, Alaska"
-"3WC","CP-Kuskokwim","Kuskokwim (Catcher Processor)","ADFG","Alaska","CP-Kuskokwim, Alaska"
-"3ZC","CP-Norton Sound","Norton Sound (Catcher Processor)","ADFG","Alaska","CP-Norton Sound, Alaska"
-"CPP","CP-PFMC","Catcher-Processor Landings - Pfmc","AFSC","Alaska","CP-PFMC, Alaska"
-"2EC","CP-Prince William Sound","Prince William Sound (Catcher Processor)","ADFG","Alaska","CP-Prince William Sound, Alaska"
-"1DC","CP-Sitka","Sitka (Catcher Processor)","ADFG","Alaska","CP-Sitka, Alaska"
-"CP5","CP-Washington 1","Catcher-Processor Landings In Washington State","WDFW","Washington","CP-Washington 1, Washington"
-"WCP","CP-Washington 2","Catcher-Processor Landings In Washington State","WDFW","Washington","CP-Washington 2, Washington"
-"1CC","CP-Wrangell-Petersburg","Petersburg / Wrangell (Catcher Processor)","ADFG","Alaska","CP-Wrangell-Petersburg, Alaska"
-"3YC","CP-Yukon River","Yukon River (Catcher Processor)","ADFG","Alaska","CP-Yukon River, Alaska"
-"AS3","CP/Akr","Catcher-Processor And Mothership Catch","AKR","Other","CP/Akr, Other"
-"ASR","CP/Akr 1","Catcher-Processor And Mothership Catch","AKR","Other","CP/Akr 1, Other"
-"CRS","Crescent City","Crescent City","CDFW","California","Crescent City, California"
-"CCA","Crescent City Area ports","Crescent City Area Ports","CDFW","California","Crescent City Area ports, California"
-"DNA","Dana Point","Dana Point","CDFW","California","Dana Point, California"
-"DPO","Depoe Bay","Depoe Bay","ODFW","Oregon","Depoe Bay, Oregon"
-"ALP","Domestic","All Shore Based And Catcher Processor Catch (Catcher Processor)","GLOB","Other","Domestic, Other"
-"4O","Dutch Harbor","Dutch Harbor","ADFG","Alaska","Dutch Harbor, Alaska"
-"EGR","East Germany","East Germany","NWAFC","Foreign","East Germany, Foreign"
-"ERK","Eureka","Eureka","CDFW","California","Eureka, California"
-"ERA","Eureka Area ports","Eureka Area Ports","CDFW","California","Eureka Area ports, California"
-"EVR","Everett","Everett","WDFW","Washington","Everett, Washington"
-"FLN","Fields Landing","Fields Landing","CDFW","California","Fields Landing, California"
-"AKF","Fl/Akr","Internal Waters Floating Processors Catch","AKR","Other","Fl/Akr, Other"
-"FL3","Fl/Akr 1","Internal Waters Floating Processors Catch","AKR","Other","Fl/Akr 1, Other"
-"BD1","Floating Bait Deliveries 1","Floating Bait Deliveries","ADFG","Alaska","Floating Bait Deliveries 1, Alaska"
-"FBD","Floating Bait Deliveries 2","Floating Bait Deliveries","ADFG","Alaska","Floating Bait Deliveries 2, Alaska"
-"FLR","Florence","Florence","ODFW","Oregon","Florence, Oregon"
-"BRG","Fort Bragg","Fort Bragg","CDFW","California","Fort Bragg, California"
-"BGA","Fort Bragg Area ports","Fort Bragg Area Ports","CDFW","California","Fort Bragg Area ports, California"
-"FRI","Friday Harbor","Friday Harbor","WDFW","Washington","Friday Harbor, Washington"
-"GSS","Gearhart","Gearhart - Seaside","ODFW","Oregon","Gearhart, Oregon"
-"GLD","Gold Beach","Gold Beach","ODFW","Oregon","Gold Beach, Oregon"
-"GRH","Grays Harbor","Grays Harbor","WDFW","Washington","Grays Harbor, Washington"
-"GRC","Greece","Greece","NWAFC","Foreign","Greece, Foreign"
-"JVG","Greece-JV","Usa-Greece Joint Ventures","NWAFC","Foreign","Greece-JV, Foreign"
-"LWC","Ilwaco/Chinook","Ilwaco/Chinook","WDFW","Washington","Ilwaco/Chinook, Washington"
-"JPN","Japan","Japan","NWAFC","Foreign","Japan, Foreign"
-"1A","Juneau","Juneau","ADFG","Alaska","Juneau, Alaska"
-"1B","Ketchikan","Ketchikan","ADFG","Alaska","Ketchikan, Alaska"
-"4K","Kodiak","Kodiak","ADFG","Alaska","Kodiak, Alaska"
-"KRA","Korea","Korea","NWAFC","Foreign","Korea, Foreign"
-"JVK","Korea-JV","Usa-Korea Joint Ventures","NWAFC","Foreign","Korea-JV, Foreign"
-"3X","Kotzebue","Kotzebue","ADFG","Alaska","Kotzebue, Alaska"
-"3W","Kuskokwim","Kuskokwim","ADFG","Alaska","Kuskokwim, Alaska"
-"LAC","La Conner","La Conner","WDFW","Washington","La Conner, Washington"
-"LAP","La Push","La Push","WDFW","Washington","La Push, Washington"
-"OR1","Landed in WA, transported to OR 1","Landed In Wa; Transported To Or","ODFW","Oregon","Landed in WA, transported to OR 1, Oregon"
-"WAL","Landed in WA, transported to OR 2","Landed In Washington; Transported To Oregon","ODFW","Oregon","Landed in WA, transported to OR 2, Oregon"
-"LGB","Long Beach","Long Beach","CDFW","California","Long Beach, California"
-"LAA","Los Angeles Area ports","Los Angeles Area Ports","CDFW","California","Los Angeles Area ports, California"
-"MXO","Mexico","Mexico","NWAFC","Foreign","Mexico, Foreign"
-"MCR","Mill Creek","Mill Creek","CDFW","California","Mill Creek, California"
-"MNT","Monterey","Monterey","CDFW","California","Monterey, California"
-"MNA","Monterey Area ports","Monterey Area Ports","CDFW","California","Monterey Area ports, California"
-"MRO","Morro Bay","Morro Bay","CDFW","California","Morro Bay, California"
-"MRA","Morro Bay Area ports","Morro Bay Area Ports","CDFW","California","Morro Bay Area ports, California"
-"MOS","Moss Landing","Moss Landing","CDFW","California","Moss Landing, California"
-"NEA","Neah Bay","Neah Bay","WDFW","Washington","Neah Bay, Washington"
-"NHL","Nehalem Bay","Nehalem Bay","ODFW","Oregon","Nehalem Bay, Oregon"
-"NTR","Netarts Bay","Netarts Bay","ODFW","Oregon","Netarts Bay, Oregon"
-"NEW","Newport","Newport","ODFW","Oregon","Newport, Oregon"
-"NPA","Newport Area ports","Newport Area Ports","ODFW","Oregon","Newport Area ports, Oregon"
-"NWB","Newport Beach","Newport Beach","CDFW","California","Newport Beach, California"
-"AKR","NMFS/Akr","All Catch Reported By Nmfs/Akr","AKR","Other","NMFS/Akr, Other"
-"NPS","North Puget Sound ports","North Puget Sound Ports","WDFW","Washington","North Puget Sound ports, Washington"
-"3Z","Norton Sound","Norton Sound","ADFG","Alaska","Norton Sound, Alaska"
-"OAK","Oakland","Oakland","CDFW","California","Oakland, California"
-"OCN","Oceanside","Oceanside","CDFW","California","Oceanside, California"
-"OLY","Olympia","Olympia","WDFW","Washington","Olympia, Washington"
-"AS4","Oregon At Sea 1","Fish At Sea, Oregon","ODFW","Oregon","Oregon At Sea 1, Oregon"
-"ASO","Oregon At Sea 2","Fish At Sea, Oregon","ODFW","Oregon","Oregon At Sea 2, Oregon"
-"OCR","Other Columbia River ports","Other Columbia River Ports","WDFW","Washington","Other Columbia River ports, Washington"
-"OCT","Other Countries","Other Countries","NWAFC","Foreign","Other Countries, Foreign"
-"ODN","Other Del Norte County ports","Other Del Norte County Ports","CDFW","California","Other Del Norte County ports, California"
-"OHB","Other Humboldt County ports","Other Humboldt County Ports","CDFW","California","Other Humboldt County ports, California"
-"OJV","Other Joint Ventures","Other Joint-Ventures","NWAFC","Foreign","Other Joint Ventures, Foreign"
-"OLA","Other Los Angeles/Orange County ports","Other La And Orange Cnty Ports","CDFW","California","Other Los Angeles/Orange County ports, California"
-"OMD","Other Mendocino County ports","Other Mendocino County Ports","CDFW","California","Other Mendocino County ports, California"
-"ONP","Other North Puget Sound ports","Other North Puget Sound Ports","WDFW","Washington","Other North Puget Sound ports, Washington"
-"OSD","Other San Diego County ports","Other San Diego County Ports","CDFW","California","Other San Diego County ports, California"
-"OSF","Other San Franciscio Bay/San Mateo County ports","Other S. F. Bay And San Mateo County Ports","CDFW","California","Other San Franciscio Bay/San Mateo County ports, California"
-"OSL","Other San Luis Obispo County ports","Other San Luis Obispo County Ports","CDFW","California","Other San Luis Obispo County ports, California"
-"OBV","Other Santa Barbara/Ventura County ports","Other Santa Barbara And Ventura County Ports","CDFW","California","Other Santa Barbara/Ventura County ports, California"
-"OCM","Other Santa Cruz/Monterey County ports","Other Santa Cruz And Monterey County Ports","CDFW","California","Other Santa Cruz/Monterey County ports, California"
-"OSM","Other Sononoma/Marin County Outer Coast ports","Other Sonoma And Marin County Outer Coast Ports","CDFW","California","Other Sononoma/Marin County Outer Coast ports, California"
-"OSP","Other South Puget Sound ports","Other South Puget Sound Ports","WDFW","Washington","Other South Puget Sound ports, Washington"
-"OWC","Other Washingtion Coastal ports","Other Washingtion Coastal Ports","WDFW","Washington","Other Washingtion Coastal ports, Washington"
-"AL1","Other/Unknown Alaska ports 1","Other Or Unknown Alaska Sub-Region","ADFG","Alaska","Other/Unknown Alaska ports 1, Alaska"
-"OAL","Other/Unknown Alaska ports 2","Other Or Unknown Alaska Sub-Region","ADFG","Alaska","Other/Unknown Alaska ports 2, Alaska"
-"OCA","Other/Unknown California ports 1","Other Or Unknown California Ports","CDFW","California","Other/Unknown California ports 1, California"
-"CA2","Other/Unknown California ports 2","Other Or Unknown California Ports","CDFW","California","Other/Unknown California ports 2, California"
-"OOR","Other/Unknown Oregon ports 1","Other Or Unknown Oregon Ports","ODFW","Oregon","Other/Unknown Oregon ports 1, Oregon"
-"OR4","Other/Unknown Oregon ports 2","Other Or Unknown Oregon Ports","ODFW","Oregon","Other/Unknown Oregon ports 2, Oregon"
-"OWA","Other/Unknown Washington ports 1","Other Or Unknown Washington Ports","WDFW","Washington","Other/Unknown Washington ports 1, Washington"
-"WA5","Other/Unknown Washington ports 2","Other Or Unknown Washington Ports","WDFW","Washington","Other/Unknown Washington ports 2, Washington"
-"OXN","Oxnard","Oxnard","CDFW","California","Oxnard, California"
-"PCC","Pacific City","Pacific City","ODFW","Oregon","Pacific City, Oregon"
-"FPP","PFMC floating processor","Floating Processor Landings - Pfmc","AFSC","Alaska","PFMC floating processor, Alaska"
-"ARE","Point Arena","Point Arena","CDFW","California","Point Arena, California"
-"RYS","Point Reyes","Point Reyes","CDFW","California","Point Reyes, California"
-"PLD","Poland","Poland","NWAFC","Foreign","Poland, Foreign"
-"JVP","Poland-JV","Usa-Poland Joint Ventures","NWAFC","Foreign","Poland-JV, Foreign"
-"PAG","Port Angeles","Port Angeles","WDFW","Washington","Port Angeles, Washington"
-"HNM","Port Hueneme","Port Hueneme","CDFW","California","Port Hueneme, California"
-"ORF","Port Orford","Port Orford","ODFW","Oregon","Port Orford, Oregon"
-"TNS","Port Townsend","Port Townsend","WDFW","Washington","Port Townsend, Washington"
-"PRT","Portugal","Portugal","NWAFC","Foreign","Portugal, Foreign"
-"2E","Prince William Sound","Prince William Sound","ADFG","Alaska","Prince William Sound, Alaska"
-"PRN","Princeton-Half Moon Bay","Princeton / Half Moon Bay","CDFW","California","Princeton-Half Moon Bay, California"
-"RCH","Richmond","Richmond","CDFW","California","Richmond, California"
-"SRV","Salmon River","Salmon River","ODFW","Oregon","Salmon River, Oregon"
-"SD","San Diego","San Diego","CDFW","California","San Diego, California"
-"SDA","San Diego Area ports","San Diego Area Ports","CDFW","California","San Diego Area ports, California"
-"SF","San Francisco","San Francisco","CDFW","California","San Francisco, California"
-"SFA","San Francisco Area ports","San Francisco Area Ports","CDFW","California","San Francisco Area ports, California"
-"SP","San Pedro","San Pedro","CDFW","California","San Pedro, California"
-"SIM","San Simeon","San Simeon","CDFW","California","San Simeon, California"
-"SLK","Sand Lake","Sand Lake","ODFW","Oregon","Sand Lake, Oregon"
-"SB","Santa Barbara","Santa Barbara","CDFW","California","Santa Barbara, California"
-"SBA","Santa Barbara Area ports","Santa Barbara Area Ports","CDFW","California","Santa Barbara Area ports, California"
-"CRZ","Santa Cruz","Santa Cruz","CDFW","California","Santa Cruz, California"
-"SLT","Sausalito","Sausalito","CDFW","California","Sausalito, California"
-"SEA","Seattle","Seattle","WDFW","Washington","Seattle, Washington"
-"SEQ","Sequim","Sequim","WDFW","Washington","Sequim, Washington"
-"SHL","Shelton","Shelton","WDFW","Washington","Shelton, Washington"
-"SLZ","Siletz Bay","Siletz Bay","ODFW","Oregon","Siletz Bay, Oregon"
-"1D","Sitka","Sitka","ADFG","Alaska","Sitka, Alaska"
-"SPS","South Puget Sound ports","South Puget Sound Ports","WDFW","Washington","South Puget Sound ports, Washington"
-"SE","Southeastern Region ports","Southeastern Region","ADFG","Alaska","Southeastern Region ports, Alaska"
-"AKS","Ss/Akr","Shore-Side Processing Catch Reported By Akr","AKR","Other","Ss/Akr, Other"
-"SR3","Ss/Akr 1","Shore-Side Processing Catch Reported By Akr","AKR","Other","Ss/Akr 1, Other"
-"TAC","Tacoma","Tacoma","WDFW","Washington","Tacoma, Washington"
-"TWN","Taiwan","Taiwan","NWAFC","Foreign","Taiwan, Foreign"
-"TRM","Terminal Island","Terminal Island","CDFW","California","Terminal Island, California"
-"TLA","Tillamook Area ports","Tillamook Area Ports","ODFW","Oregon","Tillamook Area ports, Oregon"
-"TLL","Tillamook/Garibaldi","Tillamook/Garibaldi","ODFW","Oregon","Tillamook/Garibaldi, Oregon"
-"TML","Tomales Bay","Tomales Bay","CDFW","California","Tomales Bay, California"
-"TI","Tribal","Treaty Indian","GLOB","Other","Tribal, Other"
-"TRN","Trinidad","Trinidad","CDFW","California","Trinidad, California"
-"2","U.S. Ports","Dfo,Canada Port Group 2 (U.s.)","DFO - CANADA","Other","U.S. Ports, Other"
-"DF2","U.S. Ports 1","Dfo,Canada Port Group 2 (U.s.)","DFO - CANADA","Other","U.S. Ports 1, Other"
-"DF3","Unkn Dfo","Other Or Unknown Dfo,Canada Ports","DFO - CANADA","Other","Unkn Dfo, Other"
-"ODF","Unkn Dfo 1","Other Or Unknown Dfo,Canada Ports","DFO - CANADA","Other","Unkn Dfo 1, Other"
-"XXX","Unknown","Unknown Port For Bio. Data Sys.","XXXXX","Other","Unknown, Other"
-"SSR","USSR","Ussr","NWAFC","Foreign","USSR, Foreign"
-"JVR","USSR-JV","Usa-Ussr Joint Ventures","NWAFC","Foreign","USSR-JV, Foreign"
-"VEN","Ventura","Ventura","CDFW","California","Ventura, California"
-"WLD","Waldport","Waldport","ODFW","Oregon","Waldport, Oregon"
-"AS5","Washington At Sea 1","Fish At Sea, Washington","WDFW","Washington","Washington At Sea 1, Washington"
-"ASW","Washington At Sea 2","Fish At Sea, Washington","WDFW","Washington","Washington At Sea 2, Washington"
-"WGR","West Germany","West Germany","NWAFC","Foreign","West Germany, Foreign"
-"WPT","Westport","Westport","WDFW","Washington","Westport, Washington"
-"WST","Westward Region ports","Westward Region","ADFG","Alaska","Westward Region ports, Alaska"
-"WLB","Willapa Bay","Willapa Bay","WDFW","Washington","Willapa Bay, Washington"
-"WLM","Willmington","Willmington","CDFW","California","Willmington, California"
-"WIN","Winchester Bay","Winchester Bay","ODFW","Oregon","Winchester Bay, Oregon"
-"1C","Wrangell-Petersburg","Petersburg / Wrangell","ADFG","Alaska","Wrangell-Petersburg, Alaska"
-"YAC","Yachats","Yachats","ODFW","Oregon","Yachats, Oregon"
-"CYB","Youngs Bay","Youngs Bay On Columbia River","ODFW","Oregon","Youngs Bay, Oregon"
-"3Y","Yukon River","Yukon River","ADFG","Alaska","Yukon River, Alaska"
+"port_code","agency","state1","state2","port_name","port_name_long1","port_name_long2","port_desc","port_yn","long_dd","lat_dd"
+"4R","ADFG","Alaska","AK","Adak","Adak, Alaska","Adak, AK","Adak / W. Aleutians","yes",-176.6580556,51.88
+"ANT","AFSC","Alaska","AK","Alaska At Sea, non-tribal","Alaska At Sea, non-tribal, Alaska","Alaska At Sea, non-tribal, AK","At Sea Non-Tribal - Pmfc","no",NA,NA
+"ASP","AFSC","Alaska","AK","Alaska At Sea, PFMC","Alaska At Sea, PFMC, Alaska","Alaska At Sea, PFMC, AK","At Sea Processors - Pfmc","no",NA,NA
+"APP","AFSC","Alaska","AK","Alaska At Sea, PFMC (CP/FP) ","Alaska At Sea, PFMC (CP/FP) , Alaska","Alaska At Sea, PFMC (CP/FP) , AK","At Sea Processors - Pfmc (Cp Or Floating)","no",NA,NA
+"TAS","AFSC","Alaska","AK","Alaska At Sea, tribal","Alaska At Sea, tribal, Alaska","Alaska At Sea, tribal, AK","Tribal At Sea","no",NA,NA
+"4M","ADFG","Alaska","AK","Alaska Peninsula","Alaska Peninsula, Alaska","Alaska Peninsula, AK","Alaska Peninsula","yes",-158.75,56.5
+"AAL","ADFG","Alaska","AK","All Alaska ports","All Alaska ports, Alaska","All Alaska ports, AK","All Alaska Ports","no",NA,NA
+"AYK","ADFG","Alaska","AK","Arctic-Yukon-Kuskokwim (A-Y-K) Region ports","Arctic-Yukon-Kuskokwim (A-Y-K) Region ports, Alaska","Arctic-Yukon-Kuskokwim (A-Y-K) Region ports, AK","A-Y-K Region","no",NA,NA
+"4Q","ADFG","Alaska","AK","Bering Sea","Bering Sea, Alaska","Bering Sea, AK","Bering Sea","yes",-122.3867422,47.6682236
+"4S","ADFG","Alaska","AK","Bristol Bay","Bristol Bay, Alaska","Bristol Bay, AK","Bristol Bay","yes",-160.6391038,57.9926243
+"2T","ADFG","Alaska","AK","Bristol Bay (Central)","Bristol Bay (Central), Alaska","Bristol Bay (Central), AK","Bristol Bay (Central)","yes",-160.6391038,57.9926243
+"CEN","ADFG","Alaska","AK","Central Region ports","Central Region ports, Alaska","Central Region ports, AK","Central Region","no",NA,NA
+"4L","ADFG","Alaska","AK","Chignik","Chignik, Alaska","Chignik, AK","Chignik","yes",-158.4022222,56.2952778
+"2H","ADFG","Alaska","AK","Cook Inlet","Cook Inlet, Alaska","Cook Inlet, AK","Cook Inlet","yes",-152.6440035,59.3721976
+"4RC","ADFG","Alaska","AK","CP-Adak","CP-Adak, Alaska","CP-Adak, AK","Adak / W. Aleutians (Catcher Processor)","no",NA,NA
+"AS1","ADFG","Alaska","AK","CP-Alaska At Sea 1","CP-Alaska At Sea 1, Alaska","CP-Alaska At Sea 1, AK","Adfg Catcher Processors Unloading At Sea (Catcher Processor)","no",NA,NA
+"ASA","ADFG","Alaska","AK","CP-Alaska At Sea 2","CP-Alaska At Sea 2, Alaska","CP-Alaska At Sea 2, AK","Adfg Catcher Processors Unloading At Sea (Catcher Processor)","no",NA,NA
+"4MC","ADFG","Alaska","AK","CP-Alaska Peninsula","CP-Alaska Peninsula, Alaska","CP-Alaska Peninsula, AK","Alaska Peninsula (Catcher Processor)","no",NA,NA
+"4QC","ADFG","Alaska","AK","CP-Bering Sea","CP-Bering Sea, Alaska","CP-Bering Sea, AK","Bering Sea (Catcher Processor)","no",NA,NA
+"4SC","ADFG","Alaska","AK","CP-Bristol Bay","CP-Bristol Bay, Alaska","CP-Bristol Bay, AK","Bristol Bay (Catcher Processor)","no",NA,NA
+"2TC","ADFG","Alaska","AK","CP-Bristol Bay (Central)","CP-Bristol Bay (Central), Alaska","CP-Bristol Bay (Central), AK","Bristol Bay (Central) (Catcher Processor)","no",NA,NA
+"4LC","ADFG","Alaska","AK","CP-Chignik","CP-Chignik, Alaska","CP-Chignik, AK","Chignik (Catcher Processor)","no",NA,NA
+"2HC","ADFG","Alaska","AK","CP-Cook Inlet","CP-Cook Inlet, Alaska","CP-Cook Inlet, AK","Cook Inlet (Catcher Processor)","no",NA,NA
+"4OC","ADFG","Alaska","AK","CP-Dutch Harbor","CP-Dutch Harbor, Alaska","CP-Dutch Harbor, AK","Dutch Harbor (Catcher Processor)","no",NA,NA
+"1AC","ADFG","Alaska","AK","CP-Juneau","CP-Juneau, Alaska","CP-Juneau, AK","Juneau (Catcher Processor)","no",NA,NA
+"1BC","ADFG","Alaska","AK","CP-Ketchikan","CP-Ketchikan, Alaska","CP-Ketchikan, AK","Ketchikan (Catcher Processor)","no",NA,NA
+"4KC","ADFG","Alaska","AK","CP-Kodiak","CP-Kodiak, Alaska","CP-Kodiak, AK","Kodiak (Catcher Processor)","no",NA,NA
+"3XC","ADFG","Alaska","AK","CP-Kotzebue","CP-Kotzebue, Alaska","CP-Kotzebue, AK","Kotzebue (Catcher Processor)","no",NA,NA
+"3WC","ADFG","Alaska","AK","CP-Kuskokwim","CP-Kuskokwim, Alaska","CP-Kuskokwim, AK","Kuskokwim (Catcher Processor)","no",NA,NA
+"3ZC","ADFG","Alaska","AK","CP-Norton Sound","CP-Norton Sound, Alaska","CP-Norton Sound, AK","Norton Sound (Catcher Processor)","no",NA,NA
+"CPP","AFSC","Alaska","AK","CP-PFMC","CP-PFMC, Alaska","CP-PFMC, AK","Catcher-Processor Landings - Pfmc","no",NA,NA
+"2EC","ADFG","Alaska","AK","CP-Prince William Sound","CP-Prince William Sound, Alaska","CP-Prince William Sound, AK","Prince William Sound (Catcher Processor)","no",NA,NA
+"1DC","ADFG","Alaska","AK","CP-Sitka","CP-Sitka, Alaska","CP-Sitka, AK","Sitka (Catcher Processor)","no",NA,NA
+"1CC","ADFG","Alaska","AK","CP-Wrangell-Petersburg","CP-Wrangell-Petersburg, Alaska","CP-Wrangell-Petersburg, AK","Petersburg / Wrangell (Catcher Processor)","no",NA,NA
+"3YC","ADFG","Alaska","AK","CP-Yukon River","CP-Yukon River, Alaska","CP-Yukon River, AK","Yukon River (Catcher Processor)","no",NA,NA
+"4O","ADFG","Alaska","AK","Dutch Harbor","Dutch Harbor, Alaska","Dutch Harbor, AK","Dutch Harbor","yes",-166.5400929,53.8945552
+"BD1","ADFG","Alaska","AK","Floating Bait Deliveries 1","Floating Bait Deliveries 1, Alaska","Floating Bait Deliveries 1, AK","Floating Bait Deliveries","no",NA,NA
+"FBD","ADFG","Alaska","AK","Floating Bait Deliveries 2","Floating Bait Deliveries 2, Alaska","Floating Bait Deliveries 2, AK","Floating Bait Deliveries","no",NA,NA
+"FDP","ADFG","Alaska","AK","FP-Alaska Domestic 1","FP-Alaska Domestic 1, Alaska","FP-Alaska Domestic 1, AK","Adfg Floating Domestic Processors (Mother Ships)","no",NA,NA
+"FP1","ADFG","Alaska","AK","FP-Alaska Domestic 2","FP-Alaska Domestic 2, Alaska","FP-Alaska Domestic 2, AK","Adfg Floating Domestic Processors (Mother Ships)","no",NA,NA
+"IF1","ADFG","Alaska","AK","FP-Alaska Inshore 1","FP-Alaska Inshore 1, Alaska","FP-Alaska Inshore 1, AK","Inshore Floating Processor","no",NA,NA
+"IFP","ADFG","Alaska","AK","FP-Alaska Inshore 2","FP-Alaska Inshore 2, Alaska","FP-Alaska Inshore 2, AK","Inshore Floating Processor","no",NA,NA
+"FPP","AFSC","Alaska","AK","FP-PFMC","FP-PFMC, Alaska","FP-PFMC, AK","Floating Processor Landings - Pfmc","no",NA,NA
+"1A","ADFG","Alaska","AK","Juneau","Juneau, Alaska","Juneau, AK","Juneau","yes",-134.4197221,58.3019444
+"FM1","ADFG","Alaska","AK","JV-Alaska 1","JV-Alaska 1, Alaska","JV-Alaska 1, AK","Foreign Nation Mother Ship (Jv In State Waters)","no",NA,NA
+"FMS","ADFG","Alaska","AK","JV-Alaska 2","JV-Alaska 2, Alaska","JV-Alaska 2, AK","Foreign Nation Mother Ship (Jv In State Waters)","no",NA,NA
+"1B","ADFG","Alaska","AK","Ketchikan","Ketchikan, Alaska","Ketchikan, AK","Ketchikan","yes",-131.6461112,55.3422222
+"4K","ADFG","Alaska","AK","Kodiak","Kodiak, Alaska","Kodiak, AK","Kodiak","yes",-152.4072221,57.79
+"3X","ADFG","Alaska","AK","Kotzebue","Kotzebue, Alaska","Kotzebue, AK","Kotzebue","yes",-162.5966666,66.8983333
+"3W","ADFG","Alaska","AK","Kuskokwim","Kuskokwim, Alaska","Kuskokwim, AK","Kuskokwim","yes",-158.5835786,61.548276
+"3Z","ADFG","Alaska","AK","Norton Sound","Norton Sound, Alaska","Norton Sound, AK","Norton Sound","yes",-164.268889,63.8491667
+"AL1","ADFG","Alaska","AK","Other/Unknown Alaska ports 1","Other/Unknown Alaska ports 1, Alaska","Other/Unknown Alaska ports 1, AK","Other Or Unknown Alaska Sub-Region","no",NA,NA
+"OAL","ADFG","Alaska","AK","Other/Unknown Alaska ports 2","Other/Unknown Alaska ports 2, Alaska","Other/Unknown Alaska ports 2, AK","Other Or Unknown Alaska Sub-Region","no",NA,NA
+"2E","ADFG","Alaska","AK","Prince William Sound","Prince William Sound, Alaska","Prince William Sound, AK","Prince William Sound","yes",-147.0970548,60.6905448
+"1D","ADFG","Alaska","AK","Sitka","Sitka, Alaska","Sitka, AK","Sitka","yes",-135.33,57.0530556
+"SE","ADFG","Alaska","AK","Southeastern Region ports","Southeastern Region ports, Alaska","Southeastern Region ports, AK","Southeastern Region","no",NA,NA
+"WST","ADFG","Alaska","AK","Westward Region ports","Westward Region ports, Alaska","Westward Region ports, AK","Westward Region","no",NA,NA
+"1C","ADFG","Alaska","AK","Wrangell-Petersburg","Wrangell-Petersburg, Alaska","Wrangell-Petersburg, AK","Petersburg / Wrangell","yes",-132.9554472,56.8124267
+"3Y","ADFG","Alaska","AK","Yukon River","Yukon River, Alaska","Yukon River, AK","Yukon River","yes",-151.464785,65.184049
+"ALM","CDFW","California","CA","Alameda","Alameda, California","Alameda, CA","Alameda","yes",-122.2821855,37.7798721
+"ALB","CDFW","California","CA","Albion","Albion, California","Albion, CA","Albion","yes",-123.7680598,39.2232406
+"ACA","CDFW","California","CA","All California ports","All California ports, California","All California ports, CA","All California Ports","no",NA,NA
+"AVL","CDFW","California","CA","Avila/Port San Luis","Avila/Port San Luis, California","Avila/Port San Luis, CA","Avila","yes",-120.7343817,35.1787763
+"BKL","CDFW","California","CA","Berkeley","Berkeley, California","Berkeley, CA","Berkeley","yes",-122.273042,37.8715226
+"BCR","CDFW","California","CA","Big Creek","Big Creek, California","Big Creek, CA","Big Creek","yes",-119.2460242,37.2048997
+"BDG","CDFW","California","CA","Bodega Bay","Bodega Bay, California","Bodega Bay, CA","Bodega Bay","yes",-123.0480571,38.33325
+"BDA","CDFW","California","CA","Bodega Bay Area ports","Bodega Bay Area ports, California","Bodega Bay Area ports, CA","Bodega Bay Area Ports","no",NA,NA
+"BOL","CDFW","California","CA","Bolinas","Bolinas, California","Bolinas, CA","Bolinas","yes",-122.6863733,37.9093702
+"AS2","CDFW","California","CA","California At Sea 1","California At Sea 1, California","California At Sea 1, CA","Fish At Sea, California","no",NA,NA
+"ASC","CDFW","California","CA","California At Sea 2","California At Sea 2, California","California At Sea 2, CA","Fish At Sea, California","no",NA,NA
+"CRS","CDFW","California","CA","Crescent City","Crescent City, California","Crescent City, CA","Crescent City","yes",-124.2025913,41.7557501
+"CCA","CDFW","California","CA","Crescent City Area ports","Crescent City Area ports, California","Crescent City Area ports, CA","Crescent City Area Ports","no",NA,NA
+"DNA","CDFW","California","CA","Dana Point","Dana Point, California","Dana Point, CA","Dana Point","yes",-117.6981014,33.4672256
+"ERK","CDFW","California","CA","Eureka","Eureka, California","Eureka, CA","Eureka","yes",-124.1636729,40.8020712
+"ERA","CDFW","California","CA","Eureka Area ports","Eureka Area ports, California","Eureka Area ports, CA","Eureka Area Ports","no",NA,NA
+"FLN","CDFW","California","CA","Fields Landing","Fields Landing, California","Fields Landing, CA","Fields Landing","yes",-124.2163772,40.7249124
+"BRG","CDFW","California","CA","Fort Bragg","Fort Bragg, California","Fort Bragg, CA","Fort Bragg","yes",-123.8052935,39.445723
+"BGA","CDFW","California","CA","Fort Bragg Area ports","Fort Bragg Area ports, California","Fort Bragg Area ports, CA","Fort Bragg Area Ports","no",NA,NA
+"LGB","CDFW","California","CA","Long Beach","Long Beach, California","Long Beach, CA","Long Beach","yes",-118.1937395,33.7700504
+"LAA","CDFW","California","CA","Los Angeles Area ports","Los Angeles Area ports, California","Los Angeles Area ports, CA","Los Angeles Area Ports","no",NA,NA
+"MCR","CDFW","California","CA","Mill Creek","Mill Creek, California","Mill Creek, CA","Mill Creek","yes",-121.4934599,40.3603384
+"MNT","CDFW","California","CA","Monterey","Monterey, California","Monterey, CA","Monterey","yes",-121.8946761,36.6002378
+"MNA","CDFW","California","CA","Monterey Area ports","Monterey Area ports, California","Monterey Area ports, CA","Monterey Area Ports","no",NA,NA
+"MRO","CDFW","California","CA","Morro Bay","Morro Bay, California","Morro Bay, CA","Morro Bay","yes",-120.8499924,35.3659445
+"MRA","CDFW","California","CA","Morro Bay Area ports","Morro Bay Area ports, California","Morro Bay Area ports, CA","Morro Bay Area Ports","no",NA,NA
+"MOS","CDFW","California","CA","Moss Landing","Moss Landing, California","Moss Landing, CA","Moss Landing","yes",-121.7868953,36.8044003
+"NWB","CDFW","California","CA","Newport Beach","Newport Beach, California","Newport Beach, CA","Newport Beach","yes",-117.9298493,33.6188829
+"OAK","CDFW","California","CA","Oakland","Oakland, California","Oakland, CA","Oakland","yes",-122.2711639,37.8043514
+"OCN","CDFW","California","CA","Oceanside","Oceanside, California","Oceanside, CA","Oceanside","yes",-117.3794834,33.1958696
+"ODN","CDFW","California","CA","Other Del Norte County ports","Other Del Norte County ports, California","Other Del Norte County ports, CA","Other Del Norte County Ports","no",NA,NA
+"OHB","CDFW","California","CA","Other Humboldt County ports","Other Humboldt County ports, California","Other Humboldt County ports, CA","Other Humboldt County Ports","no",NA,NA
+"OLA","CDFW","California","CA","Other Los Angeles/Orange County ports","Other Los Angeles/Orange County ports, California","Other Los Angeles/Orange County ports, CA","Other La And Orange Cnty Ports","no",NA,NA
+"OMD","CDFW","California","CA","Other Mendocino County ports","Other Mendocino County ports, California","Other Mendocino County ports, CA","Other Mendocino County Ports","no",NA,NA
+"OSD","CDFW","California","CA","Other San Diego County ports","Other San Diego County ports, California","Other San Diego County ports, CA","Other San Diego County Ports","no",NA,NA
+"OSF","CDFW","California","CA","Other San Franciscio Bay/San Mateo County ports","Other San Franciscio Bay/San Mateo County ports, California","Other San Franciscio Bay/San Mateo County ports, CA","Other S. F. Bay And San Mateo County Ports","no",NA,NA
+"OSL","CDFW","California","CA","Other San Luis Obispo County ports","Other San Luis Obispo County ports, California","Other San Luis Obispo County ports, CA","Other San Luis Obispo County Ports","no",NA,NA
+"OBV","CDFW","California","CA","Other Santa Barbara/Ventura County ports","Other Santa Barbara/Ventura County ports, California","Other Santa Barbara/Ventura County ports, CA","Other Santa Barbara And Ventura County Ports","no",NA,NA
+"OCM","CDFW","California","CA","Other Santa Cruz/Monterey County ports","Other Santa Cruz/Monterey County ports, California","Other Santa Cruz/Monterey County ports, CA","Other Santa Cruz And Monterey County Ports","no",NA,NA
+"OSM","CDFW","California","CA","Other Sononoma/Marin County Outer Coast ports","Other Sononoma/Marin County Outer Coast ports, California","Other Sononoma/Marin County Outer Coast ports, CA","Other Sonoma And Marin County Outer Coast Ports","no",NA,NA
+"OCA","CDFW","California","CA","Other/Unknown California ports 1","Other/Unknown California ports 1, California","Other/Unknown California ports 1, CA","Other Or Unknown California Ports","no",NA,NA
+"CA2","CDFW","California","CA","Other/Unknown California ports 2","Other/Unknown California ports 2, California","Other/Unknown California ports 2, CA","Other Or Unknown California Ports","no",NA,NA
+"OXN","CDFW","California","CA","Oxnard","Oxnard, California","Oxnard, CA","Oxnard","yes",-119.1770516,34.1975048
+"ARE","CDFW","California","CA","Point Arena","Point Arena, California","Point Arena, CA","Point Arena","yes",-123.6930726,38.908798
+"RYS","CDFW","California","CA","Point Reyes","Point Reyes, California","Point Reyes, CA","Point Reyes","yes",-122.9912711,38.017769
+"HNM","CDFW","California","CA","Port Hueneme","Port Hueneme, California","Port Hueneme, CA","Port Hueneme","yes",-119.1951074,34.1477829
+"PRN","CDFW","California","CA","Princeton-Half Moon Bay","Princeton-Half Moon Bay, California","Princeton-Half Moon Bay, CA","Princeton / Half Moon Bay","yes",-122.4869222,37.5049409
+"RCH","CDFW","California","CA","Richmond","Richmond, California","Richmond, CA","Richmond","yes",-122.3477486,37.9357576
+"SD","CDFW","California","CA","San Diego","San Diego, California","San Diego, CA","San Diego","yes",-117.1610838,32.715738
+"SDA","CDFW","California","CA","San Diego Area ports","San Diego Area ports, California","San Diego Area ports, CA","San Diego Area Ports","no",NA,NA
+"SF","CDFW","California","CA","San Francisco","San Francisco, California","San Francisco, CA","San Francisco","yes",-122.4194155,37.7749295
+"SFA","CDFW","California","CA","San Francisco Area ports","San Francisco Area ports, California","San Francisco Area ports, CA","San Francisco Area Ports","no",NA,NA
+"SP","CDFW","California","CA","San Pedro","San Pedro, California","San Pedro, CA","San Pedro","yes",-118.2922461,33.7360619
+"SIM","CDFW","California","CA","San Simeon","San Simeon, California","San Simeon, CA","San Simeon","yes",-121.1893211,35.6440143
+"SB","CDFW","California","CA","Santa Barbara","Santa Barbara, California","Santa Barbara, CA","Santa Barbara","yes",-119.6981901,34.4208305
+"SBA","CDFW","California","CA","Santa Barbara Area ports","Santa Barbara Area ports, California","Santa Barbara Area ports, CA","Santa Barbara Area Ports","no",NA,NA
+"CRZ","CDFW","California","CA","Santa Cruz","Santa Cruz, California","Santa Cruz, CA","Santa Cruz","yes",-122.0307963,36.9741171
+"SLT","CDFW","California","CA","Sausalito","Sausalito, California","Sausalito, CA","Sausalito","yes",-122.4852507,37.8590937
+"TRM","CDFW","California","CA","Terminal Island","Terminal Island, California","Terminal Island, CA","Terminal Island","yes",-118.2614332,33.7428471
+"TML","CDFW","California","CA","Tomales Bay","Tomales Bay, California","Tomales Bay, CA","Tomales Bay","yes",-122.9127726,38.1712779
+"TRN","CDFW","California","CA","Trinidad","Trinidad, California","Trinidad, CA","Trinidad","yes",-124.1431246,41.059291
+"VEN","CDFW","California","CA","Ventura","Ventura, California","Ventura, CA","Ventura","yes",-119.2945199,34.2804923
+"WLM","CDFW","California","CA","Willmington","Willmington, California","Willmington, CA","Willmington","yes",-118.2643567,33.7857948
+"ACN","NWAFC","Foreign","Foreign","All Countries 1","All Countries 1","All Countries 1","All Countries","no",NA,NA
+"ANW","NWAFC","Foreign","Foreign","All Countries 2","All Countries 2","All Countries 2","All Countries And Joint-Ventures","no",NA,NA
+"BLG","NWAFC","Foreign","Foreign","Bulgaria","Bulgaria","Bulgaria","Bulgaria","no",NA,NA
+"CHN","NWAFC","Foreign","Foreign","China","China","China","China","no",NA,NA
+"EGR","NWAFC","Foreign","Foreign","East Germany","East Germany","East Germany","East Germany","no",NA,NA
+"GRC","NWAFC","Foreign","Foreign","Greece","Greece","Greece","Greece","no",NA,NA
+"JPN","NWAFC","Foreign","Foreign","Japan","Japan","Japan","Japan","no",NA,NA
+"AJV","NWAFC","Foreign","Foreign","JV-All","JV-All","JV-All","All Joint-Ventures","no",NA,NA
+"JVB","NWAFC","Foreign","Foreign","JV-Bulgaria","JV-Bulgaria","JV-Bulgaria","Usa-Bulgaria Joint Ventures","no",NA,NA
+"JVG","NWAFC","Foreign","Foreign","JV-Greece","JV-Greece","JV-Greece","Usa-Greece Joint Ventures","no",NA,NA
+"JVK","NWAFC","Foreign","Foreign","JV-Korea","JV-Korea","JV-Korea","Usa-Korea Joint Ventures","no",NA,NA
+"OJV","NWAFC","Foreign","Foreign","JV-Other","JV-Other","JV-Other","Other Joint-Ventures","no",NA,NA
+"JVP","NWAFC","Foreign","Foreign","JV-Poland","JV-Poland","JV-Poland","Usa-Poland Joint Ventures","no",NA,NA
+"JVR","NWAFC","Foreign","Foreign","JV-USSR","JV-USSR","JV-USSR","Usa-Ussr Joint Ventures","no",NA,NA
+"KRA","NWAFC","Foreign","Foreign","Korea","Korea","Korea","Korea","no",NA,NA
+"MXO","NWAFC","Foreign","Foreign","Mexico","Mexico","Mexico","Mexico","no",NA,NA
+"OCT","NWAFC","Foreign","Foreign","Other Countries","Other Countries","Other Countries","Other Countries","no",NA,NA
+"PLD","NWAFC","Foreign","Foreign","Poland","Poland","Poland","Poland","no",NA,NA
+"PRT","NWAFC","Foreign","Foreign","Portugal","Portugal","Portugal","Portugal","no",NA,NA
+"TWN","NWAFC","Foreign","Foreign","Taiwan","Taiwan","Taiwan","Taiwan","no",NA,NA
+"SSR","NWAFC","Foreign","Foreign","USSR","USSR","USSR","Ussr","no",NA,NA
+"WGR","NWAFC","Foreign","Foreign","West Germany","West Germany","West Germany","West Germany","no",NA,NA
+"AOR","ODFW","Oregon","OR","All Oregon ports","All Oregon ports, Oregon","All Oregon ports, OR","All Oregon Ports","no",NA,NA
+"AST","ODFW","Oregon","OR","Astoria","Astoria, Oregon","Astoria, OR","Astoria","yes",-123.8312534,46.1878841
+"BDN","ODFW","Oregon","OR","Bandon","Bandon, Oregon","Bandon, OR","Bandon","yes",-124.408448,43.1189978
+"BRK","ODFW","Oregon","OR","Brookings","Brookings, Oregon","Brookings, OR","Brookings","yes",-124.2839819,42.0526114
+"BRA","ODFW","Oregon","OR","Brookings Area ports","Brookings Area ports, Oregon","Brookings Area ports, OR","Brookings Area Ports","no",NA,NA
+"CNB","ODFW","Oregon","OR","Cannon Beach","Cannon Beach, Oregon","Cannon Beach, OR","Cannon Beach","yes",-123.9615274,45.8917738
+"CRV","ODFW","Oregon","OR","Columbia River","Columbia River, Oregon","Columbia River, OR","Psuedo Port Code For Columbia River","yes",-120.3251007,47.4537758
+"CLO","ODFW","Oregon","OR","Columbia River Area ports - Oregon","Columbia River Area ports - Oregon, Oregon","Columbia River Area ports - Oregon, OR","Columbia River Ports (Oregon)","no",NA,NA
+"CAB","ODFW","Oregon","OR","Columbia River-above Bonneville Dam","Columbia River-above Bonneville Dam, Oregon","Columbia River-above Bonneville Dam, OR","Columbia River Above Bonneville Dam","yes",-121.9406369,45.6442837
+"CBB","ODFW","Oregon","OR","Columbia River-below Bonneville Dam","Columbia River-below Bonneville Dam, Oregon","Columbia River-below Bonneville Dam, OR","Columbia River Below Bonneville Dam","yes",-121.9406369,45.6442837
+"COS","ODFW","Oregon","OR","Coos Bay","Coos Bay, Oregon","Coos Bay, OR","Charleston (Coos Bay)","yes",-124.2178903,43.3665007
+"CBA","ODFW","Oregon","OR","Coos Bay Area ports","Coos Bay Area ports, Oregon","Coos Bay Area ports, OR","Coos Bay Area Ports","no",NA,NA
+"DPO","ODFW","Oregon","OR","Depoe Bay","Depoe Bay, Oregon","Depoe Bay, OR","Depoe Bay","yes",-124.0631713,44.8084467
+"FLR","ODFW","Oregon","OR","Florence","Florence, Oregon","Florence, OR","Florence","yes",-124.099841,43.9826214
+"GSS","ODFW","Oregon","OR","Gearhart","Gearhart, Oregon","Gearhart, OR","Gearhart - Seaside","yes",-123.9112502,46.0242745
+"GLD","ODFW","Oregon","OR","Gold Beach","Gold Beach, Oregon","Gold Beach, OR","Gold Beach","yes",-124.4217741,42.4073334
+"OR1","ODFW","Oregon","OR","Landed in WA, transported to OR 1","Landed in WA, transported to OR 1, Oregon","Landed in WA, transported to OR 1, OR","Landed In Wa; Transported To Or","no",NA,NA
+"WAL","ODFW","Oregon","OR","Landed in WA, transported to OR 2","Landed in WA, transported to OR 2, Oregon","Landed in WA, transported to OR 2, OR","Landed In Washington; Transported To Oregon","no",NA,NA
+"NHL","ODFW","Oregon","OR","Nehalem Bay","Nehalem Bay, Oregon","Nehalem Bay, OR","Nehalem Bay","yes",-123.9143678,45.6958701
+"NTR","ODFW","Oregon","OR","Netarts Bay","Netarts Bay, Oregon","Netarts Bay, OR","Netarts Bay","yes",-123.9483997,45.4028428
+"NEW","ODFW","Oregon","OR","Newport","Newport, Oregon","Newport, OR","Newport","yes",-124.0534505,44.6367836
+"NPA","ODFW","Oregon","OR","Newport Area ports","Newport Area ports, Oregon","Newport Area ports, OR","Newport Area Ports","no",NA,NA
+"AS4","ODFW","Oregon","OR","Oregon At Sea 1","Oregon At Sea 1, Oregon","Oregon At Sea 1, OR","Fish At Sea, Oregon","no",NA,NA
+"ASO","ODFW","Oregon","OR","Oregon At Sea 2","Oregon At Sea 2, Oregon","Oregon At Sea 2, OR","Fish At Sea, Oregon","no",NA,NA
+"OOR","ODFW","Oregon","OR","Other/Unknown Oregon ports 1","Other/Unknown Oregon ports 1, Oregon","Other/Unknown Oregon ports 1, OR","Other Or Unknown Oregon Ports","no",NA,NA
+"OR4","ODFW","Oregon","OR","Other/Unknown Oregon ports 2","Other/Unknown Oregon ports 2, Oregon","Other/Unknown Oregon ports 2, OR","Other Or Unknown Oregon Ports","no",NA,NA
+"PCC","ODFW","Oregon","OR","Pacific City","Pacific City, Oregon","Pacific City, OR","Pacific City","yes",-123.9628946,45.2023263
+"ORF","ODFW","Oregon","OR","Port Orford","Port Orford, Oregon","Port Orford, OR","Port Orford","yes",-124.4973267,42.7456644
+"SRV","ODFW","Oregon","OR","Salmon River","Salmon River, Oregon","Salmon River, OR","Salmon River","yes",-124.0062253,45.0467731
+"SLK","ODFW","Oregon","OR","Sand Lake","Sand Lake, Oregon","Sand Lake, OR","Sand Lake","yes",-123.9234532,45.3031593
+"SLZ","ODFW","Oregon","OR","Siletz Bay","Siletz Bay, Oregon","Siletz Bay, OR","Siletz Bay","yes",-124.0097296,44.8952299
+"TLA","ODFW","Oregon","OR","Tillamook Area ports","Tillamook Area ports, Oregon","Tillamook Area ports, OR","Tillamook Area Ports","no",NA,NA
+"TLL","ODFW","Oregon","OR","Tillamook/Garibaldi","Tillamook/Garibaldi, Oregon","Tillamook/Garibaldi, OR","Tillamook/Garibaldi","yes",-123.9109643,45.5598266
+"WLD","ODFW","Oregon","OR","Waldport","Waldport, Oregon","Waldport, OR","Waldport","yes",-124.0687302,44.426786
+"WIN","ODFW","Oregon","OR","Winchester Bay","Winchester Bay, Oregon","Winchester Bay, OR","Winchester Bay","yes",-124.1748369,43.6770608
+"YAC","ODFW","Oregon","OR","Yachats","Yachats, Oregon","Yachats, OR","Yachats","yes",-124.1048418,44.3112312
+"CYB","ODFW","Oregon","OR","Youngs Bay","Youngs Bay, Oregon","Youngs Bay, OR","Youngs Bay On Columbia River","yes",-123.8785319,46.1792509
+"AFO","DFO - CANADA","Other","Other","All Canada landings (US+Canada ports)","All Canada landings (US+Canada ports)","All Canada landings (US+Canada ports)","All Canadian Landings (Canadian And U.s. Ports)","no",NA,NA
+"ALL","GLOB","Other","Other","All landings (US+JV+foreign)","All landings (US+JV+foreign)","All landings (US+JV+foreign)","All U.s. Catch: Domestic + Jv + Foreign","no",NA,NA
+"AKR","AKR","Other","Other","All NMFS/AKR landings","All NMFS/AKR landings","All NMFS/AKR landings","All Catch Reported By Nmfs/Akr","no",NA,NA
+"TI","GLOB","Other","Other","All tribal landings","All tribal landings","All tribal landings","Treaty Indian","no",NA,NA
+"ALP","GLOB","Other","Other","All US landings","All US landings","All US landings","All Shore Based And Catcher Processor Catch (Catcher Processor)","no",NA,NA
+"1","DFO - CANADA","Other","Other","Canada Group 1 ports 1","Canada Group 1 ports 1","Canada Group 1 ports 1","Dfo,Canada Port Group 1 (Canadian)","no",NA,NA
+"DF1","DFO - CANADA","Other","Other","Canada Group 1 ports 2","Canada Group 1 ports 2","Canada Group 1 ports 2","Dfo,Canada Port Group 1 (Canadian)","no",NA,NA
+"2","DFO - CANADA","Other","Other","Canada Group 2 (US) ports 1","Canada Group 2 (US) ports 1","Canada Group 2 (US) ports 1","Dfo,Canada Port Group 2 (U.s.)","no",NA,NA
+"DF2","DFO - CANADA","Other","Other","Canada Group 2 (US) ports 2","Canada Group 2 (US) ports 2","Canada Group 2 (US) ports 2","Dfo,Canada Port Group 2 (U.s.)","no",NA,NA
+"AS3","AKR","Other","Other","CP-AKR 1","CP-AKR 1","CP-AKR 1","Catcher-Processor And Mothership Catch","no",NA,NA
+"ASR","AKR","Other","Other","CP-AKR 2","CP-AKR 2","CP-AKR 2","Catcher-Processor And Mothership Catch","no",NA,NA
+"AKF","AKR","Other","Other","FP-AKR 1","FP-AKR 1","FP-AKR 1","Internal Waters Floating Processors Catch","no",NA,NA
+"FL3","AKR","Other","Other","FP-AKR 2","FP-AKR 2","FP-AKR 2","Internal Waters Floating Processors Catch","no",NA,NA
+"DF3","DFO - CANADA","Other","Other","Other/Unknown Canada ports 1","Other/Unknown Canada ports 1","Other/Unknown Canada ports 1","Other Or Unknown Dfo,Canada Ports","no",NA,NA
+"ODF","DFO - CANADA","Other","Other","Other/Unknown Canada ports 2","Other/Unknown Canada ports 2","Other/Unknown Canada ports 2","Other Or Unknown Dfo,Canada Ports","no",NA,NA
+"AKS","AKR","Other","Other","SS-AKR 1","SS-AKR 1","SS-AKR 1","Shore-Side Processing Catch Reported By Akr","no",NA,NA
+"SR3","AKR","Other","Other","SS-AKR 2","SS-AKR 2","SS-AKR 2","Shore-Side Processing Catch Reported By Akr","no",NA,NA
+"XXX","XXXXX","Other","Other","Unknown","Unknown","Unknown","Unknown Port For Bio. Data Sys.","no",NA,NA
+"AWA","WDFW","Washington","WA","All Washington ports","All Washington ports, Washington","All Washington ports, WA","All Washington Ports","no",NA,NA
+"ANA","WDFW","Washington","WA","Anacortes","Anacortes, Washington","Anacortes, WA","Anacortes","yes",-122.6126718,48.5126045
+"BLL","WDFW","Washington","WA","Bellingham Bay","Bellingham Bay, Washington","Bellingham Bay, WA","Bellingham Bay","yes",-122.5616668,48.6829437
+"BLN","WDFW","Washington","WA","Blaine","Blaine, Washington","Blaine, WA","Blaine","yes",-122.7471191,48.993723
+"CWA","WDFW","Washington","WA","Coastal Washington ports","Coastal Washington ports, Washington","Coastal Washington ports, WA","Washington Coastal Ports","no",NA,NA
+"CLW","WDFW","Washington","WA","Columbia River Area ports - Washington","Columbia River Area ports - Washington, Washington","Columbia River Area ports - Washington, WA","Columbia River Ports (Washington)","no",NA,NA
+"CPL","WDFW","Washington","WA","Copalis Beach","Copalis Beach, Washington","Copalis Beach, WA","Copalis Beach","yes",-124.1737879,47.1125856
+"CP5","WDFW","Washington","WA","CP-Washington 1","CP-Washington 1, Washington","CP-Washington 1, WA","Catcher-Processor Landings In Washington State","no",NA,NA
+"WCP","WDFW","Washington","WA","CP-Washington 2","CP-Washington 2, Washington","CP-Washington 2, WA","Catcher-Processor Landings In Washington State","no",NA,NA
+"EVR","WDFW","Washington","WA","Everett","Everett, Washington","Everett, WA","Everett","yes",-122.2020795,47.9789848
+"FRI","WDFW","Washington","WA","Friday Harbor","Friday Harbor, Washington","Friday Harbor, WA","Friday Harbor","yes",-123.0171242,48.5342662
+"GRH","WDFW","Washington","WA","Grays Harbor","Grays Harbor, Washington","Grays Harbor, WA","Grays Harbor","yes",-123.7012468,46.9953526
+"LWC","WDFW","Washington","WA","Ilwaco/Chinook","Ilwaco/Chinook, Washington","Ilwaco/Chinook, WA","Ilwaco/Chinook","yes",-123.9454273,46.2728802
+"LAC","WDFW","Washington","WA","La Conner","La Conner, Washington","La Conner, WA","La Conner","yes",-122.4962753,48.3887142
+"LAP","WDFW","Washington","WA","La Push","La Push, Washington","La Push, WA","La Push","yes",-124.6352256,47.9081335
+"NEA","WDFW","Washington","WA","Neah Bay","Neah Bay, Washington","Neah Bay, WA","Neah Bay","yes",-124.6249603,48.3681223
+"NPS","WDFW","Washington","WA","North Puget Sound ports","North Puget Sound ports, Washington","North Puget Sound ports, WA","North Puget Sound Ports","no",NA,NA
+"OLY","WDFW","Washington","WA","Olympia","Olympia, Washington","Olympia, WA","Olympia","yes",-122.9006951,47.0378741
+"OCR","WDFW","Washington","WA","Other Columbia River ports","Other Columbia River ports, Washington","Other Columbia River ports, WA","Other Columbia River Ports","no",NA,NA
+"ONP","WDFW","Washington","WA","Other North Puget Sound ports","Other North Puget Sound ports, Washington","Other North Puget Sound ports, WA","Other North Puget Sound Ports","no",NA,NA
+"OSP","WDFW","Washington","WA","Other South Puget Sound ports","Other South Puget Sound ports, Washington","Other South Puget Sound ports, WA","Other South Puget Sound Ports","no",NA,NA
+"OWC","WDFW","Washington","WA","Other Washingtion Coastal ports","Other Washingtion Coastal ports, Washington","Other Washingtion Coastal ports, WA","Other Washingtion Coastal Ports","no",NA,NA
+"OWA","WDFW","Washington","WA","Other/Unknown Washington ports 1","Other/Unknown Washington ports 1, Washington","Other/Unknown Washington ports 1, WA","Other Or Unknown Washington Ports","no",NA,NA
+"WA5","WDFW","Washington","WA","Other/Unknown Washington ports 2","Other/Unknown Washington ports 2, Washington","Other/Unknown Washington ports 2, WA","Other Or Unknown Washington Ports","no",NA,NA
+"PAG","WDFW","Washington","WA","Port Angeles","Port Angeles, Washington","Port Angeles, WA","Port Angeles","yes",-123.4307413,48.118146
+"TNS","WDFW","Washington","WA","Port Townsend","Port Townsend, Washington","Port Townsend, WA","Port Townsend","yes",-122.7604471,48.1170387
+"SEA","WDFW","Washington","WA","Seattle","Seattle, Washington","Seattle, WA","Seattle","yes",-122.3320708,47.6062095
+"SEQ","WDFW","Washington","WA","Sequim","Sequim, Washington","Sequim, WA","Sequim","yes",-123.1018438,48.0795365
+"SHL","WDFW","Washington","WA","Shelton","Shelton, Washington","Shelton, WA","Shelton","yes",-123.1007066,47.2150945
+"SPS","WDFW","Washington","WA","South Puget Sound ports","South Puget Sound ports, Washington","South Puget Sound ports, WA","South Puget Sound Ports","no",NA,NA
+"TAC","WDFW","Washington","WA","Tacoma","Tacoma, Washington","Tacoma, WA","Tacoma","yes",-122.4442906,47.2528768
+"AS5","WDFW","Washington","WA","Washington At Sea 1","Washington At Sea 1, Washington","Washington At Sea 1, WA","Fish At Sea, Washington","no",NA,NA
+"ASW","WDFW","Washington","WA","Washington At Sea 2","Washington At Sea 2, Washington","Washington At Sea 2, WA","Fish At Sea, Washington","no",NA,NA
+"WPT","WDFW","Washington","WA","Westport","Westport, Washington","Westport, WA","Westport","yes",-124.1040613,46.8900903
+"WLB","WDFW","Washington","WA","Willapa Bay","Willapa Bay, Washington","Willapa Bay, WA","Willapa Bay","yes",-123.9887774,46.5395425

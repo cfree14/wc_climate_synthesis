@@ -257,7 +257,8 @@ library(ggmap)
 library(mapview)
 
 # Google Maps API key
-register_google(key="AIzaSyBa20Ku9Nx7MBgsie2pWotZbQTEAtNBz_k")
+source("data/landings/pacfin/ggmap_api_key.R")
+register_google(key=ggmap_api_key)
 
 # Geocode locations
 port_key_xy <- mutate_geocode(port_key, port_name_long)
@@ -271,12 +272,37 @@ port_key_xy_sf <- port_key_xy %>%
 mapview(port_key_xy_sf)
 
 
+# Final formatting
+################################################################################
+
+# Final formatting
+port_key_final <- port_key_xy %>% 
+  # Rename
+  rename(state1=state,
+         port_name_long1=port_name_long,
+         long_dd=lon,
+         lat_dd=lat) %>% 
+  # Add new columns
+  mutate(state2=recode(state1, 
+                       "California"="CA",
+                       "Oregon"="OR",
+                       "Washington"="WA",
+                       "Alaska"="AK"),
+         port_name_long2=ifelse(state2%in%c("CA", "OR", "WA", "AK"), 
+                               paste(port_name, state2, sep=", "), port_name)) %>% 
+  # Overwrite lat/longs for ports that aren't single ports
+  mutate(long_dd=ifelse(port_yn=="yes", long_dd, NA),
+         lat_dd=ifelse(port_yn=="yes", lat_dd, NA)) %>% 
+  # Arrange
+  select(port_code, agency, state1, state2, 
+         port_name, port_name_long1, port_name_long2, everything()) %>% 
+  arrange(state1, port_name)
+
 # Export
 ################################################################################
 
-
 # Export
-write.csv(port_key, file=file.path(outputdir, "pacfin_port_codes_clean.csv"), row.names = F)
+write.csv(port_key_final, file=file.path(outputdir, "pacfin_port_codes_clean.csv"), row.names = F)
 
 
 

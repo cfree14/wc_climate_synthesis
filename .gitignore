@@ -7,6 +7,9 @@
 admin/
 drafts/
 
+# Hide Google Maps API key
+data/landings/pacfin/ggmap_api_key.R
+
 # Ignore large raw data
 data/landings/cdfw/raw
 data/landings/swfsc/raw
