@@ -6,3 +6,7 @@
 # Ignore some folders
 admin/
 drafts/
+
+# Ignore large raw data
+data/landings/cdfw/raw
+data/landings/swfsc/raw
