@@ -1,0 +1,309 @@
+X,Species,Pounds,Value,X.1
+ANCISCO,NA,,,NA
+"Crab, Dungeness",NA,"1,321,723","$5,205,724 ",NA
+"Salmon, Chinook",NA,"159,434","$1,276,100 ",NA
+"Halibut, California",NA,"171,562","$1,170,064 ",NA
+Swordfish,NA,"328,285","$1,081,505 ",NA
+Sablefish,NA,"89,164","$322,263 ",NA
+"Tuna, bigeye",NA,"102,071","$307,037 ",NA
+"Squid, market",NA,"517,991","$257,318 ",NA
+"Herring, Pacific - roe",NA,"1,372,983","$247,137 ",NA
+Opah,NA,"142,475","$149,139 ",NA
+"Tuna, yellowfin",NA,"48,779","$139,220 ",NA
+"Rockfish, chilipepper",NA,"141,632","$68,819 ",NA
+"Shrimp, coonstriped",NA,"9,197","$50,725 ",NA
+Lingcod,NA,"18,005","$44,870 ",NA
+"Sole, petrale",NA,"64,247","$35,626 ",NA
+"Seabass, white",NA,"5,855","$35,614 ",NA
+"Rockfish, bocaccio",NA,"83,011","$35,178 ",NA
+"Rockfish, brown",NA,"5,827","$32,408 ",NA
+"Rockfish, gopher",NA,"3,634","$20,023 ",NA
+"Sole, sand",NA,"16,625","$16,660 ",NA
+Thornyheads,NA,"1,988","$14,527 ",NA
+"Crab, rock unspecified",NA,"2,510","$14,016 ",NA
+"Shark, shortfin mako",NA,"10,362","$10,059 ",NA
+"Rockfish, splitnose",NA,"46,306","$9,261 ",NA
+"Anchovy, northern",NA,"3,065","$8,939 ",NA
+"Tuna, albacore",NA,"43,635","$7,743 ",NA
+"Sea urchin, red",NA,"1,256","$6,905 ",NA
+Dolphin (fish),NA,"4,103","$5,975 ",NA
+"Rockfish, blackgill",NA,"3,656","$5,543 ",NA
+Wahoo,NA,"2,952","$4,128 ",NA
+"Rockfish, bank",NA,"8,321","$3,761 ",NA
+SAN FRANCISCO,NA,,,NA
+"Rockfish, copper",NA,675,"$3,432 ",NA
+"Flounder, starry",NA,"3,363","$3,368 ",NA
+"Rockfish, canary",NA,"2,605","$3,337 ",NA
+"Salmon, Roe (Chinook, Coho)",NA,703,"$2,965 ",NA
+"Rockfish, widow",NA,"4,054","$2,772 ",NA
+"Greenling, kelp",NA,873,"$2,699 ",NA
+"Prickleback, monkeyface (eel)",NA,259,"$2,621 ",NA
+"Rockfish, vermilion",NA,"1,049","$2,575 ",NA
+"Fish, unspecified",NA,"1,069","$2,556 ",NA
+Pomfret,NA,"1,388","$2,022 ",NA
+"Seaperch, striped",NA,348,"$1,802 ",NA
+"Rockfish, China",NA,304,"$1,775 ",NA
+"Rockfish, black",NA,692,"$1,487 ",NA
+"Shark, spiny dogfish",NA,"13,657","$1,408 ",NA
+"Thornyhead, shortspine",NA,447,"$1,239 ",NA
+"Shark, soupfin",NA,"1,612",$893 ,NA
+"Rockfish, yellowtail",NA,564,$851 ,NA
+Oilfish,NA,"1,556",$824 ,NA
+"Skate, longnose",NA,"7,258",$811 ,NA
+"Rockfish, blue",NA,340,$789 ,NA
+"Skate, unspecified",NA,"7,174",$607 ,NA
+"Shark, leopard",NA,580,$556 ,NA
+"Rockfish, greenspotted",NA,"1,200",$528 ,NA
+Cabezon,NA,177,$499 ,NA
+"Rockfish, rosy",NA,170,$429 ,NA
+"Rockfish, unspecified",NA,184,$428 ,NA
+"Surfperch, rubberlip",NA,70,$385 ,NA
+"Sanddab, Pacific",NA,"1,677",$349 ,NA
+"Octopus, unspecified",NA,101,$266 ,NA
+"Tuna, skipjack",NA,539,$260 ,NA
+"Rockfish, group bolina",NA,39,$234 ,NA
+ANCISCO,NA,,,NA
+"Skate, big",NA,"2,370",$233 ,NA
+"Ratfish, spotted",NA,"8,645",$233 ,NA
+"Rockfish, group shelf",NA,791,$232 ,NA
+"Shrimp, bay",NA,30,$210 ,NA
+"Rockfish, quillback",NA,41,$203 ,NA
+"Smelt, surf",NA,72,$180 ,NA
+"Rockfish, black-and-yellow",NA,76,$175 ,NA
+"Shark, unspecified",NA,156,$165 ,NA
+"Sole, rock",NA,389,$143 ,NA
+"Thornyhead, longspine",NA,31,$133 ,NA
+"Surfperch, redtail",NA,43,$129 ,NA
+"Eel, wolf (wolf-eel)",NA,55,$116 ,NA
+"Shark, thresher",NA,71,$96 ,NA
+"Sole, rex",NA,785,$96 ,NA
+"Rockfish, darkblotched",NA,242,$93 ,NA
+"Greenling, rock",NA,31,$93 ,NA
+Sanddab,NA,"1,653",$90 ,NA
+"Rockfish, greenstriped",NA,671,$83 ,NA
+"Croaker, white",NA,67,$82 ,NA
+"Rockfish, greenblotched",NA,123,$53 ,NA
+Jacksmelt,NA,50,$50 ,NA
+"Rockfish, treefish",NA,9,$45 ,NA
+"Sole, Dover",NA,"1,540",$42 ,NA
+"Skate, California",NA,146,$17 ,NA
+"Mackerel, unspecified",NA,104,$12 ,NA
+"Goby, yellowfin",NA,4,$12 ,NA
+"Rockfish, redbanded",NA,76,$10 ,NA
+"Rockfish, starry",NA,13,$10 ,NA
+"Rockfish, flag",NA,54,$8 ,NA
+"Ray, Pacific electric",NA,148,$4 ,NA
+"Shark, sixgill",NA,3,$0 ,NA
+ANCISCO,NA,,,
+"Rockfish, cowcod",NA,189,$0 ,
+"Sole, curlfin",NA,46,$0 ,
+"Sole, English",NA,"1,135",$0 ,
+"Flounder, arrowtooth",NA,897,$0 ,
+"Rockfish, stripetail",NA,721,$0 ,
+"Rockfish, shortbelly",NA,380,$0 ,
+"Sole, unspecified",NA,2,$0 ,
+"Sculpin, staghorn",NA,2,$0 ,
+"Surfperch, unspecified",NA,3,$0 ,
+"Whiting, Pacific",NA,"6,546",$0 ,
+"Rockfish, group slope",NA,123,$0 ,
+"Sardine, Pacific",NA,1,$0 ,
+"Mackerel, jack",NA,20,$0 ,
+"Turbot, hornyhead",NA,1,$0 ,
+"Midshipman, plainfin",NA,10,$0 ,
+"Rockfish, rosethorn",NA,1,$0 ,
+"Shad, American",NA,126,$0 ,
+"Shrimp, ocean (pink)",NA,20,$0 ,
+Eel,NA,14,$0 ,
+"Sole, slender",NA,10,$0 ,
+,NA,"4,814,115","$10,634,096 ",Port Totals:
+TON-HALF MOON,NA,,,
+"Crab, Dungeness",NA,"801,021","$3,728,542 ",
+"Salmon, Chinook",NA,"286,556","$2,522,723 ",
+"Squid, market",NA,"2,512,684","$1,249,492 ",
+"Halibut, California",NA,"46,204","$263,122 ",
+"Prawn, spot",NA,"12,716","$216,815 ",
+"Sole, petrale",NA,"177,257","$167,680 ",
+"Anchovy, northern",NA,"3,157,224","$157,861 ",
+Sablefish,NA,"45,910","$143,597 ",
+NA,PRINCETON-HALF MOON,,,NA
+NA,"Sea urchin, red","9,764","$67,775 ",NA
+NA,"Crab, rock unspecified","29,035","$60,990 ",NA
+NA,"Rockfish, chilipepper","117,816","$53,248 ",NA
+NA,"Rockfish, bocaccio","75,441","$36,522 ",NA
+NA,Lingcod,"18,460","$36,179 ",NA
+NA,"Sanddab, Pacific","69,507","$23,241 ",NA
+NA,"Rockfish, blue","3,626","$15,619 ",NA
+NA,"Rockfish, brown","2,595","$12,859 ",NA
+NA,Sanddab,"21,954","$9,426 ",NA
+NA,"Croaker, white","6,008","$8,843 ",NA
+NA,Butterfish (Pacific pompano),"3,279","$4,914 ",NA
+NA,"Crab, box",820,"$4,628 ",NA
+NA,"Crab, red rock","2,706","$4,452 ",NA
+NA,"Sole, sand","3,768","$3,759 ",NA
+NA,"Rockfish, vermilion",907,"$3,631 ",NA
+NA,"Rockfish, canary","2,253","$3,628 ",NA
+NA,"Flounder, starry","3,553","$3,190 ",NA
+NA,"Rockfish, black",507,"$2,805 ",NA
+NA,"Tuna, albacore","1,723","$2,671 ",NA
+NA,"Seabass, white",345,"$2,158 ",NA
+NA,"Prickleback, monkeyface (eel)",214,"$2,116 ",NA
+NA,"Rockfish, yellowtail",483,"$2,075 ",NA
+NA,"Sole, English","6,744","$1,641 ",NA
+NA,"Rockfish, olive",256,"$1,115 ",NA
+NA,"Rockfish, copper",134,$903 ,NA
+NA,"Skate, longnose","4,264",$848 ,NA
+NA,"Thornyhead, shortspine",164,$649 ,NA
+NA,"Rockfish, widow",289,$604 ,NA
+NA,"Sole, Dover",420,$585 ,NA
+NA,"Shrimp, bay",70,$490 ,NA
+NA,"Salmon, pink",52,$489 ,NA
+NA,TON-HALF MOON,,,NA
+NA,"Sole, rock",852,$460 ,NA
+NA,"Rockfish, black-and-yellow",57,$418 ,NA
+NA,Jacksmelt,134,$353 ,NA
+NA,"Mudsucker, longjaw",34,$340 ,NA
+NA,"Sole, curlfin",479,$325 ,NA
+NA,"Octopus, unspecified",283,$303 ,NA
+NA,"Skate, unspecified","1,470",$294 ,NA
+NA,Cabezon,31,$288 ,NA
+NA,"Rockfish, unspecified",80,$249 ,NA
+NA,"Rockfish, cowcod",592,$243 ,NA
+NA,Grenadier,817,$204 ,NA
+NA,Turbot,210,$179 ,NA
+NA,"Salmon, Roe (Chinook, Coho)",194,$158 ,NA
+NA,"Rockfish, gopher",16,$149 ,NA
+NA,"Rockfish, China",14,$145 ,NA
+NA,"Shark, unspecified",82,$140 ,NA
+NA,"Flounder, arrowtooth",369,$138 ,NA
+NA,"Shark, soupfin",226,$110 ,NA
+NA,"Surfperch, barred",53,$102 ,NA
+NA,"Greenling, kelp",11,$60 ,NA
+NA,"Smelt, night",10,$48 ,NA
+NA,"Rockfish, quillback",5,$45 ,NA
+NA,"Crab, brown rock",19,$43 ,NA
+NA,"Rockfish, splitnose",312,$42 ,NA
+NA,"Rockfish, rosy",16,$37 ,NA
+NA,"Rockfish, greenspotted",158,$36 ,NA
+NA,"Rockfish, greenstriped","1,991",$33 ,NA
+NA,"Sole, rex","1,201",$31 ,NA
+NA,"Skate, big",140,$28 ,NA
+NA,"Thornyhead, longspine",30,$23 ,NA
+NA,"Rockfish, blackgill",12,$20 ,NA
+,TON-HALF MOON,,,NA
+,"Rockfish, starry",3,$17 ,NA
+,"Shark, spiny dogfish",50,$15 ,NA
+,"Eel, wolf (wolf-eel)",24,$13 ,NA
+,"Rockfish, treefish",2,$6 ,NA
+,"Surfperch, redtail",3,$6 ,NA
+,"Rockfish, greenblotched",67,$5 ,NA
+,"Skate, California",16,$3 ,NA
+,"Mackerel, jack",16,$3 ,NA
+,"Rockfish, group shelf",545,$1 ,NA
+,"Rockfish, shortbelly",428,$1 ,NA
+,"Rockfish, stripetail",257,$0 ,NA
+,"Sole, slender",2,$0 ,NA
+,"Whiting, Pacific",714,$0 ,NA
+,"Shad, American",2,$0 ,NA
+,"Rockfish, redbanded",2,$0 ,NA
+,"Mackerel, unspecified",2,$0 ,NA
+,"Rockfish, yelloweye",1,$0 ,NA
+,"Rockfish, darkblotched",3,$0 ,NA
+,"Mackerel, Pacific",10,$0 ,NA
+Port Totals:,,"7,438,767","$8,826,996 ",NA
+,O,,,NA
+,"Crab, Dungeness","61,349","$246,494 ",NA
+,"Shrimp, bay","9,614","$61,736 ",NA
+,Sablefish,502,"$1,708 ",NA
+,"Sculpin, staghorn",528,"$1,338 ",NA
+,"Salmon, Chinook",123,$861 ,NA
+,Lingcod,141,$354 ,NA
+,"Midshipman, plainfin",133,$279 ,NA
+,"Halibut, California",22,$163 ,NA
+,"Goby, yellowfin",35,$101 ,NA
+VALLEJO,NA,,,
+"Rockfish, vermilion",NA,26,$39 ,
+"Rockfish, yellowtail",NA,5,$10 ,
+,NA,"72,478","$313,082 ",Port Totals:
+BERKELEY,NA,,,
+"Crab, Dungeness",NA,"10,875","$64,511 ",
+"Halibut, California",NA,"6,400","$50,890 ",
+"Salmon, Chinook",NA,"3,950","$41,716 ",
+"Squid, market",NA,"27,022","$13,511 ",
+"Rockfish, brown",NA,"2,364","$10,629 ",
+"Surfperch, black",NA,"1,599","$7,678 ",
+"Hagfish, unspecified",NA,"3,100","$2,325 ",
+Sablefish,NA,891,"$2,185 ",
+"Rockfish, yellowtail",NA,234,"$1,898 ",
+"Seabass, white",NA,221,"$1,753 ",
+"Seaperch, striped",NA,316,"$1,648 ",
+"Surfperch, pile",NA,203,"$1,199 ",
+"Rockfish, blue",NA,149,"$1,036 ",
+"Surfperch, rubberlip",NA,181,$963 ,
+"Rockfish, vermilion",NA,65,$598 ,
+"Rockfish, widow",NA,72,$574 ,
+"Surfperch, white",NA,126,$544 ,
+"Rockfish, unspecified",NA,136,$544 ,
+Lingcod,NA,283,$483 ,
+"Crab, rock unspecified",NA,109,$309 ,
+"Surfperch, barred",NA,41,$271 ,
+"Rockfish, starry",NA,27,$270 ,
+"Salmon, Roe (Chinook, Coho)",NA,50,$222 ,
+"Rockfish, group bolina",NA,30,$150 ,
+"Surfperch, walleye",NA,33,$143 ,
+"Rockfish, canary",NA,18,$112 ,
+"Tuna, albacore",NA,25,$88 ,
+EY,NA,,,
+"Shark, leopard",NA,70,$70 ,
+"Flounder, starry",NA,8,$56 ,
+"Shark, soupfin",NA,50,$50 ,
+"Rockfish, black",NA,11,$25 ,
+"Prickleback, monkeyface (eel)",NA,2,$10 ,
+Jacksmelt,NA,1,$0 ,
+,NA,"58,662","$206,460 ",Port Totals:
+A,NA,,,
+"Crab, Dungeness",NA,"12,014","$66,344 ",
+"Halibut, California",NA,685,"$5,266 ",
+"Seabass, white",NA,40,$281 ,
+Lingcod,NA,23,$79 ,
+,NA,"12,762","$71,970 ",Port Totals:
+ND,NA,,,
+"Crab, Dungeness",NA,"2,737","$9,880 ",
+"Salmon, Chinook",NA,879,"$6,649 ",
+"Halibut, California",NA,822,"$6,263 ",
+"Surfperch, black",NA,448,"$1,041 ",
+"Shark, leopard",NA,40,$80 ,
+"Seaperch, striped",NA,36,$72 ,
+Lingcod,NA,15,$59 ,
+"Surfperch, rubberlip",NA,18,$36 ,
+Jacksmelt,NA,17,$34 ,
+"Surfperch, walleye",NA,15,$30 ,
+"Salmon, Roe (Chinook, Coho)",NA,1,$6 ,
+,NA,"5,028","$24,149 ",Port Totals:
+OD CITY,NA,,,
+"Mudsucker, longjaw",NA,"3,636","$19,998 ",
+"Halibut, California",NA,75,$492 ,
+,NA,"3,711","$20,490 ",Port Totals:
+AMP,NA,,,
+"Sea urchin, red",NA,475,"$3,225 ",
+"Salmon, Chinook",NA,280,"$2,940 ",
+"Halibut, California",NA,138,"$1,246 ",
+,NA,893,"$7,411 ",Port Totals:
+ER PORTS,NA,,,
+"Shrimp, bay",NA,"11,067","$59,336 ",
+"Halibut, California",NA,"10,511","$35,320 ",
+"Crab, Dungeness",NA,"1,973","$9,323 ",
+"Salmon, Chinook",NA,492,"$4,183 ",
+Lingcod,NA,711,"$3,470 ",
+"Seabass, white",NA,285,"$1,294 ",
+"Sea urchin, red",NA,210,"$1,155 ",
+Sablefish,NA,310,"$1,146 ",
+"Sculpin, staghorn",NA,25,$197 ,
+"Rockfish, yellowtail",NA,46,$186 ,
+"Goby, yellowfin",NA,22,$176 ,
+"Rockfish, vermilion",NA,7,$32 ,
+"Rockfish, canary",NA,7,$27 ,
+"Bullhead, brown",NA,6,$18 ,
+"Mackerel, bullet",NA,11,$11 ,
+"Rockfish, rosy",NA,4,$0 ,
+,NA,"25,687","$115,873 ",Port Totals:
+,NA,"12,432,103","$20,220,527 ",SAN FRANCISCO totals:

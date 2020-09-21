@@ -1,0 +1,437 @@
+year,filename,area,port,species,landings_lb,revenues_usd
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,AL ISLAND,"Squid, market","13,007,413","$6,503,545 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red","870,637","$1,772,566 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, yellowfin","2,449,200","$1,218,661 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, spot","53,480","$764,472 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, skipjack","1,723,486","$664,413 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, Pacific","2,948,287","$465,498 "
+2018,Table 20PUB.pdf,Los Angeles,,"Lobster, California spiny","26,653","$423,118 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bigeye","95,297","$274,856 "
+2018,Table 20PUB.pdf,Los Angeles,,"Bonito, Pacific","842,258","$255,862 "
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California","19,665","$96,234 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea cucumber, warty","14,086","$76,524 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, ridgeback","26,300","$72,052 "
+2018,Table 20PUB.pdf,Los Angeles,,"Seabass, white","20,849","$71,823 "
+2018,Table 20PUB.pdf,Los Angeles,,Opah,"62,906","$63,112 "
+2018,Table 20PUB.pdf,Los Angeles,,Swordfish,"20,805","$61,684 "
+2018,Table 20PUB.pdf,Los Angeles,,Sablefish,"11,615","$39,094 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sardine, Pacific","206,901","$30,603 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin","23,657","$22,095 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, jack","83,923","$18,596 "
+2018,Table 20PUB.pdf,Los Angeles,,Wahoo,"3,713","$8,611 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea cucumber, giant red","1,623","$7,289 "
+2018,Table 20PUB.pdf,Los Angeles,,Thornyheads,859,"$6,369 "
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,"2,662","$5,817 "
+2018,Table 20PUB.pdf,Los Angeles,,Dolphin (fish),"3,000","$5,775 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock","3,119","$5,325 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, albacore","4,812","$4,812 "
+2018,Table 20PUB.pdf,Los Angeles,,Pomfret,"2,185","$4,370 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, English","2,865","$4,253 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, shortfin mako","3,006","$3,174 "
+2018,Table 20PUB.pdf,Los Angeles,,Escolar,"2,523","$3,066 "
+2018,Table 20PUB.pdf,Los Angeles,,TERMINAL ISLAND,,
+2018,Table 20PUB.pdf,Los Angeles,,"Whelk, Kellet's","3,667","$3,049 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, unspecified","2,684","$2,966 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, unspecified","2,033","$2,841 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, curlfin","1,543","$2,315 "
+2018,Table 20PUB.pdf,Los Angeles,,"Hagfish, unspecified","2,160","$2,172 "
+2018,Table 20PUB.pdf,Los Angeles,,"Ray, bat","4,422","$1,785 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, thresher","1,412","$1,667 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, purple","1,242","$1,334 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sheephead, California",247,"$1,257 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider",824,$882 
+2018,Table 20PUB.pdf,Los Angeles,,"Bass, giant sea",412,$787 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, soupfin","1,287",$772 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, bigeye thresher",730,$730 
+2018,Table 20PUB.pdf,Los Angeles,,"Hagfish, Pacific",562,$602 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, leopard",594,$580 
+2018,Table 20PUB.pdf,Los Angeles,,"Echinoderm, unspecified",278,$500 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, Pacific angel","1,472",$372 
+2018,Table 20PUB.pdf,Los Angeles,,Flyingfish,725,$363 
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, white",90,$360 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified",131,$262 
+2018,Table 20PUB.pdf,Los Angeles,,Sanddab,158,$237 
+2018,Table 20PUB.pdf,Los Angeles,,"Thornyhead, shortspine",26,$195 
+2018,Table 20PUB.pdf,Los Angeles,,"Flounder, arrowtooth",115,$173 
+2018,Table 20PUB.pdf,Los Angeles,,"Lizardfish, California",283,$158 
+2018,Table 20PUB.pdf,Los Angeles,,"Croaker, white",103,$101 
+2018,Table 20PUB.pdf,Los Angeles,,"Barracuda, California",96,$96 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock","1,322",$62 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, Dover",112,$59 
+2018,Table 20PUB.pdf,Los Angeles,,"Snail, top",42,$42 
+2018,Table 20PUB.pdf,Los Angeles,,"Anchovy, northern","3,874",$39 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, brown rock",21,$31 
+2018,Table 20PUB.pdf,Los Angeles,,AL ISLAND,,
+2018,Table 20PUB.pdf,Los Angeles,,Stingray,"2,681",$27 
+2018,Table 20PUB.pdf,Los Angeles,,"Skate, California",45,$16 
+2018,Table 20PUB.pdf,Los Angeles,,"Guitarfish, shovelnose",4,$12 
+2018,Table 20PUB.pdf,Los Angeles,,"Skate, unspecified",58,$12 
+2018,Table 20PUB.pdf,Los Angeles,,"Sea cucumber, unspecified",30,$0 
+2018,Table 20PUB.pdf,Los Angeles,,"Ray, unspecified",10,$0 
+2018,Table 20PUB.pdf,Los Angeles,,"Shrimp, mantis",1,$0 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"22,573,280","$12,980,521 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,DRO,"Squid, market","1,893,601","$816,811 "
+2018,Table 20PUB.pdf,Los Angeles,,Swordfish,"262,909","$747,141 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bigeye","240,983","$720,764 "
+2018,Table 20PUB.pdf,Los Angeles,,"Lobster, California spiny","38,117","$644,212 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, yellowfin","598,714","$299,207 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, skipjack","745,880","$282,751 "
+2018,Table 20PUB.pdf,Los Angeles,,"Bonito, Pacific","636,575","$190,973 "
+2018,Table 20PUB.pdf,Los Angeles,,"Seabass, white","57,146","$173,667 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, Pacific","974,272","$162,385 "
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California","22,491","$87,162 "
+2018,Table 20PUB.pdf,Los Angeles,,"Hagfish, unspecified","81,776","$80,728 "
+2018,Table 20PUB.pdf,Los Angeles,,Opah,"84,988","$67,518 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock","35,298","$61,458 "
+2018,Table 20PUB.pdf,Los Angeles,,"Hagfish, Pacific","27,695","$29,308 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, spot","1,813","$25,849 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red","25,135","$9,866 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider","5,632","$9,146 "
+2018,Table 20PUB.pdf,Los Angeles,,"Kelp, giant","1,256","$9,142 "
+2018,Table 20PUB.pdf,Los Angeles,,Dolphin (fish),"3,285","$9,098 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, thresher","6,968","$8,956 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, shortfin mako","6,888","$8,030 "
+2018,Table 20PUB.pdf,Los Angeles,,Pomfret,"3,604","$7,224 "
+2018,Table 20PUB.pdf,Los Angeles,,DRO,,
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, brown rock","3,693","$6,752 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea cucumber, warty","1,183","$6,750 "
+2018,Table 20PUB.pdf,Los Angeles,,"Ray, bat","11,853","$4,741 "
+2018,Table 20PUB.pdf,Los Angeles,,"Bass, giant sea","2,099","$4,033 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin","6,836","$3,934 "
+2018,Table 20PUB.pdf,Los Angeles,,Wahoo,"2,832","$3,819 "
+2018,Table 20PUB.pdf,Los Angeles,,Sea hare,369,"$3,690 "
+2018,Table 20PUB.pdf,Los Angeles,,"Thornyhead, shortspine",452,"$3,456 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sardine, Pacific","11,597","$3,431 "
+2018,Table 20PUB.pdf,Los Angeles,,Escolar,"2,679","$2,520 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified",811,"$2,103 "
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,"1,383","$1,955 "
+2018,Table 20PUB.pdf,Los Angeles,,Sablefish,860,"$1,770 "
+2018,Table 20PUB.pdf,Los Angeles,,"Limpet, keyhole",205,"$1,598 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, jack","12,075","$1,536 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, soupfin","2,168","$1,471 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, leopard","1,416","$1,396 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, Pacific angel","6,062","$1,281 "
+2018,Table 20PUB.pdf,Los Angeles,,"Whelk, Kellet's","1,149","$1,256 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock",665,"$1,201 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, purple",114,"$1,140 "
+2018,Table 20PUB.pdf,Los Angeles,,Sea stars,64,$645 
+2018,Table 20PUB.pdf,Los Angeles,,Bat star,62,$620 
+2018,Table 20PUB.pdf,Los Angeles,,"Skate, California",777,$302 
+2018,Table 20PUB.pdf,Los Angeles,,"Skate, unspecified",485,$261 
+2018,Table 20PUB.pdf,Los Angeles,,"Sheephead, California",60,$240 
+2018,Table 20PUB.pdf,Los Angeles,,Eel,190,$228 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider/sheep claws",183,$114 
+2018,Table 20PUB.pdf,Los Angeles,,"Guitarfish, shovelnose",107,$87 
+2018,Table 20PUB.pdf,Los Angeles,,"Fish, unspecified",77,$77 
+2018,Table 20PUB.pdf,Los Angeles,,SAN PEDRO,,
+2018,Table 20PUB.pdf,Los Angeles,,Senorita,44,$66 
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, white",4,$41 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, unspecified",179,$32 
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, unspecified",13,$24 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, Dover",50,$17 
+2018,Table 20PUB.pdf,Los Angeles,,"Octopus, unspecified",6,$6 
+2018,Table 20PUB.pdf,Los Angeles,,Stingray,400,$4 
+2018,Table 20PUB.pdf,Los Angeles,,"Ray, unspecified",45,$2 
+2018,Table 20PUB.pdf,Los Angeles,,"Snail, sea",152,$2 
+2018,Table 20PUB.pdf,Los Angeles,,"Barracuda, California",8,$2 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, petrale",65,$0 
+2018,Table 20PUB.pdf,Los Angeles,,"Anchovy, northern","1,122",$0 
+2018,Table 20PUB.pdf,Los Angeles,,"Scorpionfish, California",3,$0 
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, albacore",32,$0 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"5,829,656","$4,513,996 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,DANA POINT,"Lobster, California spiny","75,111","$1,155,712 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, spot","6,712","$147,664 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock","15,448","$41,485 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock","21,525","$36,206 "
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California","3,173","$29,707 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, box","7,001","$26,494 "
+2018,Table 20PUB.pdf,Los Angeles,,Sanddab,"6,066","$26,263 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, vermilion","4,869","$25,517 "
+2018,Table 20PUB.pdf,Los Angeles,,"Whitefish, ocean","3,839","$18,931 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified","6,805","$18,464 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sheephead, California","2,543","$12,624 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin","1,974","$11,171 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, king","1,649","$9,894 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red","4,481","$9,871 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bocaccio","1,706","$9,701 "
+2018,Table 20PUB.pdf,Los Angeles,,OINT,,
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,"1,723","$9,361 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, Pacific angel","2,938","$9,023 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider","6,381","$6,705 "
+2018,Table 20PUB.pdf,Los Angeles,,"Scorpionfish, California","1,043","$5,977 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, starry",925,"$5,224 "
+2018,Table 20PUB.pdf,Los Angeles,,"Seabass, white",692,"$4,994 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, soupfin","2,200","$4,833 "
+2018,Table 20PUB.pdf,Los Angeles,,"Whelk, Kellet's","5,017","$4,226 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, group shelf",796,"$4,091 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, yellowfin",829,"$4,067 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, widow",569,"$3,034 "
+2018,Table 20PUB.pdf,Los Angeles,,Lingcod,521,"$2,943 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, fantail",311,"$2,819 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, blackgill",521,"$2,601 "
+2018,Table 20PUB.pdf,Los Angeles,,Sablefish,776,"$2,549 "
+2018,Table 20PUB.pdf,Los Angeles,,"Hagfish, unspecified","2,509","$2,509 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, thresher",851,"$2,224 "
+2018,Table 20PUB.pdf,Los Angeles,,"Bass, giant sea",225,"$2,222 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, speckled",360,"$2,160 "
+2018,Table 20PUB.pdf,Los Angeles,,Swordfish,267,"$2,138 "
+2018,Table 20PUB.pdf,Los Angeles,,"Thornyhead, shortspine",251,"$2,134 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, group slope",433,"$1,888 "
+2018,Table 20PUB.pdf,Los Angeles,,"Bonito, Pacific",775,"$1,681 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bank",236,"$1,379 "
+2018,Table 20PUB.pdf,Los Angeles,,Dolphin (fish),269,"$1,347 "
+2018,Table 20PUB.pdf,Los Angeles,,"Octopus, unspecified",226,"$1,263 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, shortfin mako",335,"$1,065 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, spiny dogfish",511,$916 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, brown rock",524,$889 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, leopard",435,$870 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, yellowtail",66,$660 
+2018,Table 20PUB.pdf,Los Angeles,,OINT,,
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, unspecified",357,$550 
+2018,Table 20PUB.pdf,Los Angeles,,"Ray, bat",273,$545 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenspotted",67,$402 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, Dover",35,$350 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenstriped",54,$324 
+2018,Table 20PUB.pdf,Los Angeles,,"Skate, unspecified",153,$303 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, brown smoothhound",134,$288 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenblotched",46,$255 
+2018,Table 20PUB.pdf,Los Angeles,,Stingray,123,$246 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, white",60,$240 
+2018,Table 20PUB.pdf,Los Angeles,,"Midshipman, plainfin",140,$234 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, sevengill",110,$220 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, rosethorn",36,$216 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, flag",28,$165 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, swell",79,$148 
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, skipjack",31,$83 
+2018,Table 20PUB.pdf,Los Angeles,,Blacksmith,30,$80 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, chilipepper",12,$72 
+2018,Table 20PUB.pdf,Los Angeles,,Jacksmelt,28,$60 
+2018,Table 20PUB.pdf,Los Angeles,,"Barracuda, California",25,$50 
+2018,Table 20PUB.pdf,Los Angeles,,"Thornyhead, longspine",16,$32 
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, Pacific",15,$25 
+2018,Table 20PUB.pdf,Los Angeles,,"Guitarfish, shovelnose",15,$15 
+2018,Table 20PUB.pdf,Los Angeles,,Turbot,2,$12 
+2018,Table 20PUB.pdf,Los Angeles,,"Flounder, unspecified",1,$6 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, squarespot",1,$6 
+2018,Table 20PUB.pdf,Los Angeles,,"Sardine, Pacific",1,$1 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"198,286","$1,682,418 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,RT BEACH,"Lobster, California spiny","10,629","$164,365 "
+2018,Table 20PUB.pdf,Los Angeles,,NEWPORT BEACH,,
+2018,Table 20PUB.pdf,Los Angeles,,"Thornyhead, shortspine","18,223","$145,245 "
+2018,Table 20PUB.pdf,Los Angeles,,Sablefish,"35,745","$134,443 "
+2018,Table 20PUB.pdf,Los Angeles,,Swordfish,"17,111","$132,289 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, spot","3,983","$39,398 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, blackgill","7,135","$21,305 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock","8,831","$14,410 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sheephead, California","2,552","$11,494 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, aurora","2,034","$6,570 "
+2018,Table 20PUB.pdf,Los Angeles,,"Thornyhead, longspine","2,172","$6,340 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin","1,241","$6,205 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, vermilion","2,225","$6,065 "
+2018,Table 20PUB.pdf,Los Angeles,,"Whelk, Kellet's","4,963","$4,690 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red","2,191","$3,507 "
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,"1,118","$3,352 "
+2018,Table 20PUB.pdf,Los Angeles,,"Whitefish, ocean",980,"$2,178 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified","1,452","$1,877 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, Dover",569,"$1,701 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider","1,189","$1,309 "
+2018,Table 20PUB.pdf,Los Angeles,,Cabezon,217,"$1,209 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bocaccio",493,$759 
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, unspecified",364,$728 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bank",344,$688 
+2018,Table 20PUB.pdf,Los Angeles,,Lingcod,209,$627 
+2018,Table 20PUB.pdf,Los Angeles,,Dolphin (fish),98,$475 
+2018,Table 20PUB.pdf,Los Angeles,,"Skate, longnose",372,$372 
+2018,Table 20PUB.pdf,Los Angeles,,"Seabass, white",62,$369 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock",207,$351 
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California",61,$346 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, group shelf",164,$328 
+2018,Table 20PUB.pdf,Los Angeles,,"Scorpionfish, California",69,$254 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, brown rock",146,$240 
+2018,Table 20PUB.pdf,Los Angeles,,NEWPORT BEACH,,
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, skipjack",59,$177 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, starry",65,$176 
+2018,Table 20PUB.pdf,Los Angeles,,Escolar,49,$172 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, shortfin mako",105,$158 
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, Pacific",41,$82 
+2018,Table 20PUB.pdf,Los Angeles,,Grenadier,24,$48 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenspotted",23,$46 
+2018,Table 20PUB.pdf,Los Angeles,,"Octopus, unspecified",37,$37 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, squarespot",7,$21 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, spiny dogfish",10,$5 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, box",4,$4 
+2018,Table 20PUB.pdf,Los Angeles,,"Whiting, Pacific",1,$3 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"127,573","$714,415 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,REDONDO BEACH,"Lobster, California spiny","25,692","$421,982 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, Pacific","298,891","$124,945 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, spot","3,695","$55,430 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock","28,762","$49,721 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, unspecified","5,386","$2,866 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified","1,703","$2,759 "
+2018,Table 20PUB.pdf,Los Angeles,,"Whelk, Kellet's","2,215","$1,787 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin",287,"$1,264 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock",610,$976 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider",801,$947 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, group red",192,$355 
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,202,$303 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, shortfin mako",190,$285 
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, yellowfin",231,$231 
+2018,Table 20PUB.pdf,Los Angeles,,"Bonito, Pacific",210,$141 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bocaccio",66,$108 
+2018,Table 20PUB.pdf,Los Angeles,,REDONDO BEACH,,
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California",16,$100 
+2018,Table 20PUB.pdf,Los Angeles,,Jacksmelt,32,$69 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, brown rock",35,$58 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"369,215","$664,324 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,LONG BEACH,"Lobster, California spiny","23,578","$394,981 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, spot","3,327","$46,171 "
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, ridgeback","10,474","$29,069 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sheephead, California","1,769","$8,371 "
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California",930,"$7,966 "
+2018,Table 20PUB.pdf,Los Angeles,,Swordfish,"1,340","$7,825 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock","2,331","$5,548 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red","2,125","$4,022 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin",226,"$1,356 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, box",401,"$1,202 "
+2018,Table 20PUB.pdf,Los Angeles,,"Squid, market",926,$695 
+2018,Table 20PUB.pdf,Los Angeles,,"Barracuda, California",171,$483 
+2018,Table 20PUB.pdf,Los Angeles,,"Whelk, Kellet's",296,$237 
+2018,Table 20PUB.pdf,Los Angeles,,"Ray, Pacific electric",25,$160 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, unspecified",6,$71 
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,32,$71 
+2018,Table 20PUB.pdf,Los Angeles,,"Octopus, unspecified",4,$4 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"47,961","$508,231 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,MARINA DEL REY,"Lobster, California spiny","23,031","$386,631 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sardine, Pacific","67,505","$19,064 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock","5,864","$10,555 "
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,433,"$1,732 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, vermilion",440,$899 
+2018,Table 20PUB.pdf,Los Angeles,,"Anchovy, northern","2,472",$865 
+2018,Table 20PUB.pdf,Los Angeles,,MARINA DEL REY,,
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California",153,$842 
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, Pacific","2,269",$537 
+2018,Table 20PUB.pdf,Los Angeles,,"Seabass, white",83,$415 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bocaccio",83,$343 
+2018,Table 20PUB.pdf,Los Angeles,,"Whitefish, ocean",47,$282 
+2018,Table 20PUB.pdf,Los Angeles,,"Squid, market",486,$243 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenspotted",176,$226 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, widow",35,$207 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, starry",34,$204 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider",83,$125 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bank",18,$108 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenblotched",93,$93 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, brown rock",32,$58 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock",20,$36 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenstriped",17,$23 
+2018,Table 20PUB.pdf,Los Angeles,,Sanddab,12,$12 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, petrale",4,$4 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, Mexican",3,$3 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, speckled",3,$3 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, honeycomb",3,$3 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, flag",2,$2 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, squarespot",2,$2 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, chilipepper",1,$1 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified",40,$0 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"103,443","$423,516 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,AVALON,Swordfish,"9,790","$91,838 "
+2018,Table 20PUB.pdf,Los Angeles,,"Lobster, California spiny","4,538","$73,197 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin","3,359","$15,854 "
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,"3,522","$11,088 "
+2018,Table 20PUB.pdf,Los Angeles,,AVALON,,
+2018,Table 20PUB.pdf,Los Angeles,,"Seabass, white","1,334","$9,308 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, yellowfin",408,"$1,428 "
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, thresher",462,$604 
+2018,Table 20PUB.pdf,Los Angeles,,Sanddab,152,$538 
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California",69,$388 
+2018,Table 20PUB.pdf,Los Angeles,,"Prawn, spot",131,$131 
+2018,Table 20PUB.pdf,Los Angeles,,Dolphin (fish),20,$80 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, shortfin mako",48,$48 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock",2,$2 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock",2,$2 
+2018,Table 20PUB.pdf,Los Angeles,,"Octopus, unspecified",1,$0 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"23,837","$204,505 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,HERMOSA BEACH,"Lobster, California spiny","7,850","$104,263 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified","1,025","$1,900 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sheephead, California",340,"$1,020 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red",450,$990 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, yellow rock",494,$828 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, spider",781,$781 
+2018,Table 20PUB.pdf,Los Angeles,,"Hagfish, unspecified",614,$614 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, red rock",16,$27 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, brown rock",5,$9 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"11,575","$110,432 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,SANTA MONICA,Swordfish,"7,701","$46,003 "
+2018,Table 20PUB.pdf,Los Angeles,,"Lobster, California spiny","2,684","$37,455 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, yellowfin",373,"$2,120 "
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,329,"$1,596 "
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California",162,"$1,320 "
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, Pacific","1,688",$675 
+2018,Table 20PUB.pdf,Los Angeles,,SANTA MONICA,,
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red",133,$532 
+2018,Table 20PUB.pdf,Los Angeles,,Dolphin (fish),53,$265 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"13,123","$89,967 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,HUNTINGTON BEACH,Sanddab,"4,136","$20,457 "
+2018,Table 20PUB.pdf,Los Angeles,,"Scorpionfish, California","1,800","$10,206 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, vermilion",697,"$4,179 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenblotched",472,"$2,656 "
+2018,Table 20PUB.pdf,Los Angeles,,"Whitefish, ocean",490,"$2,440 "
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, widow",315,"$1,887 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, rock unspecified",620,"$1,860 "
+2018,Table 20PUB.pdf,Los Angeles,,Dolphin (fish),193,"$1,320 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sheephead, California",210,"$1,172 "
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, box",197,$788 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, bocaccio",128,$768 
+2018,Table 20PUB.pdf,Los Angeles,,Yellowtail,44,$435 
+2018,Table 20PUB.pdf,Los Angeles,,"Crab, king",69,$414 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, group slope",96,$384 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, starry",50,$297 
+2018,Table 20PUB.pdf,Los Angeles,,Lingcod,40,$242 
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, red",74,$169 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenspotted",24,$144 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, chilipepper",21,$126 
+2018,Table 20PUB.pdf,Los Angeles,,"Mackerel, unspecified",22,$110 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, flag",18,$105 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, group shelf",13,$75 
+2018,Table 20PUB.pdf,Los Angeles,,Halfmoon,11,$44 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, greenstriped",4,$24 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, rock",3,$18 
+2018,Table 20PUB.pdf,Los Angeles,,"Shark, shortfin mako",19,$0 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"9,762","$50,319 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,GELES,"Sea cucumber, warty","1,324","$7,717 "
+2018,Table 20PUB.pdf,Los Angeles,,Flyingfish,596,"$5,888 "
+2018,Table 20PUB.pdf,Los Angeles,,Sea hare,308,"$3,081 "
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, white",24,"$2,505 "
+2018,Table 20PUB.pdf,Los Angeles,,"Limpet, keyhole",149,"$1,225 "
+2018,Table 20PUB.pdf,Los Angeles,,"Halibut, California",86,$860 
+2018,Table 20PUB.pdf,Los Angeles,,"Sea urchin, purple",39,$387 
+2018,Table 20PUB.pdf,Los Angeles,,Sea stars,19,$313 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"2,544","$21,975 "
+2018,Table 20PUB.pdf,Los Angeles,,,,
+2018,Table 20PUB.pdf,Los Angeles,GTON,"Thornyhead, shortspine",175,"$1,400 "
+2018,Table 20PUB.pdf,Los Angeles,,"Scorpionfish, California",163,"$1,141 "
+2018,Table 20PUB.pdf,Los Angeles,,Sablefish,182,$728 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, blackgill",227,$681 
+2018,Table 20PUB.pdf,Los Angeles,,"Seabass, white",133,$361 
+2018,Table 20PUB.pdf,Los Angeles,,"Rockfish, aurora",96,$288 
+2018,Table 20PUB.pdf,Los Angeles,,"Thornyhead, longspine",14,$42 
+2018,Table 20PUB.pdf,Los Angeles,,"Sole, Dover",13,$39 
+2018,Table 20PUB.pdf,Los Angeles,,Sanddab,19,$0 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"1,022","$4,680 "
+2018,Table 20PUB.pdf,Los Angeles,,ER PORTS,,
+2018,Table 20PUB.pdf,Los Angeles,,"Sea cucumber, warty",726,"$3,267 "
+2018,Table 20PUB.pdf,Los Angeles,,Swordfish,370,"$2,728 "
+2018,Table 20PUB.pdf,Los Angeles,,"Tuna, bluefin",73,$475 
+2018,Table 20PUB.pdf,Los Angeles,,Port Totals:,"1,169","$6,469 "
+2018,Table 20PUB.pdf,Los Angeles,,LOS ANGELES totals:,"29,312,445","$21,975,766 "

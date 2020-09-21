@@ -10,7 +10,8 @@ library(tidyverse)
 library(lubridate)
 
 # Directories
-datadir <- "/Users/cfree/Dropbox/Chris/UCSB/data/california/landings/swfsc_erddap/"
+datadir <- "data/landings/swfsc/raw"
+outputdir <- "data/landings/swfsc/processed"
 
 # Read data
 data1_orig <- read.csv(file.path(datadir, "erdCAMarCatLM_18ce_21b9_4a32.csv"), as.is=T, skip=1) # California Fish Market Catch Landings, Long List, 1928-2002, Monthly	
@@ -21,23 +22,28 @@ data4_orig <- read.csv(file.path(datadir, "erdCAMarCatSY_b66b_0d1d_cfd6.csv"), a
 # Website
 # https://www.pfeg.noaa.gov/products/las/CA_market_catch.html
 
+# Read species key
+spp_key <- readxl::read_excel(file.path(datadir, "detailed_species_list.xlsx"))
+
 # Format data
 ################################################################################
 
 # Format
-ll_yr <- data1_orig %>% 
+ll_mon <- data1_orig %>% 
   setNames(c("date_dummy", "year", "comm_name", "region", "landings_lb")) %>% 
   mutate(dataset="California Fish Market Catch Landings, Long List, 1928-2002, Monthly", 
          date_dummy=date_dummy %>% gsub("T00:00:00Z", "", .) %>% ymd(),
          month=month(date_dummy)) %>% 
-  select(dataset, year, month, date_dummy, comm_name, region, landings_lb)
+  select(dataset, year, month, date_dummy, comm_name, region, landings_lb) %>% 
+  filter(region!="All")
 
 # Format
-ll_mon <- data2_orig %>% 
+ll_yr <- data2_orig %>% 
   setNames(c("date_dummy", "year", "comm_name", "region", "landings_lb")) %>% 
   mutate(dataset="California Fish Market Catch Landings, Long List, 1928-2002, Yearly",
          date_dummy=date_dummy %>% gsub("T00:00:00Z", "", .) %>% ymd()) %>% 
-  select(dataset, year, date_dummy, comm_name, region, landings_lb)
+  select(dataset, year, date_dummy, comm_name, region, landings_lb) %>% 
+  filter(region!="All")
 
 # Format
 sl_mon <- data3_orig %>% 
@@ -45,15 +51,47 @@ sl_mon <- data3_orig %>%
   mutate(date_dummy=date_dummy %>% gsub("T00:00:00Z", "", .) %>% ymd(),
          dataset="California Fish Market Catch Landings, Short List, 1928-2002, Monthly",
          month=month(date_dummy)) %>% 
-  select(dataset, year, month, date_dummy, comm_name, region, landings_lb)
+  select(dataset, year, month, date_dummy, comm_name, region, landings_lb) %>% 
+  filter(region!="All")
 
 # Format
 sl_yr <- data4_orig %>% 
   setNames(c("date_dummy", "year", "comm_name", "region", "landings_lb")) %>% 
   mutate(dataset="California Fish Market Catch Landings, Short List, 1928-2002, Yearly",
          date_dummy=date_dummy %>% gsub("T00:00:00Z", "", .) %>% ymd())  %>% 
-  select(dataset, year, date_dummy, comm_name, region, landings_lb)
+  select(dataset, year, date_dummy, comm_name, region, landings_lb) %>% 
+  filter(region!="All")
 
 # Export data
-save(ll_yr, ll_mon, sl_mon, sl_yr, file=file.path(datadir, "1928_2002_CA_landings_data_swfsc_erddap.Rdata"))
+save(ll_yr, ll_mon, sl_mon, sl_yr, file=file.path(outputdir, "1928_2002_CA_landings_data_swfsc_erddap.Rdata"))
 
+
+# Plot data
+################################################################################
+
+# Regions
+sort(unique(ll_mon$region))
+
+# LL monthly
+ll_mon_stats <- ll_mon %>% 
+  filter(region!="All") %>% 
+  group_by(year, month, date_dummy, region) %>% 
+  summarize(landings_lb=sum(landings_lb))
+
+g <- ggplot(ll_mon_stats, aes(x=date_dummy, y=landings_lb/1e6, fill=region)) +
+  geom_area() +
+  labs(x="Month", y="Landings (millions of lbs)") +
+  theme_bw()
+g
+
+# LL annuals
+ll_yr_stats <- ll_yr %>% 
+  filter(region!="All") %>% 
+  group_by(year, region) %>% 
+  summarize(landings_lb=sum(landings_lb))
+
+g <- ggplot(ll_yr_stats, aes(x=year, y=landings_lb/1e6, fill=region)) +
+  geom_area() +
+  labs(x="Year", y="Landings (millions of lbs)") +
+  theme_bw()
+g

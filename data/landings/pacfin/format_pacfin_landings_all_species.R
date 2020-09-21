@@ -24,8 +24,10 @@ wa_orig <- read.csv(file.path(datadir, "ALL005-W-1980---2020.csv"), as.is=T, na.
 port_key <- read.csv(file.path(outputdir, "pacfin_port_codes_clean.csv"), as.is=T)
 spp_key <- read.csv(file.path(outputdir, "pacfin_species_codes_clean.csv"), as.is=T)
 
+# Formatting steps overview
 # Step 1. Format each state's data and merge into single table
 # Step 2. Add meta-data associated with codes
+
 
 # Step 1. Format each state's data and merge into single table
 ################################################################################
@@ -165,19 +167,26 @@ data2 <- data1 %>%
   # Remove redundant species columns
   select(-c(comm_name, mgmt_group_code, complex)) %>% 
   # Add formatted species common name, scientific name
-  left_join(spp_key %>% select(spp_code, comm_name, sci_name), by=c("species_code"="spp_code")) %>% 
-  mutate(comm_name=ifelse(species_code=="Confidential", "Confidential", comm_name)) %>% 
+  left_join(spp_key %>% select(spp_code, comm_name, sci_name ), by=c("species_code"="spp_code")) %>% 
+  mutate(comm_name=ifelse(species_code=="Confidential-", "Confidential", comm_name)) %>% 
   # Add port info
   left_join(port_key %>% select(port_code, port_name)) %>% 
   # Arrange
-  select(year, agency, port_code, port_name,
+  select(year, agency, port_code, port_name, lat_dd, long_dd,
          species_code, comm_name, sci_name, 
          confidential:revenues_usd) %>% 
   # Rename some columns
-  rename(state=agency, spp_code=species_code)
+  rename(state=agency, spp_code=species_code,
+         port_lat_dd=lat_dd, port_long_dd=long_dd)
 
 # Inspect
 freeR::complete(data2)
+
+
+# Ports
+ports <- data2 %>% 
+  select(port_code, port_name) %>% 
+  unique()
 
 
 # Export
