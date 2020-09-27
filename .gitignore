@@ -11,5 +11,7 @@ drafts/
 data/landings/pacfin/ggmap_api_key.R
 
 # Ignore large raw data
-data/landings/cdfw/raw
+data/landings/cdfw/public/raw
+data/landings/cdfw/public/intermediate
 data/landings/swfsc/raw
+data/landings/odfw/public
