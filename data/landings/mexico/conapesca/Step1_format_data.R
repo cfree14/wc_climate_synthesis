@@ -74,10 +74,15 @@ data <- data_orig %>%
                        "San Quintin"="San Quintín",
                        "Santa Rosalia"="Santa Rosalía",
                        "Villa De Jesus Maria"="Villa Jesús María")) %>% 
+  # Format common name
+  # filete de fco., de cultivo vivo, carne de seca
+  # fca./fco., ent./desv./desc./desv. y desc., filete, ind., s.c. fco.
+  mutate(type=ifelse(grepl("cultiv", comm_name_long), "cultured", "wild"),
+         live_yn=ifelse(grepl("vivo", comm_name_long), "live", "dead")) %>% 
   # Arrange
   select(year, month, state, office, landing_site, place_of_capture, 
          disembarkment_site, economic_unit, 
-         species_group, comm_name_long, sci_name, 
+         species_group, comm_name_long, sci_name, type, live_yn,
          landings_kg, processed_kg, price_mxn_kg, value_mxn, 
          everything())
 
@@ -99,12 +104,6 @@ n_distinct(data$economic_unit)
 table(data$state)
 table(data$office)
 n_distinct(data$office)
-
-# filete de fco., 
-# de cultivo vivo, 
-# carne de seca
-# fca./fco., ent./desv./desc./desv. y desc., filete, ind.
-# s.c. fco.
 
 # Place of landing/capture
 table(data$landing_site)
