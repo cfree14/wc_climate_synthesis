@@ -172,12 +172,11 @@ data2 <- data1 %>%
   # Add port info
   left_join(port_key %>% select(port_code, port_name)) %>% 
   # Arrange
-  select(year, agency, port_code, port_name, lat_dd, long_dd,
+  select(year, agency, port_code, port_name,
          species_code, comm_name, sci_name, 
          confidential:revenues_usd) %>% 
   # Rename some columns
-  rename(state=agency, spp_code=species_code,
-         port_lat_dd=lat_dd, port_long_dd=long_dd)
+  rename(state=agency, spp_code=species_code)
 
 # Inspect
 freeR::complete(data2)

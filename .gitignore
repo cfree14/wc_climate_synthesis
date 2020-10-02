@@ -15,3 +15,8 @@ data/landings/cdfw/public/raw
 data/landings/cdfw/public/intermediate
 data/landings/swfsc/raw
 data/landings/odfw/public
+
+# Ignore confidential data
+data/landings/cdfw/confidential
+data/landings/odfw/confidential
+data/landings/wdfw/confidential

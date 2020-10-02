@@ -1,0 +1,306 @@
+year,filename,area,port,species,landings_lb,revenues_usd
+2019,Table 17PUB.pdf,San Francisco,San Francisco,"Crab, Dungeness","1,321,723","$5,205,724 "
+2020,Table 17PUB.pdf,San Francisco,San Francisco,"Salmon, Chinook","159,434","$1,276,100 "
+2021,Table 17PUB.pdf,San Francisco,San Francisco,"Halibut, California","171,562","$1,170,064 "
+2022,Table 17PUB.pdf,San Francisco,San Francisco,Swordfish,"328,285","$1,081,505 "
+2023,Table 17PUB.pdf,San Francisco,San Francisco,Sablefish,"89,164","$322,263 "
+2024,Table 17PUB.pdf,San Francisco,San Francisco,"Tuna, bigeye","102,071","$307,037 "
+2025,Table 17PUB.pdf,San Francisco,San Francisco,"Squid, market","517,991","$257,318 "
+2026,Table 17PUB.pdf,San Francisco,San Francisco,"Herring, Pacific - roe","1,372,983","$247,137 "
+2027,Table 17PUB.pdf,San Francisco,San Francisco,Opah,"142,475","$149,139 "
+2028,Table 17PUB.pdf,San Francisco,San Francisco,"Tuna, yellowfin","48,779","$139,220 "
+2029,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, chilipepper","141,632","$68,819 "
+2030,Table 17PUB.pdf,San Francisco,San Francisco,"Shrimp, coonstriped","9,197","$50,725 "
+2031,Table 17PUB.pdf,San Francisco,San Francisco,Lingcod,"18,005","$44,870 "
+2032,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, petrale","64,247","$35,626 "
+2033,Table 17PUB.pdf,San Francisco,San Francisco,"Seabass, white","5,855","$35,614 "
+2034,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, bocaccio","83,011","$35,178 "
+2035,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, brown","5,827","$32,408 "
+2036,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, gopher","3,634","$20,023 "
+2037,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, sand","16,625","$16,660 "
+2038,Table 17PUB.pdf,San Francisco,San Francisco,Thornyheads,"1,988","$14,527 "
+2039,Table 17PUB.pdf,San Francisco,San Francisco,"Crab, rock unspecified","2,510","$14,016 "
+2040,Table 17PUB.pdf,San Francisco,San Francisco,"Shark, shortfin mako","10,362","$10,059 "
+2041,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, splitnose","46,306","$9,261 "
+2042,Table 17PUB.pdf,San Francisco,San Francisco,"Anchovy, northern","3,065","$8,939 "
+2043,Table 17PUB.pdf,San Francisco,San Francisco,"Tuna, albacore","43,635","$7,743 "
+2044,Table 17PUB.pdf,San Francisco,San Francisco,"Sea urchin, red","1,256","$6,905 "
+2045,Table 17PUB.pdf,San Francisco,San Francisco,Dolphin (fish),"4,103","$5,975 "
+2046,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, blackgill","3,656","$5,543 "
+2047,Table 17PUB.pdf,San Francisco,San Francisco,Wahoo,"2,952","$4,128 "
+2048,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, bank","8,321","$3,761 "
+2050,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, copper",675,"$3,432 "
+2051,Table 17PUB.pdf,San Francisco,San Francisco,"Flounder, starry","3,363","$3,368 "
+2052,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, canary","2,605","$3,337 "
+2053,Table 17PUB.pdf,San Francisco,San Francisco,"Salmon, Roe (Chinook, Coho)",703,"$2,965 "
+2054,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, widow","4,054","$2,772 "
+2055,Table 17PUB.pdf,San Francisco,San Francisco,"Greenling, kelp",873,"$2,699 "
+2056,Table 17PUB.pdf,San Francisco,San Francisco,"Prickleback, monkeyface (eel)",259,"$2,621 "
+2057,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, vermilion","1,049","$2,575 "
+2058,Table 17PUB.pdf,San Francisco,San Francisco,"Fish, unspecified","1,069","$2,556 "
+2059,Table 17PUB.pdf,San Francisco,San Francisco,Pomfret,"1,388","$2,022 "
+2060,Table 17PUB.pdf,San Francisco,San Francisco,"Seaperch, striped",348,"$1,802 "
+2061,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, China",304,"$1,775 "
+2062,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, black",692,"$1,487 "
+2063,Table 17PUB.pdf,San Francisco,San Francisco,"Shark, spiny dogfish","13,657","$1,408 "
+2064,Table 17PUB.pdf,San Francisco,San Francisco,"Thornyhead, shortspine",447,"$1,239 "
+2065,Table 17PUB.pdf,San Francisco,San Francisco,"Shark, soupfin","1,612",$893 
+2066,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, yellowtail",564,$851 
+2067,Table 17PUB.pdf,San Francisco,San Francisco,Oilfish,"1,556",$824 
+2068,Table 17PUB.pdf,San Francisco,San Francisco,"Skate, longnose","7,258",$811 
+2069,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, blue",340,$789 
+2070,Table 17PUB.pdf,San Francisco,San Francisco,"Skate, unspecified","7,174",$607 
+2071,Table 17PUB.pdf,San Francisco,San Francisco,"Shark, leopard",580,$556 
+2072,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, greenspotted","1,200",$528 
+2073,Table 17PUB.pdf,San Francisco,San Francisco,Cabezon,177,$499 
+2074,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, rosy",170,$429 
+2075,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, unspecified",184,$428 
+2076,Table 17PUB.pdf,San Francisco,San Francisco,"Surfperch, rubberlip",70,$385 
+2077,Table 17PUB.pdf,San Francisco,San Francisco,"Sanddab, Pacific","1,677",$349 
+2078,Table 17PUB.pdf,San Francisco,San Francisco,"Octopus, unspecified",101,$266 
+2079,Table 17PUB.pdf,San Francisco,San Francisco,"Tuna, skipjack",539,$260 
+2080,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, group bolina",39,$234 
+2081,Table 17PUB.pdf,San Francisco,San Francisco,ANCISCO,,
+2082,Table 17PUB.pdf,San Francisco,San Francisco,"Skate, big","2,370",$233 
+2083,Table 17PUB.pdf,San Francisco,San Francisco,"Ratfish, spotted","8,645",$233 
+2084,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, group shelf",791,$232 
+2085,Table 17PUB.pdf,San Francisco,San Francisco,"Shrimp, bay",30,$210 
+2086,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, quillback",41,$203 
+2087,Table 17PUB.pdf,San Francisco,San Francisco,"Smelt, surf",72,$180 
+2088,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, black-and-yellow",76,$175 
+2089,Table 17PUB.pdf,San Francisco,San Francisco,"Shark, unspecified",156,$165 
+2090,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, rock",389,$143 
+2091,Table 17PUB.pdf,San Francisco,San Francisco,"Thornyhead, longspine",31,$133 
+2092,Table 17PUB.pdf,San Francisco,San Francisco,"Surfperch, redtail",43,$129 
+2093,Table 17PUB.pdf,San Francisco,San Francisco,"Eel, wolf (wolf-eel)",55,$116 
+2094,Table 17PUB.pdf,San Francisco,San Francisco,"Shark, thresher",71,$96 
+2095,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, rex",785,$96 
+2096,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, darkblotched",242,$93 
+2097,Table 17PUB.pdf,San Francisco,San Francisco,"Greenling, rock",31,$93 
+2098,Table 17PUB.pdf,San Francisco,San Francisco,Sanddab,"1,653",$90 
+2099,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, greenstriped",671,$83 
+2100,Table 17PUB.pdf,San Francisco,San Francisco,"Croaker, white",67,$82 
+2101,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, greenblotched",123,$53 
+2102,Table 17PUB.pdf,San Francisco,San Francisco,Jacksmelt,50,$50 
+2103,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, treefish",9,$45 
+2104,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, Dover","1,540",$42 
+2105,Table 17PUB.pdf,San Francisco,San Francisco,"Skate, California",146,$17 
+2106,Table 17PUB.pdf,San Francisco,San Francisco,"Mackerel, unspecified",104,$12 
+2107,Table 17PUB.pdf,San Francisco,San Francisco,"Goby, yellowfin",4,$12 
+2108,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, redbanded",76,$10 
+2109,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, starry",13,$10 
+2110,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, flag",54,$8 
+2111,Table 17PUB.pdf,San Francisco,San Francisco,"Ray, Pacific electric",148,$4 
+2112,Table 17PUB.pdf,San Francisco,San Francisco,"Shark, sixgill",3,$0 
+2113,Table 17PUB.pdf,San Francisco,San Francisco,ANCISCO,,
+2114,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, cowcod",189,$0 
+2115,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, curlfin",46,$0 
+2116,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, English","1,135",$0 
+2117,Table 17PUB.pdf,San Francisco,San Francisco,"Flounder, arrowtooth",897,$0 
+2118,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, stripetail",721,$0 
+2119,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, shortbelly",380,$0 
+2120,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, unspecified",2,$0 
+2121,Table 17PUB.pdf,San Francisco,San Francisco,"Sculpin, staghorn",2,$0 
+2122,Table 17PUB.pdf,San Francisco,San Francisco,"Surfperch, unspecified",3,$0 
+2123,Table 17PUB.pdf,San Francisco,San Francisco,"Whiting, Pacific","6,546",$0 
+2124,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, group slope",123,$0 
+2125,Table 17PUB.pdf,San Francisco,San Francisco,"Sardine, Pacific",1,$0 
+2126,Table 17PUB.pdf,San Francisco,San Francisco,"Mackerel, jack",20,$0 
+2127,Table 17PUB.pdf,San Francisco,San Francisco,"Turbot, hornyhead",1,$0 
+2128,Table 17PUB.pdf,San Francisco,San Francisco,"Midshipman, plainfin",10,$0 
+2129,Table 17PUB.pdf,San Francisco,San Francisco,"Rockfish, rosethorn",1,$0 
+2130,Table 17PUB.pdf,San Francisco,San Francisco,"Shad, American",126,$0 
+2131,Table 17PUB.pdf,San Francisco,San Francisco,"Shrimp, ocean (pink)",20,$0 
+2132,Table 17PUB.pdf,San Francisco,San Francisco,Eel,14,$0 
+2133,Table 17PUB.pdf,San Francisco,San Francisco,"Sole, slender",10,$0 
+2134,Table 17PUB.pdf,San Francisco,San Francisco,Port Totals:,"4,814,115","$10,634,096 "
+2135,Table 17PUB.pdf,San Francisco,,,,
+2136,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Crab, Dungeness","801,021","$3,728,542 "
+2137,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Salmon, Chinook","286,556","$2,522,723 "
+2138,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Squid, market","2,512,684","$1,249,492 "
+2139,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Halibut, California","46,204","$263,122 "
+2140,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Prawn, spot","12,716","$216,815 "
+2141,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, petrale","177,257","$167,680 "
+2142,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Anchovy, northern","3,157,224","$157,861 "
+2143,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Sablefish,"45,910","$143,597 "
+2145,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sea urchin, red","9,764","$67,775 "
+2146,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Crab, rock unspecified","29,035","$60,990 "
+2147,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, chilipepper","117,816","$53,248 "
+2148,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, bocaccio","75,441","$36,522 "
+2149,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Lingcod,"18,460","$36,179 "
+2150,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sanddab, Pacific","69,507","$23,241 "
+2151,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, blue","3,626","$15,619 "
+2152,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, brown","2,595","$12,859 "
+2153,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Sanddab,"21,954","$9,426 "
+2154,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Croaker, white","6,008","$8,843 "
+2155,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Butterfish (Pacific pompano),"3,279","$4,914 "
+2156,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Crab, box",820,"$4,628 "
+2157,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Crab, red rock","2,706","$4,452 "
+2158,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, sand","3,768","$3,759 "
+2159,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, vermilion",907,"$3,631 "
+2160,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, canary","2,253","$3,628 "
+2161,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Flounder, starry","3,553","$3,190 "
+2162,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, black",507,"$2,805 "
+2163,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Tuna, albacore","1,723","$2,671 "
+2164,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Seabass, white",345,"$2,158 "
+2165,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Prickleback, monkeyface (eel)",214,"$2,116 "
+2166,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, yellowtail",483,"$2,075 "
+2167,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, English","6,744","$1,641 "
+2168,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, olive",256,"$1,115 "
+2169,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, copper",134,$903 
+2170,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Skate, longnose","4,264",$848 
+2171,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Thornyhead, shortspine",164,$649 
+2172,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, widow",289,$604 
+2173,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, Dover",420,$585 
+2174,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Shrimp, bay",70,$490 
+2175,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Salmon, pink",52,$489 
+2176,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,TON-HALF MOON,,
+2177,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, rock",852,$460 
+2178,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, black-and-yellow",57,$418 
+2179,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Jacksmelt,134,$353 
+2180,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Mudsucker, longjaw",34,$340 
+2181,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, curlfin",479,$325 
+2182,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Octopus, unspecified",283,$303 
+2183,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Skate, unspecified","1,470",$294 
+2184,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Cabezon,31,$288 
+2185,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, unspecified",80,$249 
+2186,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, cowcod",592,$243 
+2187,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Grenadier,817,$204 
+2188,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Turbot,210,$179 
+2189,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Salmon, Roe (Chinook, Coho)",194,$158 
+2190,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, gopher",16,$149 
+2191,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, China",14,$145 
+2192,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Shark, unspecified",82,$140 
+2193,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Flounder, arrowtooth",369,$138 
+2194,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Shark, soupfin",226,$110 
+2195,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Surfperch, barred",53,$102 
+2196,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Greenling, kelp",11,$60 
+2197,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Smelt, night",10,$48 
+2198,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, quillback",5,$45 
+2199,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Crab, brown rock",19,$43 
+2200,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, splitnose",312,$42 
+2201,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, rosy",16,$37 
+2202,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, greenspotted",158,$36 
+2203,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, greenstriped","1,991",$33 
+2204,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, rex","1,201",$31 
+2205,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Skate, big",140,$28 
+2206,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Thornyhead, longspine",30,$23 
+2207,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, blackgill",12,$20 
+2208,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,TON-HALF MOON,,
+2209,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, starry",3,$17 
+2210,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Shark, spiny dogfish",50,$15 
+2211,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Eel, wolf (wolf-eel)",24,$13 
+2212,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, treefish",2,$6 
+2213,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Surfperch, redtail",3,$6 
+2214,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, greenblotched",67,$5 
+2215,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Skate, California",16,$3 
+2216,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Mackerel, jack",16,$3 
+2217,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, group shelf",545,$1 
+2218,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, shortbelly",428,$1 
+2219,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, stripetail",257,$0 
+2220,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Sole, slender",2,$0 
+2221,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Whiting, Pacific",714,$0 
+2222,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Shad, American",2,$0 
+2223,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, redbanded",2,$0 
+2224,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Mackerel, unspecified",2,$0 
+2225,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, yelloweye",1,$0 
+2226,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Rockfish, darkblotched",3,$0 
+2227,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,"Mackerel, Pacific",10,$0 
+2228,Table 17PUB.pdf,San Francisco,Princeton-Half Moon,Port Totals:,"7,438,767","$8,826,996 "
+2229,Table 17PUB.pdf,San Francisco,,,,
+2230,Table 17PUB.pdf,San Francisco,Vallejo,"Crab, Dungeness","61,349","$246,494 "
+2231,Table 17PUB.pdf,San Francisco,Vallejo,"Shrimp, bay","9,614","$61,736 "
+2232,Table 17PUB.pdf,San Francisco,Vallejo,Sablefish,502,"$1,708 "
+2233,Table 17PUB.pdf,San Francisco,Vallejo,"Sculpin, staghorn",528,"$1,338 "
+2234,Table 17PUB.pdf,San Francisco,Vallejo,"Salmon, Chinook",123,$861 
+2235,Table 17PUB.pdf,San Francisco,Vallejo,Lingcod,141,$354 
+2236,Table 17PUB.pdf,San Francisco,Vallejo,"Midshipman, plainfin",133,$279 
+2237,Table 17PUB.pdf,San Francisco,Vallejo,"Halibut, California",22,$163 
+2238,Table 17PUB.pdf,San Francisco,Vallejo,"Goby, yellowfin",35,$101 
+2239,Table 17PUB.pdf,San Francisco,Vallejo,VALLEJO,,
+2240,Table 17PUB.pdf,San Francisco,Vallejo,"Rockfish, vermilion",26,$39 
+2241,Table 17PUB.pdf,San Francisco,Vallejo,"Rockfish, yellowtail",5,$10 
+2242,Table 17PUB.pdf,San Francisco,Vallejo,Port Totals:,"72,478","$313,082 "
+2243,Table 17PUB.pdf,San Francisco,,,,
+2244,Table 17PUB.pdf,San Francisco,Berkeley,"Crab, Dungeness","10,875","$64,511 "
+2245,Table 17PUB.pdf,San Francisco,Berkeley,"Halibut, California","6,400","$50,890 "
+2246,Table 17PUB.pdf,San Francisco,Berkeley,"Salmon, Chinook","3,950","$41,716 "
+2247,Table 17PUB.pdf,San Francisco,Berkeley,"Squid, market","27,022","$13,511 "
+2248,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, brown","2,364","$10,629 "
+2249,Table 17PUB.pdf,San Francisco,Berkeley,"Surfperch, black","1,599","$7,678 "
+2250,Table 17PUB.pdf,San Francisco,Berkeley,"Hagfish, unspecified","3,100","$2,325 "
+2251,Table 17PUB.pdf,San Francisco,Berkeley,Sablefish,891,"$2,185 "
+2252,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, yellowtail",234,"$1,898 "
+2253,Table 17PUB.pdf,San Francisco,Berkeley,"Seabass, white",221,"$1,753 "
+2254,Table 17PUB.pdf,San Francisco,Berkeley,"Seaperch, striped",316,"$1,648 "
+2255,Table 17PUB.pdf,San Francisco,Berkeley,"Surfperch, pile",203,"$1,199 "
+2256,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, blue",149,"$1,036 "
+2257,Table 17PUB.pdf,San Francisco,Berkeley,"Surfperch, rubberlip",181,$963 
+2258,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, vermilion",65,$598 
+2259,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, widow",72,$574 
+2260,Table 17PUB.pdf,San Francisco,Berkeley,"Surfperch, white",126,$544 
+2261,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, unspecified",136,$544 
+2262,Table 17PUB.pdf,San Francisco,Berkeley,Lingcod,283,$483 
+2263,Table 17PUB.pdf,San Francisco,Berkeley,"Crab, rock unspecified",109,$309 
+2264,Table 17PUB.pdf,San Francisco,Berkeley,"Surfperch, barred",41,$271 
+2265,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, starry",27,$270 
+2266,Table 17PUB.pdf,San Francisco,Berkeley,"Salmon, Roe (Chinook, Coho)",50,$222 
+2267,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, group bolina",30,$150 
+2268,Table 17PUB.pdf,San Francisco,Berkeley,"Surfperch, walleye",33,$143 
+2269,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, canary",18,$112 
+2270,Table 17PUB.pdf,San Francisco,Berkeley,"Tuna, albacore",25,$88 
+2271,Table 17PUB.pdf,San Francisco,Berkeley,EY,,
+2272,Table 17PUB.pdf,San Francisco,Berkeley,"Shark, leopard",70,$70 
+2273,Table 17PUB.pdf,San Francisco,Berkeley,"Flounder, starry",8,$56 
+2274,Table 17PUB.pdf,San Francisco,Berkeley,"Shark, soupfin",50,$50 
+2275,Table 17PUB.pdf,San Francisco,Berkeley,"Rockfish, black",11,$25 
+2276,Table 17PUB.pdf,San Francisco,Berkeley,"Prickleback, monkeyface (eel)",2,$10 
+2277,Table 17PUB.pdf,San Francisco,Berkeley,Jacksmelt,1,$0 
+2278,Table 17PUB.pdf,San Francisco,Berkeley,Port Totals:,"58,662","$206,460 "
+2279,Table 17PUB.pdf,San Francisco,,,,
+2280,Table 17PUB.pdf,San Francisco,Alameda,"Crab, Dungeness","12,014","$66,344 "
+2281,Table 17PUB.pdf,San Francisco,Alameda,"Halibut, California",685,"$5,266 "
+2282,Table 17PUB.pdf,San Francisco,Alameda,"Seabass, white",40,$281 
+2283,Table 17PUB.pdf,San Francisco,Alameda,Lingcod,23,$79 
+2284,Table 17PUB.pdf,San Francisco,Alameda,Port Totals:,"12,762","$71,970 "
+2285,Table 17PUB.pdf,San Francisco,,,,
+2286,Table 17PUB.pdf,San Francisco,Richmond,"Crab, Dungeness","2,737","$9,880 "
+2287,Table 17PUB.pdf,San Francisco,Richmond,"Salmon, Chinook",879,"$6,649 "
+2288,Table 17PUB.pdf,San Francisco,Richmond,"Halibut, California",822,"$6,263 "
+2289,Table 17PUB.pdf,San Francisco,Richmond,"Surfperch, black",448,"$1,041 "
+2290,Table 17PUB.pdf,San Francisco,Richmond,"Shark, leopard",40,$80 
+2291,Table 17PUB.pdf,San Francisco,Richmond,"Seaperch, striped",36,$72 
+2292,Table 17PUB.pdf,San Francisco,Richmond,Lingcod,15,$59 
+2293,Table 17PUB.pdf,San Francisco,Richmond,"Surfperch, rubberlip",18,$36 
+2294,Table 17PUB.pdf,San Francisco,Richmond,Jacksmelt,17,$34 
+2295,Table 17PUB.pdf,San Francisco,Richmond,"Surfperch, walleye",15,$30 
+2296,Table 17PUB.pdf,San Francisco,Richmond,"Salmon, Roe (Chinook, Coho)",1,$6 
+2297,Table 17PUB.pdf,San Francisco,Richmond,Port Totals:,"5,028","$24,149 "
+2298,Table 17PUB.pdf,San Francisco,,,,
+2299,Table 17PUB.pdf,San Francisco,Redwood City,"Mudsucker, longjaw","3,636","$19,998 "
+2300,Table 17PUB.pdf,San Francisco,Redwood City,"Halibut, California",75,$492 
+2301,Table 17PUB.pdf,San Francisco,Redwood City,Port Totals:,"3,711","$20,490 "
+2302,Table 17PUB.pdf,San Francisco,,,,
+2303,Table 17PUB.pdf,San Francisco,China Camp,"Sea urchin, red",475,"$3,225 "
+2304,Table 17PUB.pdf,San Francisco,China Camp,"Salmon, Chinook",280,"$2,940 "
+2305,Table 17PUB.pdf,San Francisco,China Camp,"Halibut, California",138,"$1,246 "
+2306,Table 17PUB.pdf,San Francisco,China Camp,Port Totals:,893,"$7,411 "
+2307,Table 17PUB.pdf,San Francisco,,,,
+2308,Table 17PUB.pdf,San Francisco,All Other Ports,"Shrimp, bay","11,067","$59,336 "
+2309,Table 17PUB.pdf,San Francisco,All Other Ports,"Halibut, California","10,511","$35,320 "
+2310,Table 17PUB.pdf,San Francisco,All Other Ports,"Crab, Dungeness","1,973","$9,323 "
+2311,Table 17PUB.pdf,San Francisco,All Other Ports,"Salmon, Chinook",492,"$4,183 "
+2312,Table 17PUB.pdf,San Francisco,All Other Ports,Lingcod,711,"$3,470 "
+2313,Table 17PUB.pdf,San Francisco,All Other Ports,"Seabass, white",285,"$1,294 "
+2314,Table 17PUB.pdf,San Francisco,All Other Ports,"Sea urchin, red",210,"$1,155 "
+2315,Table 17PUB.pdf,San Francisco,All Other Ports,Sablefish,310,"$1,146 "
+2316,Table 17PUB.pdf,San Francisco,All Other Ports,"Sculpin, staghorn",25,$197 
+2317,Table 17PUB.pdf,San Francisco,All Other Ports,"Rockfish, yellowtail",46,$186 
+2318,Table 17PUB.pdf,San Francisco,All Other Ports,"Goby, yellowfin",22,$176 
+2319,Table 17PUB.pdf,San Francisco,All Other Ports,"Rockfish, vermilion",7,$32 
+2320,Table 17PUB.pdf,San Francisco,All Other Ports,"Rockfish, canary",7,$27 
+2321,Table 17PUB.pdf,San Francisco,All Other Ports,"Bullhead, brown",6,$18 
+2322,Table 17PUB.pdf,San Francisco,All Other Ports,"Mackerel, bullet",11,$11 
+2323,Table 17PUB.pdf,San Francisco,All Other Ports,"Rockfish, rosy",4,$0 
+2324,Table 17PUB.pdf,San Francisco,All Other Ports,Port Totals:,"25,687","$115,873 "
+2325,Table 17PUB.pdf,San Francisco,All Other Ports,SAN FRANCISCO totals:,"12,432,103","$20,220,527 "
