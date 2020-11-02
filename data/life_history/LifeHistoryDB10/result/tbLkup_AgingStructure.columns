@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupStructureID","INTEGER","2","2","0"
+"FdStructure","STRING","37","0","0"

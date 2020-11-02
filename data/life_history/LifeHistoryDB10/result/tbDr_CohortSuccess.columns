@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdCohortID","INTEGER","1","1","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdCohortSuccess","STRING","31","1","0"
+"FdCohortNotes","STRING","0","0","0"

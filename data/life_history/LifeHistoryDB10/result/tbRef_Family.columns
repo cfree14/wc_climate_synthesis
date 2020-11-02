@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"FamilyName","INTEGER","2","2","0"
+"ReferenceName","INTEGER","4","4","0"

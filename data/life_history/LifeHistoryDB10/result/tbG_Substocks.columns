@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdSubstockID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdSubstockNotes","STRING","245","0","0"

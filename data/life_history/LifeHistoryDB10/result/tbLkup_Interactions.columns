@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupInteractionID","INTEGER","3","3","0"
+"FdInteraction","STRING","710","0","0"

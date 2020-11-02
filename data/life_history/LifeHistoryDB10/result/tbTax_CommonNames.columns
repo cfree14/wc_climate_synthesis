@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdCommonNameID","STRING","0","0","0"
+"FdSpeciesID","STRING","0","0","0"
+"FdCommonName","STRING","0","0","0"

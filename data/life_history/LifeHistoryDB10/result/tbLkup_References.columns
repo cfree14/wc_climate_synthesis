@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupReferenceID","INTEGER","4","4","0"
+"FdReferenceName","STRING","153","0","0"
+"FdCitationDescription","STRING","413","0","0"

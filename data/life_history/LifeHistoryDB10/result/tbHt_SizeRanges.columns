@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdSizeRangeID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLLifeStage","STRING","9","0","0"
+"FdSizeRange","STRING","62","1","1"

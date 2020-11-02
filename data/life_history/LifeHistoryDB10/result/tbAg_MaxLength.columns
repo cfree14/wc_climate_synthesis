@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdMaxLgthID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLLgthType","STRING","2","0","0"
+"FdMaxLgth","DECIMAL","5","1","3"

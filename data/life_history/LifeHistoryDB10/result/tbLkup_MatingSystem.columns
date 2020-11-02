@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupMatingSystemID","INTEGER","2","2","0"
+"FdMatingSystem","STRING","175","0","0"

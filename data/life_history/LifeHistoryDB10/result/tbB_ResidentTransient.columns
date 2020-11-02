@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdResTranDescriptionID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdResTranDescription","STRING","180","0","0"

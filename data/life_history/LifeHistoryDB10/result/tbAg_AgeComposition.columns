@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdAgeCompositionID","STRING","0","0","0"
+"LkupSpeciesID","STRING","0","0","0"
+"FdReferenceName","STRING","0","0","0"

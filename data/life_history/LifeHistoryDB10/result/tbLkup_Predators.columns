@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupPredatorID","INTEGER","3","3","0"
+"FdPredator","STRING","72","0","0"

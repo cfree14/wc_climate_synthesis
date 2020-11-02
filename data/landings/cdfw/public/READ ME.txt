@@ -1,0 +1,14 @@
+APPROACH 1
+In this approach, I did the following:
+(1) I used tabulizer to extract the datasets and then tried cleaning and merging programmatically
+
+APPROACH 2
+In this approach, I did the following:
+(1) I used a website (pdftables.com) to extract the tables from the PDF to Excel (in the raw folder)
+(2) I tried to clean them and merge them programmtically
+
+APPRAOCH 3
+In this approach, I did the following:
+(1) I used a website (pdftables.com) to extract the tables from the PDF to Excel (in the raw folder)
+(2) I manually cleaned these tables (in the raw folder)
+(3) I merged the manually cleaned files and export them to the approach3 > intermediate folder

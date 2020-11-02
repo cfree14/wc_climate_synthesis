@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdGestationEggDurationID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdGestationEggDuration","STRING","47","0","0"

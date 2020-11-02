@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupForagingMethodID","INTEGER","3","3","0"
+"FdForagingMethod","STRING","217","0","0"

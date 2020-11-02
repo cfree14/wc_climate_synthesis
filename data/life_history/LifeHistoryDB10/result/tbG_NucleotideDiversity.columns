@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdNucleotideID","INTEGER","1","1","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdNucleotide#","STRING","11","1","2"

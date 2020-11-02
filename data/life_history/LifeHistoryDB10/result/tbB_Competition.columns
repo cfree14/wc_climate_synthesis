@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdCompetitionID","INTEGER","2","2","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdOrganism","STRING","163","0","0"

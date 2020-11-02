@@ -1,0 +1,8 @@
+"name","type","length","leftDigits","rightDigits"
+"FdHeteroID","INTEGER","2","2","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdExpectedHetero","STRING","15","0","0"
+"FdExpectiedHeteroSE","STRING","14","0","0"
+"FdObservedHetero","STRING","14","0","0"
+"FdObservedHeteroSE","STRING","5","0","0"
+"VLApproachHetero","STRING","15","0","0"

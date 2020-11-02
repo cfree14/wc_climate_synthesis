@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdGuildID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLLifeStage","STRING","9","0","0"
+"LkupForagingGuild","INTEGER","2","2","0"

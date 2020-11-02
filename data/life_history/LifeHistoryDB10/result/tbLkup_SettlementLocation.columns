@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupSettlementLocationID","INTEGER","2","2","0"
+"FdSettlementLocation","STRING","54","0","0"

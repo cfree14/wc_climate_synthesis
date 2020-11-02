@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupAgingMethodID","INTEGER","2","2","0"
+"FdAgingMethod","STRING","77","0","0"

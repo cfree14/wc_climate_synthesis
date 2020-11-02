@@ -1,0 +1,6 @@
+"name","type","length","leftDigits","rightDigits"
+"FdSpawnFertID","INTEGER","4","4","0"
+"FdSpawningAreaID","INTEGER","3","3","0"
+"LkupSpawnFertStage","INTEGER","1","1","0"
+"VLMonth","STRING","9","0","0"
+"Peaks/Notes","STRING","25","0","0"

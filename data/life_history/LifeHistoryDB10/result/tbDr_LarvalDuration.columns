@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdLarvalDurationID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdLarvalDuration","STRING","121","0","0"

@@ -1,0 +1,6 @@
+"name","type","length","leftDigits","rightDigits"
+"SwitchboardID","INTEGER","1","1","0"
+"ItemNumber","INTEGER","1","1","0"
+"ItemText","STRING","35","0","0"
+"Command","STRING","1","0","0"
+"Argument","STRING","20","0","0"

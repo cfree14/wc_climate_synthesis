@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupValidationMethodID","INTEGER","2","2","0"
+"FdValidationMethod","STRING","54","0","0"

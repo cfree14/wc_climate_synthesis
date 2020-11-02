@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdSexualityID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"LkupSexualityType","INTEGER","2","2","0"

@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdPopulationID","INTEGER","1","1","0"
+"LkupSpeciesID","INTEGER","2","2","0"
+"FdEffectivePopSize","STRING","46","0","0"

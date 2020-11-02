@@ -1,0 +1,6 @@
+"name","type","length","leftDigits","rightDigits"
+"ID","INTEGER","3","3","0"
+"Subject Heading","STRING","44","0","0"
+"Subject","STRING","41","0","0"
+"Field Name","STRING","37","0","0"
+"FieldDescriptions","STRING","234","0","0"

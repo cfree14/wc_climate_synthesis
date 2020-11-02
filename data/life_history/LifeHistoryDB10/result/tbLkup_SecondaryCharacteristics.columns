@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupSecondaryID","INTEGER","2","2","0"
+"FdSecondaryCharac","STRING","255","0","0"

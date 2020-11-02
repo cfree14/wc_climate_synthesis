@@ -1,0 +1,8 @@
+"name","type","length","leftDigits","rightDigits"
+"FdMaturitySexID","INTEGER","3","3","0"
+"FdMaturityID","INTEGER","4","4","0"
+"VLSexType","STRING","11","0","0"
+"FdLgthFirstMaturity","STRING","12","2","0"
+"FdAgeFirstMaturity","STRING","42","1","0"
+"FdLgth50%Maturity","STRING","12","0","0"
+"FdAge50%Maturity","STRING","42","0","0"

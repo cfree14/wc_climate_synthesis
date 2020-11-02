@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdMeanFecundityID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdMean#Eggs","STRING","168","0","0"

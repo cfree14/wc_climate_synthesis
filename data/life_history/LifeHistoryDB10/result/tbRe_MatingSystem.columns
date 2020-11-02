@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdMatingID","INTEGER","2","2","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"LkupMatingSystem","INTEGER","2","2","0"
+"FdMatingNotes","STRING","4","0","0"

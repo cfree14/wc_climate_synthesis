@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdSpawningAreaID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"LkupSpawnArea","INTEGER","3","3","0"

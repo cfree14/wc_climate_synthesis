@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupSpawnFertStageID","INTEGER","1","1","0"
+"FdSpawnFertStage","STRING","32","0","0"

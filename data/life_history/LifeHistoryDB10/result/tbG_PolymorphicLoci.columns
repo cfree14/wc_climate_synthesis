@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdLociID","INTEGER","2","2","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdPolymorphicLoci","DECIMAL","5","1","3"

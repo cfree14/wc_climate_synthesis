@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdFamilyID","INTEGER","2","2","0"
+"FdGroupID","INTEGER","2","2","0"
+"FdFamilyName","STRING","15","0","0"

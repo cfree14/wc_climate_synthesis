@@ -1,0 +1,7 @@
+"SwitchboardID","ItemNumber","ItemText","Command","Argument"
+"1","0","Main Switchboard","","Default"
+"1","1","Purpose and Overview","2","Purpose and Overview"
+"1","2","Database Information","2","DatabaseInformation"
+"1","3","Query Designer","3","Front End"
+"1","4","Information on Cailliet et al. 2000","3","ReferenceForm"
+"1","5","Close the Database","6",""

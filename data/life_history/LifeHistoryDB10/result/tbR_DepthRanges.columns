@@ -1,0 +1,6 @@
+"name","type","length","leftDigits","rightDigits"
+"FdDepthID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdMinDepthRange","STRING","2","2","0"
+"FdMaxDepthRange","STRING","4","4","0"
+"FdDepthNotes","STRING","85","0","0"

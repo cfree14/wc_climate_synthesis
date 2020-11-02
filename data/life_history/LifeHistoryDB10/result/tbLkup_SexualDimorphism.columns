@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupSexualDimorphismID","INTEGER","2","2","0"
+"FdSexualDimorphism","STRING","48","0","0"

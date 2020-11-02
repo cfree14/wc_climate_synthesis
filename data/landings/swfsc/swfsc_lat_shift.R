@@ -29,7 +29,7 @@ lats <- read.csv(file.path(datadir, "region_lat_longs.csv"), as.is=T)
 data <- ll_yr %>% 
   # Add lat/long
   left_join(lats) %>% 
-  # Summarize ladnings by year/region
+  # Summarize landings by year/region
   group_by(year, region, region_lat_dd) %>% 
   summarize(landings_lb=sum(landings_lb)) %>% 
   ungroup() %>% 

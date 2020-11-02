@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdSchoolingID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdSchoolingDescription","STRING","154","0","0"

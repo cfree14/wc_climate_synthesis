@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdHomingID","INTEGER","2","2","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdHomingDescription","STRING","94","0","0"

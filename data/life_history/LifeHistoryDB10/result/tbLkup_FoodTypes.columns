@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupFoodTypeID","INTEGER","3","3","0"
+"FdFoodType","STRING","255","0","0"

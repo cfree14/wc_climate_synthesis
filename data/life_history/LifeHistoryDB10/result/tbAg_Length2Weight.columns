@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdLgth2WgtEqID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLSexType","STRING","11","0","0"
+"FdLgth2WgtEq","STRING","90","0","0"

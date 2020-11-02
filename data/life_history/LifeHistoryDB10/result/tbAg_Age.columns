@@ -1,0 +1,8 @@
+"name","type","length","leftDigits","rightDigits"
+"FdAgeID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLSexType","STRING","6","0","0"
+"FdLongevity","INTEGER","3","3","0"
+"FdLongevityLength","STRING","6","0","0"
+"VLLgthType","STRING","2","0","0"
+"FdLongevityNotes","STRING","18","0","0"

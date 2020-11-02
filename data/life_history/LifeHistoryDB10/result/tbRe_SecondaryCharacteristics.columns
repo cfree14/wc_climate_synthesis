@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"Fd2ndCharacterID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"Lkup2ndCharacter","INTEGER","2","2","0"

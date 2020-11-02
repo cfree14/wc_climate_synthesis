@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdPredatorID","INTEGER","4","4","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLLifeStage","STRING","9","0","0"
+"LkupPredator","INTEGER","3","3","0"

@@ -1,0 +1,7 @@
+"name","type","length","leftDigits","rightDigits"
+"FdSettlementID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLLgthType","STRING","2","0","0"
+"FdSettlementSize","STRING","14","0","0"
+"LkupSettlementLocation","STRING","2","0","0"
+"FdSettlementNotes","STRING","21","0","0"

@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdForagingFrequencyID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"VLLifeStage","STRING","9","0","0"
+"LkupForagingFrequency","INTEGER","3","3","0"

@@ -1,0 +1,5 @@
+"name","type","length","leftDigits","rightDigits"
+"FdHaplotypeAreaID","INTEGER","1","1","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"FdHaplotypeArea","STRING","32","0","0"
+"FdHaplotypeNotes","STRING","48","0","0"

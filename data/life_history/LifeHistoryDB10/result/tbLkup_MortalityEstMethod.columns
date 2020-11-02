@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupMortalityEstID","INTEGER","2","2","0"
+"FdMoralityEstMethod","STRING","78","0","0"

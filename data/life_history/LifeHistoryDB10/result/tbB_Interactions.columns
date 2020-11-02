@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdInteractionID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"LkupInteractionType","INTEGER","3","3","0"

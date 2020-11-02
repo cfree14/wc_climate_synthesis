@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupForagingFequencyID","INTEGER","3","3","0"
+"FdForagingFequency","STRING","136","0","0"

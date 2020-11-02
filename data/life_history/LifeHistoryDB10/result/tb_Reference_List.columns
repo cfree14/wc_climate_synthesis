@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"ID","INTEGER","4","4","0"
+"Reference_Name","STRING","153","0","0"
+"Citation_Description","STRING","413","0","0"

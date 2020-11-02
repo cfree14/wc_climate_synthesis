@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"ResidentTransientID","INTEGER","3","3","0"
+"ReferenceName","INTEGER","4","4","0"

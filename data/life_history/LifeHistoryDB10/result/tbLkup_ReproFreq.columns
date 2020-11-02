@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupReproFreqID","INTEGER","2","2","0"
+"FdReproFreq","STRING","102","0","0"

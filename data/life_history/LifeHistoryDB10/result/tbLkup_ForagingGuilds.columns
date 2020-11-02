@@ -1,0 +1,3 @@
+"name","type","length","leftDigits","rightDigits"
+"LkupForagingGuildID","INTEGER","2","2","0"
+"FdForagingGuild","STRING","86","0","0"

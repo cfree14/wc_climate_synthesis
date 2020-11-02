@@ -20,6 +20,29 @@ data_orig <- readRDS(file.path(inputdir, "baja_data.rds"))
 # Format data
 ################################################################################
 
+# Ent fco = whole fresh
+# Ent fca = whole fresh
+# ind. = individual whole
+# 2001-2019
+# Desv = no guts
+# Desc = no head
+# s.c. foo = fresh
+# Presentation
+# 
+# Fields
+# Date
+# Office
+# Including state (coordinates)
+# Type of fishery (artisanal vs. industrial)
+# Species general name
+# Species common name
+# Species scientific name
+# Landings
+# Price
+
+# catlosa@gmail.com
+# Santiago@gocmarineprogram,org
+
 # Inspect data
 str(data_orig)
 

@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"FdEggsPerLenghtID","INTEGER","3","3","0"
+"LkupSpeciesID","INTEGER","3","3","0"
+"Fd#Eggs","STRING","125","0","0"
