@@ -22,9 +22,6 @@ data4_orig <- read.csv(file.path(datadir, "erdCAMarCatSY_b66b_0d1d_cfd6.csv"), a
 # Website
 # https://www.pfeg.noaa.gov/products/las/CA_market_catch.html
 
-# Read species key
-spp_key <- readxl::read_excel(file.path(datadir, "detailed_species_list.xlsx"))
-
 # Format data
 ################################################################################
 

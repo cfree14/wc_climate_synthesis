@@ -1,0 +1,342 @@
+"comm_name_orig","comm_name","sci_name","level","presentation"
+"Abalone, Black","Black abalone","Haliotis cracherodii","species","whole"
+"Abalone, Flat",NA,NA,NA,NA
+"Abalone, Green",NA,NA,NA,NA
+"Abalone, Pink",NA,NA,NA,NA
+"Abalone, Pinto",NA,NA,NA,NA
+"Abalone, Red",NA,NA,NA,NA
+"Abalone, Threaded",NA,NA,NA,NA
+"Abalone, Unspecified",NA,NA,NA,NA
+"Abalone, White",NA,NA,NA,NA
+"Anchovy, Deepbody","Deepbody anchovy","Anchoa compressa","species","whole"
+"Anchovy, Northern","Northern anchovy","Engraulis mordax","species","whole"
+"Barnacle","Barnacle","Cirripedia spp.","group","whole"
+"Barracuda, California","California barracuda","Sphyraena argentea","species","whole"
+"Bass, Barred Sand","Barred sand bass","Paralabrax nebulifer","species","whole"
+"Bass, Giant Sea","Giant sea bass","Stereolepis gigas","species","whole"
+"Bass, Kelp","Kelp bass","Paralabrax clathratus","species","whole"
+"Bass, Rock","Rock bass","Ambloplites rupestris","species","whole"
+"Bass, Spotted Sand","Spotted sand bass","Paralabrax maculatofasciatus","species","whole"
+"Bass, Striped","Striped bass","Morone saxatilis","species","whole"
+"Blackfish, Sacramento","Sacramento blackfish","Orthodon microlepidotus","species","whole"
+"Blacksmith","Blacksmith","Chromis punctipinnis","species","whole"
+"Bonefish",NA,NA,NA,NA
+"Bonito, Pacific","Pacific bonito","Sarda chiliensis","species","whole"
+"Box Crab",NA,NA,NA,NA
+"Butterfish, Pacific",NA,NA,NA,NA
+"Cabezon","Cabezon","Scorpaenichthys marmoratus","species","whole"
+"Cabrilla, Spotted","Spotted cabrilla","Epinephelus analogus","species","whole"
+"Carp","Carp","Cyprinidae spp.","group","whole"
+"Catfish",NA,NA,NA,NA
+"Chiton",NA,NA,NA,NA
+"Clam, California Jackknife","California jackknife clam","Ensis myrae","species","whole"
+"Clam, Common Washington",NA,NA,NA,NA
+"Clam, Gaper","Gaper clam","Tresus nuttalli, Tresus capax","group","whole"
+"Clam, Native Littleneck",NA,NA,NA,NA
+"Clam, Nothern Razor",NA,NA,NA,NA
+"Clam, Pismo",NA,NA,NA,NA
+"Clam, Purple","Purple clam","Unknown","species","whole"
+"Clam, Rosy Razor","Rosy razor clam","Solecurtus strigilatus","species","whole"
+"Clam, Soft Shelled",NA,NA,NA,NA
+"Clam, Unspecified","Unspecified clam","Clam spp.","group","whole"
+"Cod, Pacific","Pacific cod","Gadus macrocephalus","species","whole"
+"Corbina, California","California corbina","Menticirrhus undulatus","species","whole"
+"Corvina, Shortfin","Shortfin corvina","Cynoscion parvipinnis","species","whole"
+"Crab, Brown Rock","Brown rock crab","Cancer antennarius","species","whole"
+"Crab, Claws","Crab","Brachyura spp.","group","claws"
+"Crab, Dungeness","Dungeness crab","Metacarcinus magister","species","whole"
+"Crab, King","King crab","Paralithodes spp.","group","whole"
+"Crab, Pelagic Red","Pelagic red crab","Pleuroncodes planipes","species","whole"
+"Crab, Red Rock","Red rock crab","Cancer productus","species","whole"
+"Crab, Rock",NA,NA,NA,NA
+"Crab, Sand","Sand crab","Emerita analoga","species","whole"
+"Crab, Shore","Shore crab","Pachygrapsus crassipes","species","whole"
+"Crab, Spider","Sheep crab","Loxorhynchus grandis","species","whole"
+"Crab, Tanner","Tanner crab","Chionoecetes bairdi","species","whole"
+"Crab, Yellow Rock","Yellow rock crab","Cancer anthonyi","species","whole"
+"Crayfish",NA,NA,NA,NA
+"Croaker, Black","Black croaker","Cheilotrema saturnum","species","whole"
+"Croaker, Various Species",NA,NA,NA,NA
+"Croaker, White","White croaker","Genyonemus lineatus","species","whole"
+"Croaker, Yellowfin","Yellowfin croaker","Umbrina roncador","species","whole"
+"Crustacean, Unspecified","Unspecified crustacean","Crustacea spp.","group","whole"
+"Cucumber, Sea",NA,NA,NA,NA
+"Cusk-Eel, Spotted",NA,NA,NA,NA
+"Dolphinfish",NA,NA,NA,NA
+"Echinod, Unspecified",NA,NA,NA,NA
+"Eel","Eel","Anguilliformes spp.","group","whole"
+"Eel, Blenny",NA,NA,NA,NA
+"Eel, California Moray","California moray eel","Gymnothorax mordax","species","whole"
+"Escolar","Escolar","Lepidocybium flavobrunneum","species","whole"
+"Eulachon",NA,NA,NA,NA
+"Flounder, Arrowtooth","Arrowtooth flounder","Atheresthes stomias","species","whole"
+"Flounder, Starry","Starry flounder","Platichthys stellatus","species","whole"
+"Flounder, Unclassified",NA,NA,NA,NA
+"Flyingfish","Flyingfish","Exocoetidae spp.","group","whole"
+"Frogs",NA,NA,NA,NA
+"Garibaldi",NA,NA,NA,NA
+"Goby, Bluebanded","Bluebanded goby","Lythrypnus dalli","species","whole"
+"Goby, Yellowfin","Yellowfin goby","Acanthogobius flavimanus","species","whole"
+"Greenling, Kelp","Kelp greenling","Hexagrammos decagrammus","species","whole"
+"Grenadiers","Grenadiers","Macrouridae spp.","group","whole"
+"Grouper","Grouper","Epinephelinae spp.","group","whole"
+"Grouper, Broomtail","Broomtail grouper","Mycteroperca xenarcha","species","whole"
+"Grunion, California","California grunion","Leuresthes tenuis","species","whole"
+"Guitarfish, Shovelnose","Shovelnose guitarfish","Pseudobatos productus","species","whole"
+"Hagfish",NA,NA,NA,NA
+"Halfmoon","Halfmoon","Medialuna californiensis","species","whole"
+"Halibut, California","California halibut","Paralichthys californicus","species","whole"
+"Halibut, Pacific","Pacific halibut","Hippoglossus stenolepis","species","whole"
+"Halibut, Unspecified","Unspecified halibut","Paralichthys californicus or Hippoglossus stenolepis","group","whole"
+"Hardhead",NA,NA,NA,NA
+"Herring Roe On Kelp","Pacific herring","Clupea pallasii pallasii","species","roe on kelp"
+"Herring, Pacific","Pacific herring","Clupea pallasii pallasii","species","whole"
+"Herring, Round","Round herring","Etrumeus acuminatus","species","whole"
+"Herring, Whole Fish With Roe",NA,NA,NA,NA
+"Hitch","Hitch","Lavinia exilicauda","species","whole"
+"Invertebrates, Colonial","Colonial invertebrates","Invertebrate spp. (colonial)","group","whole"
+"Jack Crevalle",NA,NA,NA,NA
+"Jacks",NA,NA,NA,NA
+"Kahawai",NA,NA,NA,NA
+"Kelpfishes","Kelpfishes","Clinidae spp.","group","whole"
+"Killifish, California",NA,NA,NA,NA
+"Limpet, Unspecified","Unspecified limpet","Limpet spp.","group","whole"
+"Lingcod","Lingcod","Ophiodon elongatus","species","whole"
+"Lizardfish, California","California lizardfish","Synodus lucioceps","species","whole"
+"Lobster, California Spiny","California spiny lobster","Panulirus interruptus","species","whole"
+"Louvar","Louvar","Luvarus imperialis","species","whole"
+"Mackerel, Bullet","Bullet mackerel","Auxis rochei","species","whole"
+"Mackerel, Jack","Jack mackerel","Trachurus symmetricus","species","whole"
+"Mackerel, Pacific","Pacific mackerel","Scomber japonicus","species","whole"
+"Mackerel, Unspecified","Unspecified mackerel","Mackerel spp.","group","whole"
+"Marlin, Striped","Striped marlin","Kajikia audax","species","whole"
+"Midshipman, Plainfin","Plainfin midshipman","Porichthys notatus","species","whole"
+"Mola, Common",NA,NA,NA,NA
+"Mollusk, Unspecified","Unspecified mollusk","Mollusca spp.","group","whole"
+"Monkeyface Eel",NA,NA,NA,NA
+"Mudsucker, Longjaw","Longjaw mudsucker","Gillichthys mirabilis","species","whole"
+"Mullet, Striped","Striped mullet","Mugil cephalus","species","whole"
+"Mussel","Mussel","Mussel spp.","group","whole"
+"Needlefish, California","California needlefish","Strongylura exilis","species","whole"
+"Octopus, Unspecified","Unspecified octopus","Octopoda spp.","group","whole"
+"Oilfish","Oilfish","Ruvettus pretiosus","species","whole"
+"Opah","Opah","Lampris guttatus","species","whole"
+"Opaleye","Opaleye","Girella nigricans","species","whole"
+"Oyster, California",NA,NA,NA,NA
+"Oyster, Eastern",NA,NA,NA,NA
+"Oyster, European Flat",NA,NA,NA,NA
+"Oyster, Giant Pacific","Giant Pacific oyster","Crassostrea gigas","species","whole"
+"Oyster, Unspecified","Unspecified oyster","Oyster spp.","group","whole"
+"Perch",NA,NA,NA,NA
+"Perch, Pacific Ocean",NA,NA,NA,NA
+"Pikeminnow, Sacramento",NA,NA,NA,NA
+"Pomfret, Pacific","Pacific pomfret","Brama japonica","species","whole"
+"Prawn, Golden","Golden prawn","Unknown","species","whole"
+"Prawn, Ridgeback","Ridgeback prawn","Sicyonia ingentis","species","whole"
+"Prawn, Spotted",NA,NA,NA,NA
+"Prawn, Unspecified",NA,NA,NA,NA
+"Queenfish","Queenfish","Seriphus politus","species","whole"
+"Ratfish",NA,NA,NA,NA
+"Ray",NA,NA,NA,NA
+"Ray, Bat","Bat ray","Myliobatis californica","species","whole"
+"Ray, Pacific Electric","Pacific electric ray","Tetronarce californica","species","whole"
+"Rockfish, Aurora","Aurora rockfish","Sebastes aurora","species","whole"
+"Rockfish, Bank","Bank rockfish","Sebastes rufus","species","whole"
+"Rockfish, Black","Black rockfish","Sebastes melanops","species","whole"
+"Rockfish, Black-And-Yellow","Black-and-yellow rockfish","Sebastes chrysomelas","species","whole"
+"Rockfish, Blackgill","Blackgill rockfish","Sebastes melanostomus","species","whole"
+"Rockfish, Blue","Blue rockfish","Sebastes mystinus","species","whole"
+"Rockfish, Bocaccio","Bocaccio rockfish","Sebastes paucispinis","species","whole"
+"Rockfish, Bronzespotted","Bronzespotted rockfish","Sebastes gilli","species","whole"
+"Rockfish, Brown","Brown rockfish","Sebastes auriculatus","species","whole"
+"Rockfish, Calico","Calico rockfish","Sebastes dallii","species","whole"
+"Rockfish, Chameleon","Chameleon rockfish","Sebastes phillipsi","species","whole"
+"Rockfish, Chilipepper","Chilipepper rockfish","Sebastes goodei","species","whole"
+"Rockfish, China","China rockfish","Sebastes nebulosus","species","whole"
+"Rockfish, Copper","Copper rockfish","Sebastes caurinus","species","whole"
+"Rockfish, Cowcod","Cowcod rockfish","Sebastes levis","species","whole"
+"Rockfish, Darkblotched","Darkblotched rockfish","Sebastes crameri","species","whole"
+"Rockfish, Flag","Flag rockfish","Sebastes rubrivinctus","species","whole"
+"Rockfish, Gopher","Gopher rockfish","Sebastes carnatus","species","whole"
+"Rockfish, Grass","Grass rockfish","Sebastes rastrelliger","species","whole"
+"Rockfish, Greenblotched","Greenblotched rockfish","Sebastes rosenblatti","species","whole"
+"Rockfish, Greenspotted","Greenspotted rockfish","Sebastes chlorostictus","species","whole"
+"Rockfish, Greenstriped","Greenstriped rockfish","Sebastes elongatus","species","whole"
+"Rockfish, Group Blue/Black",NA,NA,NA,NA
+"Rockfish, Group Bocaccio/Chilir",NA,NA,NA,NA
+"Rockfish, Group Bolina","Bolina rockfish group","Sebastes spp. (bolina)","group","whole"
+"Rockfish, Group Canary/Vermillrock",NA,NA,NA,NA
+"Rockfish, Group Deep Red",NA,NA,NA,NA
+"Rockfish, Group Gopher","Gopher rockfish group","Sebastes carnatus and others","group","whole"
+"Rockfish, Group Red","Red rockfish group","Sebastes spp. (red)","group","whole"
+"Rockfish, Group Rosefish","Rosefish rockfish group","Sebastes spp. (rosefish)","group","whole"
+"Rockfish, Group Small Red",NA,NA,NA,NA
+"Rockfish, Honeycomb","Honeycomb rockfish","Sebastes umbrosus","species","whole"
+"Rockfish, Kelp","Kelp rockfish","Sebastes atrovirens","species","whole"
+"Rockfish, Mexican","Mexican rockfish","Sebastes macdonaldi","species","whole"
+"Rockfish, Nominal Canary",NA,NA,NA,NA
+"Rockfish, Olive","Olive rockfish","Sebastes serranoides","species","whole"
+"Rockfish, Pink","Pink rockfish","Sebastes eos","species","whole"
+"Rockfish, Pinkrose","Pinkrose rockfish","Sebastes simulator","species","whole"
+"Rockfish, Quillback","Quillback rockfish","Sebastes maliger","species","whole"
+"Rockfish, Redbanded","Redbanded rockfish","Sebastes babcocki","species","whole"
+"Rockfish, Rosethorn","Rosethorn rockfish","Sebastes helvomaculatus","species","whole"
+"Rockfish, Rosy","Rosy rockfish","Sebastes rosaceus","species","whole"
+"Rockfish, Shortbelly","Shortbelly rockfish","Sebastes jordani","species","whole"
+"Rockfish, Speckled","Speckled rockfish","Sebastes ovalis","species","whole"
+"Rockfish, Splitnose","Splitnose rockfish","Sebastes diploproa","species","whole"
+"Rockfish, Squarespot","Squarespot rockfish","Sebastes hopkinsi","species","whole"
+"Rockfish, Starry","Starry rockfish","Sebastes constellatus","species","whole"
+"Rockfish, Stripetail","Stripetail rockfish","Sebastes saxicola","species","whole"
+"Rockfish, Swordspine","Swordspine rockfish","Sebastes ensifer","species","whole"
+"Rockfish, Treefish","Treefish rockfish","Sebastes serriceps","species","whole"
+"Rockfish, Unspecified","Unspecified rockfish","Sebastes spp.","group","whole"
+"Rockfish, Unspecified Nearshorer",NA,NA,NA,NA
+"Rockfish, Unspecified Shelf",NA,NA,NA,NA
+"Rockfish, Unspecified Slope",NA,NA,NA,NA
+"Rockfish, Vermillion",NA,NA,NA,NA
+"Rockfish, Widow","Widow rockfish","Sebastes entomelas","species","whole"
+"Rockfish, Yelloweye","Yelloweye rockfish","Sebastes ruberrimus","species","whole"
+"Rockfish, Yellowtail","Yellowtail rockfish","Sebastes flavidus","species","whole"
+"Sablefish","Sablefish","Anoplopoma fimbria","species","whole"
+"Sailfish","Sailfish","Istiophorus platypterus","species","whole"
+"Salema",NA,NA,NA,NA
+"Salmon","Salmon","Salmonidae spp.","group","whole"
+"Salmon Roe, King",NA,NA,NA,NA
+"Salmon, Chum","Chum salmon","Oncorhynchus keta","species","whole"
+"Salmon, King",NA,NA,NA,NA
+"Salmon, Pink","Pink salmon","Oncorhynchus gorbuscha","species","whole"
+"Salmon, Silver",NA,NA,NA,NA
+"Sanddab","Sanddab","Citharichthys spp.","group","whole"
+"Sanddab, Longfin","Longfin sanddab","Citharichthys xanthostigma","species","whole"
+"Sanddab, Pacific","Pacific sanddab","Citharichthys sordidus","species","whole"
+"Sanddab, Speckled","Speckled sanddab","Citharichthys stigmaeus","species","whole"
+"Sardine, Pacific","Pacific sardine","Sardinops sagax","species","whole"
+"Sargo","Sargo","Anisotremus davidsonii","species","whole"
+"Saury, Pacific","Pacific saury","Cololabis saira","species","whole"
+"Scallop, Unspecified","Unspecified scallop","Pectinidae spp.","group","whole"
+"Scorpionfish, California","California scorpionfish","Scorpaena guttata","species","whole"
+"Sculpin, Pacific Staghorn",NA,NA,NA,NA
+"Sculpin, Yellowchin","Yellowchin sculpin","Icelinus quadriseriatus","species","whole"
+"Sea Hares",NA,NA,NA,NA
+"Sea Slug","Sea slug","Sea slug spp.","group","whole"
+"Sea Stars","Sea stars","Asteroidea spp.","group","whole"
+"Seabass, White","White seabass","Atractoscion nobilis","species","whole"
+"Senorita","Senorita","Oxyjulis californica","species","whole"
+"Shad, American","American shad","Alosa sapidissima","species","whole"
+"Shad, Threadfin","Threadfin shad","Dorosoma petenense","species","whole"
+"Shark",NA,NA,NA,NA
+"Shark, Basking","Basking shark","Cetorhinus maximus","species","whole"
+"Shark, Bigeye Thresher","Bigeye thresher shark","Alopias superciliosus","species","whole"
+"Shark, Black Tip",NA,NA,NA,NA
+"Shark, Blue","Blue shark","Prionace glauca","species","whole"
+"Shark, Bonito (Mako)",NA,NA,NA,NA
+"Shark, Brown Smooth",NA,NA,NA,NA
+"Shark, Common Thresher",NA,NA,NA,NA
+"Shark, Cow",NA,NA,NA,NA
+"Shark, Dusky","Dusky shark","Carcharhinus obscurus","species","whole"
+"Shark, Gray Smoothhound","Gray smoothhound shark","Mustelus californicus","species","whole"
+"Shark, Horn","Horn shark","Heterodontus francisci","species","whole"
+"Shark, Leopard","Leopard shark","Triakis semifasciata","species","whole"
+"Shark, Pacific Angel","Pacific angel shark","Squatina californica","species","whole"
+"Shark, Pelagic Thresher","Pelagic thresher shark","Alopias pelagicus","species","whole"
+"Shark, Salmon","Salmon shark","Lamna ditropis","species","whole"
+"Shark, Sevengill","Sevengill shark","Notorynchus cepedianus","species","whole"
+"Shark, Sixgill","Sixgill shark","Hexanchus griseus","species","whole"
+"Shark, Smooth Hammerhead","Smooth hammerhead shark","Sphyrna zygaena","species","whole"
+"Shark, Soupfin","Soupfin shark","Galeorhinus galeus","species","whole"
+"Shark, Spiny Dogfish","Spiny dogfish shark","Squalus acanthias","species","whole"
+"Shark, Swell","Swell shark","Cephaloscyllium ventriosum","species","whole"
+"Shark, White","White shark","Carcharodon carcharias","species","whole"
+"Sheephead, California","California sheephead","Semicossyphus pulcher","species","whole"
+"Shrimp, Bay","Bay shrimp","Crangon franciscorum","species","whole"
+"Shrimp, Brine","Brine shrimp","Artemia salina","species","whole"
+"Shrimp, Coonstripe",NA,NA,NA,NA
+"Shrimp, Ghost","Ghost shrimp","Callianassidae spp.","group","whole"
+"Shrimp, Pacific Ocean","Pink (ocean) shrimp","Pandalus jordani","species","whole"
+"Shrimp, Red Rock","Red rock shrimp","Lysmata californica","species","whole"
+"Shrimp, Unspecified","Unspecified shrimp","Shrimp spp.","group","whole"
+"Sierra",NA,NA,NA,NA
+"Skate",NA,NA,NA,NA
+"Skate, Big","Big skate","Beringraja binoculata","species","whole"
+"Skate, California","California skate","Beringraja inornata","species","whole"
+"Skate, Thorny",NA,NA,NA,NA
+"Smelt",NA,NA,NA,NA
+"Smelt, Atherinid",NA,NA,NA,NA
+"Smelt, Jacksmelt",NA,NA,NA,NA
+"Smelt, Night","Night smelt","Spirinchus starksi","species","whole"
+"Smelt, Surf","Surf smelt","Hypomesus pretiosus","species","whole"
+"Smelt, Topsmelt",NA,NA,NA,NA
+"Smelt, True",NA,NA,NA,NA
+"Smelt, Whitebait","Whitebait smelt","Allosmerus elongatus","species","whole"
+"Snail, Sea","Sea snail","Sea snail spp.","group","whole"
+"Snapper -Mexico-",NA,NA,NA,NA
+"Sole, Bigmouth","Bigmouth sole","Hippoglossina stomata","species","whole"
+"Sole, Butter","Butter sole","Isopsetta isolepis","species","whole"
+"Sole, C-O",NA,NA,NA,NA
+"Sole, Curlfin","Curlfin sole","Pleuronichthys decurrens","species","whole"
+"Sole, Dover","Dover sole","Microstomus pacificus","species","whole"
+"Sole, English","English sole","Parophrys vetulus","species","whole"
+"Sole, Fantail","Fantail sole","Xystreurys liolepis","species","whole"
+"Sole, Petrale","Petrale sole","Eopsetta jordani","species","whole"
+"Sole, Rex","Rex sole","Glyptocephalus zachirus","species","whole"
+"Sole, Rock","Rock sole","Paraplagusia bilineata","species","whole"
+"Sole, Sand","Sand sole","Psettichthys melanostictus","species","whole"
+"Sole, Slender","Slender sole","Lyopsetta exilis","species","whole"
+"Sole, Unclassified",NA,NA,NA,NA
+"Split-Tail",NA,NA,NA,NA
+"Squid, Jumbo","Jumbo squid","Dosidicus gigas","species","whole"
+"Squid, Market","Market squid","Doryteuthis opalescens","species","whole"
+"Stickleback, Threespine","Threespine stickleback","Gasterosteus aculeatus","species","whole"
+"Stingray","Stingray","Myliobatoidei spp.","group","whole"
+"Sturgeon",NA,NA,NA,NA
+"Sucker, Western",NA,NA,NA,NA
+"Surfperch",NA,NA,NA,NA
+"Surfperch, Barred","Barred surfperch","Amphistichus argenteus","species","whole"
+"Surfperch, Black","Black surfperch","Embiotoca jacksoni","species","whole"
+"Surfperch, Calico","Calico surfperch","Amphistichus koelzi","species","whole"
+"Surfperch, Dwarf",NA,NA,NA,NA
+"Surfperch, Pile","Pile surfperch","Rhacochilus vacca","species","whole"
+"Surfperch, Pink",NA,NA,NA,NA
+"Surfperch, Rainbow","Rainbow surfperch","Hypsurus caryi","species","whole"
+"Surfperch, Redtail","Redtail surfperch","Amphistichus rhodoterus","species","whole"
+"Surfperch, Rubberlip","Rubberlip surfperch","Rhacochilus toxotes","species","whole"
+"Surfperch, Shiner","Shiner surfperch","Cymatogaster aggregata","species","whole"
+"Surfperch, Walleye","Walleye surfperch","Hyperprosopon argenteum","species","whole"
+"Surfperch, White","White surfperch","Phanerodon furcatus","species","whole"
+"Swordfish","Swordfish","Xiphias gladius","species","whole"
+"Thornyhead",NA,NA,NA,NA
+"Thornyhead, Longspine","Longspine thornyhead","Sebastolobus altivelis","species","whole"
+"Thornyhead, Shortspine","Shortspine thornyhead","Sebastolobus alascanus","species","whole"
+"Tomcod, Pacific","Pacific tomcod","Microgadus proximus","species","whole"
+"Tonguefish, California",NA,NA,NA,NA
+"Triggerfish","Triggerfish","Balistidae spp.","group","whole"
+"Tuna, Albacore","Albacore tuna","Thunnus alalunga","species","whole"
+"Tuna, Bigeye","Bigeye tuna","Thunnus obesus","species","whole"
+"Tuna, Blackfin","Blackfin tuna","Thunnus atlanticus","species","whole"
+"Tuna, Bluefin","Bluefin tuna","Thunnus thynnus","species","whole"
+"Tuna, Skipjack","Skipjack tuna","Katsuwonus pelamis","species","whole"
+"Tuna, Skipjack, Black","Black skipjack tuna","Euthynnus lineatus","species","whole"
+"Tuna, Unspecified","Unspecified tuna","Scombrinae spp.","group","whole"
+"Tuna, Yellowfin","Yellowfin tuna","Thunnus albacares","species","whole"
+"Turbot, Diamond","Diamond turbot","Hypsopsetta guttulata","species","whole"
+"Turbot, Hornyhead","Hornyhead turbot","Pleuronichthys verticalis","species","whole"
+"Turbot, Spotted",NA,NA,NA,NA
+"Turbot, Unspecified",NA,NA,NA,NA
+"Turtles, Freshwater",NA,NA,NA,NA
+"Turtles, Marine",NA,NA,NA,NA
+"Unspecified Fish",NA,NA,NA,NA
+"Unspecified Trawled Fish",NA,NA,NA,NA
+"Urchin, Lytechinus",NA,NA,NA,NA
+"Urchin, Purple Sea","Purple sea urchin","Strongylocentrotus purpuratus","species","whole"
+"Urchin, Red Sea",NA,NA,NA,NA
+"Urchin, Unspecified",NA,NA,NA,NA
+"Wahoo","Wahoo","Acanthocybium solandri","species","whole"
+"Whelk",NA,NA,NA,NA
+"Whitefish, Ocean","Ocean whitefish","Caulolatilus princeps","species","whole"
+"Whiting, Pacific","Pacific whiting","Merluccius productus","species","whole"
+"Wolf-Eel",NA,NA,NA,NA
+"Worms, Marine","Marine worms","Marine worm spp.","group","whole"
+"Wrasse, Rock","Rock wrasse","Halichoeres semicinctus","species","whole"
+"Yellowtail","Yellowtail","Seriola lalandi","species","whole"
+"Zebraperch","Zebraperch","Kyphosus azureus","species","whole"

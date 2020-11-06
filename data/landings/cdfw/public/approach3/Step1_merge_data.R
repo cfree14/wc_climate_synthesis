@@ -17,9 +17,7 @@ outputdir <- "data/landings/cdfw/public/approach3/intermediate"
 # Merge data
 ################################################################################
 
-
-# Merge
-year <- 2006
+# Merge all data from a single year
 merge_year_data <- function(year){
   
   # Files to merge
@@ -121,10 +119,10 @@ merge_year_data <- function(year){
 }
 
 #  Do one
-data19 <- merge_year_data(year=2015) # 2016 error
+data19 <- merge_year_data(year=2013)
 
 # Do all
 for(i in 2010:2019){
-  data <- merge_year_data(year=i) # 2016 error
+  data <- merge_year_data(year=i)
 }
 

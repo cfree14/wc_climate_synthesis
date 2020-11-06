@@ -15,9 +15,7 @@ outputdir <- "data/landings/cdfw/public/processed"
 plotdir <- "data/landings/cdfw/public/figures"
 
 # Read port key
-port_key <- readxl::read_excel(file.path(outputdir, "port_key.xlsx"))
-
-# All files come from Approach 3
+port_key <- readxl::read_excel("data/landings/cdfw/public/port_key/port_key_v1.xlsx")
 
 
 # Build data
@@ -43,11 +41,17 @@ data_all <-  data_orig %>%
   # Fill in port complex for all other ports
   group_by(year, filename) %>% 
   mutate(port_complex=ifelse(grepl("IW", toupper(filename)), "Inland Waters", port_complex),
-         port_complex=ifelse(grepl("21DS", toupper(filename)), "Sacramento Delta", port_complex),
+         port_complex=ifelse(grepl("21DS|DELTA", toupper(filename)), "Sacramento Delta", port_complex),
          port_complex=ifelse(!is.na(port_complex), port_complex, unique(port_complex) %>% na.omit())) %>% 
   ungroup() %>% 
   # Rename all other ports
   mutate(port=ifelse(port=="All Other Ports", paste("Other", port_complex, "Ports"), port)) %>% 
+  # Format a few species
+  mutate(species=recode(species, 
+                        "Prawn, Spot"="Prawn, spot",
+                        "Salmon, Chinook"="Salmon, chinook",
+                        "Salmon, Roe (Chinook, Coho)"="Salmon, Roe (Chinook and Coho)",
+                        "Shrimp, Brine"="Shrimp, brine")) %>% 
   # Arrange
   select(year, filename, port_complex, port, year, species, landings_lb, value_usd, everything())
 
@@ -72,6 +76,9 @@ spp_key <- data %>%
   select(species) %>%
   unique() %>% 
   arrange(species)
+
+# Any duplicated?
+freeR::which_duplicated(toupper(spp_key$species))
 
 
 # QA/QC data
