@@ -27,21 +27,6 @@ data_orig <- readRDS(file.path(inputdir, "baja_data.rds"))
 # Desv = no guts
 # Desc = no head
 # s.c. foo = fresh
-# Presentation
-# 
-# Fields
-# Date
-# Office
-# Including state (coordinates)
-# Type of fishery (artisanal vs. industrial)
-# Species general name
-# Species common name
-# Species scientific name
-# Landings
-# Price
-
-# catlosa@gmail.com
-# Santiago@gocmarineprogram,org
 
 # Inspect data
 str(data_orig)
@@ -97,21 +82,27 @@ data <- data_orig %>%
                        "San Quintin"="San Quintín",
                        "Santa Rosalia"="Santa Rosalía",
                        "Villa De Jesus Maria"="Villa Jesús María")) %>% 
-  # Format common name
-  # filete de fco., de cultivo vivo, carne de seca
+  # Extract info from common name
+  # filete de fco., de cultivo vivo, carne de seca, aleta de, concha de, colas de, carne de, de cultivo, hueva de, piel de
   # fca./fco., ent./desv./desc./desv. y desc., filete, ind., s.c. fco.
-  mutate(type=ifelse(grepl("cultiv", comm_name_long), "cultured", "wild"),
-         live_yn=ifelse(grepl("vivo", comm_name_long), "live", "dead")) %>% 
+  # mutate(type=ifelse(grepl("cultiv", comm_name_long), "cultured", "wild"),
+  #        live_yn=ifelse(grepl("vivo", comm_name_long), "live", "dead")) %>% 
+  # Format common name
+  mutate(comm_name=gsub("filete de fco.|de cultivo vivo|carne de seca|aleta de|concha de|colas de|carne de|fca.|fco.|ent.|desv.|desc.|desv. y desc.|filete|ind.|s.c.|fco.|de cultivo|hueva de|piel de", "", comm_name_long),
+         comm_name=stringr::str_trim(comm_name)) %>% 
   # Arrange
   select(year, month, state, office, landing_site, place_of_capture, 
          disembarkment_site, economic_unit, 
-         species_group, comm_name_long, sci_name, type, live_yn,
+         species_group, comm_name_long, comm_name, sci_name, #type, live_yn,
          landings_kg, processed_kg, price_mxn_kg, value_mxn, 
          everything())
 
 # Inspect
 str(data)
 freeR::complete(data)
+
+# Common names
+table(data$comm_name)
 
 # Date
 table(data$year)
@@ -139,6 +130,7 @@ n_distinct(data$species_group)
 n_distinct(data$sci_name)
 n_distinct(data$comm_name_long)
 table(data$comm_name_long)
+table(data$comm_name)
 
 
 # Format data

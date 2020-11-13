@@ -35,7 +35,6 @@ data_noaa_orig <- readRDS(file.path(datadir, "NOAA_1950_2019_wc_landings_by_stat
 # Read country shapefiles
 load(file.path(file.path(datadir, "country_shapefiles.Rdata")))
 
-
 # Prepare data
 ################################################################################
 
