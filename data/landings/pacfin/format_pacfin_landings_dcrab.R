@@ -57,6 +57,11 @@ data <- data_orig %>%
          revenues_usd=as.numeric(revenues_usd),
          price_usd_lb=as.numeric(price_usd_lb))
 
+# Ports
+ports <- data %>% 
+  select(agency, port_code, port_desc) %>% 
+  unique()
+
 # Summarize by state-year
 stats <- data %>% 
   filter(month=="tot") %>% 

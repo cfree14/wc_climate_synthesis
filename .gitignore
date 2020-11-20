@@ -1,3 +1,5 @@
+
+# Ignore hidden files
 .Rproj.user
 .Rhistory
 .RData
@@ -20,3 +22,4 @@ data/landings/odfw/public
 data/landings/cdfw/confidential
 data/landings/odfw/confidential
 data/landings/wdfw/confidential
+data/landings/mexico/datamares/confidential

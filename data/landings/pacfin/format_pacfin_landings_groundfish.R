@@ -54,6 +54,11 @@ data <- data_orig %>%
          landings_mt=as.numeric(landings_mt),
          revenues_usd=as.numeric(revenues_usd))
 
+# Ports
+ports <- data %>% 
+  select(port_code) %>% 
+  unique()
+
 # Export data
 saveRDS(data, file.path(outputdir, "PACFIN_1980_2020_groundfish_landings_by_port.Rds"))
 

@@ -10,8 +10,8 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-inputdir <- "data/landings/mexico/datamares/raw"
-outputdir <- "data/landings/mexico/datamares/processed"
+inputdir <- "data/landings/mexico/datamares/public/raw"
+outputdir <- "data/landings/mexico/datamares/public/processed"
 
 # Read data
 data <- readRDS(file=file.path(outputdir, "2006_2014_mexico_landings_datamares.Rds"))

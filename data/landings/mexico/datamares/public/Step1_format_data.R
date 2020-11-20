@@ -10,8 +10,8 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-inputdir <- "data/landings/mexico/datamares/raw"
-outputdir <- "data/landings/mexico/datamares/processed"
+inputdir <- "data/landings/mexico/datamares/public/raw"
+outputdir <- "data/landings/mexico/datamares/public/processed"
 
 # Read data
 data_orig <- readxl::read_excel(file.path(inputdir, "bb4167625s_1.xlsx"), sheet="data")

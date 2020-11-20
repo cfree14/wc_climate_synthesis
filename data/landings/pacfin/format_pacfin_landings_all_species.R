@@ -184,7 +184,7 @@ freeR::complete(data2)
 
 # Ports
 ports <- data2 %>% 
-  select(port_code, port_name) %>% 
+  select(state, port_code, port_name) %>% 
   unique()
 
 
