@@ -19,8 +19,8 @@ library(RColorBrewer)
 # Directories
 datadir <- "data" # for actual app
 codedir <- "code"  # for actual app
-# datadir <- "shiny_apps/wc_landings/data" # when testing
-# codedir <- "shiny_apps/wc_landings/code" # when testing
+datadir <- "shiny_apps/wc_landings/data" # when testing
+codedir <- "shiny_apps/wc_landings/code" # when testing
 
 # Source code
 sapply(list.files(codedir), function(x) source(file.path(codedir, x)))
@@ -29,8 +29,8 @@ sapply(list.files(codedir), function(x) source(file.path(codedir, x)))
 ports_ca <- read.csv(file.path(datadir, "port_key_v3.csv"), as.is=T)
 
 # Read landings data
-data_ca_orig <- read.csv(file.path(datadir, "CDFW_2000_2019_landings_by_port_expanded.csv"), as.is=T)
-data_noaa_orig <- readRDS(file.path(datadir, "NOAA_1950_2019_wc_landings_by_state_species.Rds"))
+data_ca_orig <- readRDS(file.path(datadir, "1928_2019_CA_landings_by_port_species.Rds"))
+# data_noaa_orig <- readRDS(file.path(datadir, "NOAA_1950_2019_wc_landings_by_state_species.Rds"))
 
 # Read country shapefiles
 load(file.path(file.path(datadir, "country_shapefiles.Rdata")))
@@ -44,11 +44,11 @@ areas_do <- c("Eureka", "Fort Bragg", "Bodega Bay", "San Francisco", "Monterey",
 # Prepare CA marine landings data
 data_ca <- data_ca_orig %>% 
   # Reduce to:
-  filter(environment=="marine" & presentation=="whole" & level=="species" & area %in% areas_do) %>% 
+  filter(presentation=="whole" & level=="species" & port_complex %in% areas_do) %>% # environment=="marine" & 
   # Add a nice species name
-  mutate(species_label=paste0(comm_name, " (", sci_name, ")")) %>% 
+  # mutate(species_label=paste0(comm_name, " (", sci_name, ")")) %>% 
   # Arrange port complex
-  mutate(area=factor(area, levels=areas_do))
+  mutate(port_complex=factor(port_complex, levels=areas_do))
 
 
 # Parameters

@@ -29,10 +29,9 @@ spp_key_cdfw <- readxl::read_excel("data/landings/cdfw/public/species_key/CA_spe
 # Step 1. Initial list
 spp_key_ll <- ll_yr %>% 
   # Unique species
-  select(comm_name) %>% 
+  select(comm_name_orig) %>% 
   unique() %>% 
-  arrange(comm_name) %>% 
-  rename(comm_name_orig=comm_name) %>% 
+  arrange(comm_name_orig) %>% 
   # Add CDFW key
   left_join(spp_key_cdfw %>% select(comm_name_orig, comm_name, sci_name, level, presentation))
 

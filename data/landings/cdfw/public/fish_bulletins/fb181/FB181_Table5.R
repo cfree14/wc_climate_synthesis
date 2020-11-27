@@ -92,7 +92,7 @@ table(data1$year)
 table(data1$table)
 table(data1$category)
 table(data1$port_complex)
-freeR::complete(data)
+freeR::complete(data1)
 
 # Export
 write.csv(data1, file=file.path(indir, "FB181_Table5_annual_landings_by_species_port_complex_imperfect.csv"), row.names=F)
@@ -165,9 +165,20 @@ g
 
 # Final data
 data4 <- data3 %>% 
+  # Remove totals
   filter(species!="Total") %>% 
-  mutate(source="FB 181") %>% 
-  select(source, everything())
+  # Rename columns
+  rename(comm_name_orig=species) %>% 
+  # Add source and landings in kg
+  mutate(source="FB 181",
+         landings_kg=measurements::conv_unit(landings_lb, "lbs", "kg")) %>%
+  # Add presentation
+  mutate(presentation=ifelse(grepl("claws", comm_name_orig), "claws", 
+                             ifelse(grepl("roe on kelp", comm_name_orig), "roe on kelp", 
+                                    ifelse(grepl("roe", comm_name_orig), "roe", "whole")))) %>% 
+  # Order columns
+  select(source, table:comm_name_orig, presentation, 
+         landings_lb, landings_kg, value_usd, everything())
 
 # Inspect data
 str(data4)
