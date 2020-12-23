@@ -1,0 +1,13 @@
+
+# Data come from the CDFW website
+https://wildlife.ca.gov/fishing/commercial/landings
+
+
+Table 7: Annual landings by state (CA, south of CA, north of CA) and species
+Table 8: Monthly landings by species (could be derived from Tables 9-14)
+Tables 9-14: Monthly landings by port complex and species
+Table 15: Annual landings/value by port complex and species (could be derived from Tables 16-21?)
+Tables 16-21: Annual landings/value by port complex, port, and species
+
+All of the files have 9 statistical areas and all use names from Gates and Frey (1974).
+

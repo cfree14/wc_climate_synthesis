@@ -62,12 +62,14 @@ table(stock_key$region)
 
 # West Coast stocks
 wc_stocks <- stock_key %>% 
-  filter(region%in%c("US West Coast", "Canada West Coast"))
+  filter(region%in%c("US West Coast", "Canada West Coast")) # US Alaska
 
 # West Coast data
 wc_data <- timeseries_values_views %>% 
   # Reduce to NE stocks
-  filter(stockid %in% wc_stocks$stockid)
+  filter(stockid %in% wc_stocks$stockid) %>% 
+  # Add meta-data
+  left_join(wc_stocks %>% select(stockid, region, area, species, comm_name), by="stockid")
 
 
 # Export data

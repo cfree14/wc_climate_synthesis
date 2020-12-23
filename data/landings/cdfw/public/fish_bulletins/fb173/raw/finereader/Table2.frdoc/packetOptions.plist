@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultLanguagesList</key>
+	<string>English</string>
+	<key>exportDocXHighlightUncertainCharacter</key>
+	<false/>
+	<key>exportDocXImageQuality</key>
+	<integer>1</integer>
+	<key>exportDocXIncreasePaperSizeFitToContent</key>
+	<true/>
+	<key>exportDocXKeepLineBreaksAndHyphens</key>
+	<false/>
+	<key>exportDocXKeepLineNumbers</key>
+	<true/>
+	<key>exportDocXKeepPageBreaks</key>
+	<true/>
+	<key>exportDocXKeepPageNumbersHeadersAndFooters</key>
+	<true/>
+	<key>exportDocXKeepPictures</key>
+	<true/>
+	<key>exportDocXKeepTextAndBackgroundColor</key>
+	<true/>
+	<key>exportDocXLayout</key>
+	<integer>1</integer>
+	<key>exportDocXPaperMargins</key>
+	<string>1.180555, 0.7881944, 0,59027777, 0.7881944</string>
+	<key>exportDocXPaperSize</key>
+	<string>0,0</string>
+	<key>exportFormat</key>
+	<integer>40612</integer>
+	<key>exportImageFormat</key>
+	<integer>2</integer>
+	<key>exportOpenAfterExport</key>
+	<true/>
+	<key>exportPdfCopyDocumentSequrity</key>
+	<false/>
+	<key>exportPdfCopyDocumentSequrityPassword</key>
+	<string></string>
+	<key>exportPdfCreateOutline</key>
+	<false/>
+	<key>exportPdfEmbedFonts</key>
+	<true/>
+	<key>exportPdfEnabledTaggedPDF</key>
+	<true/>
+	<key>exportPdfExportMode</key>
+	<integer>2</integer>
+	<key>exportPdfImageQuality</key>
+	<real>2</real>
+	<key>exportPdfKeepPageNumbersHeadersAndFooters</key>
+	<false/>
+	<key>exportPdfKeepPictures</key>
+	<true/>
+	<key>exportPdfKeepTextAndBackgroundColor</key>
+	<true/>
+	<key>exportPdfMakePdfACompliant</key>
+	<false/>
+	<key>exportPdfOpenDocumentSequrity</key>
+	<false/>
+	<key>exportPdfOpenDocumentSequrityPassword</key>
+	<string></string>
+	<key>exportPdfPaperMargins</key>
+	<string>1.180555, 0.7881944, 0,59027777, 0.7881944</string>
+	<key>exportPdfPaperSize</key>
+	<string>0,0</string>
+	<key>exportPdfPrintDocumentSequrity</key>
+	<false/>
+	<key>exportPdfUseMRC</key>
+	<false/>
+	<key>exportSaveOption</key>
+	<integer>0</integer>
+	<key>exportXlsXConvertNumericalValuesToNumbers</key>
+	<true/>
+	<key>exportXlsXIgnoreTextOutsideTables</key>
+	<true/>
+	<key>exportXlsXImageQuality</key>
+	<integer>1</integer>
+	<key>exportXlsXKeepPageNumbersHeadersAndFooters</key>
+	<true/>
+	<key>exportXlsXKeepPictures</key>
+	<true/>
+	<key>preferencesRecognitionLanguages</key>
+	<string>English</string>
+</dict>
+</plist>
