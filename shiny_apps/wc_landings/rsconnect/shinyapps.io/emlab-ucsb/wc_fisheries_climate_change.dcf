@@ -5,8 +5,8 @@ account: emlab-ucsb
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3166373
-bundleId: 4023673
+bundleId: 4035916
 url: https://emlab-ucsb.shinyapps.io/wc_fisheries_climate_change/
-when: 1608754946.76663
+when: 1609175661.94137
 asMultiple: FALSE
 asStatic: FALSE

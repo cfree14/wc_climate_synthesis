@@ -61,6 +61,13 @@ table(data$mgmt_zone)
 table(data$cause)
 
 
+# Export data
+################################################################################
+
+# Export data
+saveRDS(data, file=file.path(outdir, "US_federal_fishery_disasters_summary.Rds"))
+
+
 # Plot data
 ################################################################################
 

@@ -62,7 +62,8 @@ check <- data %>%
 # Handle these duplicates
 data1 <- data %>% 
   group_by(region, species_orig, survey, year) %>% 
-  summarize_all(mean, na.rm=T)
+  summarize_all(mean, na.rm=T) %>% 
+  ungroup()
 
 # Means
 data1_avgs <- data1 %>% 
@@ -133,8 +134,32 @@ freeR::suggest_names(species2check)
 # Stegophiura ponderosa - appears correct
 # Tochuina gigantea - appears correct
 
+# Build species key
+spp <- sort(unique(data3$species))
+spp_key <- freeR::fb_comm_name(spp)
+
+# Format species key
+spp_key1 <- spp_key %>% 
+  # Fix some common names
+  mutate(comm_name=recode(comm_name, 
+                          '"Dirty harry"'="Fuzzy hermit crab"))
+
+# Add common name
+data4 <- data3 %>% 
+  # Add common name
+  left_join(spp_key1 %>% select(-source)) %>% 
+  # Arrange columns
+  select(region, species_orig, species, comm_name, survey, metric, year, everything()) %>% 
+  # Convert NANs to NAs
+  mutate(std_err=ifelse(is.nan(std_err), NA, std_err))
+
+# Inspect data
+str(data4)
+freeR::complete(data4)
+
+  
 # Export data
 ################################################################################
 
 # Export data
-saveRDS(data3, file=file.path(outdir, "OA_1977_2018_distribution_shifts.Rds"))
+saveRDS(data4, file=file.path(outdir, "OA_1977_2018_distribution_shifts.Rds"))

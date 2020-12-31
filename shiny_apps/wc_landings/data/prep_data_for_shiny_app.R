@@ -42,7 +42,10 @@ saveRDS(noaa, file=file.path(outputdir, "NOAA_1950_2019_wc_landings_by_state_spe
 ################################################################################
 
 # Read 
-data_oa <- readRDS("data/oceanadapt/processed/OA_1977_2018_distribution_shifts.Rds")
+data_oa <- readRDS("data/oceanadapt/processed/OA_1977_2018_distribution_shifts.Rds") %>% 
+  mutate(comm_name=stringr::str_to_sentence(comm_name),
+         species_label=ifelse(!is.na(comm_name), paste0(comm_name, " (", species, ")"), species)) %>% 
+  select(region, species_orig, species, comm_name, species_label, everything())
 
 # Export
 saveRDS(data_oa, file=file.path(outputdir, "OA_1977_2018_distribution_shifts.Rds"))
@@ -50,10 +53,19 @@ saveRDS(data_oa, file=file.path(outputdir, "OA_1977_2018_distribution_shifts.Rds
 # RAM Legacy data
 ################################################################################
 
-# Read
-load("data/ramldb/processed/RAM_wc_data.Rdata")
-data_ram <- wc_data
-stocks_ram <- wc_stocks
+# Read data
+data_ram_status <- readRDS(file=file.path("data/ramldb/processed/RAM_WC_status_data.Rds"))
+data_ram_sr <- readRDS(file=file.path("data/ramldb/processed/RAM_WC_recruitment_data.Rds"))
+data_ram_sp <- readRDS(file=file.path("data/ramldb/processed/RAM_WC_production_data.Rds"))
 
 # Export
-save(data_ram, stocks_ram, file=file.path(outputdir, "RAM_wc_data.Rdata"))
+saveRDS(data_ram_status, file.path(outputdir, "RAM_WC_status_data.Rds"))
+saveRDS(data_ram_sr, file.path(outputdir, "RAM_WC_recruitment_data.Rds"))
+saveRDS(data_ram_sp, file.path(outputdir, "RAM_WC_production_data.Rds"))
+
+
+
+
+
+
+
