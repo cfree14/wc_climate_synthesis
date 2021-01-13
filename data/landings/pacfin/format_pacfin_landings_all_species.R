@@ -192,6 +192,6 @@ ports <- data2 %>%
 ################################################################################
 
 # Export data
-saveRDS(data, file.path(outputdir, "PACFIN_1980_2020_all_species_landings_by_port.Rds"))
+saveRDS(data2, file.path(outputdir, "PACFIN_1980_2020_all_species_landings_by_port.Rds"))
 
 

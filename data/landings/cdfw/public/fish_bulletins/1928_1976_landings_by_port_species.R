@@ -19,14 +19,14 @@ outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
 ################################################################################
 
 # Which FBs?
-fbs <- c(170, 168, 166, 163, 161, 159, 154, 153, 149, 144)
+fbs <- c(170, 168, 166, 163, 161, 159, 154, 153, 149, 144, 138, 135, 132, 129, 125, 121, 117, 111)
 
 # Merge data
 data_orig <- purrr::map_df(fbs, function(x){
   
   # Read data
   indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw/", paste0("fb", x), "processed")
-  infile <- list.files(indir, pattern="Tables16-21")
+  infile <- list.files(indir, pattern="Tables16-21|Tables17-22")
   fdata <- read.csv(file.path(indir, infile), as.is=T)
   
 })
