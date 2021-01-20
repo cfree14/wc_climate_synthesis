@@ -48,7 +48,7 @@
 "FB 105","Table 43",1955,"Eureka","Point Arena","Landings","All other species",16935,2376
 "FB 105","Table 43",1955,"Eureka","Shelter Cove","Landings","Salmon",82273,29115
 "FB 105","Table 43",1955,"Eureka","Shelter Cove","Landings","All other species",1969,173
-"FB 105","Table 43",1955,"Eureka","All Other Ports","Landings","All other species",36141,4337
+"FB 105","Table 43",1955,"Eureka","All Other Ports","Landings","All species",36141,4337
 "FB 105","Table 44",1955,"Sacramento Delta","Pittsburg","Landings","Salmon",555019,176274
 "FB 105","Table 44",1955,"Sacramento Delta","Pittsburg","Landings","Shad",265319,16618
 "FB 105","Table 44",1955,"Sacramento Delta","Pittsburg","Landings","All other species",1213,57
@@ -121,6 +121,7 @@
 "FB 105","Table 45",1955,"San Francisco","Princeton","Landings","All other species",33920,4797
 "FB 105","Table 45",1955,"San Francisco","Richmond","Landings","Bay shrimp",371351,28074
 "FB 105","Table 45",1955,"San Francisco","Richmond","Landings","All other species",6775,889
+"FB 105","Table 45",1955,"San Francisco","All Other Ports","Landings","All species",22976,1760
 "FB 105","Table 46",1955,"Monterey","Monterey","Landings","Squid",15083766,257932
 "FB 105","Table 46",1955,"Monterey","Monterey","Landings","Rockfish",5115444,226483
 "FB 105","Table 46",1955,"Monterey","Monterey","Landings","Albacore tuna",1052379,165750
@@ -190,7 +191,7 @@
 "FB 105","Table 47",1955,"Santa Barbara","Morro Bay","Landings","Lingcod",79429,7093
 "FB 105","Table 47",1955,"Santa Barbara","Morro Bay","Landings","All other species",139692,7400
 "FB 105","Table 47",1955,"Santa Barbara","San Simeon","Landings","Abalone",806504,111217
-"FB 105","Table 47",1955,"Santa Barbara","All Other Ports","Landings","All other species",23572,5121
+"FB 105","Table 47",1955,"Santa Barbara","All Other Ports","Landings","All species",23572,5121
 "FB 105","Table 48",1955,"Los Angeles","Terminal Island","Landings","Yellowfin tuna",126445944,17352801
 "FB 105","Table 48",1955,"Los Angeles","Terminal Island","Landings","Skipjack",74696374,8469023
 "FB 105","Table 48",1955,"Los Angeles","Terminal Island","Landings","Albacore tuna",27548831,5003051
