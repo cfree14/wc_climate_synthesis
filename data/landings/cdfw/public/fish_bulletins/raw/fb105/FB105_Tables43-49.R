@@ -42,7 +42,7 @@ data_full <- data_orig %>%
                              "Table 49"="San Diego")) %>% 
   mutate(port=port %>% gsub("[[:punct:]]", "", .) %>% stringr::str_trim(.) %>% stringr::str_to_title(.)) %>% 
   # Add columns
-  mutate(year=1955,
+  mutate(year=1956,
          source="FB 105") %>% 
   # Arrange
   select(source, table, year, port_complex, port, type, species, pounds, values, everything()) %>% 

@@ -34,7 +34,7 @@
 "FB 95","Table 21",1952,"Eureka","Trinidad","Landings","All other species",936,69
 "FB 95","Table 21",1952,"Eureka","Point Arena","Landings","Salmon",39918,9588
 "FB 95","Table 21",1952,"Eureka","Point Arena","Landings","All other species",9612,825
-"FB 95","Table 21",1952,"Eureka","All Other Ports","Landings","All other species",95585,6610
+"FB 95","Table 21",1952,"Eureka","All Other Ports","Landings","All species",95585,6610
 "FB 95","Table 22",1952,"Sacramento Delta","Pittsburg","Landings","Salmon",455716,101807
 "FB 95","Table 22",1952,"Sacramento Delta","Pittsburg","Landings","Shad",426631,31784
 "FB 95","Table 22",1952,"Sacramento Delta","Pittsburg","Landings","Catfish",102782,20971
@@ -107,7 +107,7 @@
 "FB 95","Table 23",1952,"San Francisco","Drakes Bay","Landings","Pacific oyster",49399,5429
 "FB 95","Table 23",1952,"San Francisco","Oakland","Landings","Crab",72749,10076
 "FB 95","Table 23",1952,"San Francisco","Oakland","Landings","All other species",4944,749
-"FB 95","Table 23",1952,"San Francisco","All Other Ports","Landings","All other species",88116,8815
+"FB 95","Table 23",1952,"San Francisco","All Other Ports","Landings","All species",88116,8815
 "FB 95","Table 24",1952,"Monterey","Monterey","Landings","Anchovy",37370280,784776
 "FB 95","Table 24",1952,"Monterey","Monterey","Landings","Albacore tuna",2020120,372514
 "FB 95","Table 24",1952,"Monterey","Monterey","Landings","Yellowfin tuna",1291394,207098
@@ -175,8 +175,9 @@
 "FB 95","Table 25",1952,"Santa Barbara","Avila","Landings","All other species",223127,18601
 "FB 95","Table 25",1952,"Santa Barbara","Channel Islands","Landings","Abalone",579415,72948
 "FB 95","Table 25",1952,"Santa Barbara","San Simeon","Landings","Abalone",210550,26508
+"FB 95","Table 25",1952,"Santa Barbara","Cayucos","Landings","Abalone",45464,5724
 "FB 95","Table 25",1952,"Santa Barbara","Cayucos","Landings","All other species",112,10
-"FB 95","Table 25",1952,"Santa Barbara","All Other Ports","Landings","All other species",32772,4313
+"FB 95","Table 25",1952,"Santa Barbara","All Other Ports","Landings","All species",32772,4313
 "FB 95","Table 26",1952,"Los Angeles","Terminal Island","Landings","Yellowfin tuna",122009562,19270510
 "FB 95","Table 26",1952,"Los Angeles","Terminal Island","Landings","Skipjack",52805685,6780114
 "FB 95","Table 26",1952,"Los Angeles","Terminal Island","Landings","NA",27291909,4731089
@@ -298,4 +299,4 @@
 "FB 95","Table 27",1952,"San Diego","Salton Sea","Landings","Mullet",89718,8981
 "FB 95","Table 27",1952,"San Diego","Encinitas","Landings","Spiny lobster",12219,5540
 "FB 95","Table 27",1952,"San Diego","Encinitas","Landings","All other species",12583,3085
-"FB 95","Table 27",1952,"San Diego","All Other Ports","Landings","All other species",23576,3490
+"FB 95","Table 27",1952,"San Diego","All Other Ports","Landings","All species",23576,3490
