@@ -85,7 +85,11 @@ wcfish::check_names(names2check)
 # Finalize data
 ################################################################################
 
+<<<<<<< HEAD
 # Format data 
+=======
+# Format data
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 data <- data_full %>% 
   filter(!grepl("total", tolower(species)))
 

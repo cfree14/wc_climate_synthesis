@@ -1,4 +1,5 @@
 "source","table","year","port_complex","port","type","species","landings_lb","value_usd"
+<<<<<<< HEAD
 "FB 105","Table 43",1955,"Eureka","Eureka","Landings","Salmon",2400142,849824
 "FB 105","Table 43",1955,"Eureka","Eureka","Landings","Crab",2431933,344362
 "FB 105","Table 43",1955,"Eureka","Eureka","Landings","Dover sole",2727555,134196
@@ -285,3 +286,292 @@
 "FB 105","Table 49",1955,"San Diego","Cardiff","Landings","White seabass",220,50
 "FB 105","Table 49",1955,"San Diego","All Other Ports","Landings","Spiny lobster",13586,7255
 "FB 105","Table 49",1955,"San Diego","All Other Ports","Landings","All other species",27438,3563
+=======
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Salmon",2400142,849824
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Crab",2431933,344362
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Dover sole",2727555,134196
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Giant Pacific oyster",4381050,72725
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Albacore tuna",348447,49479
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","English sole",654421,42341
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Petrale sole",371310,37057
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Rockfish",932577,32208
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Sablefish",210832,18026
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Rex sole",185225,10410
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Pacific halibut",37702,9505
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Perch",54810,8052
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","Lingcod",80525,6676
+"FB 105","Table 43",1956,"Eureka","Eureka","Landings","All other species",359571,15413
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Salmon",2506058,883444
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Dover sole",2083574,102512
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Sablefish",791406,67665
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Petrale sole",324378,32373
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Rockfish",896246,26994
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","English sole",351465,22740
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Lingcod",179929,14916
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Crab",78815,11160
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Albacore tuna",67791,9626
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Rex sole",135075,7591
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Arrowtooth halibut",370450,7150
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","Hake",384982,6737
+"FB 105","Table 43",1956,"Eureka","Fort Bragg","Landings","All other species",142882,8401
+"FB 105","Table 43",1956,"Eureka","Crescent City","Landings","Crab",3759281,532314
+"FB 105","Table 43",1956,"Eureka","Crescent City","Landings","Salmon",1212460,429418
+"FB 105","Table 43",1956,"Eureka","Crescent City","Landings","Ocean shrimp",880713,78472
+"FB 105","Table 43",1956,"Eureka","Crescent City","Landings","Albacore tuna",87784,12465
+"FB 105","Table 43",1956,"Eureka","Crescent City","Landings","All other species",194530,13130
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Crab",1016173,143890
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Dover sole",2281451,112247
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Petrale sole",552207,55110
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Rockfish",1243937,41540
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","English sole",318664,20618
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Arrowtooth halibut",657470,12689
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Hake",678645,11876
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Sablefish",96181,8223
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Rex sole",142312,7998
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","Lingcod",68060,5642
+"FB 105","Table 43",1956,"Eureka","Fields Landing","Landings","All other species",67376,7397
+"FB 105","Table 43",1956,"Eureka","Trinidad","Landings","Crab",686183,97164
+"FB 105","Table 43",1956,"Eureka","Trinidad","Landings","All other species",13357,4587
+"FB 105","Table 43",1956,"Eureka","Point Arena","Landings","Salmon",87493,30977
+"FB 105","Table 43",1956,"Eureka","Point Arena","Landings","All other species",16935,2376
+"FB 105","Table 43",1956,"Eureka","Shelter Cove","Landings","Salmon",82273,29115
+"FB 105","Table 43",1956,"Eureka","Shelter Cove","Landings","All other species",1969,173
+"FB 105","Table 43",1956,"Eureka","All Other Ports","Landings","All species",36141,4337
+"FB 105","Table 44",1956,"Sacramento Delta","Pittsburg","Landings","Salmon",555019,176274
+"FB 105","Table 44",1956,"Sacramento Delta","Pittsburg","Landings","Shad",265319,16618
+"FB 105","Table 44",1956,"Sacramento Delta","Pittsburg","Landings","All other species",1213,57
+"FB 105","Table 44",1956,"Sacramento Delta","Sacramento","Landings","Salmon",181301,57581
+"FB 105","Table 44",1956,"Sacramento Delta","Sacramento","Landings","Hardhead",42250,17956
+"FB 105","Table 44",1956,"Sacramento Delta","Sacramento","Landings","Shad",90261,5434
+"FB 105","Table 44",1956,"Sacramento Delta","Sacramento","Landings","Carp",128545,5399
+"FB 105","Table 44",1956,"Sacramento Delta","Sacramento","Landings","All other species",17,2
+"FB 105","Table 44",1956,"Sacramento Delta","Martinez","Landings","Salmon",160203,50881
+"FB 105","Table 44",1956,"Sacramento Delta","Martinez","Landings","All other species",28120,1860
+"FB 105","Table 44",1956,"Sacramento Delta","Benicia","Landings","Salmon",132433,42061
+"FB 105","Table 44",1956,"Sacramento Delta","Benicia","Landings","All other species",47530,3371
+"FB 105","Table 44",1956,"Sacramento Delta","Port Costa","Landings","Salmon",110629,35136
+"FB 105","Table 44",1956,"Sacramento Delta","Clear Lake","Landings","Carp",546260,22943
+"FB 105","Table 44",1956,"Sacramento Delta","Clear Lake","Landings","Hardhead",25350,10774
+"FB 105","Table 44",1956,"Sacramento Delta","Turlock","Landings","Hardhead",9150,3889
+"FB 105","Table 44",1956,"Sacramento Delta","Turlock","Landings","Carp",92442,3883
+"FB 105","Table 44",1956,"Sacramento Delta","Turlock","Landings","All other species",110,22
+"FB 105","Table 44",1956,"Sacramento Delta","All Other Ports","Landings","Carp",86642,3639
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Yellowfin tuna",9531726,1357585
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Albacore tuna",5114208,899001
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Crab",3444675,365824
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Salmon",681591,237868
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Rockfish",2262881,87877
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","English sole",1283786,75743
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Sablefish",994873,70457
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Petrale sole",638584,56195
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Skipjack",493713,50918
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Shad",36576,38405
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Dover sole",1048190,37525
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Bay shrimp",313360,23690
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Rex sole",406122,19859
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Sanddab",338267,16846
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Lingcod",181246,11998
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Pacific halibut",45916,11938
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Anchovy",387981,7760
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Smelt",73793,6736
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Flounder",131506,5576
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","Sand sole",60909,5323
+"FB 105","Table 45",1956,"San Francisco","San Francisco","Landings","All other species",571229,26395
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","Salmon",1308859,438206
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","Crab",454639,48283
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","Rockfish",578439,20558
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","Giant Pacific oyster",173300,20017
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","Petrale sole",185420,16316
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","English sole",179358,10582
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","Lingcod",106603,7058
+"FB 105","Table 45",1956,"San Francisco","Point Reyes Drakes Bay","Landings","All other species",362192,14424
+"FB 105","Table 45",1956,"San Francisco","Bodega Bay","Landings","Salmon",765570,256313
+"FB 105","Table 45",1956,"San Francisco","Bodega Bay","Landings","Crab",1316191,139779
+"FB 105","Table 45",1956,"San Francisco","Bodega Bay","Landings","Ocean shrimp",248088,18309
+"FB 105","Table 45",1956,"San Francisco","Bodega Bay","Landings","English sole",267245,15767
+"FB 105","Table 45",1956,"San Francisco","Bodega Bay","Landings","Smelt",62735,5492
+"FB 105","Table 45",1956,"San Francisco","Bodega Bay","Landings","Petrale sole",59554,5241
+"FB 105","Table 45",1956,"San Francisco","Bodega Bay","Landings","All other species",440468,24294
+"FB 105","Table 45",1956,"San Francisco","Sausalito","Landings","Albacore tuna",1087756,173606
+"FB 105","Table 45",1956,"San Francisco","Sausalito","Landings","Salmon",149159,49986
+"FB 105","Table 45",1956,"San Francisco","Sausalito","Landings","Crab",207713,21140
+"FB 105","Table 45",1956,"San Francisco","Sausalito","Landings","All other species",9142,393
+"FB 105","Table 45",1956,"San Francisco","Oakland","Landings","Albacore tuna",1091106,174141
+"FB 105","Table 45",1956,"San Francisco","Oakland","Landings","Crab",279528,29685
+"FB 105","Table 45",1956,"San Francisco","Oakland","Landings","Salmon",62482,20960
+"FB 105","Table 45",1956,"San Francisco","Oakland","Landings","All other species",24559,1901
+"FB 105","Table 45",1956,"San Francisco","Tomales Bay Marshall","Landings","Eastern oyster",142181,37905
+"FB 105","Table 45",1956,"San Francisco","Tomales Bay Marshall","Landings","Giant Pacific oyster",151845,17538
+"FB 105","Table 45",1956,"San Francisco","Tomales Bay Marshall","Landings","Pacific herring",617200,8394
+"FB 105","Table 45",1956,"San Francisco","Tomales Bay Marshall","Landings","All other species",46549,5255
+"FB 105","Table 45",1956,"San Francisco","Princeton","Landings","Crab",269048,28573
+"FB 105","Table 45",1956,"San Francisco","Princeton","Landings","Salmon",35652,11936
+"FB 105","Table 45",1956,"San Francisco","Princeton","Landings","All other species",33920,4797
+"FB 105","Table 45",1956,"San Francisco","Richmond","Landings","Bay shrimp",371351,28074
+"FB 105","Table 45",1956,"San Francisco","Richmond","Landings","All other species",6775,889
+"FB 105","Table 45",1956,"San Francisco","All Other Ports","Landings","All species",22976,1760
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Squid",15083766,257932
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Rockfish",5115444,226483
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Albacore tuna",1052379,165750
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Anchovy",8498400,109629
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Salmon",284567,98232
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Yellowfin tuna",360983,47975
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Jack mackerel",1927978,45886
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","English sole",452176,30748
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Sablefish",544265,15076
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Petrale sole",103933,10071
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","Lingcod",100589,9083
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","NA",112675,6761
+"FB 105","Table 46",1956,"Monterey","Monterey","Landings","All other species",767127,33859
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","Salmon",225810,77950
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","Albacore tuna",182300,28712
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","Rockfish",500512,23834
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","Pacific herring",285953,13011
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","Sablefish",346949,9610
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","English sole",134131,9121
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","California pompano",22031,8348
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","Petrale sole",81981,7944
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","Smelt",78042,5376
+"FB 105","Table 46",1956,"Monterey","Santa Cruz","Landings","All other species",437589,21184
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","Albacore tuna",3425392,539499
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","Salmon",242592,83743
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","Squid",3502615,59895
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","Shark",541033,28089
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","Pacific herring",406580,18499
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","Anchovy",1081400,13950
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","Jack mackerel",483860,11516
+"FB 105","Table 46",1956,"Monterey","Moss Landing","Landings","All other species",168197,13635
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","Yellowfin tuna",3190944,543737
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","Salmon",204915,74210
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","Albacore tuna",148016,21951
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","Petrale sole",154721,15039
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","Crab",100106,14415
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","Alnlonc",68942,9507
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","Rockfish",154224,8211
+"FB 105","Table 47",1956,"Santa Barbara","Port San Luis Avila Grover City","Landings","All other species",228073,9604
+"FB 105","Table 47",1956,"Santa Barbara","Port Hueneme","Landings","Sardine",14439885,274358
+"FB 105","Table 47",1956,"Santa Barbara","Port Hueneme","Landings","Jack mackerel",13447066,203051
+"FB 105","Table 47",1956,"Santa Barbara","Port Hueneme","Landings","Pacific mackerel",11251815,190156
+"FB 105","Table 47",1956,"Santa Barbara","Port Hueneme","Landings","Abalone",176040,15470
+"FB 105","Table 47",1956,"Santa Barbara","Port Hueneme","Landings","All other species",242536,6351
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Abalone",945577,116382
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Spiny lobster",192284,95411
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","California halibut",133785,29981
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Sardine",881240,16744
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","White seabass",40373,11349
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Shark",161156,10595
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Pacific mackerel",584678,9881
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Petrale sole",100605,9779
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Jack mackerel",607892,9179
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","English sole",104285,6737
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Anchovy",321900,6052
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Rockfish",157292,5163
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","Swordfish",13199,5046
+"FB 105","Table 47",1956,"Santa Barbara","Santa Barbara","Landings","All other species",138257,8919
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Abalone",696680,95688
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Rockfish",2264308,82947
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Crab",225513,32474
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Giant Pacific oyster",1395025,28040
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Albacore tuna",169885,25194
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Petrale sole",239863,23315
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Salmon",58893,21325
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Perch",40157,8861
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","Lingcod",79429,7093
+"FB 105","Table 47",1956,"Santa Barbara","Morro Bay","Landings","All other species",139692,7400
+"FB 105","Table 47",1956,"Santa Barbara","San Simeon","Landings","Abalone",806504,111217
+"FB 105","Table 47",1956,"Santa Barbara","All Other Ports","Landings","All species",23572,5121
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Yellowfin tuna",126445944,17352801
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Skipjack",74696374,8469023
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Albacore tuna",27548831,5003051
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Blackfin tuna",11367498,1483716
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Sardine",48103535,1226640
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Jack mackerel",46711942,994964
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Pacific mackerel",23661671,534754
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Anchovy",12005371,150067
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Bigeye tuna",665582,85128
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Pismo clam",735432,15812
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Yellowtail",144876,13198
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","Grouper",33232,6248
+"FB 105","Table 48",1956,"Los Angeles","Terminal Island","Landings","All other species",61513,3682
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","White seabass",603589,144137
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","California barracuda",565353,102498
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Spiny lobster",163584,86978
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Pacific mackerel",2856865,64565
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Blackfin tuna",473713,61867
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Anchovy",4452480,55656
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Yellowfin tuna",390292,52767
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Sardine",2014021,51358
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Black sea bass",299266,45937
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Jack mackerel",2012057,42857
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Rockfish",370337,37232
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Grouper",177232,33320
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","California halibut",118479,30402
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Swordfish",61684,24785
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Albacore tuna",136179,24036
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","White croaker (kingfish)",447311,15878
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Sculpin",59845,14632
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Squid",677298,14630
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Yellowtail",126582,11532
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","California pompano",43782,10547
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Shark",93569,10071
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","Cabrilla",63438,9395
+"FB 105","Table 48",1956,"Los Angeles","San Pedro","Landings","All other species",160581,18119
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Pacific mackerel",7388164,166973
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Abalone",1173863,98838
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Jack mackerel",3551440,75646
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Swordfish",149503,60070
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Spiny lobster",91089,48432
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Albacore tuna",128135,22616
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Sardine",529835,13511
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","White seabass",46553,11117
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","Anchovy",474810,5935
+"FB 105","Table 48",1956,"Los Angeles","Newport Beach","Landings","All other species",41118,7148
+"FB 105","Table 48",1956,"Los Angeles","Long Beach","Landings","Anchovy",19582260,244778
+"FB 105","Table 48",1956,"Los Angeles","Long Beach","Landings","Sardine",3002302,76559
+"FB 105","Table 48",1956,"Los Angeles","Long Beach","Landings","Jack mackerel",2059840,43875
+"FB 105","Table 48",1956,"Los Angeles","Long Beach","Landings","Spiny lobster",52556,27944
+"FB 105","Table 48",1956,"Los Angeles","Long Beach","Landings","Rockfish",152874,17927
+"FB 105","Table 48",1956,"Los Angeles","Long Beach","Landings","Pacific mackerel",556030,12566
+"FB 105","Table 48",1956,"Los Angeles","Long Beach","Landings","All other species",56544,6504
+"FB 105","Table 48",1956,"Los Angeles","Wilmington","Landings","Jack mackerel",4691583,99931
+"FB 105","Table 48",1956,"Los Angeles","Wilmington","Landings","Anchovy",7122145,89027
+"FB 105","Table 48",1956,"Los Angeles","Wilmington","Landings","Pacific mackerel",3521725,79591
+"FB 105","Table 48",1956,"Los Angeles","Wilmington","Landings","White croaker (kingfish)",152300,5559
+"FB 105","Table 48",1956,"Los Angeles","Wilmington","Landings","All other species",37992,969
+"FB 105","Table 48",1956,"Los Angeles","Los Angeles","Landings","Salmon",116656,61804
+"FB 105","Table 48",1956,"Los Angeles","Los Angeles","Landings","Sablefish",309972,56884
+"FB 105","Table 48",1956,"Los Angeles","Los Angeles","Landings","Sturgeon",23601,14734
+"FB 105","Table 48",1956,"Los Angeles","Los Angeles","Landings","Pismo clam",455040,9783
+"FB 105","Table 48",1956,"Los Angeles","Los Angeles","Landings","All other species",170857,44918
+"FB 105","Table 48",1956,"Los Angeles","Santa Monica","Landings","Anchovy",2669995,33375
+"FB 105","Table 48",1956,"Los Angeles","Santa Monica","Landings","Sardine",398089,10151
+"FB 105","Table 48",1956,"Los Angeles","Santa Monica","Landings","Spiny lobster",18581,9880
+"FB 105","Table 48",1956,"Los Angeles","Santa Monica","Landings","All other species",303979,13636
+"FB 105","Table 48",1956,"Los Angeles","Redondo Beach","Landings","Spiny lobster",11111,5908
+"FB 105","Table 48",1956,"Los Angeles","Redondo Beach","Landings","All other species",62096,4532
+"FB 105","Table 48",1956,"Los Angeles","All Other Ports","Landings","Spiny lobster",10263,5457
+"FB 105","Table 48",1956,"Los Angeles","All Other Ports","Landings","All other species",27957,3618
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Yellowfin tuna",63965600,8648882
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Skipjack",60803098,7024702
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Albacore tuna",16732918,2916242
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Bluefin tuna",925714,121546
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","White seabass",372320,84110
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Spiny lobster",105719,56454
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","California halibut",148204,32753
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","California barracuda",183132,30986
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Abalone",351149,25942
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Swordfish",49910,20733
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Shark",178829,17501
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Jackknife clam",26683,9689
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Sculpin",36251,7305
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Yellowtail",97927,7139
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","Rockfish",71314,6023
+"FB 105","Table 49",1956,"San Diego","San Diego","Landings","All other species",446270,18453
+"FB 105","Table 49",1956,"San Diego","La Jolla","Landings","Spiny lobster",34257,18293
+"FB 105","Table 49",1956,"San Diego","Oceanside","Landings","Spiny lobster",15054,8039
+"FB 105","Table 49",1956,"San Diego","Oceanside","Landings","All other species",38318,5678
+"FB 105","Table 49",1956,"San Diego","Cardiff","Landings","Spiny lobster",21764,11622
+"FB 105","Table 49",1956,"San Diego","Cardiff","Landings","White seabass",220,50
+"FB 105","Table 49",1956,"San Diego","All Other Ports","Landings","Spiny lobster",13586,7255
+"FB 105","Table 49",1956,"San Diego","All Other Ports","Landings","All other species",27438,3563
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
