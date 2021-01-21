@@ -1,0 +1,296 @@
+"source","table","year","port_complex","port","type","species","landings_lb","value_usd"
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Sole",7177134,401920
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Crab",1324912,242724
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Salmon",689042,167851
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Sablefish",432602,39367
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Rockfish",1119829,35947
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Albacore tuna",110781,22123
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Lingcod",213852,13900
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","Pacific halibut",45302,8639
+"FB 102","Table 22",1953,"Eureka","Eureka","Landings","All other species",322640,19893
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","Salmon",1610661,392357
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","Sole",1457497,81620
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","Crab",396851,72703
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","Rockfish",907019,29115
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","Sablefish",285120,25946
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","Albacore tuna",110489,22065
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","Lingcod",96075,6245
+"FB 102","Table 22",1953,"Eureka","Fort Bragg","Landings","All other species",77440,5709
+"FB 102","Table 22",1953,"Eureka","Crescent City","Landings","Crab",1575456,288624
+"FB 102","Table 22",1953,"Eureka","Crescent City","Landings","Salmon",380922,92793
+"FB 102","Table 22",1953,"Eureka","Crescent City","Landings","Sole",1229879,68873
+"FB 102","Table 22",1953,"Eureka","Crescent City","Landings","Lingcod",165898,10783
+"FB 102","Table 22",1953,"Eureka","Crescent City","Landings","Rockfish",335640,10774
+"FB 102","Table 22",1953,"Eureka","Crescent City","Landings","Ocean shrimp",41100,5191
+"FB 102","Table 22",1953,"Eureka","Crescent City","Landings","All other species",121731,7180
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Sole",2805332,157099
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Crab",326816,59872
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Salmon",178527,43489
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Rockfish",718363,23059
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Sablefish",104349,9496
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Lingcod",143172,9306
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Albacore tuna",43261,8639
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","Skate",290299,7257
+"FB 102","Table 22",1953,"Eureka","Fields Landing","Landings","All other species",379199,14680
+"FB 102","Table 22",1953,"Eureka","Trinidad","Landings","Crab",480480,88024
+"FB 102","Table 22",1953,"Eureka","Trinidad","Landings","Salmon",26172,6375
+"FB 102","Table 22",1953,"Eureka","Trinidad","Landings","All other species",1354,121
+"FB 102","Table 22",1953,"Eureka","Point Arena","Landings","Salmon",54525,13282
+"FB 102","Table 22",1953,"Eureka","Point Arena","Landings","All other species",1338,109
+"FB 102","Table 22",1953,"Eureka","All Other Ports","Landings","All other species",49750,5990
+"FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Salmon",495995,101479
+"FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Shad",530132,37268
+"FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Catfish",10252,2151
+"FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","All other species",10409,591
+"FB 102","Table 23",1953,"Sacramento Delta","Martinez","Landings","Salmon",214259,43837
+"FB 102","Table 23",1953,"Sacramento Delta","Martinez","Landings","Shad",50667,3562
+"FB 102","Table 23",1953,"Sacramento Delta","Martinez","Landings","Carp",170,10
+"FB 102","Table 23",1953,"Sacramento Delta","Sacramento","Landings","Hardhead",45358,15866
+"FB 102","Table 23",1953,"Sacramento Delta","Sacramento","Landings","Salmon",69315,14182
+"FB 102","Table 23",1953,"Sacramento Delta","Sacramento","Landings","All other species",37819,3022
+"FB 102","Table 23",1953,"Sacramento Delta","Benicia","Landings","Salmon",85780,17551
+"FB 102","Table 23",1953,"Sacramento Delta","Benicia","Landings","All other species",19933,1401
+"FB 102","Table 23",1953,"Sacramento Delta","Turlock","Landings","Carp",156094,8882
+"FB 102","Table 23",1953,"Sacramento Delta","Antioch","Landings","Carp",86875,4943
+"FB 102","Table 23",1953,"Sacramento Delta","Antioch","Landings","Catfish",206,43
+"FB 102","Table 23",1953,"Sacramento Delta","All Other Ports","Landings","Catfish",16038,3366
+"FB 102","Table 23",1953,"Sacramento Delta","All Other Ports","Landings","All other species",11999,1324
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Albacore tuna",6916006,1378144
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Crab",2683802,432360
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Skipjack",1142916,157037
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Salmon",624011,156297
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Sole",2309974,139292
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Rockfish",2588615,95782
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Anchovy",3062882,64933
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Yellowfin",373887,59523
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Pacific herring",2443399,39864
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Bay shrimp",541797,38305
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Sablefish",383007,31768
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Sanddab",230001,11983
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Shark",71005,11041
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Pacific halibut",52140,10885
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Smelt",137281,10557
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","All other species",538125,43629
+"FB 102","Table 24",1953,"San Francisco","Point Reyes Drakes Bay","Landings","Salmon",1565738,377969
+"FB 102","Table 24",1953,"San Francisco","Point Reyes Drakes Bay","Landings","Crab",479231,77204
+"FB 102","Table 24",1953,"San Francisco","Point Reyes Drakes Bay","Landings","Sole",288431,17392
+"FB 102","Table 24",1953,"San Francisco","Point Reyes Drakes Bay","Landings","Rockfish",461322,17069
+"FB 102","Table 24",1953,"San Francisco","Point Reyes Drakes Bay","Landings","All other species",195966,12554
+"FB 102","Table 24",1953,"San Francisco","Bodega Bay","Landings","Salmon",1110528,268081
+"FB 102","Table 24",1953,"San Francisco","Bodega Bay","Landings","Crab",647291,104279
+"FB 102","Table 24",1953,"San Francisco","Bodega Bay","Landings","Rockfish",1120563,41456
+"FB 102","Table 24",1953,"San Francisco","Bodega Bay","Landings","Sole",567662,34230
+"FB 102","Table 24",1953,"San Francisco","Bodega Bay","Landings","Albacore tuna",46923,9277
+"FB 102","Table 24",1953,"San Francisco","Bodega Bay","Landings","Smelt",96934,7454
+"FB 102","Table 24",1953,"San Francisco","Bodega Bay","Landings","All other species",230971,15489
+"FB 102","Table 24",1953,"San Francisco","Sausalito","Landings","Albacore tuna",923993,182673
+"FB 102","Table 24",1953,"San Francisco","Sausalito","Landings","Crab",58565,9435
+"FB 102","Table 24",1953,"San Francisco","Sausalito","Landings","All other species",15550,3746
+"FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","Pacific herring",2361803,38025
+"FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","Eastern oyster",129733,28360
+"FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","Giant Pacific oyster",99844,11442
+"FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","All other species",36340,5432
+"FB 102","Table 24",1953,"San Francisco","Princeton","Landings","Salmon",142565,38856
+"FB 102","Table 24",1953,"San Francisco","Princeton","Landings","Crab",109762,17683
+"FB 102","Table 24",1953,"San Francisco","Princeton","Landings","All other species",49206,5469
+"FB 102","Table 24",1953,"San Francisco","Oakland","Landings","Crab",105844,17051
+"FB 102","Table 24",1953,"San Francisco","Oakland","Landings","All other species",41443,3720
+"FB 102","Table 24",1953,"San Francisco","Berkeley","Landings","Crab",30856,4971
+"FB 102","Table 24",1953,"San Francisco","Berkeley","Landings","Salmon",18618,4494
+"FB 102","Table 24",1953,"San Francisco","Berkeley","Landings","All other species",5016,129
+"FB 102","Table 24",1953,"San Francisco","Richmond","Landings","Bay shrimp",132311,9354
+"FB 102","Table 24",1953,"San Francisco","Richmond","Landings","All other species",3205,167
+"FB 102","Table 24",1953,"San Francisco","All Other Ports","Landings","All other species",29957,2326
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Anchovy",12780443,273501
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Albacore tuna",991957,191732
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Rockfish",3477020,175242
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Skipjack",1229420,169294
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Yellowfin",646150,103255
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Salmon",343024,90318
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Squid",3219101,84340
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Jack mackerel",836718,36314
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Sole",407770,31480
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Sablefish",289766,13909
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","White croaker (kingfish)",143011,10826
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Pacific herring",314015,9797
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Sanddab",105308,7919
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Lingcod",67742,6117
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","All other species",181488,20458
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","Albacore tuna",1458274,279259
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","Pacific herring",2237750,69818
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","Salmon",194167,51124
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","Anchovy",906500,19399
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","Jack mackerel",298230,12943
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","Squid",288603,7561
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","White croaker (kingfish)",68201,5163
+"FB 102","Table 25",1953,"Monterey","Moss Landing","Landings","All other species",82908,6522
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Salmon",253779,66820
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Sole",759974,58670
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Rockfish",808002,40723
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Albacore tuna",149195,28571
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Sablefish",291495,13992
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Sanddab",171012,12860
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Smelt",117546,7723
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","White croaker (kingfish)",94633,7164
+"FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","All other species",365693,25641
+"FB 102","Table 25",1953,"Monterey","All Other Ports","Landings","All other species",21087,546
+"FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Anchovy",28251701,480279
+"FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Jack mackerel",7338595,253182
+"FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Sardine",576970,32195
+"FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Bluefin tuna",51931,8402
+"FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","All other species",197479,17077
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Abalone",1137956,129840
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Anchovy",6427875,109274
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Spiny lobster",251750,99290
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Jack mackerel",1280760,44186
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","California halibut",119115,28171
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Sardine",279309,15585
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","White seabass",55767,14884
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Sole",145129,12597
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Shark",84456,10219
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","Bluefin tuna",60712,9823
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","California barracuda",86032,6031
+"FB 102","Table 26",1953,"Santa Barbara","Santa Barbara","Landings","All other species",93512,9103
+"FB 102","Table 26",1953,"Santa Barbara","Morro Bay","Landings","Albacore tuna",907566,171076
+"FB 102","Table 26",1953,"Santa Barbara","Morro Bay","Landings","Sole",237627,20626
+"FB 102","Table 26",1953,"Santa Barbara","Morro Bay","Landings","Ocean shrimp",198505,19811
+"FB 102","Table 26",1953,"Santa Barbara","Morro Bay","Landings","Abalone",140371,16017
+"FB 102","Table 26",1953,"Santa Barbara","Morro Bay","Landings","Rockfish",124324,10116
+"FB 102","Table 26",1953,"Santa Barbara","Morro Bay","Landings","All other species",77678,6633
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","Albacore tuna",162367,30606
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","Salmon",76563,21384
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","Abalone",148382,16930
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","Sole",105454,9153
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","Sardine",116069,6477
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","Pacific herring",342625,6064
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","California halibut",23005,5441
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","Crab",24282,5034
+"FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","All other species",175060,10512
+"FB 102","Table 26",1953,"Santa Barbara","San Simeon","Landings","Abalone",126375,14419
+"FB 102","Table 26",1953,"Santa Barbara","Cayucos","Landings","Abalone",51800,5910
+"FB 102","Table 26",1953,"Santa Barbara","All Other Ports","Landings","All other species",20328,2291
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Yellowfin",90861864,14501314
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Skipjack",68460581,9395135
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Albacore tuna",40656544,7956254
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Jack mackerel",34231442,1225486
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Bluefin tuna",6372847,1014654
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Yellowtail",2294918,215263
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Bonito",2160487,210864
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Anchovy",8139168,179876
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Sardine",2453290,139592
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Pacific mackerel",2855967,128804
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Squid",3513950,73442
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","All other species",16225,1379
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Yellowfin",3205484,508898
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Skipjack",2882319,397264
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Albacore tuna",1560573,304976
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Anchovy",13100482,289521
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Jack mackerel",2768744,99121
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Pismo clam",4806768,80273
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Bluefin tuna",498017,79288
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Spiny lobster",87523,44847
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Sardine",667221,37965
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Squid",1572533,32866
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Pacific mackerel",462277,20849
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Bonito",176000,17178
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Yellowtail",113452,10642
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Rockfish",69360,8101
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","All other species",105564,14864
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","California barracuda",967557,181127
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Sardine",3020008,171838
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","White seabass",446785,135152
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Grouper",473893,104873
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Abalone",1176500,94120
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Bluefin tuna",537739,85608
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Cabrilla",401030,65408
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Black sea bass",334982,55406
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Spiny lobster",106170,54402
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Yellowfin",323631,51781
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Anchovy",1914392,42308
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Jack mackerel",911717,32639
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Rockfish",274849,32102
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","California halibut",112368,30328
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Perch",101973,18223
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Pacific mackerel",373638,16851
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Sculpin",68945,16761
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Yellowtail",160017,15010
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Albacore tuna",54727,10995
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Swordfish",18689,9001
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","White croaker (kingfish)",215611,8668
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Shark",51889,7488
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Smelt",88343,5186
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Squid",235628,4925
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","All other species",144615,17656
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Jack mackerel",7857298,281291
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Yellowfin",1572621,251619
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Anchovy",7289225,161092
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Skipjack",1044915,143362
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Bluefin tuna",717619,114245
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Sardine",952883,54219
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Pacific mackerel",776452,35018
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Albacore tuna",154370,31013
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","White croaker (kingfish)",392452,15777
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Pacific herring",160773,5627
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","All other species",55439,5154
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","Albacore tuna",811030,162936
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","Abalone",1650022,132013
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","Pacific mackerel",1671559,75387
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","Anchovy",2123190,46922
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","Swordfish",63191,30433
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","Spiny lobster",34881,17873
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","White seabass",26143,7908
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","Sardine",138800,7898
+"FB 102","Table 27",1953,"Los Angeles","Newport Beach","Landings","All other species",152092,13513
+"FB 102","Table 27",1953,"Los Angeles","Los Angeles","Landings","Salmon",620634,218339
+"FB 102","Table 27",1953,"Los Angeles","Los Angeles","Landings","Sablefish",244935,44505
+"FB 102","Table 27",1953,"Los Angeles","Los Angeles","Landings","Pismo clam",1510384,25223
+"FB 102","Table 27",1953,"Los Angeles","Los Angeles","Landings","All other species",285986,46210
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","Anchovy",1758584,38865
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","Sardine",616729,35092
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","Spiny lobster",65058,33336
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","Bluefin tuna",121852,19399
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","Rockfish",56785,6632
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","White croaker (kingfish)",146802,5901
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","White seabass",13063,3952
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","Jack mackerel",101399,3630
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","Albacore tuna",13398,2692
+"FB 102","Table 27",1953,"Los Angeles","Santa Monica","Landings","All other species",96621,8215
+"FB 102","Table 27",1953,"Los Angeles","Redondo Beach","Landings","Spiny lobster",16668,8541
+"FB 102","Table 27",1953,"Los Angeles","Redondo Beach","Landings","Rock crab",18504,2250
+"FB 102","Table 27",1953,"Los Angeles","Redondo Beach","Landings","All other species",46640,4390
+"FB 102","Table 27",1953,"Los Angeles","Avalon Catalina Island","Landings","Spiny lobster",15103,7739
+"FB 102","Table 27",1953,"Los Angeles","Avalon Catalina Island","Landings","Swordfish",3296,1587
+"FB 102","Table 27",1953,"Los Angeles","Avalon Catalina Island","Landings","All other species",28809,3394
+"FB 102","Table 27",1953,"Los Angeles","Dana Point","Landings","Spiny lobster",18516,9488
+"FB 102","Table 27",1953,"Los Angeles","Dana Point","Landings","All other species",17683,1752
+"FB 102","Table 27",1953,"Los Angeles","All Other Ports","Landings","Spiny lobster",11184,5731
+"FB 102","Table 27",1953,"Los Angeles","All Other Ports","Landings","All other species",47633,3585
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Skipjack",55893625,7737373
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Yellowfin",43561050,6948122
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Albacore tuna",24930051,5056305
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Yellowtail",2636601,248368
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Bluefin tuna",1474319,228962
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","White seabass",305838,73821
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Bonito",749499,73151
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Spiny lobster",114071,57400
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Pacific mackerel",1213786,45395
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","California barracuda",304010,45074
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","California halibut",207473,43914
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Sardine",646041,26681
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Swordfish",43411,19913
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Shark",140428,16669
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Abalone",132914,12933
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Black sea bass",71318,11603
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Jackknife clam",21447,8075
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Sculpin",40483,8012
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","All other species",166737,18174
+"FB 102","Table 28",1953,"San Diego","Encinitas","Landings","Spiny lobster",15406,7752
+"FB 102","Table 28",1953,"San Diego","Encinitas","Landings","White seabass",9078,2262
+"FB 102","Table 28",1953,"San Diego","Encinitas","Landings","All other species",12692,1738
+"FB 102","Table 28",1953,"San Diego","Mission Beach","Landings","Jackknife clam",25265,9512
+"FB 102","Table 28",1953,"San Diego","Oceanside","Landings","White seabass",16384,4083
+"FB 102","Table 28",1953,"San Diego","Oceanside","Landings","Spiny lobster",4551,2290
+"FB 102","Table 28",1953,"San Diego","Oceanside","Landings","All other species",18133,2683
+"FB 102","Table 28",1953,"San Diego","La Jolla","Landings","Spiny lobster",4458,2243
+"FB 102","Table 28",1953,"San Diego","La Jolla","Landings","All other species",5165,820
+"FB 102","Table 28",1953,"San Diego","All Other Ports","Landings","All other species",29324,1155
