@@ -88,13 +88,13 @@ data <- data_full %>%
   filter(!grepl("total", tolower(species)))
 
 # Inspect
-freeR::complete(data)
+freeR::complete(data_full)
 
 # Export data
 ################################################################################
 
 # Export data
-write.csv(data, file=file.path(outdir, "FB74_Tables62-68_1947_landings_by_port.csv"), row.names=F)
+write.csv(data_full, file=file.path(outdir, "FB74_Tables62-68_1947_landings_by_port.csv"), row.names=F)
 
 
 

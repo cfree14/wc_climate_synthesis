@@ -1,4 +1,5 @@
 "source","table","year","port_complex","port","type","species","landings_lb","value_usd"
+"FB 67","Table 10",1945,"Los Angeles","Los Angeles Region","Landings","Totals",531118017,15056900
 "FB 67","Table 10",1945,"Los Angeles","Terminal Island","Landings","Sardine",NA,2610000
 "FB 67","Table 10",1945,"Los Angeles","Terminal Island","Landings","Yellowfin tuna",NA,2185300
 "FB 67","Table 10",1945,"Los Angeles","Terminal Island","Landings","Bluefin tuna",NA,1197800
@@ -10,6 +11,7 @@
 "FB 67","Table 10",1945,"Los Angeles","Terminal Island","Landings","Jack mackerel",NA,77700
 "FB 67","Table 10",1945,"Los Angeles","Terminal Island","Landings","Yellowtail",NA,55800
 "FB 67","Table 10",1945,"Los Angeles","Terminal Island","Landings","All other species",NA,300
+"FB 67","Table 10",1945,"Los Angeles","Terminal Island","Landings","Totals",NA,8403400
 "FB 67","Table 10",1945,"Los Angeles","Long Beach","Landings","Pismo clam",NA,1255900
 "FB 67","Table 10",1945,"Los Angeles","Long Beach","Landings","Sardine",NA,806500
 "FB 67","Table 10",1945,"Los Angeles","Long Beach","Landings","Yellowfin tuna",NA,512700
@@ -21,6 +23,7 @@
 "FB 67","Table 10",1945,"Los Angeles","Long Beach","Landings","Shark",NA,7500
 "FB 67","Table 10",1945,"Los Angeles","Long Beach","Landings","Spiny lobster",NA,7000
 "FB 67","Table 10",1945,"Los Angeles","Long Beach","Landings","All other species",NA,5800
+"FB 67","Table 10",1945,"Los Angeles","Long Beach","Landings","Totals",NA,3249100
 "FB 67","Table 10",1945,"Los Angeles","Wilmington","Landings","Yellowfin tuna",NA,612600
 "FB 67","Table 10",1945,"Los Angeles","Wilmington","Landings","Sardine",NA,287000
 "FB 67","Table 10",1945,"Los Angeles","Wilmington","Landings","Bluefin tuna",NA,159700
@@ -30,6 +33,7 @@
 "FB 67","Table 10",1945,"Los Angeles","Wilmington","Landings","Jack mackerel",NA,16000
 "FB 67","Table 10",1945,"Los Angeles","Wilmington","Landings","Pacific mackerel",NA,9300
 "FB 67","Table 10",1945,"Los Angeles","Wilmington","Landings","All other species",NA,1500
+"FB 67","Table 10",1945,"Los Angeles","Wilmington","Landings","Totals",NA,1291500
 "FB 67","Table 10",1945,"Los Angeles","Newport Beach","Landings","Pacific mackerel",NA,313400
 "FB 67","Table 10",1945,"Los Angeles","Newport Beach","Landings","Shark",NA,236300
 "FB 67","Table 10",1945,"Los Angeles","Newport Beach","Landings","Albacore tuna",NA,121000
@@ -45,6 +49,7 @@
 "FB 67","Table 10",1945,"Los Angeles","Newport Beach","Landings","Spiny lobster",NA,3700
 "FB 67","Table 10",1945,"Los Angeles","Newport Beach","Landings","Skipjack tuna",NA,3700
 "FB 67","Table 10",1945,"Los Angeles","Newport Beach","Landings","All other species",NA,11500
+"FB 67","Table 10",1945,"Los Angeles","Newport Beach","Landings","Totals",NA,831000
 "FB 67","Table 10",1945,"Los Angeles","San Pedro","Landings","Barracuda",NA,250100
 "FB 67","Table 10",1945,"Los Angeles","San Pedro","Landings","Yellowtail",NA,79800
 "FB 67","Table 10",1945,"Los Angeles","San Pedro","Landings","Shark",NA,71400
@@ -66,6 +71,7 @@
 "FB 67","Table 10",1945,"Los Angeles","San Pedro","Landings","Perch",NA,4300
 "FB 67","Table 10",1945,"Los Angeles","San Pedro","Landings","Sheepshead",NA,3700
 "FB 67","Table 10",1945,"Los Angeles","San Pedro","Landings","All other species",NA,17400
+"FB 67","Table 10",1945,"Los Angeles","San Pedro","Landings","Totals",NA,723500
 "FB 67","Table 10",1945,"Los Angeles","Santa Monica","Landings","Pacific mackerel",NA,273000
 "FB 67","Table 10",1945,"Los Angeles","Santa Monica","Landings","Shark",NA,95100
 "FB 67","Table 10",1945,"Los Angeles","Santa Monica","Landings","Albacore tuna",NA,21800
@@ -74,14 +80,19 @@
 "FB 67","Table 10",1945,"Los Angeles","Santa Monica","Landings","California halibut",NA,8400
 "FB 67","Table 10",1945,"Los Angeles","Santa Monica","Landings","Anchovy",NA,3500
 "FB 67","Table 10",1945,"Los Angeles","Santa Monica","Landings","All other species",NA,17600
+"FB 67","Table 10",1945,"Los Angeles","Santa Monica","Landings","Totals",NA,447600
 "FB 67","Table 10",1945,"Los Angeles","Redondo Beach","Landings","Pacific mackerel",NA,39800
 "FB 67","Table 10",1945,"Los Angeles","Redondo Beach","Landings","Barracuda",NA,1600
 "FB 67","Table 10",1945,"Los Angeles","Redondo Beach","Landings","Spiny lobster",NA,1600
 "FB 67","Table 10",1945,"Los Angeles","Redondo Beach","Landings","All other species",NA,3600
+"FB 67","Table 10",1945,"Los Angeles","Redondo Beach","Landings","Totals",NA,46600
 "FB 67","Table 10",1945,"Los Angeles","Avalon","Landings","Broadbill swordfish",NA,16900
 "FB 67","Table 10",1945,"Los Angeles","Avalon","Landings","Spiny lobster",NA,1600
 "FB 67","Table 10",1945,"Los Angeles","Avalon","Landings","All other species",NA,4500
+"FB 67","Table 10",1945,"Los Angeles","Avalon","Landings","Totals",NA,23000
 "FB 67","Table 10",1945,"Los Angeles","All Other Ports","Landings","All species",NA,41200
+"FB 67","Table 10",1945,"Los Angeles","All Other Ports","Landings","Totals",NA,41200
+"FB 67","Table 11",1945,"San Diego","San Diego Region","Landings","Totals",11265800,105871620
 "FB 67","Table 11",1945,"San Diego","San Diego","Landings","Yellowfin tuna",NA,4600000
 "FB 67","Table 11",1945,"San Diego","San Diego","Landings","Albacore tuna",NA,1999500
 "FB 67","Table 11",1945,"San Diego","San Diego","Landings","Skipjack tuna",NA,1786400
@@ -105,6 +116,7 @@
 "FB 67","Table 11",1945,"San Diego","San Diego","Landings","Abalone",NA,4200
 "FB 67","Table 11",1945,"San Diego","San Diego","Landings","Rockfish",NA,3900
 "FB 67","Table 11",1945,"San Diego","San Diego","Landings","All other species",NA,6200
+"FB 67","Table 11",1945,"San Diego","San Diego","Landings","Totals",NA,9426500
 "FB 67","Table 11",1945,"San Diego","Point Loma","Landings","Yellowfin tuna",NA,804600
 "FB 67","Table 11",1945,"San Diego","Point Loma","Landings","Albacore tuna",NA,570800
 "FB 67","Table 11",1945,"San Diego","Point Loma","Landings","Skipjack tuna",NA,376500
@@ -112,10 +124,14 @@
 "FB 67","Table 11",1945,"San Diego","Point Loma","Landings","Yellowtail",NA,15800
 "FB 67","Table 11",1945,"San Diego","Point Loma","Landings","Bonito tuna",NA,13800
 "FB 67","Table 11",1945,"San Diego","Point Loma","Landings","Sardine",NA,9900
+"FB 67","Table 11",1945,"San Diego","Point Loma","Landings","Totals",NA,1822800
 "FB 67","Table 11",1945,"San Diego","La Jolla","Landings","Spiny lobster",NA,7000
 "FB 67","Table 11",1945,"San Diego","La Jolla","Landings","Rock bass",NA,1500
 "FB 67","Table 11",1945,"San Diego","La Jolla","Landings","All other species",NA,2300
+"FB 67","Table 11",1945,"San Diego","La Jolla","Landings","Totals",NA,10800
 "FB 67","Table 11",1945,"San Diego","All Other Ports","Landings","All species",NA,5700
+"FB 67","Table 11",1945,"San Diego","All Other Ports","Landings","Totals",NA,5700
+"FB 67","Table 5",1945,"Eureka","Eureka Region","Landings","Totals",2376000,28753877
 "FB 67","Table 5",1945,"Eureka","Eureka","Landings","Rockfish",NA,419900
 "FB 67","Table 5",1945,"Eureka","Eureka","Landings","Sablefish",NA,221200
 "FB 67","Table 5",1945,"Eureka","Eureka","Landings","Salmon",NA,204700
@@ -128,6 +144,7 @@
 "FB 67","Table 5",1945,"Eureka","Eureka","Landings","Whitebait",NA,11000
 "FB 67","Table 5",1945,"Eureka","Eureka","Landings","Sanddab",NA,6300
 "FB 67","Table 5",1945,"Eureka","Eureka","Landings","All other species",NA,26300
+"FB 67","Table 5",1945,"Eureka","Eureka","Landings","Totals",NA,1355800
 "FB 67","Table 5",1945,"Eureka","Fort Bragg","Landings","Salmon",NA,556300
 "FB 67","Table 5",1945,"Eureka","Fort Bragg","Landings","Rockfish",NA,83400
 "FB 67","Table 5",1945,"Eureka","Fort Bragg","Landings","Sablefish",NA,50800
@@ -136,44 +153,60 @@
 "FB 67","Table 5",1945,"Eureka","Fort Bragg","Landings","Shark",NA,7100
 "FB 67","Table 5",1945,"Eureka","Fort Bragg","Landings","Crab",NA,5700
 "FB 67","Table 5",1945,"Eureka","Fort Bragg","Landings","All other species",NA,15500
+"FB 67","Table 5",1945,"Eureka","Fort Bragg","Landings","Totals",NA,751900
 "FB 67","Table 5",1945,"Eureka","Crescent City","Landings","Salmon",NA,102400
 "FB 67","Table 5",1945,"Eureka","Crescent City","Landings","Crab",NA,91000
 "FB 67","Table 5",1945,"Eureka","Crescent City","Landings","Sablefish",NA,9100
 "FB 67","Table 5",1945,"Eureka","Crescent City","Landings","Whitebait",NA,5100
 "FB 67","Table 5",1945,"Eureka","Crescent City","Landings","Pacific cultus",NA,3500
 "FB 67","Table 5",1945,"Eureka","Crescent City","Landings","All other species",NA,8000
+"FB 67","Table 5",1945,"Eureka","Crescent City","Landings","Totals",NA,219100
 "FB 67","Table 5",1945,"Eureka","Fields Landing","Landings","Sablefish",NA,14800
 "FB 67","Table 5",1945,"Eureka","Fields Landing","Landings","Rockfish",NA,9200
 "FB 67","Table 5",1945,"Eureka","Fields Landing","Landings","Sole",NA,5200
 "FB 67","Table 5",1945,"Eureka","Fields Landing","Landings","Crab",NA,4300
 "FB 67","Table 5",1945,"Eureka","Fields Landing","Landings","All other species",NA,4000
+"FB 67","Table 5",1945,"Eureka","Fields Landing","Landings","Totals",NA,37500
 "FB 67","Table 5",1945,"Eureka","Areata","Landings","Whitebait",NA,4300
 "FB 67","Table 5",1945,"Eureka","Areata","Landings","Smelt",NA,1700
+"FB 67","Table 5",1945,"Eureka","Areata","Landings","Totals",NA,6000
 "FB 67","Table 5",1945,"Eureka","Point Arena","Landings","Salmon",NA,3900
 "FB 67","Table 5",1945,"Eureka","Point Arena","Landings","Pacific cultus",NA,1000
+"FB 67","Table 5",1945,"Eureka","Point Arena","Landings","Totals",NA,4900
 "FB 67","Table 5",1945,"Eureka","Trinidad","Landings","All species",NA,800
+"FB 67","Table 5",1945,"Eureka","Trinidad","Landings","Totals",NA,800
+"FB 67","Table 6",1945,"Sacramento Delta","Sacramento Region","Landings","Totals",43243863,1355700
 "FB 67","Table 6",1945,"Sacramento Delta","Pittsburg","Landings","Salmon",NA,484100
 "FB 67","Table 6",1945,"Sacramento Delta","Pittsburg","Landings","Catfish",NA,72900
 "FB 67","Table 6",1945,"Sacramento Delta","Pittsburg","Landings","Shad",NA,61000
 "FB 67","Table 6",1945,"Sacramento Delta","Pittsburg","Landings","Sardine",NA,21200
 "FB 67","Table 6",1945,"Sacramento Delta","Pittsburg","Landings","All other species",NA,1100
+"FB 67","Table 6",1945,"Sacramento Delta","Pittsburg","Landings","Totals",NA,640300
 "FB 67","Table 6",1945,"Sacramento Delta","Benicia","Landings","Sardine",NA,256100
+"FB 67","Table 6",1945,"Sacramento Delta","Benicia","Landings","Totals",NA,256100
 "FB 67","Table 6",1945,"Sacramento Delta","Martinez","Landings","Salmon",NA,171200
 "FB 67","Table 6",1945,"Sacramento Delta","Martinez","Landings","Sardine",NA,38200
 "FB 67","Table 6",1945,"Sacramento Delta","Martinez","Landings","Shad",NA,7500
 "FB 67","Table 6",1945,"Sacramento Delta","Martinez","Landings","All other species",NA,300
+"FB 67","Table 6",1945,"Sacramento Delta","Martinez","Landings","Totals",NA,217200
 "FB 67","Table 6",1945,"Sacramento Delta","Port Chicago","Landings","Sardine",NA,80600
+"FB 67","Table 6",1945,"Sacramento Delta","Port Chicago","Landings","Totals",NA,80600
 "FB 67","Table 6",1945,"Sacramento Delta","Collinsville","Landings","Salmon",NA,67900
 "FB 67","Table 6",1945,"Sacramento Delta","Collinsville","Landings","Catfish",NA,3200
 "FB 67","Table 6",1945,"Sacramento Delta","Collinsville","Landings","All other species",NA,1500
+"FB 67","Table 6",1945,"Sacramento Delta","Collinsville","Landings","Totals",NA,72600
 "FB 67","Table 6",1945,"Sacramento Delta","Sacramento","Landings","Salmon",NA,53900
 "FB 67","Table 6",1945,"Sacramento Delta","Sacramento","Landings","Catfish",NA,10000
 "FB 67","Table 6",1945,"Sacramento Delta","Sacramento","Landings","Shad",NA,1900
 "FB 67","Table 6",1945,"Sacramento Delta","Sacramento","Landings","All other species",NA,400
+"FB 67","Table 6",1945,"Sacramento Delta","Sacramento","Landings","Totals",NA,66200
 "FB 67","Table 6",1945,"Sacramento Delta","Stockton","Landings","Catfish",NA,16700
 "FB 67","Table 6",1945,"Sacramento Delta","Stockton","Landings","Salmon",NA,4100
 "FB 67","Table 6",1945,"Sacramento Delta","Stockton","Landings","All other species",NA,100
+"FB 67","Table 6",1945,"Sacramento Delta","Stockton","Landings","Totals",NA,20900
 "FB 67","Table 6",1945,"Sacramento Delta","All Other Ports","Landings","All species",NA,1800
+"FB 67","Table 6",1945,"Sacramento Delta","All Other Ports","Landings","Totals",NA,1800
+"FB 67","Table 7",1945,"San Francisco","San Francisco Region","Landings","Totals",161937333,3270300
 "FB 67","Table 7",1945,"San Francisco","San Francisco","Landings","Sardine",NA,603500
 "FB 67","Table 7",1945,"San Francisco","San Francisco","Landings","Shark",NA,341200
 "FB 67","Table 7",1945,"San Francisco","San Francisco","Landings","Crab",NA,183000
@@ -189,8 +222,10 @@
 "FB 67","Table 7",1945,"San Francisco","San Francisco","Landings","Pacific herring",NA,5400
 "FB 67","Table 7",1945,"San Francisco","San Francisco","Landings","Sablefish",NA,5100
 "FB 67","Table 7",1945,"San Francisco","San Francisco","Landings","All other species",NA,26100
+"FB 67","Table 7",1945,"San Francisco","San Francisco","Landings","Totals",NA,1400600
 "FB 67","Table 7",1945,"San Francisco","Richmond","Landings","Sardine",NA,919000
 "FB 67","Table 7",1945,"San Francisco","Richmond","Landings","Shrimp",NA,5800
+"FB 67","Table 7",1945,"San Francisco","Richmond","Landings","Totals",NA,924800
 "FB 67","Table 7",1945,"San Francisco","Bay Bodega","Landings","Salmon",NA,154400
 "FB 67","Table 7",1945,"San Francisco","Bay Bodega","Landings","Shark",NA,81300
 "FB 67","Table 7",1945,"San Francisco","Bay Bodega","Landings","Crab",NA,73600
@@ -198,23 +233,31 @@
 "FB 67","Table 7",1945,"San Francisco","Bay Bodega","Landings","Abalone",NA,31100
 "FB 67","Table 7",1945,"San Francisco","Bay Bodega","Landings","Sanddab",NA,3600
 "FB 67","Table 7",1945,"San Francisco","Bay Bodega","Landings","All other species",NA,15700
+"FB 67","Table 7",1945,"San Francisco","Bay Bodega","Landings","Totals",NA,394800
 "FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","Salmon",NA,194600
 "FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","Crab",NA,79100
 "FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","Eastern oyster",NA,8500
 "FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","Abalone",NA,4900
 "FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","Sablefish",NA,4900
-"FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","All other species",NA,106
+"FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","All other species",NA,10600
+"FB 67","Table 7",1945,"San Francisco","Point Reyes","Landings","Totals",NA,302600
 "FB 67","Table 7",1945,"San Francisco","Mcnears Point","Landings","Sardine",NA,117600
 "FB 67","Table 7",1945,"San Francisco","Mcnears Point","Landings","Shrimp",NA,1300
+"FB 67","Table 7",1945,"San Francisco","Mcnears Point","Landings","Totals",NA,118900
 "FB 67","Table 7",1945,"San Francisco","Princetonbythesea","Landings","Salmon",NA,52900
 "FB 67","Table 7",1945,"San Francisco","Princetonbythesea","Landings","Crab",NA,20400
 "FB 67","Table 7",1945,"San Francisco","Princetonbythesea","Landings","Sardine",NA,17800
 "FB 67","Table 7",1945,"San Francisco","Princetonbythesea","Landings","Abalone",NA,4100
 "FB 67","Table 7",1945,"San Francisco","Princetonbythesea","Landings","All other species",NA,2800
+"FB 67","Table 7",1945,"San Francisco","Princetonbythesea","Landings","Totals",NA,98000
 "FB 67","Table 7",1945,"San Francisco","Oakland","Landings","Crab",NA,14400
 "FB 67","Table 7",1945,"San Francisco","Oakland","Landings","All other species",NA,100
+"FB 67","Table 7",1945,"San Francisco","Oakland","Landings","Totals",NA,14500
 "FB 67","Table 7",1945,"San Francisco","Tomales Bay","Landings","Pacific oyster",NA,5500
+"FB 67","Table 7",1945,"San Francisco","Tomales Bay","Landings","Totals",NA,5500
 "FB 67","Table 7",1945,"San Francisco","All Other Ports","Landings","All species",NA,10600
+"FB 67","Table 7",1945,"San Francisco","All Other Ports","Landings","Totals",NA,10600
+"FB 67","Table 8",1945,"Monterey","Monterey Region","Landings","Totals",339566856,4639600
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","Sardine",NA,3163300
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","Squid",NA,415600
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","Rockfish",NA,55900
@@ -226,9 +269,10 @@
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","Smelt",NA,14300
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","Kingfish",NA,11500
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","Jack mackerel",NA,10200
-"FB 67","Table 8",1945,"Monterey","Monterey","Landings","Sole",NA,85
+"FB 67","Table 8",1945,"Monterey","Monterey","Landings","Sole",NA,8500
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","Shark",NA,6200
 "FB 67","Table 8",1945,"Monterey","Monterey","Landings","All other species",NA,15600
+"FB 67","Table 8",1945,"Monterey","Monterey","Landings","Totals",NA,3849900
 "FB 67","Table 8",1945,"Monterey","Santa Cruz","Landings","Sablefish",NA,186300
 "FB 67","Table 8",1945,"Monterey","Santa Cruz","Landings","Salmon",NA,99900
 "FB 67","Table 8",1945,"Monterey","Santa Cruz","Landings","Albacore tuna",NA,26100
@@ -239,11 +283,15 @@
 "FB 67","Table 8",1945,"Monterey","Santa Cruz","Landings","Sanddab",NA,5000
 "FB 67","Table 8",1945,"Monterey","Santa Cruz","Landings","Crab",NA,4700
 "FB 67","Table 8",1945,"Monterey","Santa Cruz","Landings","All other species",NA,9700
+"FB 67","Table 8",1945,"Monterey","Santa Cruz","Landings","Totals",NA,388500
 "FB 67","Table 8",1945,"Monterey","Moss Landing","Landings","Sardine",NA,389700
 "FB 67","Table 8",1945,"Monterey","Moss Landing","Landings","Squid",NA,8300
 "FB 67","Table 8",1945,"Monterey","Moss Landing","Landings","Crab",NA,2100
 "FB 67","Table 8",1945,"Monterey","Moss Landing","Landings","All other species",NA,800
+"FB 67","Table 8",1945,"Monterey","Moss Landing","Landings","Totals",NA,400900
 "FB 67","Table 8",1945,"Monterey","Capitola","Landings","All species",NA,300
+"FB 67","Table 8",1945,"Monterey","Capitola","Landings","Totals",NA,300
+"FB 67","Table 9",1945,"Santa Barbara","Santa Barbara Region","Landings","Totals",5468016,705700
 "FB 67","Table 9",1945,"Santa Barbara","Santa Barbara","Landings","Albacore tuna",NA,137300
 "FB 67","Table 9",1945,"Santa Barbara","Santa Barbara","Landings","California halibut",NA,117700
 "FB 67","Table 9",1945,"Santa Barbara","Santa Barbara","Landings","Abalone",NA,108400
@@ -257,26 +305,34 @@
 "FB 67","Table 9",1945,"Santa Barbara","Santa Barbara","Landings","White seabass",NA,5900
 "FB 67","Table 9",1945,"Santa Barbara","Santa Barbara","Landings","Ocean whitefish",NA,4000
 "FB 67","Table 9",1945,"Santa Barbara","Santa Barbara","Landings","All other species",NA,14000
+"FB 67","Table 9",1945,"Santa Barbara","Santa Barbara","Landings","Totals",NA,522300
 "FB 67","Table 9",1945,"Santa Barbara","Morro Bay","Landings","Abalone",NA,61500
 "FB 67","Table 9",1945,"Santa Barbara","Morro Bay","Landings","Pacific oyster",NA,11800
 "FB 67","Table 9",1945,"Santa Barbara","Morro Bay","Landings","All other species",NA,1200
+"FB 67","Table 9",1945,"Santa Barbara","Morro Bay","Landings","Totals",NA,74500
 "FB 67","Table 9",1945,"Santa Barbara","Avila","Landings","Shark",NA,15600
 "FB 67","Table 9",1945,"Santa Barbara","Avila","Landings","California halibut",NA,9200
 "FB 67","Table 9",1945,"Santa Barbara","Avila","Landings","White seabass",NA,7100
 "FB 67","Table 9",1945,"Santa Barbara","Avila","Landings","Abalone",NA,2900
 "FB 67","Table 9",1945,"Santa Barbara","Avila","Landings","All other species",NA,7500
+"FB 67","Table 9",1945,"Santa Barbara","Avila","Landings","Totals",NA,42300
 "FB 67","Table 9",1945,"Santa Barbara","San Luis Obispo","Landings","California halibut",NA,7800
 "FB 67","Table 9",1945,"Santa Barbara","San Luis Obispo","Landings","Abalone",NA,6400
 "FB 67","Table 9",1945,"Santa Barbara","San Luis Obispo","Landings","Salmon",NA,6000
 "FB 67","Table 9",1945,"Santa Barbara","San Luis Obispo","Landings","Shark",NA,3500
 "FB 67","Table 9",1945,"Santa Barbara","San Luis Obispo","Landings","Sole",NA,2700
 "FB 67","Table 9",1945,"Santa Barbara","San Luis Obispo","Landings","All other species",NA,4800
+"FB 67","Table 9",1945,"Santa Barbara","San Luis Obispo","Landings","Totals",NA,31200
 "FB 67","Table 9",1945,"Santa Barbara","Shell Beach","Landings","White seabass",NA,8900
 "FB 67","Table 9",1945,"Santa Barbara","Shell Beach","Landings","California halibut",NA,2800
 "FB 67","Table 9",1945,"Santa Barbara","Shell Beach","Landings","Shark",NA,2700
 "FB 67","Table 9",1945,"Santa Barbara","Shell Beach","Landings","All other species",NA,2500
+"FB 67","Table 9",1945,"Santa Barbara","Shell Beach","Landings","Totals",NA,16900
 "FB 67","Table 9",1945,"Santa Barbara","Cambria","Landings","Abalone",NA,15100
+"FB 67","Table 9",1945,"Santa Barbara","Cambria","Landings","Totals",NA,15100
 "FB 67","Table 9",1945,"Santa Barbara","Pismo Beach","Landings","Pismo clam",NA,1900
 "FB 67","Table 9",1945,"Santa Barbara","Pismo Beach","Landings","California halibut",NA,1000
 "FB 67","Table 9",1945,"Santa Barbara","Pismo Beach","Landings","All other species",NA,400
+"FB 67","Table 9",1945,"Santa Barbara","Pismo Beach","Landings","Totals",NA,3300
 "FB 67","Table 9",1945,"Santa Barbara","All Other Ports","Landings","All species",NA,100
+"FB 67","Table 9",1945,"Santa Barbara","All Other Ports","Landings","Totals",NA,100

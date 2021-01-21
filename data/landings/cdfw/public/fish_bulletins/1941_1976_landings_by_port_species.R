@@ -23,7 +23,7 @@ fbs <- c(170, 168, 166, 163, 161, 159, 154, 153, 149, 144, 138, 135, 132, 129, 1
 data_orig <- purrr::map_df(fbs, function(x){
   
   # Find files
-  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw/", paste0("fb", x), "processed")
+  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", paste0("fb", x), "processed")
   infiles <- list.files(indir, pattern="landings_by_port")
   
   # Read and merge data
@@ -51,7 +51,12 @@ table(data_orig$port)
 table(data_orig$type)
 
 # Format data
-data <- data_orig %>% 
+data_full <- data_orig %>% 
+  # Correct a few species names
+  mutate(species=recode(species, 
+                        "Total"="Totals",
+                        'Jacknife clam'='Jackknife clam', 
+                        'Pacific Ocean shrimp'='Pacific ocean shrimp')) %>% 
   # Fix port spellings
   rename(port_orig=port) %>% 
   mutate(port_orig=recode(port_orig, 
@@ -67,7 +72,7 @@ data <- data_orig %>%
                           "Mcrro Bay"="Morro Bay",
                           "Oxnard And Ventura"="Oxnard/Ventura",
                           "Playa Del Ray"="Playa Del Rey",
-                          "Point Reyes Drakes Bay"="Point Reyes (Drakes Bay)",
+                          "Point Reyes Drakes Bay"="Point Reyes/Drakes Bay",
                           "Unknown Spelling Error"="Unknown (spelling error)",
                           # Princeton
                           "Halfmoon Bay"="Half Moon Bay",
@@ -95,8 +100,6 @@ data <- data_orig %>%
                      "San Clemente"="San Clemente Island",
                      "Morro"="Morro Bay",
                      "Pismo"="Pismo Beach",
-                     "Point Reyes"="Point Reyes (Drakes Bay)",
-                     "Drakes Bay"="Point Reyes (Drakes Bay)",
                      # Avalon (Catalina Island)
                      "Avalon"="Avalon (Catalina Island)",
                      "Catalina Island"="Avalon (Catalina Island)",
@@ -115,28 +118,31 @@ data <- data_orig %>%
   arrange(year, source, table, port_complex, port, type, species)
 
 # Inspect
-str(data)
-freeR::complete(data)
-range(data$year)
-table(data$year)
-table(data$source)
-table(data$table)
-table(data$port_complex)
-table(data$port_orig)
-table(data$port)
-table(data$year)
-table(data$type)
+str(data_full)
+freeR::complete(data_full)
+range(data_full$year)
+table(data_full$year)
+table(data_full$source)
+table(data_full$table)
+table(data_full$port_complex)
+table(data_full$port_orig)
+table(data_full$port)
+table(data_full$year)
+table(data_full$type)
 
-# Inspect names
-# names2check <- data$species[!grepl("total", tolower(data$species))]
-# wcfish::check_names(names2check)
+# Inspect common names
+names2check <- data_full$species[!grepl("total", tolower(data_full$species))]
+wcfish::check_names(names2check)
 
 
 # Inspect coverage
 ################################################################################
 
 # Coverage
-coverage <- data %>% 
+coverage <- data_full %>% 
+  # Remove totals
+  filter(species!="Totals") %>% 
+  # Summarize
   group_by(port_complex, port, year) %>% 
   summarize(landings_lb=sum(landings_lb))
 
@@ -151,6 +157,58 @@ g <- ggplot(coverage, aes(x=year, y=port)) +
   theme_bw() +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 g
+
+
+# QA/QC checks
+################################################################################
+
+# Observed totals should match reported totals
+# No species should occur twice in a port-year
+
+# Calculate observed totals
+tot_obs <- data_full %>% 
+  # Remove totals
+  filter(species!="Totals") %>% 
+  # Calculate totals
+  group_by(port_complex, port, year) %>% 
+  summarize(value_tot_obs=sum(value_usd, na.rm=T),
+            landings_tot_obs=sum(landings_lb, na.rm=T)) %>% 
+  ungroup()
+
+# Extract reported totals
+tot_rep <- data_full %>% 
+  # Extract totals
+  filter(species=="Totals") %>% 
+  # Simplify
+  select(port_complex, port, year, value_usd, landings_lb) %>% 
+  # Rename
+  rename(value_tot_rep=value_usd, landings_tot_rep=landings_lb)
+
+# Merge
+tots <- tot_obs %>% 
+  # Add reported
+  left_join(tot_rep) %>%
+  # Calculate comparison
+  mutate(value_tot_diff = value_tot_obs - value_tot_rep,
+         landings_tot_diff = landings_tot_obs - landings_tot_rep)
+
+# Plot coverage
+g <- ggplot(tots, aes(x=year, y=port, fill=value_tot_diff)) +
+  facet_grid(port_complex~., scales="free_y", space="free_y") +
+  geom_tile() +
+  # Labels
+  labs(x="Year", y="") +
+  scale_x_continuous(breaks=seq(1940,1980,5)) +
+  # Legend
+  scale_fill_gradient2(name="Difference in\nobserved and reported values",
+                       low="darkred", high="navy", mid="grey80", midpoint=0, na.value = "grey50") +
+  guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
+  # Theme
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "bottom")
+g
+  
 
 
 # Export data

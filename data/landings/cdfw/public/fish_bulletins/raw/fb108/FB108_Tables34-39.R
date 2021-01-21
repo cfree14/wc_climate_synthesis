@@ -76,76 +76,32 @@ data_full <- data_orig %>%
   mutate(species=gsub("[[:punct:]]", "", species),
          species=stringr::str_trim(species),
          species=recode(species, 
-                        'A Ilia core'='Albacore tuna', 
-                        'Abalniir'='Abalone', 
                         'Abalonc'='Abalone', 
-                        'AH other'='All other', 
                         'Albacorc'='Albacore tuna', 
                         'Albacore'='Albacore tuna', 
-                        # 'Alhaeorr'='NA', 
-                        'alifornia barracuda'='California barracuda', 
                         'All other'='All other species', 
-                        'All othrr'='All other species', 
-                        # 'Alliaroro'='NA', 
                         'Allother'='All other species', 
-                        # 'Alltacore'='NA', 
-                        'Anehovv'='Anchovy', 
                         'Bigeyc tuna'='Bigeye tuna', 
-                        'California ponipaio'='California pompano', 
                         'Caligorna halibut'='California halibut', 
                         'Ciant IVific oyster'='Giant Pacific oyster', 
-                        'Crab   i'='Crab', 
-                        'ellnwfin tuna'='Yellowfin tuna', 
-                        'English sie'='English sole', 
-                        'Hex sole'='Rex sole',
-                        'Hock fish'='Rockfish', 
+                        'Hex sole'='Rex sole', 
                         'iant Pacific oyster'='Giant Pacific oyster', 
-                        'Ietrale sole    1'='Petrale sole', 
-                        'IHuefin tuna'='Bluefin tuna', 
-                        # 'Ii ircikJ'='NA', 
-                        'iiant Pacific oyster'='Giant Pacific oyster', 
-                        # 'Iingcixl'='NA',
                         'Iingcod'='Lingcod', 
-                        # 'Ilex Wile'='NA', 
-                        # 'ItiMkfish'='NA', 
-                        # 'itoekfhh'='NA', 
-                        'Jack mackrn 1'='Jack mackerel', 
-                        'Jack marker 1'='Jack mackerel', 
                         'Jiant Pacific oyster'='Giant Pacific oyster', 
-                        'Kastern oyster'='Eastern oyster', 
-                        'Kockfish'='Arrowtooth rockfish', 
-                        # 'Ktitllish sole'='NA', 
-                        # 'Kuckfish'='NA', 
-                        # 'l Mk fish'='NA', 
-                        # 'lb x sole'='NA', 
-                        # 'liligeod'='NA', 
+                        'Kockfish'='Rockfish', 
                         'lingcod'='Lingcod', 
                         'lingeod'='Lingcod', 
                         'lingrod'='Lingcod', 
-                        # 'Mother'='All other species', 
+                        'OCean shrimp'='Ocean shrimp', 
                         'Packific mackerel'='Pacific mackerel', 
-                        'Pctralc sole'='Petrale sole', 
-                        # 'Publish sole'='NA', 
-                        'rab'='Crab', 
-                        'rib'='Crab', 
                         'Rock fish'='Rockfish', 
-                        'Rockfbh'='Rockfish', 
-                        # 'Ron i to'='NA',
-                        # 'S dmon'='NA', 
-                        # 'S inline'='NA', 
                         'Sable fish'='Sablefish', 
                         'Spinv lolnster'='Spiny lobster', 
-                        'Spiny lolwter'='Spiny lobster', 
-                        'Spiny lolxster'='Spiny lobster', 
-                        'SworJIisli'='Swordfish', 
-                        'Tot ib'='Totals', 
                         'Totab'='Totals', 
-                        'Vcllnwfin tuna'='Yellowfin tuna', 
-                        'W hitc scabaiv'='White seabass', 
-                        'Wan shrimp'='Ocean shrimp', 
                         'White scabiss'='White seabass', 
                         'White sea bass'='White seabass', 
-                        'White seabadd'='White seabass'))
+                        'White seabadd'='White seabass', 
+                        'Yellnwfin tuna'='Yellowfin tuna'))
 
 # Inspect data
 str(data_full)
@@ -168,13 +124,13 @@ data <- data_full %>%
   filter(!grepl("total", tolower(species)))
 
 # Inspect
-freeR::complete(data)
+freeR::complete(data_full)
 
 # Export data
 ################################################################################
 
 # Export data
-write.csv(data, file=file.path(outdir, "FB108_Tables34-39_1958_landings_by_port.csv"), row.names=F)
+write.csv(data_f, file=file.path(outdir, "FB108_Tables34-39_1958_landings_by_port.csv"), row.names=F)
 
 
 

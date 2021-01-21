@@ -71,7 +71,6 @@ data_full <- data_orig %>%
                         'Kingfish'='Flyingfish', 
                         'Sabefish'='Sablefish', 
                         'Sand dab'='Sanddab', 
-                        'Sheepshead'='NA', 
                         'Solo'='Sole', 
                         'Ycllowtail'='Yellowtail'))
 
@@ -96,13 +95,13 @@ data <- data_full %>%
   filter(!grepl("total", tolower(species)))
 
 # Inspect
-freeR::complete(data)
+freeR::complete(data_full)
 
 # Export data
 ################################################################################
 
 # Export data
-write.csv(data, file=file.path(outdir, "FB63_Tables5-18_1943-1944_landings_by_port.csv"), row.names=F)
+write.csv(data_full, file=file.path(outdir, "FB63_Tables5-18_1943-1944_landings_by_port.csv"), row.names=F)
 
 
 

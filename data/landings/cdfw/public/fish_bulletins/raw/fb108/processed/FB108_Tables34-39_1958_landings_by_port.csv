@@ -36,8 +36,8 @@
 "FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Petrale sole",91045,856493
 "FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","English sole",90898,1289336
 "FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Crab",61394,547029
-"FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Arrowtooth rockfish",51164,1291849
-"FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","lb x sole",17881,303073
+"FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Rockfish",51164,1291849
+"FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Rex sole",17881,303073
 "FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Hake",16762,957818
 "FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Lingcod",11931,186423
 "FB 108","Table 34",1958,"Eureka","Fields Landing","Landings","Sablefish",10351,151109
@@ -51,9 +51,9 @@
 "FB 108","Table 34",1958,"Eureka","Point Arena","Landings","All other species",294,2627
 "FB 108","Table 34",1958,"Eureka","All Other Ports","Landings","All other species",931,14044
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Yellowfin tuna",1706500,12742442
-"FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Alliaroro",1073221,6443821
+"FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Albacore tuna",1073221,6443821
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Crab",572334,4496665
-"FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","l Mk fish",127515,3198188
+"FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Rockfish",127515,3198188
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Skipjack",82269,655820
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Salmon",71149,159994
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Petrale sole",57686,558009
@@ -62,14 +62,14 @@
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","English sole",28318,454910
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Sablefish",13820,399508
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Rex sole",12894,228661
-"FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Iingcixl",11775,202194
+"FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Lingcod",11775,202194
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","Sanddab",7907,138039
 "FB 108","Table 35",1958,"San Francisco","San Francisco","Landings","All other species",25986,696234
 "FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Salmon",449135,1009973
 "FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Crab",172082,1351781
-"FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Publish sole",42342,680757
+"FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","English sole",42342,680757
 "FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Albacore tuna",17444,88190
-"FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Kuckfish",14972,342839
+"FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Rockfish",14972,342839
 "FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Ocean shrimp",13917,163734
 "FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Petrale sole",8385,81093
 "FB 108","Table 35",1958,"San Francisco","Bodega Bay","Landings","Lingcod",6723,114535
@@ -84,7 +84,7 @@
 "FB 108","Table 35",1958,"San Francisco","Point Reyes Drakes Bay","Landings","Lingcod",10242,174486
 "FB 108","Table 35",1958,"San Francisco","Point Reyes Drakes Bay","Landings","Rex sole",5697,101552
 "FB 108","Table 35",1958,"San Francisco","Point Reyes Drakes Bay","Landings","All other species",18984,398370
-"FB 108","Table 35",1958,"San Francisco","Oakland","Landings","Alltacore",181022,915175
+"FB 108","Table 35",1958,"San Francisco","Oakland","Landings","Albacore tuna",181022,915175
 "FB 108","Table 35",1958,"San Francisco","Oakland","Landings","Salmon",48630,109355
 "FB 108","Table 35",1958,"San Francisco","Oakland","Landings","Crab",14784,116139
 "FB 108","Table 35",1958,"San Francisco","Oakland","Landings","All other species",53,335
@@ -123,7 +123,7 @@
 "FB 108","Table 36",1958,"Monterey","Moss Landing","Landings","Crab",17092,121562
 "FB 108","Table 36",1958,"Monterey","Moss Landing","Landings","Jack mackerel",11220,429900
 "FB 108","Table 36",1958,"Monterey","Moss Landing","Landings","All other species",12290,230534
-"FB 108","Table 36",1958,"Monterey","Santa Cruz","Landings","S dmon",27907,66907
+"FB 108","Table 36",1958,"Monterey","Santa Cruz","Landings","Salmon",27907,66907
 "FB 108","Table 36",1958,"Monterey","Santa Cruz","Landings","Albacore tuna",25433,134640
 "FB 108","Table 36",1958,"Monterey","Santa Cruz","Landings","Rockfish",22544,375380
 "FB 108","Table 36",1958,"Monterey","Santa Cruz","Landings","California pompano",11276,36550
@@ -132,7 +132,7 @@
 "FB 108","Table 36",1958,"Monterey","Santa Cruz","Landings","All other species",21835,380549
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Sardine",652915,28387600
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Albacore tuna",141667,744830
-"FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Arrowtooth rockfish",96982,2505049
+"FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Rockfish",96982,2505049
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Jack mackerel",64265,3060254
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Giant Pacific oyster",32149,1607466
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Abalone",30715,232515
@@ -140,7 +140,7 @@
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Crab",15920,110784
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","White seabass",11905,73354
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Petrale sole",10742,105003
-"FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Ii ircikJ",8531,110366
+"FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Lingcod",8531,110366
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Ocean shrimp",8051,88763
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","Perch",5934,26590
 "FB 108","Table 37",1958,"Santa Barbara","Mcrro Bay","Landings","All other species",13771,179165
@@ -150,12 +150,12 @@
 "FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","Swordfish",34585,102172
 "FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","Pacific mackerel",27328,1295185
 "FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","Petrale sole",24588,240348
-"FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","Arrowtooth rockfish",20253,550273
+"FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","Rockfish",20253,550273
 "FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","California halibut",19945,87365
 "FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","Sardine",11238,488630
-"FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","Ktitllish sole",9352,143222
+"FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","English sole",9352,143222
 "FB 108","Table 37",1958,"Santa Barbara","Santa Barbara","Landings","All other species",12744,297619
-"FB 108","Table 37",1958,"Santa Barbara","Port Hueneme","Landings","S inline",325184,14138445
+"FB 108","Table 37",1958,"Santa Barbara","Port Hueneme","Landings","Sardine",325184,14138445
 "FB 108","Table 37",1958,"Santa Barbara","Port Hueneme","Landings","Pacific mackerel",49361,2339369
 "FB 108","Table 37",1958,"Santa Barbara","Port Hueneme","Landings","Jack mackerel",24546,1168876
 "FB 108","Table 37",1958,"Santa Barbara","Port Hueneme","Landings","Abalone",13825,135935
@@ -219,7 +219,7 @@
 "FB 108","Table 38",1958,"Los Angeles","Long Beach","Landings","Anchovy",27648,2159995
 "FB 108","Table 38",1958,"Los Angeles","Long Beach","Landings","Pacific mackerel",25954,1050753
 "FB 108","Table 38",1958,"Los Angeles","Long Beach","Landings","Jack mackerel",18515,740584
-"FB 108","Table 38",1958,"Los Angeles","Long Beach","Landings","itoekfhh",15524,131826
+"FB 108","Table 38",1958,"Los Angeles","Long Beach","Landings","Rockfish",15524,131826
 "FB 108","Table 38",1958,"Los Angeles","Long Beach","Landings","All other species",2198,19328
 "FB 108","Table 38",1958,"Los Angeles","Newport Beach","Landings","Abalone",111168,1443735
 "FB 108","Table 38",1958,"Los Angeles","Newport Beach","Landings","Pacific mackerel",86359,3496333
@@ -258,10 +258,10 @@
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","White seabass",123771,816434
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","Spiny lobster",74203,120127
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","Abalone",40419,487147
-"FB 108","Table 39",1958,"San Diego","San Diego","Landings","Ron i to",30778,714117
+"FB 108","Table 39",1958,"San Diego","San Diego","Landings","Bonito",30778,714117
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","California barracuda",28551,241754
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","Swordfish",28329,79199
-"FB 108","Table 39",1958,"San Diego","San Diego","Landings","ItiMkfish",22402,283416
+"FB 108","Table 39",1958,"San Diego","San Diego","Landings","Rockfish",22402,283416
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","California halibut",17065,69454
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","Shark",14201,174958
 "FB 108","Table 39",1958,"San Diego","San Diego","Landings","Yellowtail",5699,79377

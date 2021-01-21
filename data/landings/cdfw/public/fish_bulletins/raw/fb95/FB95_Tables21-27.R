@@ -53,21 +53,42 @@ data_full <- data_orig %>%
          species=stringr::str_trim(species),
          species=stringr::str_to_sentence(species),
          species=recode(species, 
+                        'A ibacore'='Albacore tuna', 
+                        'Aba lone'='Abalone', 
+                        'Abalonc'='Abalone', 
+                        'Ahnlone'='Abalone', 
+                        'Alba core'='Albacore tuna', 
                         'Albacorc'='Albacore tuna', 
                         'Albacore'='Albacore tuna', 
+                        'Albacoro'='Albacore tuna', 
+                        'Alia lone'='Abalone', 
                         'All other'='All other species', 
-                        'Blucfin tuna'='Bluefin tuna', 
-                        'Hock bass'='Rock bass', 
-                        'Hockfish'='Rockfish', 
+                        'Alliacore'='Albacore tuna', 
+                        'Allother'='All other species', 
+                        'Alltaco re'='Albacore tuna', 
+                        'Auiacore'='Albacore tuna', 
+                        'Black sea baas'='Black sea bass', 
+                        'Bluedn tuna'='Bluefin tuna', 
+                        'Clam japanese'='Japanese clam',
+                        'Gpinv lobster'='Spiny lobster', 
+                        'Hliiefin tuna'='Bluefin tuna', 
+                        'Hluefin tuna'='Bluefin tuna', 
                         'Iingcod'='Lingcod', 
-                        'Jacknife clam'='Jackknife clam',
+                        'Kinafish'='Kingfish', 
+                        'Kinefish'='Kingfish', 
+                        'Kockfish'='Rockfish', 
+                        'Porch'='Perch', 
                         'Rock fish'='Rockfish', 
-                        'Rookfish'='Rockfish', 
+                        'Rockfisli'='Rockfish', 
                         'Sablcfish'='Sablefish', 
-                        'Sable fish'='Sablefish', 
-                        'Sahlefish'='Sablefish', 
-                        'Sand dab'='Sanddab', 
-                        'White sea bass'='White seabass'))
+                        'Sanddah'='Sanddab', 
+                        'Spiny lolwter'='Spiny lobster', 
+                        'Totols'='Totals', 
+                        'White scabass'='White seabass', 
+                        'White sea bass'='White seabass', 
+                        'Ycllowfin tuna'='Yellowfin tuna', 
+                        'Yellow fin tuna'='Yellowfin tuna', 
+                        'Yellow tail'='Yellowtail'))
 
 # Inspect data
 str(data_full)
@@ -90,13 +111,14 @@ data <- data_full %>%
   filter(!grepl("total", tolower(species)))
 
 # Inspect
-freeR::complete(data)
+freeR::complete(data_full)
+
 
 # Export data
 ################################################################################
 
 # Export data
-write.csv(data, file=file.path(outdir, "FB95_Tables21-27_1952_landings_by_port.csv"), row.names=F)
+write.csv(data_full, file=file.path(outdir, "FB95_Tables21-27_1952_landings_by_port.csv"), row.names=F)
 
 
 

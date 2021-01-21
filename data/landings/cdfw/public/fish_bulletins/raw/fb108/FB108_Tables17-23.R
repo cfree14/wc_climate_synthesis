@@ -128,7 +128,7 @@ data <- data_full %>%
   filter(!grepl("total", tolower(species)))
 
 # Inspect
-freeR::complete(data)
+freeR::complete(data_full)
 
 # Export data
 ################################################################################

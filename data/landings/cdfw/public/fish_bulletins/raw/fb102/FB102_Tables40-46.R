@@ -68,7 +68,12 @@ data_full <- data_orig %>%
                         'White croaker Kingfish'='White croaker (kingfish)', 
                         'White sea bass'='White seabass', 
                         'Yellovrfin tuna'='Yellowfin tuna', 
-                        'YeUowfin tuna'='Yellowfin tuna'))
+                        'YeUowfin tuna'='Yellowfin tuna',
+                        'Au other'='All other species', 
+                        'Bireye tuna'='Bigeye tuna', 
+                        'Black sea isass'='Black sea bass', 
+                        'White croaker kingfish'='White croaker (kingfish)', 
+                        'Yeuowfin tuna'='Yellowfin tuna'))
 
 # Inspect data
 str(data_full)
@@ -91,13 +96,13 @@ data <- data_full %>%
   filter(!grepl("total", tolower(species)))
 
 # Inspect
-freeR::complete(data)
+freeR::complete(data_full)
 
 # Export data
 ################################################################################
 
 # Export data
-write.csv(data, file=file.path(outdir, "FB102_Tables40-46_1954_landings_by_port.csv"), row.names=F)
+write.csv(data_full, file=file.path(outdir, "FB102_Tables40-46_1954_landings_by_port.csv"), row.names=F)
 
 
 
