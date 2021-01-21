@@ -37,11 +37,7 @@
 "FB 102","Table 40",1954,"Eureka","Point Arena","Landings","Lingcod",581,39
 "FB 102","Table 40",1954,"Eureka","Shelter Cove","Landings","Salmon",27886,8491
 "FB 102","Table 40",1954,"Eureka","Shelter Cove","Landings","All other species",2228,98
-<<<<<<< HEAD
-"FB 102","Table 40",1954,"Eureka","All Other Ports","Landings","All other species",30823,2997
-=======
 "FB 102","Table 40",1954,"Eureka","All Other Ports","Landings","All species",30823,2997
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 41",1954,"Sacramento Delta","Pittsburg","Landings","Salmon",522940,152228
 "FB 102","Table 41",1954,"Sacramento Delta","Pittsburg","Landings","Shad",612514,43060
 "FB 102","Table 41",1954,"Sacramento Delta","Pittsburg","Landings","All other species",18766,1055
@@ -106,20 +102,16 @@
 "FB 102","Table 42",1954,"San Francisco","Berkeley","Landings","Salmon",28034,8250
 "FB 102","Table 42",1954,"San Francisco","Berkeley","Landings","Crab",40381,5831
 "FB 102","Table 42",1954,"San Francisco","Berkeley","Landings","All other species",476,88
-<<<<<<< HEAD
-"FB 102","Table 42",1954,"San Francisco","All Other Ports","Landings","All other species",40540,3125
-=======
 "FB 102","Table 42",1954,"San Francisco","All Other Ports","Landings","All species",40540,3125
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Rockfish",4435158,200913
-"FB 102","Table 43",1954,"Monterey","Monterey","Landings","Yellowfin tuna",1149335,192629
+"FB 102","Table 43",1954,"Monterey","Monterey","Landings","Yeuowfin tuna",1149335,192629
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Salmon",582122,169281
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Jack mackerel",4747348,161885
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Albacore tuna",815317,152716
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Squid",6380497,137819
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Skipjack",434110,61123
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Sole",383157,28124
-"FB 102","Table 43",1954,"Monterey","Monterey","Landings","White croaker (kingfish)",153263,10468
+"FB 102","Table 43",1954,"Monterey","Monterey","Landings","White croaker kingfish",153263,10468
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Sablefish",212260,9700
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Lingcod",83190,8044
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Sanddab",106439,6993
@@ -130,7 +122,7 @@
 "FB 102","Table 43",1954,"Monterey","Moss Landing","Landings","Jack mackerel",1396960,47636
 "FB 102","Table 43",1954,"Monterey","Moss Landing","Landings","Squid",1074150,23202
 "FB 102","Table 43",1954,"Monterey","Moss Landing","Landings","Pacific herring",140100,4609
-"FB 102","Table 43",1954,"Monterey","Moss Landing","Landings","White croaker (kingfish)",56329,3847
+"FB 102","Table 43",1954,"Monterey","Moss Landing","Landings","White croaker kingfish",56329,3847
 "FB 102","Table 43",1954,"Monterey","Moss Landing","Landings","All other species",192367,10439
 "FB 102","Table 43",1954,"Monterey","Santa Cruz","Landings","Salmon",201853,58699
 "FB 102","Table 43",1954,"Monterey","Santa Cruz","Landings","Rockfish",706569,32008
@@ -170,7 +162,7 @@
 "FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","Shark",306632,17355
 "FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","Abalone",89897,10392
 "FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","Pacific mackerel",261850,9322
-"FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","Bigeye tuna",68951,8591
+"FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","Bireye tuna",68951,8591
 "FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","Yellowfin tuna",50000,8430
 "FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","California halibut",33739,7568
 "FB 102","Table 44",1954,"Santa Barbara","Port San Luis Avila Grover City","Landings","Crab",23800,5222
@@ -215,7 +207,7 @@
 "FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","Black sea bass",284103,38041
 "FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","Anchovy",1541793,29602
 "FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","Sculpin",62701,15136
-"FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","White croaker (kingfish)",342105,15087
+"FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","White croaker kingfish",342105,15087
 "FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","Cabrilla",109926,15016
 "FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","Yellowfin tuna",83364,14314
 "FB 102","Table 45",1954,"Los Angeles","San Pedro","Landings","Yellowtail",133465,12189
@@ -236,8 +228,8 @@
 "FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","Yellowtail",177241,16169
 "FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","Rockfish",136516,13420
 "FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","Squid",437644,10328
-"FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","Black sea bass",58606,8770
-"FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","White croaker (kingfish)",182344,8041
+"FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","Black sea isass",58606,8770
+"FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","White croaker kingfish",182344,8041
 "FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","Pismo clam",356048,7477
 "FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","Grouper",36452,6139
 "FB 102","Table 45",1954,"Los Angeles","Long Beach","Landings","All other species",91799,13040
@@ -249,7 +241,7 @@
 "FB 102","Table 45",1954,"Los Angeles","Wilmington","Landings","Pacific mackerel",1531280,47929
 "FB 102","Table 45",1954,"Los Angeles","Wilmington","Landings","Albacore tuna",81203,16342
 "FB 102","Table 45",1954,"Los Angeles","Wilmington","Landings","Sardine",238015,5855
-"FB 102","Table 45",1954,"Los Angeles","Wilmington","Landings","All other species",123612,8600
+"FB 102","Table 45",1954,"Los Angeles","Wilmington","Landings","Au other",123612,8600
 "FB 102","Table 45",1954,"Los Angeles","Newport Beach","Landings","Pacific mackerel",7501543,234798
 "FB 102","Table 45",1954,"Los Angeles","Newport Beach","Landings","Albacore tuna",715147,146534
 "FB 102","Table 45",1954,"Los Angeles","Newport Beach","Landings","Abalone",1310271,101939
@@ -302,8 +294,4 @@
 "FB 102","Table 46",1954,"San Diego","Mission Beach","Landings","Jackknife clam",24787,9035
 "FB 102","Table 46",1954,"San Diego","La Jolla","Landings","Spiny lobster",8287,4082
 "FB 102","Table 46",1954,"San Diego","La Jolla","Landings","All other species",936,98
-<<<<<<< HEAD
-"FB 102","Table 46",1954,"San Diego","All Other Ports","Landings","All other species",81659,6391
-=======
 "FB 102","Table 46",1954,"San Diego","All Other Ports","Landings","All species",81659,6391
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20

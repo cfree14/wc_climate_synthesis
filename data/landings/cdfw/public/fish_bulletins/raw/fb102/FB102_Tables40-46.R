@@ -51,6 +51,7 @@ data_full <- data_orig %>%
   # Format species
   mutate(species=gsub("[[:punct:]]", "", species),
          species=stringr::str_trim(species),
+         species=stringr::str_to_sentence(species),
          species=recode(species, 
                         'Ail other'='All other species', 
                         'Albacorc'='Albacore tuna', 
@@ -85,11 +86,7 @@ wcfish::check_names(names2check)
 # Finalize data
 ################################################################################
 
-<<<<<<< HEAD
-# Format data 
-=======
 # Format data
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 data <- data_full %>% 
   filter(!grepl("total", tolower(species)))
 

@@ -51,8 +51,20 @@ data_full <- data_orig %>%
   # Format species
   mutate(species=gsub("[[:punct:]]", "", species),
          species=stringr::str_trim(species),
+         species=stringr::str_to_sentence(species),
          species=recode(species, 
-                        " " = " "))
+                        'Albacore'='Albacore tuna', 
+                        'All other'='All other species', 
+                        'Black seabass'='Black sea bass', 
+                        'Flying fish'='Flyingfish', 
+                        'Jack mackerel1'='Jack mackerel', 
+                        'Rock fish'='Rockfish', 
+                        'Sablcfish'='Sablefish', 
+                        'Sable fish'='Sablefish', 
+                        'Sand dab'='Sanddab', 
+                        'Shccpshead'='Sheepshead', 
+                        'Solo'='Sole', 
+                        'Yellow tail'='Yellowtail'))
 
 # Inspect data
 str(data_full)

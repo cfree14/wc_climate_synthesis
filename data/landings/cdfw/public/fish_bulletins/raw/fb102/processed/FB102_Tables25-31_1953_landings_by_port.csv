@@ -37,11 +37,7 @@
 "FB 102","Table 22",1953,"Eureka","Trinidad","Landings","All other species",1354,121
 "FB 102","Table 22",1953,"Eureka","Point Arena","Landings","Salmon",54525,13282
 "FB 102","Table 22",1953,"Eureka","Point Arena","Landings","All other species",1338,109
-<<<<<<< HEAD
-"FB 102","Table 22",1953,"Eureka","All Other Ports","Landings","All other species",49750,5990
-=======
 "FB 102","Table 22",1953,"Eureka","All Other Ports","Landings","All species",49750,5990
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Salmon",495995,101479
 "FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Shad",530132,37268
 "FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Catfish",10252,2151
@@ -66,7 +62,7 @@
 "FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Sole",2309974,139292
 "FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Rockfish",2588615,95782
 "FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Anchovy",3062882,64933
-"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Yellowfin",373887,59523
+"FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Yellowfin tuna",373887,59523
 "FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Pacific herring",2443399,39864
 "FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Bay shrimp",541797,38305
 "FB 102","Table 24",1953,"San Francisco","San Francisco","Landings","Sablefish",383007,31768
@@ -92,7 +88,7 @@
 "FB 102","Table 24",1953,"San Francisco","Sausalito","Landings","All other species",15550,3746
 "FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","Pacific herring",2361803,38025
 "FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","Eastern oyster",129733,28360
-"FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","Giant Pacific oyster",99844,11442
+"FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","Pacific oyster",99844,11442
 "FB 102","Table 24",1953,"San Francisco","Tomales Bay Marshall","Landings","All other species",36340,5432
 "FB 102","Table 24",1953,"San Francisco","Princeton","Landings","Salmon",142565,38856
 "FB 102","Table 24",1953,"San Francisco","Princeton","Landings","Crab",109762,17683
@@ -104,16 +100,12 @@
 "FB 102","Table 24",1953,"San Francisco","Berkeley","Landings","All other species",5016,129
 "FB 102","Table 24",1953,"San Francisco","Richmond","Landings","Bay shrimp",132311,9354
 "FB 102","Table 24",1953,"San Francisco","Richmond","Landings","All other species",3205,167
-<<<<<<< HEAD
-"FB 102","Table 24",1953,"San Francisco","All Other Ports","Landings","All other species",29957,2326
-=======
 "FB 102","Table 24",1953,"San Francisco","All Other Ports","Landings","All species",29957,2326
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Anchovy",12780443,273501
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Albacore tuna",991957,191732
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Rockfish",3477020,175242
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Skipjack",1229420,169294
-"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Yellowfin",646150,103255
+"FB 102","Table 25",1953,"Monterey","Monterey","Landings","Yellowfin tuna",646150,103255
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Salmon",343024,90318
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Squid",3219101,84340
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Jack mackerel",836718,36314
@@ -141,11 +133,7 @@
 "FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Smelt",117546,7723
 "FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","White croaker (kingfish)",94633,7164
 "FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","All other species",365693,25641
-<<<<<<< HEAD
-"FB 102","Table 25",1953,"Monterey","All Other Ports","Landings","All other species",21087,546
-=======
 "FB 102","Table 25",1953,"Monterey","All Other Ports","Landings","All species",21087,546
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Anchovy",28251701,480279
 "FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Jack mackerel",7338595,253182
 "FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Sardine",576970,32195
@@ -180,12 +168,8 @@
 "FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","All other species",175060,10512
 "FB 102","Table 26",1953,"Santa Barbara","San Simeon","Landings","Abalone",126375,14419
 "FB 102","Table 26",1953,"Santa Barbara","Cayucos","Landings","Abalone",51800,5910
-<<<<<<< HEAD
-"FB 102","Table 26",1953,"Santa Barbara","All Other Ports","Landings","All other species",20328,2291
-=======
 "FB 102","Table 26",1953,"Santa Barbara","All Other Ports","Landings","All species",20328,2291
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
-"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Yellowfin",90861864,14501314
+"FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Yellowfin tuna",90861864,14501314
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Skipjack",68460581,9395135
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Albacore tuna",40656544,7956254
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Jack mackerel",34231442,1225486
@@ -197,7 +181,7 @@
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Pacific mackerel",2855967,128804
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Squid",3513950,73442
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","All other species",16225,1379
-"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Yellowfin",3205484,508898
+"FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Yellowfin tuna",3205484,508898
 "FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Skipjack",2882319,397264
 "FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Albacore tuna",1560573,304976
 "FB 102","Table 27",1953,"Los Angeles","Long Beach","Landings","Anchovy",13100482,289521
@@ -221,7 +205,7 @@
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Cabrilla",401030,65408
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Black sea bass",334982,55406
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Spiny lobster",106170,54402
-"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Yellowfin",323631,51781
+"FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Yellowfin tuna",323631,51781
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Anchovy",1914392,42308
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Jack mackerel",911717,32639
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Rockfish",274849,32102
@@ -238,7 +222,7 @@
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","Squid",235628,4925
 "FB 102","Table 27",1953,"Los Angeles","San Pedro","Landings","All other species",144615,17656
 "FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Jack mackerel",7857298,281291
-"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Yellowfin",1572621,251619
+"FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Yellowfin tuna",1572621,251619
 "FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Anchovy",7289225,161092
 "FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Skipjack",1044915,143362
 "FB 102","Table 27",1953,"Los Angeles","Wilmington","Landings","Bluefin tuna",717619,114245
@@ -282,7 +266,7 @@
 "FB 102","Table 27",1953,"Los Angeles","All Other Ports","Landings","Spiny lobster",11184,5731
 "FB 102","Table 27",1953,"Los Angeles","All Other Ports","Landings","All other species",47633,3585
 "FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Skipjack",55893625,7737373
-"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Yellowfin",43561050,6948122
+"FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Yellowfin tuna",43561050,6948122
 "FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Albacore tuna",24930051,5056305
 "FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Yellowtail",2636601,248368
 "FB 102","Table 28",1953,"San Diego","San Diego Point Loma","Landings","Bluefin tuna",1474319,228962
@@ -309,8 +293,4 @@
 "FB 102","Table 28",1953,"San Diego","Oceanside","Landings","All other species",18133,2683
 "FB 102","Table 28",1953,"San Diego","La Jolla","Landings","Spiny lobster",4458,2243
 "FB 102","Table 28",1953,"San Diego","La Jolla","Landings","All other species",5165,820
-<<<<<<< HEAD
-"FB 102","Table 28",1953,"San Diego","All Other Ports","Landings","All other species",29324,1155
-=======
 "FB 102","Table 28",1953,"San Diego","All Other Ports","Landings","All species",29324,1155
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20

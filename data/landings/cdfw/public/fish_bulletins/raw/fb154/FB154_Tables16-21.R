@@ -10,9 +10,9 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-indir <- "data/landings/cdfw/public/fish_bulletins/fb154/raw"
-outdir <- "data/landings/cdfw/public/fish_bulletins/fb154/processed"
-plotdir <- "data/landings/cdfw/public/fish_bulletins/fb154/figures"
+indir <- "data/landings/cdfw/public/fish_bulletins/raw/fb154/raw"
+outdir <- "data/landings/cdfw/public/fish_bulletins/raw/fb154/processed"
+plotdir <- "data/landings/cdfw/public/fish_bulletins/raw/fb154/figures"
 
 
 # Merge and format data
@@ -126,6 +126,9 @@ spp_key <- data_full %>%
 # Format data 
 data <- data_full %>% 
   filter(!grepl("total", tolower(species)))
+
+# Inspect
+freeR::complete(data)
 
 # Export data
 ################################################################################

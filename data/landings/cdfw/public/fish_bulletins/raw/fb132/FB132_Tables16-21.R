@@ -119,6 +119,9 @@ wcfish::check_names(names2check)
 data <- data_full %>% 
   filter(!grepl("total", tolower(species)))
 
+# Inspect
+freeR::complete(data)
+
 # Export data
 ################################################################################
 

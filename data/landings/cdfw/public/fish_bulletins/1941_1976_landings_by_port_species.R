@@ -38,7 +38,8 @@ data_orig <- purrr::map_df(fbs, function(x){
 ################################################################################
 
 # Port complexes
-port_complexes <- c("Eureka", "Sacramento Delta", "San Francisco", "Monterey", "Santa Barbara", "Los Angeles", "San Diego")
+port_complexes <- c("Eureka", "Sacramento Delta", "San Francisco", 
+                    "Monterey", "Santa Barbara", "Los Angeles", "San Diego")
 
 # Inspect data
 str(data_orig)

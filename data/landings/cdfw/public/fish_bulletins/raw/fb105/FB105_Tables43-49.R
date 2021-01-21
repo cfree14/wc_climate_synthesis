@@ -42,11 +42,7 @@ data_full <- data_orig %>%
                              "Table 49"="San Diego")) %>% 
   mutate(port=port %>% gsub("[[:punct:]]", "", .) %>% stringr::str_trim(.) %>% stringr::str_to_title(.)) %>% 
   # Add columns
-<<<<<<< HEAD
-  mutate(year=1955,
-=======
   mutate(year=1956,
->>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
          source="FB 105") %>% 
   # Arrange
   select(source, table, year, port_complex, port, type, species, pounds, values, everything()) %>% 
@@ -55,6 +51,7 @@ data_full <- data_orig %>%
   # Format species
   mutate(species=gsub("[[:punct:]]", "", species),
          species=stringr::str_trim(species),
+         species=stringr::str_to_sentence(species),
          species=recode(species, 
                         'Abalonc'='Abalone', 
                         'Albacorc'='Albacore tuna', 
@@ -62,29 +59,28 @@ data_full <- data_orig %>%
                         'Alhacore'='Albacore tuna', 
                         'All other'='All other species', 
                         'All othfr'='All other species', 
-                        # 'Alnlonc'='NA', 
+                        'Alnlonc'='Abalone', 
                         'Black sea lass'='Black sea bass', 
-                        'Blucfin tuna'='Blackfin tuna', 
+                        'Blucfin tuna'='Bluefin tuna', 
                         'California poinpno'='California pompano', 
-                        'hite scalioss'='White seabass', 
-                        'hite seabass'='White seabass', 
+                        'Giant pacific oyster'='Giant Pacific oyster', 
+                        'Hite scalioss'='White seabass', 
+                        'Hite seabass'='White seabass', 
                         'Iacific mackerel'='Pacific mackerel', 
                         'Iingcod'='Lingcod', 
                         'Irouper'='Grouper', 
-                        'IVific mackerel'='Pacific mackerel', 
-                        # 'Jackknife clam'='California jackknife clam', 
+                        'Ivific mackerel'='Pacific mackerel', 
                         'Jrouper'='Grouper', 
                         'Kockfish'='Rockfish', 
-                        'liant Pacific oyster'='Giant Pacific oyster', 
+                        'Liant pacific oyster'='Giant Pacific oyster', 
                         'N hite croaker kingfish'='White croaker (kingfish)', 
-                        'Ocean Shrimp'='Ocean shrimp', 
                         'Petralc sole'='Petrale sole', 
                         'Petrale solo'='Petrale sole', 
                         'Petralo sole'='Petrale sole', 
-                        'Rant Pacific oyster'='Giant Pacific oyster', 
+                        'Rant pacific oyster'='Giant Pacific oyster', 
                         'Roekfish'='Rockfish', 
                         'Sablcfish'='Sablefish', 
-                        'Saiuldab'='NA', 
+                        'Saiuldab'='Sanddab', 
                         'White croaker kingfish'='White croaker (kingfish)', 
                         'Y ellowtail'='Yellowtail', 
                         'Ycllowfin tuna'='Yellowfin tuna', 

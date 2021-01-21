@@ -13,9 +13,9 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-inputdir <- "data/landings/cdfw/public/fish_bulletins/fb173/raw"
-outputdir <- "data/landings/cdfw/public/fish_bulletins/fb173/processed"
-plotdir <- "data/landings/cdfw/public/fish_bulletins/fb173/figures"
+inputdir <- "data/landings/cdfw/public/fish_bulletins/raw/fb173/raw"
+outputdir <- "data/landings/cdfw/public/fish_bulletins/raw/fb173/processed"
+plotdir <- "data/landings/cdfw/public/fish_bulletins/raw/fb173/figures"
 
 # Table key
 table_key <- tibble(table=paste("Table", 4:13),
@@ -30,7 +30,7 @@ table_key <- tibble(table=paste("Table", 4:13),
 data_orig <- purrr::map_df(4:13, function(x){
   
   # Read data
-  infile <- paste0("Table", x, "_clean.xlsx")
+  infile <- paste0("Table", x, ".xlsx")
   fdata_orig <- readxl::read_excel(file.path(inputdir, infile))
   
   # Format data
