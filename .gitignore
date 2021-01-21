@@ -6,6 +6,7 @@
 .Ruserdata
 .DS_Store
 **/.DS_Store
+*/.DS_Store
 
 # Ignore some folders
 admin/

@@ -37,7 +37,11 @@
 "FB 102","Table 40",1954,"Eureka","Point Arena","Landings","Lingcod",581,39
 "FB 102","Table 40",1954,"Eureka","Shelter Cove","Landings","Salmon",27886,8491
 "FB 102","Table 40",1954,"Eureka","Shelter Cove","Landings","All other species",2228,98
+<<<<<<< HEAD
+"FB 102","Table 40",1954,"Eureka","All Other Ports","Landings","All other species",30823,2997
+=======
 "FB 102","Table 40",1954,"Eureka","All Other Ports","Landings","All species",30823,2997
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 41",1954,"Sacramento Delta","Pittsburg","Landings","Salmon",522940,152228
 "FB 102","Table 41",1954,"Sacramento Delta","Pittsburg","Landings","Shad",612514,43060
 "FB 102","Table 41",1954,"Sacramento Delta","Pittsburg","Landings","All other species",18766,1055
@@ -102,7 +106,11 @@
 "FB 102","Table 42",1954,"San Francisco","Berkeley","Landings","Salmon",28034,8250
 "FB 102","Table 42",1954,"San Francisco","Berkeley","Landings","Crab",40381,5831
 "FB 102","Table 42",1954,"San Francisco","Berkeley","Landings","All other species",476,88
+<<<<<<< HEAD
+"FB 102","Table 42",1954,"San Francisco","All Other Ports","Landings","All other species",40540,3125
+=======
 "FB 102","Table 42",1954,"San Francisco","All Other Ports","Landings","All species",40540,3125
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Rockfish",4435158,200913
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Yellowfin tuna",1149335,192629
 "FB 102","Table 43",1954,"Monterey","Monterey","Landings","Salmon",582122,169281
@@ -294,4 +302,8 @@
 "FB 102","Table 46",1954,"San Diego","Mission Beach","Landings","Jackknife clam",24787,9035
 "FB 102","Table 46",1954,"San Diego","La Jolla","Landings","Spiny lobster",8287,4082
 "FB 102","Table 46",1954,"San Diego","La Jolla","Landings","All other species",936,98
+<<<<<<< HEAD
+"FB 102","Table 46",1954,"San Diego","All Other Ports","Landings","All other species",81659,6391
+=======
 "FB 102","Table 46",1954,"San Diego","All Other Ports","Landings","All species",81659,6391
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20

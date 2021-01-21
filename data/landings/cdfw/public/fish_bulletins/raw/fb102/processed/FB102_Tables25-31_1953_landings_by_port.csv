@@ -37,7 +37,11 @@
 "FB 102","Table 22",1953,"Eureka","Trinidad","Landings","All other species",1354,121
 "FB 102","Table 22",1953,"Eureka","Point Arena","Landings","Salmon",54525,13282
 "FB 102","Table 22",1953,"Eureka","Point Arena","Landings","All other species",1338,109
+<<<<<<< HEAD
+"FB 102","Table 22",1953,"Eureka","All Other Ports","Landings","All other species",49750,5990
+=======
 "FB 102","Table 22",1953,"Eureka","All Other Ports","Landings","All species",49750,5990
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Salmon",495995,101479
 "FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Shad",530132,37268
 "FB 102","Table 23",1953,"Sacramento Delta","Pittsburg","Landings","Catfish",10252,2151
@@ -100,7 +104,11 @@
 "FB 102","Table 24",1953,"San Francisco","Berkeley","Landings","All other species",5016,129
 "FB 102","Table 24",1953,"San Francisco","Richmond","Landings","Bay shrimp",132311,9354
 "FB 102","Table 24",1953,"San Francisco","Richmond","Landings","All other species",3205,167
+<<<<<<< HEAD
+"FB 102","Table 24",1953,"San Francisco","All Other Ports","Landings","All other species",29957,2326
+=======
 "FB 102","Table 24",1953,"San Francisco","All Other Ports","Landings","All species",29957,2326
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Anchovy",12780443,273501
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Albacore tuna",991957,191732
 "FB 102","Table 25",1953,"Monterey","Monterey","Landings","Rockfish",3477020,175242
@@ -133,7 +141,11 @@
 "FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","Smelt",117546,7723
 "FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","White croaker (kingfish)",94633,7164
 "FB 102","Table 25",1953,"Monterey","Santa Cruz","Landings","All other species",365693,25641
+<<<<<<< HEAD
+"FB 102","Table 25",1953,"Monterey","All Other Ports","Landings","All other species",21087,546
+=======
 "FB 102","Table 25",1953,"Monterey","All Other Ports","Landings","All species",21087,546
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Anchovy",28251701,480279
 "FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Jack mackerel",7338595,253182
 "FB 102","Table 26",1953,"Santa Barbara","Port Hueneme","Landings","Sardine",576970,32195
@@ -168,7 +180,11 @@
 "FB 102","Table 26",1953,"Santa Barbara","Avila","Landings","All other species",175060,10512
 "FB 102","Table 26",1953,"Santa Barbara","San Simeon","Landings","Abalone",126375,14419
 "FB 102","Table 26",1953,"Santa Barbara","Cayucos","Landings","Abalone",51800,5910
+<<<<<<< HEAD
+"FB 102","Table 26",1953,"Santa Barbara","All Other Ports","Landings","All other species",20328,2291
+=======
 "FB 102","Table 26",1953,"Santa Barbara","All Other Ports","Landings","All species",20328,2291
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Yellowfin",90861864,14501314
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Skipjack",68460581,9395135
 "FB 102","Table 27",1953,"Los Angeles","Terminal Island","Landings","Albacore tuna",40656544,7956254
@@ -293,4 +309,8 @@
 "FB 102","Table 28",1953,"San Diego","Oceanside","Landings","All other species",18133,2683
 "FB 102","Table 28",1953,"San Diego","La Jolla","Landings","Spiny lobster",4458,2243
 "FB 102","Table 28",1953,"San Diego","La Jolla","Landings","All other species",5165,820
+<<<<<<< HEAD
+"FB 102","Table 28",1953,"San Diego","All Other Ports","Landings","All other species",29324,1155
+=======
 "FB 102","Table 28",1953,"San Diego","All Other Ports","Landings","All species",29324,1155
+>>>>>>> 8aaa484b31d2a8a3c363935a8ac319966050ec20
