@@ -122,11 +122,14 @@ wcfish::check_names(names2check)
 data <- data_full %>% 
   filter(!grepl("total", tolower(species)))
 
+# Inspect
+freeR::complete(data_full)
+
 # Export data
 ################################################################################
 
 # Export data
-write.csv(data, file=file.path(outdir, "FB138_Tables16-21_1966_landings_by_port.csv"), row.names=F)
+write.csv(data_full, file=file.path(outdir, "FB138_Tables16-21_1966_landings_by_port.csv"), row.names=F)
 
 
 

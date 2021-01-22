@@ -10,6 +10,7 @@ library(tidyverse)
 
 # Directories
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
+plotdir <- "data/landings/cdfw/public/fish_bulletins/figures"
 
 
 # Merge data
@@ -55,6 +56,7 @@ data_full <- data_orig %>%
   # Correct a few species names
   mutate(species=recode(species, 
                         "Total"="Totals",
+                        "Port totals"="Totals",
                         'Jacknife clam'='Jackknife clam', 
                         'Pacific Ocean shrimp'='Pacific ocean shrimp')) %>% 
   # Fix port spellings
@@ -192,27 +194,68 @@ tots <- tot_obs %>%
   mutate(value_tot_diff = value_tot_obs - value_tot_rep,
          landings_tot_diff = landings_tot_obs - landings_tot_rep)
 
-# Plot coverage
-g <- ggplot(tots, aes(x=year, y=port, fill=value_tot_diff)) +
+# Theme
+my_theme <-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+                   axis.text=element_text(size=6),
+                   axis.title=element_text(size=8),
+                   legend.text=element_text(size=6),
+                   legend.title=element_text(size=8),
+                   strip.text=element_text(size=7),
+                   plot.title=element_text(size=9),
+                   # Gridlines
+                   # panel.grid.major = element_blank(), 
+                   # panel.grid.minor = element_blank(),
+                   # panel.background = element_blank(), 
+                   # axis.line = element_line(colour = "black"),
+                   # Legend
+                   legend.position="bottom")
+
+# Plot difference in values
+g1 <- ggplot(tots, aes(x=year, y=port, fill=value_tot_diff)) +
   facet_grid(port_complex~., scales="free_y", space="free_y") +
   geom_tile() +
   # Labels
   labs(x="Year", y="") +
   scale_x_continuous(breaks=seq(1940,1980,5)) +
   # Legend
-  scale_fill_gradient2(name="Difference in\nobserved and reported values",
+  scale_fill_gradient2(name="Difference (USD) in\nobserved and reported values",
                        low="darkred", high="navy", mid="grey80", midpoint=0, na.value = "grey50") +
   guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
   # Theme
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
-        legend.position = "bottom")
-g
+  theme_bw() + my_theme
+g1
+
+# Export
+ggsave(g1, filename=file.path(plotdir, "qaqc_port_landings_value.png"), 
+       width=5, height=8.5, units="in", dpi=600)
+
+# Plot difference in landings
+g2 <- ggplot(tots, aes(x=year, y=port, fill=landings_tot_diff)) +
+  facet_grid(port_complex~., scales="free_y", space="free_y") +
+  geom_tile() +
+  # Labels
+  labs(x="Year", y="") +
+  scale_x_continuous(breaks=seq(1940,1980,5)) +
+  # Legend
+  scale_fill_gradient2(name="Difference (lbs) in\nobserved and reported volumes",
+                       low="darkred", high="navy", mid="grey80", midpoint=0, na.value = "grey50") +
+  guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
+  # Theme
+  theme_bw() + my_theme
+g2
+
+# Export
+ggsave(g2, filename=file.path(plotdir, "qaqc_port_landings_volume.png"), 
+       width=5, height=8.5, units="in", dpi=600)
   
 
 
 # Export data
 ################################################################################
+
+# Remove totals
+data <- data_full %>% 
+  filter(species!="Totals")
 
 # Export
 saveRDS(data, file=file.path(outdir, "CDFW_1941_1976_landings_by_port_species.Rds"))

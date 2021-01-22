@@ -20,6 +20,7 @@
 "FB 161","Table 16",1972,"Eureka","Eureka","Landings","Arrowtooth flounder",87681,4398
 "FB 161","Table 16",1972,"Eureka","Eureka","Landings","Grenadiers",64023,3204
 "FB 161","Table 16",1972,"Eureka","Eureka","Landings","All other species",25916,1307
+"FB 161","Table 16",1972,"Eureka","Eureka","Landings","Port totals",24229740,3726935
 "FB 161","Table 16",1972,"Eureka","Fort Bragg","Landings","Salmon",1580623,61103742
 "FB 161","Table 16",1972,"Eureka","Fort Bragg","Landings","Dover sole",2865904,234498
 "FB 161","Table 16",1972,"Eureka","Fort Bragg","Landings","Sablefish",2382721,190021
@@ -36,6 +37,7 @@
 "FB 161","Table 16",1972,"Eureka","Fort Bragg","Landings","Arrowtooth flounder",50284,2522
 "FB 161","Table 16",1972,"Eureka","Fort Bragg","Landings","Sanddab",8821,1061
 "FB 161","Table 16",1972,"Eureka","Fort Bragg","Landings","All other species",27273,1890
+"FB 161","Table 16",1972,"Eureka","Fort Bragg","Landings","Port totals",10632333,61968078
 "FB 161","Table 16",1972,"Eureka","Crescent City","Landings","Salmon",503128,338155
 "FB 161","Table 16",1972,"Eureka","Crescent City","Landings","Pink (ocean) shrimp",2044584,306691
 "FB 161","Table 16",1972,"Eureka","Crescent City","Landings","Dover sole",3318218,271507
@@ -53,13 +55,18 @@
 "FB 161","Table 16",1972,"Eureka","Crescent City","Landings","Perch",25417,4949
 "FB 161","Table 16",1972,"Eureka","Crescent City","Landings","Whitebait smelt",36157,4085
 "FB 161","Table 16",1972,"Eureka","Crescent City","Landings","All other species",68989,3383
+"FB 161","Table 16",1972,"Eureka","Crescent City","Landings","Port totals",11903686,1766336
 "FB 161","Table 16",1972,"Eureka","Trinidad","Landings","Dungeness crab",174280,93142
 "FB 161","Table 16",1972,"Eureka","Trinidad","Landings","Salmon",76231,46452
 "FB 161","Table 16",1972,"Eureka","Trinidad","Landings","All other species",2534,802
+"FB 161","Table 16",1972,"Eureka","Trinidad","Landings","Port totals",253045,140396
 "FB 161","Table 16",1972,"Eureka","Albion","Landings","Salmon",43997,30496
 "FB 161","Table 16",1972,"Eureka","Albion","Landings","All other species",16351,1377
+"FB 161","Table 16",1972,"Eureka","Albion","Landings","Port totals",60348,31873
 "FB 161","Table 16",1972,"Eureka","All Other Ports","Landings","Salmon",29149,18522
 "FB 161","Table 16",1972,"Eureka","All Other Ports","Landings","All other species",4489,560
+"FB 161","Table 16",1972,"Eureka","All Other Ports","Landings","Totals",33638,19082
+"FB 161","Table 16",1972,"Eureka","Eureka Area Totals","Landings","Totals",47112790,7652700
 "FB 161","Table 17",1972,"San Francisco","Bodega Bay","Landings","Salmon",1308355,1051798
 "FB 161","Table 17",1972,"San Francisco","Bodega Bay","Landings","Albacore tuna",207399,66507
 "FB 161","Table 17",1972,"San Francisco","Bodega Bay","Landings","Dungeness crab",86964,59342
@@ -77,6 +84,7 @@
 "FB 161","Table 17",1972,"San Francisco","Bodega Bay","Landings","Whitebait smelt",14929,2110
 "FB 161","Table 17",1972,"San Francisco","Bodega Bay","Landings","Sand sole",10356,1332
 "FB 161","Table 17",1972,"San Francisco","Bodega Bay","Landings","All other species",21368,2450
+"FB 161","Table 17",1972,"San Francisco","Bodega Bay","Landings","Port totals",4129963,1431112
 "FB 161","Table 17",1972,"San Francisco","San Francisco","Landings","Albacore tuna",1335296,428190
 "FB 161","Table 17",1972,"San Francisco","San Francisco","Landings","Dover sole",2081512,171068
 "FB 161","Table 17",1972,"San Francisco","San Francisco","Landings","Petrale sole",982308,160632
@@ -95,6 +103,7 @@
 "FB 161","Table 17",1972,"San Francisco","San Francisco","Landings","Shark",32673,1662
 "FB 161","Table 17",1972,"San Francisco","San Francisco","Landings","Pink (ocean) shrimp",6870,1032
 "FB 161","Table 17",1972,"San Francisco","San Francisco","Landings","All other species",31126,2731
+"FB 161","Table 17",1972,"San Francisco","San Francisco","Landings","Port totals",8145789,1303843
 "FB 161","Table 17",1972,"San Francisco","Sausalito","Landings","Albacore tuna",1082822,347229
 "FB 161","Table 17",1972,"San Francisco","Sausalito","Landings","Salmon",270210,218612
 "FB 161","Table 17",1972,"San Francisco","Sausalito","Landings","Dover sole",364656,29969
@@ -105,6 +114,7 @@
 "FB 161","Table 17",1972,"San Francisco","Sausalito","Landings","Sablefish",63266,4500
 "FB 161","Table 17",1972,"San Francisco","Sausalito","Landings","Rockfish",42431,2453
 "FB 161","Table 17",1972,"San Francisco","Sausalito","Landings","All other species",9822,993
+"FB 161","Table 17",1972,"San Francisco","Sausalito","Landings","Port totals",2241870,649153
 "FB 161","Table 17",1972,"San Francisco","Princeton","Landings","Salmon",458820,377512
 "FB 161","Table 17",1972,"San Francisco","Princeton","Landings","Albacore tuna",199427,63950
 "FB 161","Table 17",1972,"San Francisco","Princeton","Landings","Dungeness crab",55805,38080
@@ -115,6 +125,7 @@
 "FB 161","Table 17",1972,"San Francisco","Princeton","Landings","Whitebait smelt",9270,1310
 "FB 161","Table 17",1972,"San Francisco","Princeton","Landings","Flounder",17411,1292
 "FB 161","Table 17",1972,"San Francisco","Princeton","Landings","All other species",12543,1408
+"FB 161","Table 17",1972,"San Francisco","Princeton","Landings","Port total",910162,521772
 "FB 161","Table 17",1972,"San Francisco","Oakland","Landings","Albacore tuna",572430,183562
 "FB 161","Table 17",1972,"San Francisco","Oakland","Landings","Salmon",86301,69148
 "FB 161","Table 17",1972,"San Francisco","Oakland","Landings","Dover sole",439661,36133
@@ -122,24 +133,31 @@
 "FB 161","Table 17",1972,"San Francisco","Oakland","Landings","Rockfish",47098,2632
 "FB 161","Table 17",1972,"San Francisco","Oakland","Landings","Dungeness crab",2063,1408
 "FB 161","Table 17",1972,"San Francisco","Oakland","Landings","All other species",7181,1098
+"FB 161","Table 17",1972,"San Francisco","Oakland","Landings","Port totals",1200344,297225
 "FB 161","Table 17",1972,"San Francisco","Point Reyes","Landings","Salmon",182493,148325
 "FB 161","Table 17",1972,"San Francisco","Point Reyes","Landings","Giant Pacific oyster",74014,64392
 "FB 161","Table 17",1972,"San Francisco","Point Reyes","Landings","Dungeness crab",17723,12094
 "FB 161","Table 17",1972,"San Francisco","Point Reyes","Landings","All other species",3220,595
+"FB 161","Table 17",1972,"San Francisco","Point Reyes","Landings","Port totals",277450,225406
 "FB 161","Table 17",1972,"San Francisco","Berkeley","Landings","Salmon",52589,43766
 "FB 161","Table 17",1972,"San Francisco","Berkeley","Landings","Dungeness crab",14870,10147
 "FB 161","Table 17",1972,"San Francisco","Berkeley","Landings","All other species",5725,1505
+"FB 161","Table 17",1972,"San Francisco","Berkeley","Landings","Port totals",73184,55418
 "FB 161","Table 17",1972,"San Francisco","Tomales Bay","Landings","Eastern oyster",9028,26543
 "FB 161","Table 17",1972,"San Francisco","Tomales Bay","Landings","Giant Pacific oyster",21541,18740
 "FB 161","Table 17",1972,"San Francisco","Tomales Bay","Landings","Pacific herring",12000,7608
 "FB 161","Table 17",1972,"San Francisco","Tomales Bay","Landings","All other species",4478,1094
+"FB 161","Table 17",1972,"San Francisco","Tomales Bay","Landings","Port totals",47047,53985
 "FB 161","Table 17",1972,"San Francisco","Richmond","Landings","Perch",16373,5684
 "FB 161","Table 17",1972,"San Francisco","Richmond","Landings","White croaker",16193,3095
 "FB 161","Table 17",1972,"San Francisco","Richmond","Landings","Salmon",2106,1748
 "FB 161","Table 17",1972,"San Francisco","Richmond","Landings","All other species",1613,153
+"FB 161","Table 17",1972,"San Francisco","Richmond","Landings","Port totals",36285,10680
 "FB 161","Table 17",1972,"San Francisco","All Other Ports","Landings","Longjaw mudsucker",1287,3860
 "FB 161","Table 17",1972,"San Francisco","All Other Ports","Landings","Perch",5577,1927
 "FB 161","Table 17",1972,"San Francisco","All Other Ports","Landings","All other species",1751,874
+"FB 161","Table 17",1972,"San Francisco","All Other Ports","Landings","Totals",8615,6661
+"FB 161","Table 17",1972,"San Francisco","San Francisco Area Totals","Landings","Totals",17070709,4555255
 "FB 161","Table 18",1972,"Monterey","Monterey","Landings","Albacore tuna",2041166,653204
 "FB 161","Table 18",1972,"Monterey","Monterey","Landings","Rockfish",3572445,318865
 "FB 161","Table 18",1972,"Monterey","Monterey","Landings","Squid",9724090,308722
@@ -160,6 +178,7 @@
 "FB 161","Table 18",1972,"Monterey","Monterey","Landings","Pacific bonito",18715,1347
 "FB 161","Table 18",1972,"Monterey","Monterey","Landings","Skate",43405,1006
 "FB 161","Table 18",1972,"Monterey","Monterey","Landings","All other species",22123,4095
+"FB 161","Table 18",1972,"Monterey","Monterey","Landings","Port totals",18469386,1602680
 "FB 161","Table 18",1972,"Monterey","Moss Landing","Landings","Albacore tuna",2379734,761551
 "FB 161","Table 18",1972,"Monterey","Moss Landing","Landings","Salmon",380417,322604
 "FB 161","Table 18",1972,"Monterey","Moss Landing","Landings","Squid",2534188,80456
@@ -175,6 +194,7 @@
 "FB 161","Table 18",1972,"Monterey","Moss Landing","Landings","Pacific bonito",26917,1937
 "FB 161","Table 18",1972,"Monterey","Moss Landing","Landings","Flounder",10713,1291
 "FB 161","Table 18",1972,"Monterey","Moss Landing","Landings","All other species",62859,4892
+"FB 161","Table 18",1972,"Monterey","Moss Landing","Landings","Port totals",7001242,1254245
 "FB 161","Table 18",1972,"Monterey","Santa Cruz","Landings","Salmon",23804,20477
 "FB 161","Table 18",1972,"Monterey","Santa Cruz","Landings","California halibut",30296,12768
 "FB 161","Table 18",1972,"Monterey","Santa Cruz","Landings","Albacore tuna",31773,10168
@@ -184,6 +204,8 @@
 "FB 161","Table 18",1972,"Monterey","Santa Cruz","Landings","Rockfish",28631,3041
 "FB 161","Table 18",1972,"Monterey","Santa Cruz","Landings","Lingcod",9508,1187
 "FB 161","Table 18",1972,"Monterey","Santa Cruz","Landings","All other species",34207,2697
+"FB 161","Table 18",1972,"Monterey","Santa Cruz","Landings","Port totals",203283,62200
+"FB 161","Table 18",1972,"Monterey","Monterey Area Totals","Landings","Totals",25673911,2919125
 "FB 161","Table 19",1972,"Santa Barbara","Morro Bay","Landings","Albacore tuna",3214077,1029381
 "FB 161","Table 19",1972,"Santa Barbara","Morro Bay","Landings","Rockfish",1848351,163061
 "FB 161","Table 19",1972,"Santa Barbara","Morro Bay","Landings","Red abalone",219687,112799
@@ -201,6 +223,7 @@
 "FB 161","Table 19",1972,"Santa Barbara","Morro Bay","Landings","Perch",8813,2733
 "FB 161","Table 19",1972,"Santa Barbara","Morro Bay","Landings","Rex sole",21126,2622
 "FB 161","Table 19",1972,"Santa Barbara","Morro Bay","Landings","All other species",39609,4723
+"FB 161","Table 19",1972,"Santa Barbara","Morro Bay","Landings","Port totals",6333601,1509822
 "FB 161","Table 19",1972,"Santa Barbara","Santa Barbara","Landings","Red abalone",640543,328890
 "FB 161","Table 19",1972,"Santa Barbara","Santa Barbara","Landings","Black abalone",823505,140162
 "FB 161","Table 19",1972,"Santa Barbara","Santa Barbara","Landings","Rockfish",1145397,98951
@@ -222,6 +245,7 @@
 "FB 161","Table 19",1972,"Santa Barbara","Santa Barbara","Landings","Albacore tuna",6791,2175
 "FB 161","Table 19",1972,"Santa Barbara","Santa Barbara","Landings","Green abalone",3228,1505
 "FB 161","Table 19",1972,"Santa Barbara","Santa Barbara","Landings","All other species",4622,1132
+"FB 161","Table 19",1972,"Santa Barbara","Santa Barbara","Landings","Port totals",4048770,895452
 "FB 161","Table 19",1972,"Santa Barbara","Port Hueneme","Landings","Northern anchovy",27476975,364475
 "FB 161","Table 19",1972,"Santa Barbara","Port Hueneme","Landings","Pacific bonito",2258295,192066
 "FB 161","Table 19",1972,"Santa Barbara","Port Hueneme","Landings","Squid",3644435,52625
@@ -235,6 +259,7 @@
 "FB 161","Table 19",1972,"Santa Barbara","Port Hueneme","Landings","Pink abalone",2347,1299
 "FB 161","Table 19",1972,"Santa Barbara","Port Hueneme","Landings","White seabass",2409,1281
 "FB 161","Table 19",1972,"Santa Barbara","Port Hueneme","Landings","All other species",55850,2180
+"FB 161","Table 19",1972,"Santa Barbara","Port Hueneme","Landings","Port totals",34261356,669267
 "FB 161","Table 19",1972,"Santa Barbara","Avila","Landings","Albacore tuna",698387,223674
 "FB 161","Table 19",1972,"Santa Barbara","Avila","Landings","Salmon",72595,58872
 "FB 161","Table 19",1972,"Santa Barbara","Avila","Landings","Red abalone",78793,40457
@@ -253,6 +278,7 @@
 "FB 161","Table 19",1972,"Santa Barbara","Avila","Landings","Dover sole",16180,1415
 "FB 161","Table 19",1972,"Santa Barbara","Avila","Landings","Miscellaneous sole",12878,1339
 "FB 161","Table 19",1972,"Santa Barbara","Avila","Landings","All other species",23075,2597
+"FB 161","Table 19",1972,"Santa Barbara","Avila","Landings","Port totals",1739628,423033
 "FB 161","Table 19",1972,"Santa Barbara","Oxnard","Landings","California spiny lobster",25892,38882
 "FB 161","Table 19",1972,"Santa Barbara","Oxnard","Landings","California halibut",24965,12787
 "FB 161","Table 19",1972,"Santa Barbara","Oxnard","Landings","Albacore tuna",8183,2621
@@ -260,9 +286,13 @@
 "FB 161","Table 19",1972,"Santa Barbara","Oxnard","Landings","Pacific bonito",20275,1724
 "FB 161","Table 19",1972,"Santa Barbara","Oxnard","Landings","Black abalone",9885,1682
 "FB 161","Table 19",1972,"Santa Barbara","Oxnard","Landings","All other species",18732,4064
+"FB 161","Table 19",1972,"Santa Barbara","Oxnard","Landings","Port totals",125306,63665
 "FB 161","Table 19",1972,"Santa Barbara","Ventura","Landings","California spiny lobster",804,1207
 "FB 161","Table 19",1972,"Santa Barbara","Ventura","Landings","All other species",7101,1285
+"FB 161","Table 19",1972,"Santa Barbara","Ventura","Landings","Port totals",7905,2492
 "FB 161","Table 19",1972,"Santa Barbara","All Other Ports","Landings","All species",1738,198
+"FB 161","Table 19",1972,"Santa Barbara","All Other Ports","Landings","Totals",1738,198
+"FB 161","Table 19",1972,"Santa Barbara","Santa Barbara Area Totals","Landings","Totals",46518304,3563929
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Landings","Yellowfin tuna",194545756,42922551
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Landings","Skipjack tuna",24289458,4859479
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Landings","Bluefin tuna",14971867,3221888
@@ -276,12 +306,15 @@
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Landings","Perch",107825,4363
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Landings","Pacific mackerel",71795,4089
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Landings","All other species",1100,24
+"FB 161","Table 20",1972,"Los Angeles","Terminal Island","Landings","Total landings",404213945,57156352
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Albacore tuna",70849199,29860981
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Skipjack tuna",79789260,19656819
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Yellowfin tuna",31073419,10229403
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Bluefin tuna",6045303,1710836
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Bigeye tuna",183220,49907
 "FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Black skipjack tuna",423139,37060
+"FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Total shipments",188363540,61545006
+"FB 161","Table 20",1972,"Los Angeles","Terminal Island","Shipments","Port totals",592577485,118701358
 "FB 161","Table 20",1972,"Los Angeles","San Pedro","Landings","Pacific bonito",2656247,245107
 "FB 161","Table 20",1972,"Los Angeles","San Pedro","Landings","White seabass",389220,188453
 "FB 161","Table 20",1972,"Los Angeles","San Pedro","Landings","Jack mackerel",3821160,160542
@@ -317,6 +350,7 @@
 "FB 161","Table 20",1972,"Los Angeles","San Pedro","Landings","Halfmoon",5914,1453
 "FB 161","Table 20",1972,"Los Angeles","San Pedro","Landings","Skipjack tuna",5317,1064
 "FB 161","Table 20",1972,"Los Angeles","San Pedro","Landings","All other species",71061,3845
+"FB 161","Table 20",1972,"Los Angeles","San Pedro","Landings","Port totals",16567737,1806592
 "FB 161","Table 20",1972,"Los Angeles","Wilmington","Landings","Jack mackerel",1832938,77009
 "FB 161","Table 20",1972,"Los Angeles","Wilmington","Landings","Pacific bonito",423662,39094
 "FB 161","Table 20",1972,"Los Angeles","Wilmington","Landings","Northern anchovy",2515914,29041
@@ -324,31 +358,44 @@
 "FB 161","Table 20",1972,"Los Angeles","Wilmington","Landings","California spiny lobster",930,1463
 "FB 161","Table 20",1972,"Los Angeles","Wilmington","Landings","Black abalone",8575,1410
 "FB 161","Table 20",1972,"Los Angeles","Wilmington","Landings","All other species",27008,1650
+"FB 161","Table 20",1972,"Los Angeles","Wilmington","Landings","Total landings",4876907,152042
 "FB 161","Table 20",1972,"Los Angeles","Wilmington","Shipments","Skipjack tuna",37500,9238
+"FB 161","Table 20",1972,"Los Angeles","Wilmington","Shipments","Total shipments",37500,9238
+"FB 161","Table 20",1972,"Los Angeles","Wilmington","Shipments","Port totals",4914407,161280
 "FB 161","Table 20",1972,"Los Angeles","Dana Point","Landings","California spiny lobster",35541,55914
 "FB 161","Table 20",1972,"Los Angeles","Dana Point","Landings","Rockfish",6553,1544
 "FB 161","Table 20",1972,"Los Angeles","Dana Point","Landings","All other species",2787,736
+"FB 161","Table 20",1972,"Los Angeles","Dana Point","Landings","Port totals",44881,58194
 "FB 161","Table 20",1972,"Los Angeles","Redondo Beach","Landings","California spiny lobster",23133,36393
 "FB 161","Table 20",1972,"Los Angeles","Redondo Beach","Landings","Rock crab",119404,17535
 "FB 161","Table 20",1972,"Los Angeles","Redondo Beach","Landings","White seabass",3618,1752
 "FB 161","Table 20",1972,"Los Angeles","Redondo Beach","Landings","Rockfish",8474,1750
 "FB 161","Table 20",1972,"Los Angeles","Redondo Beach","Landings","All other species",2767,665
+"FB 161","Table 20",1972,"Los Angeles","Redondo Beach","Landings","Port totals",157396,58095
 "FB 161","Table 20",1972,"Los Angeles","Newport Beach","Landings","California spiny lobster",7550,11878
 "FB 161","Table 20",1972,"Los Angeles","Newport Beach","Landings","White seabass",18042,8736
 "FB 161","Table 20",1972,"Los Angeles","Newport Beach","Landings","Albacore tuna",24519,8362
 "FB 161","Table 20",1972,"Los Angeles","Newport Beach","Landings","Swordfish",13702,8161
 "FB 161","Table 20",1972,"Los Angeles","Newport Beach","Landings","Rockfish",25337,6045
 "FB 161","Table 20",1972,"Los Angeles","Newport Beach","Landings","All other species",11066,1873
+"FB 161","Table 20",1972,"Los Angeles","Newport Beach","Landings","Port totals",100216,45055
 "FB 161","Table 20",1972,"Los Angeles","Long Beach","Landings","California spiny lobster",2455,3862
 "FB 161","Table 20",1972,"Los Angeles","Long Beach","Landings","Northern anchovy",192384,2221
 "FB 161","Table 20",1972,"Los Angeles","Long Beach","Landings","All other species",585,329
+"FB 161","Table 20",1972,"Los Angeles","Long Beach","Landings","Port totals",195424,6412
 "FB 161","Table 20",1972,"Los Angeles","Malibu","Landings","California spiny lobster",1457,2292
 "FB 161","Table 20",1972,"Los Angeles","Malibu","Landings","All other species",5845,1005
+"FB 161","Table 20",1972,"Los Angeles","Malibu","Landings","Port totals",7302,3297
 "FB 161","Table 20",1972,"Los Angeles","Avalon","Landings","All species",4780,2688
+"FB 161","Table 20",1972,"Los Angeles","Avalon","Landings","Port totals",4780,2688
 "FB 161","Table 20",1972,"Los Angeles","Santa Monica","Landings","Rockfish",7598,1257
 "FB 161","Table 20",1972,"Los Angeles","Santa Monica","Landings","All other species",2983,1163
+"FB 161","Table 20",1972,"Los Angeles","Santa Monica","Landings","Port totals",10581,2420
 "FB 161","Table 20",1972,"Los Angeles","Playa Del Rey","Landings","All species",2996,1333
+"FB 161","Table 20",1972,"Los Angeles","Playa Del Rey","Landings","Port totals",2996,1333
 "FB 161","Table 20",1972,"Los Angeles","All Other Ports","Landings","California spiny lobster",2393,3765
+"FB 161","Table 20",1972,"Los Angeles","All Other Ports","Landings","Totals",2393,3765
+"FB 161","Table 20",1972,"Los Angeles","Los Angeles Area Totals","Landings","Totals",614585598,120850489
 "FB 161","Table 21",1972,"San Diego","San Diego","Landings","Yellowfin tuna",46940841,10376089
 "FB 161","Table 21",1972,"San Diego","San Diego","Landings","Skipjack tuna",11650109,2355349
 "FB 161","Table 21",1972,"San Diego","San Diego","Landings","Bluefin tuna",9337320,1967421
@@ -376,12 +423,15 @@
 "FB 161","Table 21",1972,"San Diego","San Diego","Landings","Common dolphinfish",4823,1674
 "FB 161","Table 21",1972,"San Diego","San Diego","Landings","California barracuda",3126,1015
 "FB 161","Table 21",1972,"San Diego","San Diego","Landings","All other species",21953,4095
+"FB 161","Table 21",1972,"San Diego","San Diego","Landings","Total landings",75451735,16972628
 "FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Albacore tuna",5281298,2137082
 "FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Skipjack tuna",7996794,1969227
 "FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Yellowfin tuna",5708148,1800635
 "FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Bluefin tuna",51404,10846
 "FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Bigeye tuna",7991,1798
 "FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Black skipjack tuna",11265,845
+"FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Total shipments",19056900,5920433
+"FB 161","Table 21",1972,"San Diego","San Diego","Shipments","Port totals",94508635,22893061
 "FB 161","Table 21",1972,"San Diego","Oceanside","Landings","California spiny lobster",17666,28022
 "FB 161","Table 21",1972,"San Diego","Oceanside","Landings","Rockfish",95139,21395
 "FB 161","Table 21",1972,"San Diego","Oceanside","Landings","White seabass",13963,7405
@@ -391,5 +441,8 @@
 "FB 161","Table 21",1972,"San Diego","Oceanside","Landings","Albacore tuna",5058,1707
 "FB 161","Table 21",1972,"San Diego","Oceanside","Landings","California halibut",2345,1322
 "FB 161","Table 21",1972,"San Diego","Oceanside","Landings","All other species",15027,3419
+"FB 161","Table 21",1972,"San Diego","Oceanside","Landings","Port totals",219472,76281
 "FB 161","Table 21",1972,"San Diego","All Other Ports","Landings","California spiny lobster",4838,7674
 "FB 161","Table 21",1972,"San Diego","All Other Ports","Landings","All other species",4898,1147
+"FB 161","Table 21",1972,"San Diego","All Other Ports","Landings","Totals",9736,8821
+"FB 161","Table 21",1972,"San Diego","San Diego Area Totals","Landings","Totals",94737843,22978163

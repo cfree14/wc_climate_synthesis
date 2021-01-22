@@ -130,7 +130,7 @@ freeR::complete(data_full)
 ################################################################################
 
 # Export data
-write.csv(data_f, file=file.path(outdir, "FB108_Tables34-39_1958_landings_by_port.csv"), row.names=F)
+write.csv(data_full, file=file.path(outdir, "FB108_Tables34-39_1958_landings_by_port.csv"), row.names=F)
 
 
 
