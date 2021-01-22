@@ -54,9 +54,15 @@ table(data_orig$type)
 # Format data
 data_full <- data_orig %>% 
   # Correct a few species names
-  mutate(species=recode(species, 
+  mutate(species=gsub('[[:digit:]]+', '', species) %>% stringr::str_trim(.),
+         species=recode(species, 
                         "Total"="Totals",
-                        "Port totals"="Totals",
+                        "TotalsI"="Totals",
+                        "Port totals"="Port totals",
+                        "Port total"="Port totals",
+                        "Tort totals"="Port totals",
+                        "Total landings"="Totals",
+                        "Total shipments"="Totals",
                         'Jacknife clam'='Jackknife clam', 
                         'Pacific Ocean shrimp'='Pacific ocean shrimp')) %>% 
   # Fix port spellings
@@ -119,6 +125,11 @@ data_full <- data_orig %>%
   select(source:port_orig, port, type, species, value_usd, landings_lb, everything()) %>% 
   arrange(year, source, table, port_complex, port, type, species)
 
+# Look for totals
+spp <- sort(unique(data_full$species))
+spp[grepl("tot", spp)]
+spp[grepl("port", spp)]
+
 # Inspect
 str(data_full)
 freeR::complete(data_full)
@@ -137,30 +148,6 @@ names2check <- data_full$species[!grepl("total", tolower(data_full$species))]
 wcfish::check_names(names2check)
 
 
-# Inspect coverage
-################################################################################
-
-# Coverage
-coverage <- data_full %>% 
-  # Remove totals
-  filter(species!="Totals") %>% 
-  # Summarize
-  group_by(port_complex, port, year) %>% 
-  summarize(landings_lb=sum(landings_lb))
-
-# Plot coverage
-g <- ggplot(coverage, aes(x=year, y=port)) +
-  facet_grid(port_complex~., scales="free_y", space="free_y") +
-  geom_tile() +
-  # Labels
-  labs(x="Year", y="") +
-  scale_x_continuous(breaks=seq(1940,1980,5)) +
-  # Theme
-  theme_bw() +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-g
-
-
 # QA/QC checks
 ################################################################################
 
@@ -170,7 +157,7 @@ g
 # Calculate observed totals
 tot_obs <- data_full %>% 
   # Remove totals
-  filter(species!="Totals") %>% 
+  filter(!species%in%c("Totals", "Port totals") & type=="Landings") %>% 
   # Calculate totals
   group_by(port_complex, port, year) %>% 
   summarize(value_tot_obs=sum(value_usd, na.rm=T),
@@ -180,7 +167,7 @@ tot_obs <- data_full %>%
 # Extract reported totals
 tot_rep <- data_full %>% 
   # Extract totals
-  filter(species=="Totals") %>% 
+  filter(!species%in%c("Totals", "Port totals") & type=="Landings") %>% 
   # Simplify
   select(port_complex, port, year, value_usd, landings_lb) %>% 
   # Rename
@@ -248,6 +235,28 @@ g2
 ggsave(g2, filename=file.path(plotdir, "qaqc_port_landings_volume.png"), 
        width=5, height=8.5, units="in", dpi=600)
   
+
+# Inspect coverage
+################################################################################
+
+# Coverage
+coverage <- data_full %>% 
+  # Remove totals
+  filter(species!="Totals") %>% 
+  # Summarize
+  group_by(port_complex, port, year) %>% 
+  summarize(landings_lb=sum(landings_lb))
+
+# Plot coverage
+g <- ggplot(coverage, aes(x=year, y=port)) +
+  facet_grid(port_complex~., scales="free_y", space="free_y") +
+  geom_tile() +
+  # Labels
+  labs(x="Year", y="") +
+  scale_x_continuous(breaks=seq(1940,1980,5)) +
+  # Theme
+  theme_bw() + my_theme
+g
 
 
 # Export data
