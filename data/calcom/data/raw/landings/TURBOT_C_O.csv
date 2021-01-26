@@ -1,0 +1,5 @@
+"year","species_code","port_complex_code","gear_code","live_yn","source","landings_lb"
+"1981","CTRB","OSF","TWL","N","Nominal","6"
+"2010","CTRB","OLA","TWL","Y","ACTUAL","185"
+"2011","CTRB","OLA","TWL","Y","ACTUAL","24"
+"2016","CTRB","BRG","TWL","N","ACTUAL","5"
