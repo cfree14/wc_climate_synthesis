@@ -1,0 +1,34 @@
+species_group,sex,code,description
+FLAT,1,1,Immature. Very small - no sperm extruded under pressure during spawning season.
+FLAT,1,2,Mature. Enlarged - extending slightly into the abdominal cavity  but retaining sperm.
+FLAT,1,3,Ripe/Spawning. Running sperm evident.
+FLAT,1,4,Spent. Soft -  few sperm present (not likely to see this stage; short time)
+FLAT,1,8,Unknown: not any of the above; different; not determinable.
+FLAT,1,9,Unknown
+FLAT,2,1,Immature. Ovaries small with no visible eggs.
+FLAT,2,2,Mature/Resting. Ovaries enlarged and no eggs can be distinguished by direct observation.
+FLAT,2,3,Ripe. Ovaries very full of granular eggs and ova cannot be separated easily.
+FLAT,2,4,Spawning. Ovaries very full of entirely translucent mature ova. Eggs will run under a very slight pressure.
+FLAT,2,8,Unknown, not any of the above, different, not determinable.
+FLAT,2,9,Unknown
+LING,1,1,Immature:  thin and  ribbon-like.
+LING,1,2,Transitional: moderate sized; firm; compact.
+LING,1,3,Ripe: moderate to large; white; creamy; milt flows when cut.
+LING,2,1,Immature:  small; 1.5 – 3.0 cm.
+LING,2,2,Maturing: eggs visible and opaque.
+LING,2,3,Mature: ovaries swollen with large pale sticky egg mass.
+LING,2,4,Spent: thick walled ovaries empty.
+LING,2,5,Transitional: thick walled ovaries firming and progressing to thinner-walled condition.
+ROCK,1,1,IMMATURE: THIN;  RIBBONLIKE; CLEAR;  BREAKS EASILY
+ROCK,1,2,EARLY MATURITY: TRIANGULAR XSECTION; MILT DOES NOT FLOW READILY
+ROCK,1,3,LATE MATURITY: LARGE; WHITE; CREAMY; MILT FLOWS WHEN CUT
+ROCK,1,8,UNKNOWN: NOT ONE OF THE ABOVE -  DIFFERENT
+ROCK,1,9,NOT EXAMINED
+ROCK,2,1,IMMATURE: SMALL;  ELONGATE; PALE FLESH COLORED; ROUND XS; NO BLACK SPOTS
+ROCK,2,2,EARLY YOLK: OVARIES SLIGHTLY SWOLLEN AND ROUND XS; YELLOW-ORANGE COLOR (WHITE IN SOME SPECIES)
+ROCK,2,3,LATE YOLK: OVARIES LARGE AND FIRM;  BRIGHT UNIFORM ORANGE-YELLOW COLOR; OVARY MEMBRANE THIN; EGGS SEPARATE EASILY
+ROCK,2,4,EYED LARVAE: OVARIES LARGE; FULL; THIN WALLED; LARVAE FREE WITH PIGMENTED EYES
+ROCK,2,5,SPENT: OVARIES LIMP; LARGE AND MOSTLY EMPTY; DARK RED-BROWN BLOOD VESSELS VISIBLE
+ROCK,2,6,RECOVERING: OVARIES SMALL; LIMP BUT MORE FIRM; REDUCED REDNESS; COLOR BROWN-FLESH; POSSIBLE RESIDUAL EGGS PRESENT
+ROCK,2,8,UNKNOWN:  DIFFERENT THAN ABOVE
+ROCK,2,9,NOT EXAMINED

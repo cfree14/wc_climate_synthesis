@@ -1,0 +1,8 @@
+"year","species_code","port_complex_code","gear_code","live_yn","source","landings_lb"
+"1983","SSDB","MRO","TWL","N","Nominal","17"
+"1997","SSDB","OLA","HKL","N","NOMINAL","30"
+"1998","SSDB","BDG","TWL","N","NOMINAL","231"
+"2002","SSDB","OSB","TWL","Y","NOMINAL","64"
+"2005","SSDB","MNT","HKL","N","NOMINAL","3"
+"2010","SSDB","OLA","TWL","N","NOMINAL","180"
+"2015","SSDB","OSD","HKL","N","NOMINAL","10"

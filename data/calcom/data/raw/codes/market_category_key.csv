@@ -1,0 +1,427 @@
+mark_cat, description, nominal_species, species_grp,
+0,Unknown, unspecified,UNK,UNK
+1,Tuna, yellowfin,YTNA,OTHER
+2,Tuna, skipjack,STNA,OTHER
+3,Bonito, Pacific,BONI,OTHER
+4,Tuna, bluefin,BTNA,OTHER
+5,Tuna, albacore,ALBC,OTHER
+6,Tuna, unspecified,OTNA,OTHER
+8,Tuna, bigeye,OTNA,OTHER
+9,Tuna," skipjack,  black",STNA,OTHER
+11,Tuna, longtail,OTNA,OTHER
+12,Tuna, blackfin,OTNA,OTHER
+15,Escolar,MISC,OTHER,
+17,Oilfish,MISC,OTHER,
+19,Mackerel, bullet,UMCK,OTHER
+40,Yellowtail,MISC,OTHER,
+41,Jack, Pacific crevalle,JACK,OTHER
+42,Jacks, unspecified,JACK,OTHER
+43,Jack, almaco (amberjack),JACK,OTHER
+50,Mackerel, unspecified,UMCK,OTHER
+51,Mackerel, Pacific,PMCK,OTHER
+52,Sierra, Pacific,MISC,OTHER
+55,Mackerel, jack,JMCK,OTHER
+56,jack mackeral, large,MISC,OTHER
+57,Wahoo,WAHO,OTHER,
+80,Butterfish (Pacific pompano),MISC,OTHER,
+81,Pacific Pomfret,MISC,OTHER,
+91,Swordfish,SWRD,OTHER,
+92,Marlin, striped,MARL,OTHER
+95,Sailfish,SAIL,OTHER,
+96,Shark, white,SHRK,ELASMOBRANCH
+97,Shark, bigeye thresher,SHRK,ELASMOBRANCH
+98,Shark, pelagic thresher,SHRK,ELASMOBRANCH
+100,Sardine, Pacific,PSDN,OTHER
+101,Sardine, juvenile,PSDN,OTHER
+105,Herring, round,PHRG,OTHER
+110,Anchovy, northern,NANC,OTHER
+111,Anchovy, deepbody,NANC,OTHER
+113,Anchovy, slough,NANC,OTHER
+121,Herring, Pacific,PHRG,OTHER
+122,Herring, Roe,HROE,OTHER
+130,Barracuda, California,CUDA,OTHER
+135,Mullet, striped,MULL,OTHER
+144,Senorita,MISC,OTHER,
+145,Sheephead, California,SHPD,OTHER
+146,Wrasse, rock,MISC,OTHER
+147,Skate, Longnose,LSKT,ELASMOBRANCH
+149,Shark, blacktip,SHRK,ELASMOBRANCH
+150,Shark, unspecified,SHRK,ELASMOBRANCH
+151,Shark, shortfin mako,SHRK,ELASMOBRANCH
+152,Shark, spiny dogfish,DSRK,ELASMOBRANCH
+153,Shark, leopard,LSRK,ELASMOBRANCH
+154,Shark, brown smoothhound,SHRK,ELASMOBRANCH
+155,Shark, thresher,SHRK,ELASMOBRANCH
+156,Shark, basking,SHRK,ELASMOBRANCH
+158,Shark, smooth hammerhead,SHRK,ELASMOBRANCH
+159,Shark, soupfin,SSRK,ELASMOBRANCH
+160,Sharks, cow,SHRK,ELASMOBRANCH
+161,Shark, sixgill,SHRK,ELASMOBRANCH
+162,Shark, sevengill,SHRK,ELASMOBRANCH
+163,Shark, swell,SHRK,ELASMOBRANCH
+164,Shark, dusky,SHRK,ELASMOBRANCH
+165,Shark, Pacific angel,ASRK,ELASMOBRANCH
+166,Ratfish, spotted,RATF,ELASMOBRANCH
+167,Shark, blue,SHRK,ELASMOBRANCH
+168,Shark, salmon,SHRK,ELASMOBRANCH
+169,Shark, horn,SHRK,ELASMOBRANCH
+170,Ray, unspecified,URAY,ELASMOBRANCH
+171,Ray, bat,URAY,ELASMOBRANCH
+172,Ray, Pacific electric,URAY,ELASMOBRANCH
+173,Stingray,URAY,ELASMOBRANCH,
+174,Guitarfish, shovelnose,SHRK,ELASMOBRANCH
+175,Skate, unspecified,USKT,ELASMOBRANCH
+176,Skate, big,BSKT,ELASMOBRANCH
+177,Skate, California,CSKT,ELASMOBRANCH
+178,Skate, thornback,USKT,ELASMOBRANCH
+179,Shark, gray smoothhound,SHRK,ELASMOBRANCH
+180,Smelts, true,SMLT,OTHER
+181,Grunion, California,SMLT,OTHER
+182,Smelt, surf,SMLT,OTHER
+183,Smelt, Bay,MISC,OTHER
+184,Jacksmelt,SMLT,OTHER,
+185,Smelt, whitebait,SMLT,OTHER
+186,Topsmelt,SMLT,OTHER,
+187,Smelt, night,SMLT,OTHER
+188,Eulachon,EULC,OTHER,
+189,Silversides,MISC,OTHER,
+190,Sablefish,SABL,OTHER_GF,
+191,Louvar,MISC,OTHER,
+195,Lingcod,LCOD,OTHER_GF,
+196,Tomcod, Pacific,MISC,OTHER_GF
+197,Cod, Pacific,PCOD,OTHER_GF
+198,Grenadiers,GRDR,OTHER_GF,
+200,Sole, unspecified,UFLT,FLATFISH
+201,Flounder, arrowtooth,ARTH,FLATFISH
+202,Sole, bigmouth,UFLT,FLATFISH
+203,Sole, rock,RSOL,FLATFISH
+204,Sole, fantail,FNTS,FLATFISH
+205,Sole, sand,SSOL,FLATFISH
+206,Sole, English,EGLS,FLATFISH
+207,Sole, rex,REX,FLATFISH
+208,Sole, butter,BSOL,FLATFISH
+209,Sole, petrale,PTRL,FLATFISH
+210,Sole, slender,SLNS,FLATFISH
+211,Sole, Dover,DOVR,FLATFISH
+212,Sole, tongue,UFLT,FLATFISH
+220,Halibut, unspecified,CHLB,FLATFISH
+221,Halibut, Pacific,PHLB,FLATFISH
+222,Halibut, California,CHLB,FLATFISH
+225,Sanddab,UDAB,FLATFISH,
+226,Sanddab, longfin,LDAB,FLATFISH
+227,Sanddab, Pacific,PDAB,FLATFISH
+228,Sanddab, speckled,SSDB,FLATFISH
+230,Flounder, unspecified,UFLT,FLATFISH
+231,Flounder, starry,STRY,FLATFISH
+235,Turbot, curlfin,CSOL,FLATFISH
+236,Turbot, diamond,DTRB,FLATFISH
+237,Sole, C-O,CTRB,FLATFISH
+238,Turbot, hornyhead,HTRB,FLATFISH
+239,Turbot, spotted,UTRB,FLATFISH
+240,Turbot,UTRB,FLATFISH,
+245,Rockfish, cowcod,CWCD,ROCKFISH
+246,Rockfish, copper (whitebelly),COPP,ROCKFISH
+247,Rockfish, canary,CNRY,ROCKFISH
+249,Rockfish, vermilion,VRML,ROCKFISH
+250,Rockfish, unspecified,URCK,ROCKFISH
+251,Rockfish, black-and-yellow,BYEL,ROCKFISH
+252,Rockfish, black,BLCK,ROCKFISH
+253,Rockfish, bocaccio,BCAC,ROCKFISH
+254,Rockfish, chilipepper,CLPR,ROCKFISH
+255,Rockfish, greenspotted,GSPT,ROCKFISH
+256,Rockfish, starry,STAR,ROCKFISH
+257,Rockfish, darkblotched,DBRK,ROCKFISH
+258,Rockfish, China,CHNA,ROCKFISH
+259,Rockfish, yellowtail,YTRK,ROCKFISH
+260,Scorpionfish, California (Sculpin in early years),SCOR,OTHER_GF
+261,Cabezon,CBZN,OTHER_GF,
+262,Thornyheads,THDS,OTHER_GF,
+263,Rockfish, gopher,GPHR,ROCKFISH
+264,Rockfish, pinkrose,PRRK,ROCKFISH
+266,Rockfish, large red,URCK,ROCKFISH
+267,Rockfish, brown,BRWN,ROCKFISH
+268,Rockfish, rosy,ROSY,ROCKFISH
+269,Rockfish, widow,WDOW,ROCKFISH
+270,Rockfish, splitnose,SNOS,ROCKFISH
+271,Rockfish, Pacific ocean perch,POP,ROCKFISH
+272,Sculpin, staghorn,SCLP,OTHER_GF
+273,Sculpin, yellowchin,SCLP,OTHER_GF
+275,Bass, rock,OBAS,OTHER
+276,Bass, spotted sand,OBAS,OTHER
+277,Bass, kelp,OBAS,OTHER
+278,Bass, barred sand,OBAS,OTHER
+280,Bass, giant sea,GBAS,OTHER
+281,seabass, shortfin,MISC,OTHER
+285,Rockfish, pelican (China),URCK,ROCKFISH
+289,Greenling, Rock,RCKG,OTHER_GF
+290,Greenling, kelp,KLPG,OTHER_GF
+291,Triggerfish,MISC,OTHER,
+292,Sunfish, ocean,MISC,OTHER
+300,Salmon,USMN,SALMONID,
+301,Salmon, chum,CHUM,SALMONID
+302,Salmon, chinook,CHNK,SALMONID
+303,Salmon, pink,PINK,SALMONID
+304,Salmon, coho,COHO,SALMONID
+305,Salmon, roe,USMN,SALMONID
+306,Salmon, Roe,USMN,SALMONID
+316,Trout, rainbow,OMIT,SALMONID
+320,Catfish, unspecified,OMIT,OTHER
+321,catfish, squaretail,MISC,OTHER
+322,Bullhead, brown,OMIT,OTHER
+324,Shad, threadfin,SHAD,OTHER
+325,Shad, American,SHAD,OTHER
+326,shad, roe,MISC,OTHER
+327,shad, buck,MISC,OTHER
+335,Bass, striped,SBAS,OTHER
+340,Tilapia,MISC,OTHER,
+341,Crab, red rock,RCRB,INVERT
+342,Crab, yellow rock,OCRB,INVERT
+343,Crab, brown rock,OCRB,INVERT
+345,Carp,OMIT,OTHER,
+346,Hardhead (freshwater),OMIT,OTHER,
+347,Splittail,MISC,OTHER,
+348,Hitch,MISC,OTHER,
+349,Blackfish, Sacramento,OMIT,OTHER
+361,Stickleback, threespine,OMIT,OTHER
+365,Squawfish,OMIT,OTHER,
+375,Sucker,OMIT,OTHER,
+400,Seabass, white,WBAS,OTHER
+410,Seabass, totuava,OBAS,OTHER
+415,Snapper -Mexico-,MISC,OTHER,
+420,Croaker, unspecifed,OCRK,OTHER
+421,Croaker, black,OCRK,OTHER
+422,Croaker, spotfin,OCRK,OTHER
+423,Croaker, yellowfin,OCRK,OTHER
+426,Corbina, California,MISC,OTHER
+427,Corvina, shortfin,MISC,OTHER
+430,Grouper,GROU,OTHER,
+431,Cabrilla, spotted,MISC,OTHER
+432,Grouper, broomtail,GROU,OTHER
+435,Croaker, white,OCRK,OTHER
+440,Queenfish,MISC,OTHER,
+445,Flyingfish,MISC,OTHER,
+446,Saury, Pacific,MISC,OTHER
+450,Eel,EELS,OTHER,
+451,Eel, blenny,EELS,OTHER
+452,Eel, California moray,EELS,OTHER
+453,Lamprey, Pacific,EELS,OTHER
+454,Eel, wolf (wolf-eel),EELS,OTHER
+455,Eel, spotted cusk-,EELS,OTHER
+456,Eel, monkeyface,EELS,OTHER
+457,Hagfishes,OHAG,OTHER,
+458,ribbon fish,MISC,OTHER,
+459,scabbard fish,MISC,OTHER,
+465,tai,MISC,OTHER,
+467,Opah,MISC,OTHER,
+470,Sturgeons,USTG,OTHER,
+473,Lizardfish, California,MISC,OTHER
+474,Perch-like, unspecified,MISC,OTHER
+475,Opaleye,PRCH,OTHER,
+476,Needlefish, California,MISC,OTHER
+477,Bonefish,MISC,OTHER,
+478,Halfmoon,MISC,OTHER,
+479,Blacksmith,MISC,OTHER,
+480,Sargo,MISC,OTHER,
+481,Dolphin (fish),MISC,OTHER,
+482,Garibaldi,OMIT,OTHER,
+483,Mudsucker, longjaw,MISC,OTHER
+484,Salema,MISC,OTHER,
+485,Midshipman, plainfin,OMIT,OTHER
+486,Goby, bluebanded,GOBY,OTHER
+487,Goby, yellowfin,GOBY,OTHER
+488,Goby, zebra,GOBY,OTHER
+490,Whitefish, ocean,OWFS,OTHER
+491,Killifish, California,MISC,OTHER
+495,Whiting, Pacific,PWHT,OTHER_GF
+501,Kelpfish, giant,MISC,OTHER
+510,Kelpfishes,MISC,OTHER,
+550,Surfperch, unspecified,PRCH,OTHER
+551,Surfperch, barred,PRCH,OTHER
+552,Surfperch, black,PRCH,OTHER
+553,Surfperch, redtail,PRCH,OTHER
+554,Surfperch, shiner,PRCH,OTHER
+555,Surfperch, striped,PRCH,OTHER
+556,Surfperch, white,PRCH,OTHER
+557,Surfperch, walleye,PRCH,OTHER
+558,Surfperch, rubberlip,PRCH,OTHER
+559,Surfperch, pile,PRCH,OTHER
+560,Surfperch, calico,PRCH,OTHER
+561,Surfperch, dwarf,PRCH,OTHER
+562,Surfperch, rainbow,PRCH,OTHER
+563,Surfperch, pink,PRCH,OTHER
+564,Surfperch, silver,PRCH,OTHER
+601,Kahawai,MISC,OTHER,
+602,Zebraperch,PRCH,OTHER,
+650,Rockfish, rougheye,REYE,ROCKFISH
+651,Rockfish, olive,OLVE,ROCKFISH
+652,Rockfish, grass,GRAS,ROCKFISH
+653,Rockfish, pink,PNKR,ROCKFISH
+654,Rockfish, greenstriped,GSRK,ROCKFISH
+655,Rockfish, copper,COPP,ROCKFISH
+656,Rockfish, blackspotted,BSPR,ROCKFISH
+657,Rockfish, flag,FLAG,ROCKFISH
+658,Rockfish, treefish,TREE,ROCKFISH
+659,Rockfish, kelp,KLPR,ROCKFISH
+660,Rockfish, honeycomb,HNYC,ROCKFISH
+661,Rockfish, greenblotched,GBLC,ROCKFISH
+662,Rockfish, bronzespotted,BRNZ,ROCKFISH
+663,Rockfish, bank,BANK,ROCKFISH
+664,Rockfish, rosethorn,RSTN,ROCKFISH
+665,Rockfish, blue,BLUR,ROCKFISH
+666,Rockfish, squarespot,SQRS,ROCKFISH
+667,Rockfish, blackgill,BLGL,ROCKFISH
+668,Rockfish, stripetail,STRK,ROCKFISH
+669,Rockfish, speckled,SPKL,ROCKFISH
+670,Rockfish, swordspine,SWSP,ROCKFISH
+671,Rockfish, calico,CLCO,ROCKFISH
+672,Rockfish, shortbelly,SBLY,ROCKFISH
+673,Rockfish, chameleon,CMEL,ROCKFISH
+674,Rockfish, aurora,ARRA,ROCKFISH
+675,Rockfish, redbanded,RDBD,ROCKFISH
+676,Rockfish, Mexican,MXRF,ROCKFISH
+677,Rockfish, shortraker,SRKR,ROCKFISH
+678,Thornyhead, longspine,LSPN,OTHER_GF
+679,Thornyhead, shortspine,SSPN,OTHER_GF
+680,Anemones,UINV,INVERT,
+681,Jellyfish,UINV,INVERT,
+682,Sea pansy,UINV,INVERT,
+683,Limpet, keyhole,UINV,INVERT
+684,Snail, tegula,UINV,INVERT
+685,Crab, hermit,OCRB,INVERT
+686,Crab, spider/sheep claws,OCRB,INVERT
+687,Sand dollar,UINV,INVERT,
+688,Bryozoan,UINV,INVERT,
+689,Flatworm, marine,UINV,INVERT
+690,Hornsnail,UINV,INVERT,
+699,Invertebrate Unspecified,UINV,INVERT,
+700,Abalone,ABLN,INVERT,
+701,Abalone, black,ABLN,INVERT
+702,Abalone, red,ABLN,INVERT
+703,Abalone, green,ABLN,INVERT
+704,Abalone, pink,ABLN,INVERT
+705,Abalone, white,ABLN,INVERT
+706,Abalone, threaded,ABLN,INVERT
+707,Abalone, pinto,ABLN,INVERT
+708,Abalone, flat,ABLN,INVERT
+709,Limpet, unspecified,UINV,INVERT
+710,Squid, jumbo,SQID,INVERT
+711,Squid, market,MSQD,INVERT
+712,Octopus, unspecified,OCTO,INVERT
+717,Scallop, weathervane,SCAL,INVERT
+718,Scallop, rock,SCAL,INVERT
+719,Scallop, unspecified,SCAL,INVERT
+720,Clam, unspecified,CLAM,INVERT
+721,Clam, common littleneck,CLAM,INVERT
+722,Clam, Pismo,CLAM,INVERT
+723,Clam, softshell,CLAM,INVERT
+725,Clam, northern razor,CLAM,INVERT
+726,Clam, gaper,CLAM,INVERT
+727,Clam, common Washington,CLAM,INVERT
+728,Clam, California jackknife,CLAM,INVERT
+729,Sea slug,UINV,INVERT,
+730,Mussel,UINV,INVERT,
+731,Whelk, Kellet's,UINV,INVERT
+732,Snail, sea,UINV,INVERT
+733,Clam, freshwater,OMIT,INVERT
+734,Clam, purple,CLAM,INVERT
+735,Clam, rosy razor,CLAM,INVERT
+736,Snails, moon,UINV,INVERT
+737,Clam, northern quahog,CLAM,INVERT
+740,Oyster, unspecified,OSTR,INVERT
+741,Oyster, eastern,OSTR,INVERT
+742,Oyster, California native,OSTR,INVERT
+743,Oyster, giant Pacific,OSTR,INVERT
+745,Oyster, european flat,OSTR,INVERT
+746,Snail, bubble,UINV,INVERT
+747,Snail, top,UINV,INVERT
+749,Sea hare,UINV,INVERT,
+750,Echinoderm, unspecified,UINV,INVERT
+751,Sea stars,UINV,INVERT,
+752,Urchin, red,RURC,INVERT
+753,Urchin, purple sea,PURC,INVERT
+754,Giant Red Sea Cucumber,USCU,INVERT,
+755,Cucumber, sea,USCU,INVERT
+756,Urchin, white,UINV,INVERT
+757,Worty,USCU,INVERT,
+760,Sponges,UINV,INVERT,
+769,Invertebrates, colonial,UINV,INVERT
+781,Snail, freshwater,OMIT,INVERT
+799,Mollusk, unspecified,UINV,INVERT
+800,Crab, Dungeness,DCRB,INVERT
+801,Crab, rock unspecified,RCRB,INVERT
+802,Crab, claws,OCRB,INVERT
+803,Crab, spider,OCRB,INVERT
+804,Crab, king,OCRB,INVERT
+805,Crab, sand,OCRB,INVERT
+806,Crab, shore,OCRB,INVERT
+807,Crab, pelagic red,OCRB,INVERT
+808,Crab, tanner,OCRB,INVERT
+809,Crab, box,OCRB,INVERT
+810,Shrimp, bay,SRMP,INVERT
+811,Shrimp, ghost,SRMP,INVERT
+812,Shrimp, Pacific Ocean,PSHP,INVERT
+813,Prawn, ridgeback,RPRW,INVERT
+814,Shrimp, unspecified,SRMP,INVERT
+815,Prawn, spot,SPRW,INVERT
+816,Prawn, golden,SRMP,INVERT
+817,Shrimp, coonstriped,SRMP,INVERT
+818,Shrimp, red rock,SRMP,INVERT
+819,Shrimp, brine,BRIN,INVERT
+820,Lobster, California spiny,LOBS,INVERT
+821,Shrimp, manta,SRMP,INVERT
+823,Crab, armed box,OCRB,INVERT
+825,Crayfish, signal,OMIT,INVERT
+826,Barnacle,UINV,INVERT,
+827,Crayfish, red swamp,OMIT,INVERT
+828,Crayfish, unspecified,OMIT,INVERT
+830,Spiders, sea,UINV,INVERT
+840,Tunicates,UINV,INVERT,
+850,Worms, marine,UINV,INVERT
+851,Themiste,OMIT,INVERT,
+860,Chiton, unspecified,UINV,INVERT
+899,Crustacean, unspecified,UINV,INVERT
+900,barracuda, roe,MISC,OTHER
+901,shad, roe,MISC,OTHER
+902,roe, unspecified,MISC,OTHER
+903,seabass, roe,MISC,OTHER
+904,salmon, roe,MISC,OTHER
+905,Fin, shark,MISC,OTHER
+906,shark liver,MISC,OTHER,
+907,Halibut liver,MISC,OTHER,
+908,liver, unspecified,MISC,OTHER
+911,sablefish liver,MISC,OTHER,
+912,broadbill swordfish liver,MISC,OTHER,
+913,white seabass liver,MISC,OTHER,
+915,Lancelets, amphioxus,MISC,OTHER
+917,albacore liver,MISC,OTHER,
+920,Frog,OMIT,OTHER,
+921,barracuda liver,MISC,OTHER,
+924,rockfish liver,MISC,OTHER,
+930,Turtle,OMIT,OTHER,
+931,Terrapin,OMIT,OTHER,
+945,snail,MISC,INVERT,
+950,Kelp,OMIT,OTHER,
+951,Agar,OMIT,OTHER,
+953,Algae, marine,OMIT,OTHER
+956,Rockfish, group bocaccio/chili,URCK,ROCKFISH
+957,Rockfish, group bolina,USHR,ROCKFISH
+958,Rockfish, group deepwater reds,RCK3,ROCKFISH
+959,Rockfish, group red,URCK,ROCKFISH
+960,Rockfish, group small,URCK,ROCKFISH
+961,Rockfish, group rosefish,RCK6,ROCKFISH
+962,Rockfish, group gopher,URCK,ROCKFISH
+963,Rockfish, large red,URCK,ROCKFISH
+964,Rockfish, group rougheye/blackspotted,RBR1,ROCKFISH
+970,Rockfish, quillback,QLBK,ROCKFISH
+971,Rockfish, group canary/vermili,RCK8,ROCKFISH
+972,Rockfish, group black/blue,RCK9,ROCKFISH
+973,Rockfish, Nearshore,USHR,ROCKFISH
+974,Rockfish, shelf,USLF,ROCKFISH
+975,Rockfish, slope,USLP,ROCKFISH
+976,Rockfish, Deep Nearshore,UDNR,ROCKFISH
+977,all rf mcats - ratio,URCK,ROCKFISH,
+992,Trawled fish for animal food,MISC,OTHER,
+995,Herring roe on kelp,MISC,OTHER,
+997,Trawled fish, unspecified,MISC,OTHER
+998,Rockfish, Live-well mix,URCK,ROCKFISH
+999,Fish, unspecified,MISC,OTHER

@@ -1,0 +1,200 @@
+species,common_name,sci_name,species_grp
+ABLN,ABALONE, UNSPECIFIED          ,Haliotus spp                          ,INVERT         
+ALBC,ALBACORE                      ,Thunnus alalunga                      ,OTHER          
+NANC,ANCHOVY, NORTHERN             ,Engralis mordax                       ,OTHER          
+CUDA,BARRACUDA, CALIFORNIA         ,Sphyraena argentea                    ,OTHER          
+GBAS,BASS, GIANT SEA               ,Stereolepis gigas                     ,OTHER          
+KBAS,BASS, KELP                    ,Paralabrax clathratus                 ,OTHER          
+SBAS,BASS, STRIPED                 ,Morones saxitallus                    ,OTHER          
+OBAS,BASS, UNSPECIFIED             ,Serranidae, sp.                       ,OTHER          
+BTRY,BATRAY                        ,Myliobatis californica                ,ELASMOBRANCH   
+BONI,BONITO                        ,Sarda chiliensis                      ,OTHER          
+PBTR,BUTTERFISH, PACIFIC           ,Peprilus simillimus                   ,OTHER          
+CBZN,CABEZON                       ,Scorpaenichthys marmorat              ,OTHER_GF       
+CLAM,CLAM, UNSPECIFIED             ,Clam                                  ,INVERT         
+PCOD,COD, PACIFIC                  ,Gadus macrocephalus                   ,OTHER_GF       
+DCRB,CRAB, DUNGENESS               ,Cancer magister                       ,INVERT         
+RCRB,CRAB, ROCK                    ,Cancer antennarius                    ,INVERT         
+OCRB,CRAB, UNSPECIFIED             ,Brachyura, sp.                        ,INVERT         
+OCRK,CROAKER, UNSPECIFIED          ,Scianidae, sp.                        ,OTHER_GF       
+WCRK,CROAKER, WHITE                ,Genyonemus lineatus                   ,OTHER          
+MEEL,EEL, MONKEYFACE               ,Cebidichthys violaceus                ,OTHER          
+EELS,EELS, UNSPECIFIED             ,Anguilliformes, sp.                   ,OTHER          
+EULC,EULACHON                      ,Thalieicthys pacificus                ,OTHER          
+UFLT,FLATFISH, UNIDENTIFIED        ,Pleuronectiformes                     ,FLATFISH       
+ARTH,FLOUNDER, ARROWTOOTH          ,Atheresthes stomias                   ,FLATFISH       
+STRY,FLOUNDER, STARRY              ,Platichthys stellatus                 ,FLATFISH       
+KFSH,GIANT KELPFISH                ,Heterostichus rostratus               ,OTHER          
+GOBY,GOBY, UNSPECIFIED             ,Gobiidae, sp.                         ,OTHER          
+KLPG,GREENLING, KELP               ,Hexagrammos decagrammus               ,OTHER_GF       
+RCKG,GREENLING, ROCK               ,Hexagrammos superciliosus             ,OTHER_GF       
+GGRD,GRENADIER, GIANT              ,Albatrossia pectoralis                ,OTHER_GF       
+GREN,GRENADIER, PACIFIC            ,Coryphaenoides acrolepis              ,OTHER_GF       
+GRDR,GRENADIER, UNSPECIFIED        ,Macrouridae, sp.                      ,OTHER_GF       
+GROU,GROUPERS                      ,Serranidae, sp.                       ,OTHER          
+OHAG,HAGFISH                       ,Myxinadae, sp.                        ,OTHER          
+CHLB,HALIBUT, CALIFORNIA           ,Paralichthys californicus             ,FLATFISH       
+PHLB,HALIBUT, PACIFIC              ,Hippoglossus stenolepis               ,FLATFISH       
+PHRG,HERRING, PACIFIC              ,Clupea pallasii pallasii              ,OTHER          
+HROE,HERRING, ROE                  ,Clupea harengus                       ,OTHER          
+UINV,INVERTEBRATE, UNSPECIFIED     ,INVERTEBRATE, Unspecified             ,INVERT         
+JACK,JACKS                         ,Carangidae                            ,OTHER          
+LCOD,LINGCOD                       ,Ophiodon elongatus                    ,OTHER_GF       
+JMCK,MACKERAL, JACK                ,Trachurrus symetricus                 ,OTHER          
+PMCK,MACKERAL, PACIFIC             ,Scomber japonicus                     ,OTHER          
+UMCK,MACKERAL, UNSPECIFIED         ,Scombridae sp.                        ,OTHER          
+MARL,MARLIN, STRIPED               ,Tetrapturus   audux                   ,OTHER          
+MISC,MISCELLANEOUS SPECIES         ,MISCELLANEOUS SPECIES                 ,OTHER          
+MULL,MULLET                        ,Mugil cephalus                        ,OTHER          
+OCTO,OCTOPUS, UNSPECIFIED          ,Octopus, sp.                          ,INVERT         
+OSTR,OYSTER,UNSPECIFIED            ,Ostrea, sp.                           ,INVERT         
+PRCH,PERCH, UNSPECIFIED            ,Embiotocidae, Sp.                     ,OTHER          
+RPRW,PRAWN, RIDGEBACK              ,Sicyonia ingentis                     ,INVERT         
+SPRW,PRAWN, SPOT                   ,Pandalus platyceros                   ,INVERT         
+QFSH,QUEENFISH                     ,Seriphus politus                      ,OTHER          
+RATF,RATFISH, SPOTTED              , HYDROLAGUS COLLIEI                   ,ELASMOBRANCH   
+URAY,RAY, UNSPECIFIED              ,Torpediniformes, Myliobatidiformes sp.,ELASMOBRANCH   
+ARRA,ROCKFISH, AURORA              ,Sebastes aurora                       ,ROCKFISH       
+BANK,ROCKFISH, BANK (RED-WIDOW)    ,Sebastes rufus                        ,ROCKFISH       
+BLCK,ROCKFISH, BLACK               ,Sebastes melanops                     ,ROCKFISH       
+BYEL,ROCKFISH, BLACK-AND-YELLOW    ,Sebastes chrysomelas                  ,ROCKFISH       
+RCK9,ROCKFISH, BLACK/BLUE ROCKFISH ,Sebastes spp                          ,ROCKFISH       
+BLGL,ROCKFISH, BLACKGILL           ,Sebastes melanostomus                 ,ROCKFISH       
+BSPR,ROCKFISH, BLACKSPOTTED        ,Sebastes melanostictus                ,ROCKFISH       
+BLUR,ROCKFISH, BLUE                ,Sebastes mystinus                     ,ROCKFISH       
+BDRK,ROCKFISH, BLUE - GENERIC      ,Sebastes mystinus                     ,ROCKFISH       
+BCAC,ROCKFISH, BOCACCIO            ,Sebastes paucispinis                  ,ROCKFISH       
+BRNZ,ROCKFISH, BRONZESPOTTED       ,Sebastes gilli                        ,ROCKFISH       
+BRWN,ROCKFISH, BROWN               ,Sebastes auriculatus                  ,ROCKFISH       
+CLCO,ROCKFISH, CALICO              ,Sebastes dalli                        ,ROCKFISH       
+CNRY,ROCKFISH, CANARY              ,Sebastes pinniger                     ,ROCKFISH       
+RCK8,ROCKFISH, CANARY/VERMILLION   ,Sebastes spp                          ,ROCKFISH       
+CMEL,ROCKFISH, CHAMELEON           ,Sebastes phillipsi                    ,ROCKFISH       
+CLPR,ROCKFISH, CHILIPEPPER         ,Sebastes goodei                       ,ROCKFISH       
+CHNA,ROCKFISH, CHINA               ,Sebastes nebulosus                    ,ROCKFISH       
+COPP,ROCKFISH, COPPER              ,Sebastes caurinus                     ,ROCKFISH       
+CWCD,ROCKFISH, COWCOD              ,Sebastes levis                        ,ROCKFISH       
+DBRK,ROCKFISH, DARKBLOTCHED        ,Sebastes crameri                      ,ROCKFISH       
+DEAC,ROCKFISH, DEACON              ,Sebastes diaconus                     ,ROCKFISH       
+UDNR,ROCKFISH, DEEP NEARSHORE      ,Sebastes spp                          ,ROCKFISH       
+RCK3,ROCKFISH, DEEPWATER RED  GRP  ,Sebastes spp                          ,ROCKFISH       
+FLAG,ROCKFISH, FLAG                ,Sebastes rubrivinctus                 ,ROCKFISH       
+FRCK,ROCKFISH, FRECKLED            ,Sebastes lentiginosus                 ,ROCKFISH       
+GPHR,ROCKFISH, GOPHER              ,Sebastes carnatus                     ,ROCKFISH       
+GRAS,ROCKFISH, GRASS               ,Sebastes rastrelliger                 ,ROCKFISH       
+GBLC,ROCKFISH, GREENBLOTCHED       ,Sebastes rosenblatti                  ,ROCKFISH       
+GSPT,ROCKFISH, GREENSPOTTED        ,Sebastes chlorostictus                ,ROCKFISH       
+GSRK,ROCKFISH, GREENSTRIPED        ,Sebastes elongatus                    ,ROCKFISH       
+HBRK,ROCKFISH, HALFBANDED          ,Sebastes semicinctus                  ,ROCKFISH       
+HNYC,ROCKFISH, HONEYCOMB           ,Sebastes umbrosus                     ,ROCKFISH       
+KLPR,ROCKFISH, KELP                ,Sebastes atrovirens                   ,ROCKFISH       
+MXRF,ROCKFISH, MEXICAN             ,Sebastes macdonaldi                   ,ROCKFISH       
+USHR,ROCKFISH, NEARSHORE           ,Sebastes spp                          ,ROCKFISH       
+OLVE,ROCKFISH, OLIVE               ,Sebastes serranoides                  ,ROCKFISH       
+POP,ROCKFISH, PACIFIC OCEAN PERCH ,Sebastes alutus                       ,ROCKFISH       
+PNKR,ROCKFISH, PINK                ,Sebastes eos                          ,ROCKFISH       
+PRRK,ROCKFISH, PINKROSE            ,Sebastes simulator                    ,ROCKFISH       
+PGMY,ROCKFISH, PYGMY               ,Sebastes wilsoni                      ,ROCKFISH       
+QLBK,ROCKFISH, QUILLBACK           ,Sebastes maliger                      ,ROCKFISH       
+RDBD,ROCKFISH, REDBANDED           ,Sebastes babcocki                     ,ROCKFISH       
+REDS,ROCKFISH, REDSTRIPE           ,Sebastes proriger                     ,ROCKFISH       
+RCK6,ROCKFISH, ROSEFISH   GRP      ,Sebastes spp                          ,ROCKFISH       
+RSTN,ROCKFISH, ROSETHORN           ,Sebastes helvomaculatus               ,ROCKFISH       
+ROSY,ROCKFISH, ROSY                ,Sebastes rosaceus                     ,ROCKFISH       
+REYE,ROCKFISH, ROUGHEYE            ,Sebastes aleutianus                   ,ROCKFISH       
+BRRK,ROCKFISH, ROUGHEYE - GENERIC  ,Sebastes aleutianus                   ,ROCKFISH       
+SHRP,ROCKFISH, SHARPCHIN           ,Sebastes zacentrus                    ,ROCKFISH       
+USLF,ROCKFISH, SHELF               ,Sebastes spp                          ,ROCKFISH       
+SBLY,ROCKFISH, SHORTBELLY          ,Sebastes jordani                      ,ROCKFISH       
+SRKR,ROCKFISH, SHORTRAKER          ,Sebastes borealis                     ,ROCKFISH       
+SLGR,ROCKFISH, SILVERGRAY          ,Sebastes brevispinis                  ,ROCKFISH       
+USLP,ROCKFISH, SLOPE               ,Sebastes spp                          ,ROCKFISH       
+SPKL,ROCKFISH, SPECKLED            ,Sebastes ovalis                       ,ROCKFISH       
+SNOS,ROCKFISH, SPLITNOSE           ,Sebastes diploproa                    ,ROCKFISH       
+SQRS,ROCKFISH, SQUARESPOT          ,Sebastes hopkinsi                     ,ROCKFISH       
+STAR,ROCKFISH, STARRY              ,Sebastes constellatus                 ,ROCKFISH       
+STRK,ROCKFISH, STRIPETAIL          ,Sebastes saxicola                     ,ROCKFISH       
+SWSP,ROCKFISH, SWORDSPINE          ,Sebastes ensifer                      ,ROCKFISH       
+TIGR,ROCKFISH, TIGER               ,Sebastes nigrocinctus                 ,ROCKFISH       
+TREE,ROCKFISH, TREEFISH            ,Sebastes serriceps                    ,ROCKFISH       
+URCK,ROCKFISH, UNIDENTIFIED        ,Sebastes Sp.                          ,ROCKFISH       
+VRML,ROCKFISH, VERMILION           ,Sebastes miniatus                     ,ROCKFISH       
+WDOW,ROCKFISH, WIDOW               ,Sebastes entomelas                    ,ROCKFISH       
+YEYE,ROCKFISH, YELLOWEYE           ,Sebastes ruberrimus                   ,ROCKFISH       
+YMTH,ROCKFISH, YELLOWMOUTH         ,Sebastes reedi                        ,ROCKFISH       
+YTRK,ROCKFISH, YELLOWTAIL          ,Sebastes flavidus                     ,ROCKFISH       
+SABL,SABLEFISH                     ,Anoplopoma fimbria                    ,OTHER_GF       
+SAIL,SAILFISH                      ,Istiophorus platypterus               ,OTHER          
+CHNK,SALMON, CHINOOK               ,Oncorhynchus tshawytscha              ,SALMONID       
+CHUM,SALMON, CHUM                  ,Onchorhynchus keta                    ,SALMONID       
+COHO,SALMON, COHO                  ,Oncohynchus kisutch                   ,SALMONID       
+PINK,SALMON, PINK                  ,Oncorhynchus gorbuscha                ,SALMONID       
+USMN,SALMON, UNSPECIFIED           ,Salmonidae sp.                        ,SALMONID       
+LDAB,SANDDAB, LONGFIN              ,Citharichthys xanthostigma            ,FLATFISH       
+PDAB,SANDDAB, PACIFIC              ,Citharichthys sordidus                ,FLATFISH       
+SSDB,SANDDAB, SPECKLED             ,Citharichthys stigmaeus               ,FLATFISH       
+UDAB,SANDDAB,UNIDENTIFIED          ,Citharichthys Sp.                     ,FLATFISH       
+PSDN,SARDINE, PACIFIC              ,Sardinops sagax                       ,OTHER          
+SCAL,SCALLOPS, UNSPECIFIED         ,Pectinidae, sp.                       ,INVERT         
+SCOR,SCORPIONFISH, CALIFORNIA      ,Scorpaena guttata                     ,OTHER_GF       
+SCLP,SCULPIN                       ,Cottidae sp.                          ,OTHER_GF       
+USCU,SEA CUCUMBER                  ,Holothuroidea                         ,INVERT         
+WBAS,SEABASS, WHITE                ,Cynoscion xanthulus                   ,OTHER          
+SHAD,SHAD, UNSPECIFIED             ,Alosa sp.                             ,OTHER          
+CSRK,SHARK, BROWN CAT              ,Apristurus brunneus                   ,ELASMOBRANCH   
+LSRK,SHARK, LEOPORD                ,Triakis semifasciata                  ,ELASMOBRANCH   
+ASRK,SHARK, PACIFIC ANGEL          ,Squatina californica                  ,ELASMOBRANCH   
+SSRK,SHARK, SOUPFIN                ,Galeorhinus zyopterus                 ,ELASMOBRANCH   
+DSRK,SHARK, SPINEY DOGFISH         ,Squalus acanthias                     ,ELASMOBRANCH   
+SHRK,SHARK, UNSPECIFIED            ,SHARK, Unspecified                    ,ELASMOBRANCH   
+SHPD,SHEEPHEAD, CALIFORNIA         ,Semicossyphus pulcher                 ,OTHER          
+BRIN,SHRIMP, BRINE                 ,Artemia spp                           ,INVERT         
+PSHP,SHRIMP, PACIFIC OCEAN         ,Pandalus spp                          ,INVERT         
+SRMP,SHRIMP, UNSPECIFIED           ,CRUSTACEA Decapoda                    ,INVERT         
+BSKT,SKATE, BIG                    ,Raja binoculata                       ,ELASMOBRANCH   
+RTS1,SKATE, BLACK (SEE ROUGHTAIL)  ,R                                     ,ELASMOBRANCH   
+CSKT,SKATE, CALIFORNIA             ,Raja iinornata                        ,ELASMOBRANCH   
+LSKT,SKATE, LONGNOSE               ,Raja rhina                            ,ELASMOBRANCH   
+RTSK,SKATE, ROUGHTAIL              ,Bathyraja trachura                    ,ELASMOBRANCH   
+SPSK,SKATE, SANDPAPER              ,Bathyraja Interrupta                  ,ELASMOBRANCH   
+SSKT,SKATE, STARRY                 ,Raja Stellulata                       ,ELASMOBRANCH   
+USKT,SKATE, UNSPECIFIED            ,Skate sp.                             ,ELASMOBRANCH   
+SMLT,SMELT, UNSPECIFIED            ,Osmeridae, sp.                        ,OTHER          
+BMOL,SOLE, BIGMOUTH                ,Hippoglossina stomata                 ,FLATFISH       
+BSOL,SOLE, BUTTER                  ,Isopsetta isolepis                    ,FLATFISH       
+CSOL,SOLE, CURLFIN                 ,Pleuronichthys decurrens              ,FLATFISH       
+DSOL,SOLE, DEEPSEA                 ,Embassichthys bathybius               ,FLATFISH       
+DOVR,SOLE, DOVER                   ,Microstomus pacificus                 ,FLATFISH       
+EGLS,SOLE, ENGLISH                 ,Parophrys vetulus                     ,FLATFISH       
+FNTS,SOLE, FANTAIL                 ,Xystreurys liolepis                   ,FLATFISH       
+FSOL,SOLE, FLATHEAD                ,Hippoglossoides elassodon             ,FLATFISH       
+PTRL,SOLE, PETRALE                 ,Eopsetta jordani                      ,FLATFISH       
+REX,SOLE, REX                     ,Errex zachirus                        ,FLATFISH       
+RSOL,SOLE, ROCK                    ,Lepidopsetta bilineata                ,FLATFISH       
+SSOL,SOLE, SAND                    ,Psettichthys melanostict              ,FLATFISH       
+SLNS,SOLE, SLENDER                 ,Lyopsetta exilis                      ,FLATFISH       
+LOBS,SPINEY LOBSTER                ,Panulirus interruptus                 ,INVERT         
+CEEL,SPOTTED CUSK-EEL              ,Chilara taylori                       ,OTHER          
+MSQD,SQUID, MARKET                 ,Loligo opalescens                     ,INVERT         
+SQID,SQUID, UNSPECIFIED            ,Ommastrephes, Loligo sp.              ,INVERT         
+USTG,STURGEON,UNSPECIFIED          , Acipenser spp                        ,OTHER          
+SRFP,SURFPERCH, WALLEYE            ,Hyperprosopon argenteum               ,OTHER          
+SWRD,SWORDFISH                     ,Xiphias gladius                       ,OTHER          
+LSPN,THORNYHEAD, LONGSPINE         ,Sebastolobus altivelis                ,OTHER_GF       
+SSPN,THORNYHEAD, SHORTSPINE        ,Sebastolobus alascanus                ,OTHER_GF       
+THDS,THORNYHEAD, UNSPECIFED        ,Sebastolobus Sp.                      ,OTHER_GF       
+BTNA,TUNA, BLUEFIN                 ,Thunnus thynnus                       ,OTHER          
+STNA,TUNA, SKIPJACK                ,Euthynnus pelamis                     ,OTHER          
+OTNA,TUNA, UNSPECIFIED             ,Thunnus, sp.                          ,OTHER          
+YTNA,TUNA, YELLOWFIN               ,Thunnus albacaras                     ,OTHER          
+CTRB,TURBOT, C-O                   ,Pleuronicthys coenosus                ,FLATFISH       
+DTRB,TURBOT, DIAMOND               ,Hypsopsetta guttulata                 ,FLATFISH       
+STRB,TURBOT, SPOTTED               ,Pleuronichthys ritteri                ,FLATFISH       
+UTRB,TURBOT, UNSPECIFIED           ,Turbot sp.                            ,FLATFISH       
+HTRB,TURBOTS, HORNYHEAD            ,Pleuronichthys verticalis             ,FLATFISH       
+UNK,Unknown COMX                  ,Unknown                               ,OTHER          
+PURC,URCHIN, PURPLE                ,Strongylocentrus purpuratus           ,INVERT         
+RURC,URCHIN, RED                   ,Strongylocentrotus franciscanus       ,INVERT         
+WAHO,WAHOO                         ,Acanthocybium solandri                ,OTHER          
+OWFS,WHITEFISH, OCEAN              ,Caulolatilus princeps                 ,OTHER          
+PWHT,WHITING, PACIFIC              ,Merluccius productus                  ,OTHER_GF       
