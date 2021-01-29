@@ -7,8 +7,10 @@ rm(list = ls())
 
 # Packages
 library(tidyverse)
+library(here)
 
 # Directories
+
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
 
 
@@ -16,32 +18,60 @@ outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
 ################################################################################
 
 # Which FBs?
-fbs <- c(170, 168, 166, 163, 161, 159, 154, 153, 149)
+fbs <- c(44, 49, 57, 58, 59, 63, 67, 74, 80, 86, 89, 95, 102, 105)
+         
+fbs_2 <- c(108, 111, 117, 121, 125, 129, 132, 135, 138, 144, 149, 153, 154, 159, 161, 163, 166, 168, 170)
+
+
 
 # Merge data
-x <- 170
-data_orig <- purrr::map_df(fbs, function(x){
+x <- 129
+data_orig <- purrr::map_df(fbs_2, function(fbs_2){
   
-  # Read data
-  indir <- file.path("data/landings/cdfw/public/fish_bulletins", paste0("fb", x), "raw")
-  fdata <- readxl::read_excel(file.path(indir, "Table4.xlsx"))
+# Read data
+indir <- file.path("data/landings/cdfw/public/fish_bulletins", paste0("fb", fbs_2), "raw")
+  fdata <- readxl::read_excel(file.path(indir, "Table5.xlsx" | "Table6.xlsx"))
   
-  # Format data
+# Format data
   fdata1 <- fdata %>% 
-    # Gather
+
+# Gather
     gather(key="year", value="nfishers", 2:ncol(.)) %>% 
-    # Rename
+# Rename
     setNames(c("residence", "year", "nfishers")) %>% 
-    # Add and arrange source
-    mutate(source=paste("FB", x)) %>% 
+# Add and arrange source
+    mutate(source=paste("FB", fbs_2)) %>% 
     select(source, everything()) %>% 
-    # Convert to character
+# Convert to character
     mutate_all(as.character)
   
   # Return
   fdata1
 
 })
+
+
+##test
+x <- 129
+
+# Read data
+indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", paste0("fb", x), "raw")
+fdata <- readxl::read_excel(file.path(indir, "Table6.xlsx"))
+
+# Format data
+fdata1 <- fdata %>% 
+  
+  # Gather
+  gather(key="year", value="nfishers", 2:ncol(.)) %>% 
+  # Rename
+  setNames(c("residence", "year", "nfishers")) %>% 
+  # Add and arrange source
+  mutate(source=paste("FB", fbs_2)) %>% 
+  select(source, everything()) %>% 
+  # Convert to character
+  mutate_all(as.character)
+
+
 
 
 # Format data

@@ -19,15 +19,17 @@ outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
 ################################################################################
 
 # Which FBs?
-fbs <- c(170, 168, 166, 163, 161, 159, 154, 153, 149)
+fbs_1 <- c(44, 49, 57, 58, 59, 63, 67, 74, 80, 86, 89, 95, 102, 105)
 
-# Merge data
-x <- 153
-data_orig <- purrr::map_df(fbs, function(x){
+fbs_2 <- c(108, 111, 117, 121, 125, 129, 132, 135, 138, 144, 149, 153, 154, 159, 161, 163, 166, 168, 170)
+
+##Function to import tables from different FBs
+
+import_n_vessel <- function(fb_num, table_name){                           
   
   # Read data
-  indir <- file.path("data/landings/cdfw/public/fish_bulletins", paste0("fb", x), "raw")
-  infile <- list.files(indir, pattern="Table5")
+  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", paste0("fb", fb_num), "raw")
+  infile <- table_name
   fdata <- readxl::read_excel(file.path(indir, infile))
   
   # Format
@@ -39,7 +41,7 @@ data_orig <- purrr::map_df(fbs, function(x){
       # Rename
       setNames(c("length_group_ft", "year", "nvessels")) %>% 
       # Add and arrange source
-      mutate(source=paste("FB", x)) %>% 
+      mutate(source=paste("FB", fb_num)) %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
@@ -52,7 +54,7 @@ data_orig <- purrr::map_df(fbs, function(x){
       # Rename
       setNames(c("year", "length_group_ft", "nvessels")) %>% 
       # Add and arrange source
-      mutate(source=paste("FB", x)) %>% 
+      mutate(source=paste("FB", fb_num)) %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
@@ -61,7 +63,53 @@ data_orig <- purrr::map_df(fbs, function(x){
   # Return
   fdata1
   
-})
+}
+
+# Import and Merge data
+data_orig <- purrr::map_df(fbs_2, import_n_vessel(fbs_2, "Table5.xlsx"))
+
+
+import_n_vessel(fb_num = 129, table_name = "Table6.xlsx")
+
+##test
+x <- 129
+file_name <- "Table6"
+
+indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", paste0("fb", x), "raw")
+infile <- list.files(indir, pattern= file_name)
+fdata <- readxl::read_excel(file.path(indir, infile))
+
+# Format
+ncols <- ncol(fdata)
+if(ncols==3){
+  fdata1 <- fdata %>% 
+    # Gather
+    gather(key="year", value="nvessels", 2:ncol(.)) %>% 
+    # Rename
+    setNames(c("length_group_ft", "year", "nvessels")) %>% 
+    # Add and arrange source
+    mutate(source=paste("FB", x)) %>% 
+    select(source, everything()) %>% 
+    # Convert to character
+    mutate_all(as.character)
+}
+
+if(ncols>3){
+  fdata1 <- fdata %>% 
+    # Gather
+    gather(key="length_group_ft", value="nvessels", 2:ncol(.)) %>% 
+    # Rename
+    setNames(c("year", "length_group_ft", "nvessels")) %>% 
+    # Add and arrange source
+    mutate(source=paste("FB", x)) %>% 
+    select(source, everything()) %>% 
+    # Convert to character
+    mutate_all(as.character)
+}
+
+# Return
+fdata1
+
 
 
 # Format data
