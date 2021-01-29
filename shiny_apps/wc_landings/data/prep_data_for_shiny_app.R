@@ -15,13 +15,13 @@ outputdir <- "shiny_apps/wc_landings/data"
 # Spatial data
 ################################################################################
 
-# # Get US states and Mexico
-# usa <- rnaturalearth::ne_states(country = "United States of America", returnclass = "sf")
-# mexico <- rnaturalearth::ne_countries(country="Mexico", returnclass = "sf")
-# canada <- rnaturalearth::ne_countries(country="Canada", returnclass = "sf")
-# 
-# # Export
-# save(usa, mexico, file=file.path(outputdir, "country_shapefiles.Rdata"))
+# Get US states and Mexico
+usa <- rnaturalearth::ne_states(country = "United States of America", returnclass = "sf")
+mexico <- rnaturalearth::ne_countries(country="Mexico", returnclass = "sf")
+canada <- rnaturalearth::ne_countries(country="Canada", returnclass = "sf")
+
+# Export
+save(usa, mexico, canada, file=file.path(outputdir, "country_shapefiles.Rdata"))
 
 
 # NOAA data

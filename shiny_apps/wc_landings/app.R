@@ -120,10 +120,14 @@ ui <- navbarPage("West Coast Fisheries & Climate Change Explorer",
                      choices = species_oa,  multiple = F),
       br(),
       
-      # Select region and plot
+      # Select region and plot time series
       radioButtons(inputId = "region_oa", label="Select a region:", choices = regions, inline=T),
       plotOutput(outputId = "plot_oa_dist_shift", width=1000, height=375),
       br(),
+      
+      # Plot map
+      plotOutput(outputId = "plot_oa_dist_shift_map", width=1000, height=1000),
+      br()
             
    ),
                  
@@ -274,8 +278,15 @@ server <- function(input, output, session){
   
   # Plot distribution shift
   output$plot_oa_dist_shift <- renderPlot({
-    g <- plot_oa_dist_shift(dataset=data_oa, species = input$species_oa, 
-                            region = input$region_oa, base_theme=base_theme)
+    g <- plot_oa_dist_shift(dataset=data_oa, species = input$species_oa, region = input$region_oa, 
+                            base_theme=base_theme)
+    g
+  })
+  
+  # Plot distribution shift
+  output$plot_oa_dist_shift_map <- renderPlot({
+    g <- plot_oa_dist_shift_map(dataset=data_oa, species = input$species_oa, region = input$region_oa, 
+                                base_theme=base_theme, usa=usa, mexico=mexico, canada=canada)
     g
   })
   
@@ -284,37 +295,43 @@ server <- function(input, output, session){
   
   # Plot rank scatterplot
   output$plot_rank_scatterplot <- renderPlot({
-    g <- plot_rank_scatterplot(dataset=data_ca, species_label = input$species, base_theme=base_theme)
+    g <- plot_rank_scatterplot(dataset=data_ca, species_label = input$species, 
+                               base_theme=base_theme)
     g
   })
   
   # Plot rank state-wide and by port
   output$plot_rank_by_species <- renderPlot({
-    g <- plot_rank_by_species(dataset=data_ca, species_label = input$species, base_theme=base_theme)
+    g <- plot_rank_by_species(dataset=data_ca, species_label = input$species, 
+                              base_theme=base_theme)
     g
   })
   
   # Plot landings time series by port complex
   output$plot_landings_ts_by_area <- renderPlot({
-    g <- plot_landings_ts_by_area(dataset=data_ca, noaa=data_noaa_orig, species_label = input$species, base_theme=base_theme)
+    g <- plot_landings_ts_by_area(dataset=data_ca, noaa=data_noaa_orig, species_label = input$species, 
+                                  base_theme=base_theme)
     g
   })
   
   # Plot landings time series by port complex (proprotional)
   output$plot_landings_ts_by_area_prop <- renderPlot({
-    g <- plot_landings_ts_by_area_prop(dataset=data_ca, species_label = input$species, base_theme=base_theme)
+    g <- plot_landings_ts_by_area_prop(dataset=data_ca, species_label = input$species, 
+                                       base_theme=base_theme)
     g
   })
   
   # Plot landings by port map
   output$plot_landings_by_port_map <- renderPlot({
-    g <- plot_landings_by_port_map(dataset=data_ca, ports=ports_ca, species_label = input$species, base_theme=base_theme, usa=usa, mexico=mexico)
+    g <- plot_landings_by_port_map(dataset=data_ca, ports=ports_ca, species_label = input$species, 
+                                   base_theme=base_theme, usa=usa, mexico=mexico)
     g
   })
   
   # Plot landings lat shift
   output$plot_landings_lat_shift <- renderPlot({
-    g <- plot_landings_lat_shift(dataset=data_ca, ports=ports_ca, species_label = input$species, base_theme=base_theme)
+    g <- plot_landings_lat_shift(dataset=data_ca, ports=ports_ca, species_label = input$species, 
+                                 base_theme=base_theme)
     g
   })
   
