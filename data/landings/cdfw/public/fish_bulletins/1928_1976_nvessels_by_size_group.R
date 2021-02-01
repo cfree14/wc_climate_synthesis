@@ -13,21 +13,50 @@ library(tidyverse)
 # Directories
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
 
-################################################################################
-# Merge data
 
-# Which FBs
+###################################################################################
+## Read and merge tables
+
 ## Set 1: Table number varies. Data reported by port
-fbs_1 <- c(44, 49, 57, 58, 59, 63, 67, 74, 80, 86, 89, 95, 102, 105)
+fbs_1 <- c(44, 49, 57, 58, 59, 59, 63, 63, 67, 67, 74, 80, 80, 86, 89, 95, 102, 102, 105, 105)
+
+table_name <- c("Table30", "Table141", "Table6", "Table12", "Table18", "Table19", "Table25", "Table26", "Table25", "Table26", "Table31", "Table7", "Table8", "Table7", "Table13", "Table9", "Table9", "Table10", "Table12", "Table13")
+
+year <- c("1934", "1935", "1939-40", "1940- 41", "1941-42", "1942-43", "1943-44", "1944-45", "1945-46", "1946-47", "1947-48", "1948-49", "1949-50", "1950-51", "1951-52", "1952-53", "1953-54", "1954-55", "1955-56", "1956-57")
+
+##Data frame with path to read each table and corresponding year
+fb_table <- tibble(fbs_1, table_name, year) %>% 
+  mutate(source = paste("FB", fbs_1), 
+         path = paste0("fb", fbs_1, "/", "raw", "/", table_name, ".xlsx"))
+
+
+##Merging
+data_orig_older <- purrr::map_df(fb_table$path, function(x){
+
+  # Read data
+  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", fb)
+  fdata <- readxl::read_excel(file.path(indir))
+  
+  fdata_1 <- fdata %>% 
+    # pivot_longer
+    pivot_longer(2:ncol(.),
+                 names_to = "length_group_ft",
+                 values_to = "nvessels") %>%
+    # Rename
+    setNames(c("region", "length_group_ft", "nvessels")) %>% 
+    # Add and arrange source
+    mutate(region_type = "port complex",
+           path = x) %>% 
+    # Convert to character
+    mutate_all(as.character) %>% 
+    left_join(fb_table, by = "path") %>% 
+    select(source, year, length_group_ft, nvessels, region_type, region)
+
+})
+
 
 ##Set 2: All tables are Table 5. Data reported statewise
 fbs_2 <- c(108, 111, 117, 121, 125, 132, 135, 138, 144, 149, 153, 154, 159, 161, 163, 166, 168, 170)
-
-## Table name = Table5
-fb_129 <- 129
-
-## Read and bind tables
-## Set 2, Table 4
 x <- 108
 
 data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
@@ -48,7 +77,9 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
       # Rename
       setNames(c("length_group_ft", "year", "nvessels")) %>% 
       # Add and arrange source
-      mutate(source=paste("FB", x)) %>% 
+      mutate(source=paste("FB", x),
+             region_type = "state",
+             region = "statewide") %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
@@ -63,7 +94,9 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
       # Rename
       setNames(c("year", "length_group_ft", "nvessels")) %>% 
       # Add and arrange source
-      mutate(source=paste("FB", x)) %>% 
+      mutate(source=paste("FB", x),
+             region_type = "state",
+             region = "statewide") %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
