@@ -1,47 +1,54 @@
+##Cleans and wrangles commercial fishing vessels data from California historic Fish Bulletins
 
+##################################################################################
 
-
-
-# Clear workspace
+## Clear workspace
 rm(list = ls())
 
-# Setup
 ################################################################################
-
-# Packages
+# Setup
+## Packages
 library(tidyverse)
 
 # Directories
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
 
-
-# Merge data
 ################################################################################
+# Merge data
 
-# Which FBs?
+# Which FBs
+## Set 1: Table number varies. Data reported by port
 fbs_1 <- c(44, 49, 57, 58, 59, 63, 67, 74, 80, 86, 89, 95, 102, 105)
 
-fbs_2 <- c(108, 111, 117, 121, 125, 129, 132, 135, 138, 144, 149, 153, 154, 159, 161, 163, 166, 168, 170)
+##Set 2: All tables are Table 5. Data reported statewise
+fbs_2 <- c(108, 111, 117, 121, 125, 132, 135, 138, 144, 149, 153, 154, 159, 161, 163, 166, 168, 170)
 
-##Function to import tables from different FBs
+## Table name = Table5
+fb_129 <- 129
 
-import_n_vessel <- function(fb_num, table_name){                           
+## Read and bind tables
+## Set 2, Table 4
+x <- 108
+
+data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
   
   # Read data
-  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", paste0("fb", fb_num), "raw")
-  infile <- table_name
+  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", paste0("fb", x), "raw")
+  infile <- list.files(indir, pattern="Table5")
   fdata <- readxl::read_excel(file.path(indir, infile))
   
   # Format
   ncols <- ncol(fdata)
   if(ncols==3){
     fdata1 <- fdata %>% 
-      # Gather
-      gather(key="year", value="nvessels", 2:ncol(.)) %>% 
+      # pivot_longer
+      pivot_longer(2:ncol(.),
+                   names_to = "length_group_ft",
+                   values_to = "nvessels") %>%
       # Rename
       setNames(c("length_group_ft", "year", "nvessels")) %>% 
       # Add and arrange source
-      mutate(source=paste("FB", fb_num)) %>% 
+      mutate(source=paste("FB", x)) %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
@@ -49,12 +56,14 @@ import_n_vessel <- function(fb_num, table_name){
   
   if(ncols>3){
     fdata1 <- fdata %>% 
-      # Gather
-      gather(key="length_group_ft", value="nvessels", 2:ncol(.)) %>% 
+      # pivot_longer
+      pivot_longer(2:ncol(.),
+                   names_to = "length_group_ft",
+                   values_to = "nvessels") %>%
       # Rename
       setNames(c("year", "length_group_ft", "nvessels")) %>% 
       # Add and arrange source
-      mutate(source=paste("FB", fb_num)) %>% 
+      mutate(source=paste("FB", x)) %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
@@ -63,52 +72,8 @@ import_n_vessel <- function(fb_num, table_name){
   # Return
   fdata1
   
-}
+})
 
-# Import and Merge data
-data_orig <- purrr::map_df(fbs_2, import_n_vessel(fbs_2, "Table5.xlsx"))
-
-
-import_n_vessel(fb_num = 129, table_name = "Table6.xlsx")
-
-##test
-x <- 129
-file_name <- "Table6"
-
-indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", paste0("fb", x), "raw")
-infile <- list.files(indir, pattern= file_name)
-fdata <- readxl::read_excel(file.path(indir, infile))
-
-# Format
-ncols <- ncol(fdata)
-if(ncols==3){
-  fdata1 <- fdata %>% 
-    # Gather
-    gather(key="year", value="nvessels", 2:ncol(.)) %>% 
-    # Rename
-    setNames(c("length_group_ft", "year", "nvessels")) %>% 
-    # Add and arrange source
-    mutate(source=paste("FB", x)) %>% 
-    select(source, everything()) %>% 
-    # Convert to character
-    mutate_all(as.character)
-}
-
-if(ncols>3){
-  fdata1 <- fdata %>% 
-    # Gather
-    gather(key="length_group_ft", value="nvessels", 2:ncol(.)) %>% 
-    # Rename
-    setNames(c("year", "length_group_ft", "nvessels")) %>% 
-    # Add and arrange source
-    mutate(source=paste("FB", x)) %>% 
-    select(source, everything()) %>% 
-    # Convert to character
-    mutate_all(as.character)
-}
-
-# Return
-fdata1
 
 
 
