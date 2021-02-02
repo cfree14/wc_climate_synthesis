@@ -14,8 +14,8 @@ library(tidyverse)
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
 
 
-###################################################################################
-## Read and merge tables
+################################################################################
+# Read and merge tables
 
 ## Set 1: Table number varies. Data reported by port
 fbs_1 <- c(44, 49, 57, 58, 59, 59, 63, 63, 67, 67, 74, 80, 80, 86, 89, 95, 102, 102, 105, 105)
@@ -30,7 +30,7 @@ fb_table <- tibble(fbs_1, table_name, year) %>%
          path = paste0("fb", fbs_1, "/", "raw", "/", table_name, ".xlsx"))
 
 
-##Merging
+## Merging
 data_orig_older <- purrr::map_df(fb_table$path, function(x){ 
 
   # Read data
@@ -55,7 +55,7 @@ data_orig_older <- purrr::map_df(fb_table$path, function(x){
 })
 
 
-##Set 2: All tables are Table 5. Data reported statewise
+## Set 2: All tables are Table 5. Data reported statewise
 fbs_2 <- c(108, 111, 117, 121, 125, 132, 135, 138, 144, 149, 153, 154, 159, 161, 163, 166, 168, 170)
 
 data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
@@ -124,17 +124,19 @@ nvessels_fb129 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/r
   # Convert to character
   mutate_all(as.character)
 
+## All fb with table5 format
 data_orig_tb5 <- rbind(data_orig_tb5, nvessels_fb129)
 
 #################################################################################
-## Totals df
-# Set 1: Totals by region
-totals_rgn <- data_orig_older %>% 
-  filter(length_group_ft == "Total number of boats in each region")
+## DF with totals 
+# Set 1: Totals for each season/yr
+totals_older <- data_orig_older %>% 
+  filter(grepl("number", tolower(length_group_ft)),
+         grepl("number", tolower(region)))
 
 
-# Set 2 + fb120
-totals_yr <- data_orig_tb5 %>% 
+# Set 2 + fb120: Total by season/yr
+totals_tb5 <- data_orig_tb5 %>% 
   filter(length_group_ft == "Total") %>% 
   select(source, year, nvessels_toal = nvessels)
 
@@ -199,14 +201,13 @@ data_tb5 <- data_orig_tb5 %>%
                                 "15-11" = "11-15",
                                 "150-160" = "156-160",
                                 "20-25" = "21-25"))
-                               
-                                
-                              
-                                
-                                
-                              
+
 # Inspect
-table(data$length_group_ft)
+unique(data_tb5$length_group_ft)
+unique(data_older$length_group_ft)
+
+# Check Total
+#################################################################################
 
 # Plot coverage
 ################################################################################
