@@ -31,10 +31,10 @@ fb_table <- tibble(fbs_1, table_name, year) %>%
 
 
 ##Merging
-data_orig_older <- purrr::map_df(fb_table$path, function(x){
+data_orig_older <- purrr::map_df(fb_table$path, function(x){ 
 
   # Read data
-  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", fb)
+  indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", x)
   fdata <- readxl::read_excel(file.path(indir))
   
   fdata_1 <- fdata %>% 
@@ -57,7 +57,6 @@ data_orig_older <- purrr::map_df(fb_table$path, function(x){
 
 ##Set 2: All tables are Table 5. Data reported statewise
 fbs_2 <- c(108, 111, 117, 121, 125, 132, 135, 138, 144, 149, 153, 154, 159, 161, 163, 166, 168, 170)
-x <- 108
 
 data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
   
@@ -79,7 +78,8 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
       # Add and arrange source
       mutate(source=paste("FB", x),
              region_type = "state",
-             region = "statewide") %>% 
+             region = "statewide",
+             length_group_ft = str_remove(length_group_ft, "//.")) %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
@@ -93,13 +93,14 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
                    values_to = "nvessels") %>%
       # Rename
       setNames(c("year", "length_group_ft", "nvessels")) %>% 
+      # Convert to character
+      mutate_all(as.character) %>% 
       # Add and arrange source
       mutate(source=paste("FB", x),
              region_type = "state",
              region = "statewide") %>% 
-      select(source, everything()) %>% 
-      # Convert to character
-      mutate_all(as.character)
+      select(source, everything())
+     
   }
   
   # Return
@@ -107,14 +108,75 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
   
 })
 
+## FB129. Table6
+
+nvessels_fb129 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/raw/fb129/raw/Table6.xlsx") %>% 
+  pivot_longer(2:ncol(.),
+               names_to = "length_group_ft",
+               values_to = "nvessels") %>%
+  # Rename
+  setNames(c("year", "length_group_ft", "nvessels")) %>% 
+  # Add and arrange source
+  mutate(source= "FB 129",
+         region_type = "state",
+         region = "statewide") %>% 
+  select(source, everything()) %>% 
+  # Convert to character
+  mutate_all(as.character)
+
+data_orig_tb5 <- rbind(data_orig_tb5, nvessels_fb129)
+
+#################################################################################
+## Totals df
+# Set 1: Totals by region
+totals_rgn <- data_orig_older %>% 
+  filter(length_group_ft == "Total number of boats in each region")
 
 
+# Set 2 + fb120
+totals_yr <- data_orig_tb5 %>% 
+  filter(length_group_ft == "Total") %>% 
+  select(source, year, nvessels_toal = nvessels)
 
-# Format data
 ################################################################################
 
-# Format data
-data <- data_orig %>% 
+## Format data
+# Set 1
+data_older <- data_orig_older %>% 
+  filter(!grepl("total", tolower(length_group_ft)),
+         !grepl("total", tolower(region)),
+         !grepl("number", tolower(length_group_ft)),
+         !grepl("number", tolower(region))) %>% 
+  # Format nvessels
+  mutate(nvessels=as.numeric(nvessels)) %>% 
+  # Format length group
+  mutate(length_group_ft=gsub("\\.|\\_|\\,", "", length_group_ft),
+         length_group_ft=gsub("- | -", "-", length_group_ft),
+         length_group_ft=stringr::str_trim(length_group_ft),
+         length_group_ft=recode(length_group_ft, 
+                                "Up to 24 feet"="0-24",
+                                "Up to 24'" = "0-24",
+                                "25 to 39 feet"="25-39",
+                                "25 feet to 39 feet" = "25-39",
+                                "25' to 39'" = "25-39",
+                                "40 to 64 feet"="40-64",
+                                "40 feet to 64 feet" = "40-64",
+                                "40' to 64'" = "40-64",
+                                "65 to 84 feet"="65-84",
+                                "65 feet to 84 feet" = "65-84",
+                                "65' to 84'" = "65-84",
+                                "65 to 84" = "65-84",
+                                "85 to 99 feet"="85-99",
+                                "85 to 99" = "85-99",
+                                "85 feet and over" = "85+",
+                                "85' and over" = "85+",
+                                "100 feet and over"="100+",
+                                "Up to 21 feet" = "0-24", ##fixing numbers that were incorrect in the xlsx file
+                                "10 to 61 feet" = "40-64"))
+
+
+# Set2
+data_tb5 <- data_orig_tb5 %>% 
   # Remove totals and total checks
   filter(!grepl("total", tolower(length_group_ft))) %>% 
   # Format nvessels
@@ -122,19 +184,27 @@ data <- data_orig %>%
   # Format length group
   mutate(length_group_ft=gsub("\\.|\\_|\\,", "", length_group_ft),
          length_group_ft=gsub("- | -", "-", length_group_ft),
-         length_group_ft=stringr::str_trim(length_group_ft), 
+         length_group_ft=stringr::str_trim(length_group_ft),
          length_group_ft=recode(length_group_ft, 
-                                #"00-70",
-                                "100 feet and over"="100+",
-                                "40 to 64 feet"="40-64",
-                                "181 and over"="181+",
+                                "Up to 24 fcet"="0-24",
+                                "Up to 24 feet"="0-24",
                                 "25 to 39 feet"="25-39",
-                                "40 to 64 feet "="40-64",
+                                "40 to 64 feet"="40-64",
                                 "65 to 84 feet"="65-84",
                                 "85 to 99 feet"="85-99",
-                                "Up to 24 feet"="0-24",
-                                "Up to 39 feet"="0-39"))
-
+                                "100 feet and over"="100+",
+                                "181 and over"="181+",
+                                "40 to 61 feet"="40-64", ##fixing numbers that were incorrect in the xlsx file
+                                "25 to 29 feet" = "25-39",
+                                "15-11" = "11-15",
+                                "150-160" = "156-160",
+                                "20-25" = "21-25"))
+                               
+                                
+                              
+                                
+                                
+                              
 # Inspect
 table(data$length_group_ft)
 
