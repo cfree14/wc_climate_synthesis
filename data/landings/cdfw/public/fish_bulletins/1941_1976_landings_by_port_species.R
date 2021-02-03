@@ -62,6 +62,7 @@ data_full <- data_orig %>%
                         "Port total"="Port totals",
                         "Tort totals"="Port totals",
                         "Total landings"="Totals",
+                        "Total Landings"="Totals",
                         "Total shipments"="Totals",
                         'Jacknife clam'='Jackknife clam', 
                         'Pacific Ocean shrimp'='Pacific ocean shrimp')) %>% 
@@ -264,7 +265,7 @@ g
 
 # Remove totals
 data <- data_full %>% 
-  filter(species!="Totals")
+  filter(!grepl("totals", tolower(species)))
 
 # Export
 saveRDS(data, file=file.path(outdir, "CDFW_1941_1976_landings_by_port_species.Rds"))
