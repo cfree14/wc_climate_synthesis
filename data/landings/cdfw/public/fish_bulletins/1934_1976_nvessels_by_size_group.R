@@ -40,17 +40,17 @@ data_orig_older <- purrr::map_df(fb_table_key$path, function(x){
   fdata_1 <- fdata %>% 
     # pivot_longer
     pivot_longer(2:ncol(.),
-                 names_to = "length_group_ft",
+                 names_to = "length_class_orig",
                  values_to = "nvessels") %>%
     # Rename
-    setNames(c("region", "length_group_ft", "nvessels")) %>% 
+    setNames(c("region", "length_class_orig", "nvessels")) %>% 
     # Add and arrange source
     mutate(region_type = "port complex",
            path = x) %>% 
     # Convert to character
     mutate_all(as.character) %>% 
     left_join(fb_table_key, by = "path") %>% 
-    select(source, year, length_group_ft, nvessels, region_type, region)
+    select(source, year, length_class_orig, nvessels, region_type, region)
 
 })
 
@@ -71,15 +71,15 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
     fdata1 <- fdata %>% 
       # pivot_longer
       pivot_longer(2:ncol(.),
-                   names_to = "length_group_ft",
+                   names_to = "length_class_orig",
                    values_to = "nvessels") %>%
       # Rename
-      setNames(c("length_group_ft", "year", "nvessels")) %>% 
+      setNames(c("length_class_orig", "year", "nvessels")) %>% 
       # Add and arrange source
       mutate(source=paste("FB", x),
              region_type = "state",
              region = "statewide",
-             length_group_ft = str_remove(length_group_ft, "//.")) %>% 
+             length_class_orig = str_remove(length_class_orig, "//.")) %>% 
       select(source, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
@@ -89,10 +89,10 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
     fdata1 <- fdata %>% 
       # pivot_longer
       pivot_longer(2:ncol(.),
-                   names_to = "length_group_ft",
+                   names_to = "length_class_orig",
                    values_to = "nvessels") %>%
       # Rename
-      setNames(c("year", "length_group_ft", "nvessels")) %>% 
+      setNames(c("year", "length_class_orig", "nvessels")) %>% 
       # Convert to character
       mutate_all(as.character) %>% 
       # Add and arrange source
@@ -109,13 +109,12 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
 })
 
 ## FB129. Table6
-
 nvessels_fb129 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/raw/fb129/raw/Table6.xlsx") %>% 
   pivot_longer(2:ncol(.),
-               names_to = "length_group_ft",
+               names_to = "length_class_orig",
                values_to = "nvessels") %>%
   # Rename
-  setNames(c("year", "length_group_ft", "nvessels")) %>% 
+  setNames(c("year", "length_class_orig", "nvessels")) %>% 
   # Add and arrange source
   mutate(source= "FB 129",
          region_type = "state",
@@ -131,7 +130,7 @@ data_orig_tb5 <- rbind(data_orig_tb5, nvessels_fb129)
 ## DF with totals 
 # Set 1: Totals for each season/yr
 totals_older <- data_orig_older %>% 
-  filter(grepl("number", tolower(length_group_ft)),
+  filter(grepl("number", tolower(length_class_orig)),
          grepl("number", tolower(region))) %>% 
   mutate(nvessels_total = as.numeric(nvessels)) %>% 
   select(source, year, nvessels_total)
@@ -139,7 +138,7 @@ totals_older <- data_orig_older %>%
 
 # Set 2 + fb120: Total by season/yr
 totals_tb5 <- data_orig_tb5 %>% 
-  filter(length_group_ft == "Total") %>% 
+  filter(length_class_orig == "Total") %>% 
   mutate(year = gsub("\\.|\\_|\\,", "", year),
          nvessels_total = as.numeric(nvessels)) %>% 
   select(source, year, nvessels_total)
@@ -149,18 +148,18 @@ totals_tb5 <- data_orig_tb5 %>%
 ## Format data
 # Set 1
 data_older <- data_orig_older %>% 
-  filter(!grepl("total", tolower(length_group_ft)),
+  filter(!grepl("total", tolower(length_class_orig)),
          !grepl("total", tolower(region)),
-         !grepl("number", tolower(length_group_ft)),
+         !grepl("number", tolower(length_class_orig)),
          !grepl("number", tolower(region))) %>% 
   # Format nvessels
   mutate(nvessels=as.numeric(nvessels)) %>% 
   # Format length group
-  mutate(length_group_ft=gsub("\\.|\\_|\\,", "", length_group_ft),
-         length_group_ft=gsub("- | -", "-", length_group_ft),
-         length_group_ft=stringr::str_trim(length_group_ft),
+  mutate(length_class_orig=gsub("\\.|\\_|\\,", "", length_class_orig),
+         length_class_orig=gsub("- | -", "-", length_class_orig),
+         length_class_orig=stringr::str_trim(length_class_orig),
          region = gsub("\\.|\\_|\\-", "", region),
-         length_group_ft=recode(length_group_ft, 
+         length_class_orig=recode(length_class_orig, 
                                 "Up to 24 feet"="0-24",
                                 "Up to 24'" = "0-24",
                                 "25 to 39 feet"="25-39",
@@ -185,15 +184,15 @@ data_older <- data_orig_older %>%
 # Set2
 data_tb5 <- data_orig_tb5 %>% 
   # Remove totals and total checks
-  filter(!grepl("total", tolower(length_group_ft))) %>% 
+  filter(!grepl("total", tolower(length_class_orig))) %>% 
   # Format nvessels
   mutate(nvessels=as.numeric(nvessels)) %>% 
   # Format length group
-  mutate(length_group_ft = gsub("\\.|\\_|\\,", "", length_group_ft),
-         length_group_ft = gsub("- | -", "-", length_group_ft),
-         length_group_ft = stringr::str_trim(length_group_ft),
+  mutate(length_class_orig = gsub("\\.|\\_|\\,", "", length_class_orig),
+         length_class_orig = gsub("- | -", "-", length_class_orig),
+         length_class_orig = stringr::str_trim(length_class_orig),
          year = gsub("\\.|\\_|\\,", "", year),
-         length_group_ft = recode(length_group_ft, 
+         length_class_orig = recode(length_class_orig, 
                                 "Up to 24 fcet"="0-24",
                                 "Up to 24 feet"="0-24",
                                 "25 to 39 feet"="25-39",
@@ -209,8 +208,8 @@ data_tb5 <- data_orig_tb5 %>%
                                 "20-25" = "21-25"))
 
 # Inspect
-unique(data_tb5$length_group_ft)
-unique(data_older$length_group_ft)
+unique(data_tb5$length_class_orig)
+unique(data_older$length_class_orig)
 
 #################################################################################
 # Check Totals
@@ -239,7 +238,7 @@ nvessels_complete <- rbind(data_older, data_tb5) %>%
                          "Del Norte Eurecka" = "Del Norte Eureka",
                          "i/os Angeles" = "Los Angeles",
                          "Saciamento" = "Sacramento"),
-         regroup_length_ft = recode(length_group_ft,
+         length_class_group = recode(length_class_orig,
                                            "0-10" = "0-24" ,
                                            "11-15" = "0-24",
                                            "16-20" = "0-24",
@@ -256,26 +255,28 @@ nvessels_complete <- rbind(data_older, data_tb5) %>%
                                            "71-75" ="65-84",
                                            "76-80" ="65-84",
                                            "81-85" = "65-84",
-                                           "86-90" ="85-99",
-                                           "91-95" ="85-99",
-                                           "96-100" = "85-99",
-                                           "101-105" = "100+",
-                                           "106-110" = "100+",
-                                           "111-115" = "100+",
-                                           "116-120" = "100+",
-                                           "121-125" = "100+",
-                                           "126-130" ="100+",
-                                           "131-135" = "100+",
-                                           "136-140" ="100+",
-                                           "141-145" = "100+", 
-                                           "146-150" = "100+",
-                                           "151-155" = "100+", 
-                                           "156-160" = "100+",
-                                           "161-165" = "100+",
-                                           "166-170" = "100+",
-                                           "171-175" = "100+",
-                                           "176-180" = "100+",
-                                           "181+" = "100+"),
+                                           "85-99" = "85+",
+                                           "86-90" = "85+",
+                                           "91-95" = "85+",
+                                           "100+" = "85+",
+                                           "96-100" = "85+",
+                                           "101-105" = "85+",
+                                           "106-110" = "85+",
+                                           "111-115" = "85+",
+                                           "116-120" = "85+",
+                                           "121-125" = "85+",
+                                           "126-130" = "85+",
+                                           "131-135" = "85+",
+                                           "136-140" ="85+",
+                                           "141-145" = "85+", 
+                                           "146-150" = "85+",
+                                           "151-155" = "85+", 
+                                           "156-160" = "85+",
+                                           "161-165" = "85+",
+                                           "166-170" = "85+",
+                                           "171-175" = "85+",
+                                           "176-180" = "85+",
+                                           "181+" = "85+"),
          year = recode(year,
                        "1957-1958"= "1957-58",
                        "1958-1959" = "1958-59",
@@ -286,9 +287,9 @@ nvessels_complete <- rbind(data_older, data_tb5) %>%
                        "1963-1964" = "1963-64",
                        "1964-1965" = "1964-65",
                        "1965-1966" = "1965-66")) %>% 
-  distinct(year, length_group_ft, nvessels, region_type, region, .keep_all = T)
+  distinct(year, length_class_orig, nvessels, region_type, region, .keep_all = T)
 
-###?? Reduce all 100+ to 85+ to be consistent with earlier years? Data up untill 1947-48 only reports up to the lenght group 85+
+##Data up untill 1947-48 only reports up to the lenght group 85+
 
 ################################################################################
 ## Testing group with year 1970-71
@@ -296,7 +297,7 @@ nvessels_complete <- rbind(data_older, data_tb5) %>%
 nvessels_grouped_test <- nvessels_complete %>%
   filter(source == "FB 159",
          year == "1970-71") %>% 
-  group_by(regroup_length_ft) %>% 
+  group_by(length_class_group) %>% 
   summarise(nvessels_group_fb159 = sum(nvessels))
 
 
@@ -311,22 +312,21 @@ test_compare <- nvessels_complete %>%
 
 nvessels_grouped <- nvessels_complete %>% 
   filter(!(year == "1970-71" & source == "FB 159")) %>% 
-  group_by(year, regroup_length_ft) %>% 
+  group_by(year, length_class_group) %>% 
   summarise(nvessels_group_yr = sum(nvessels, na.rm = T)) %>% 
-  mutate(regroup_length_ft = as_factor(regroup_length_ft))
+  mutate(length_class_group = as_factor(length_class_group))
 
 #mutate(iso3_code = fct_relevel(iso3_code, rev(c("CHN", "RUS"
 
 
 ################################################################################
 # Plot
-
-pal_antique <- rev(c("#855C75", "#D9AF6B", "#AF6458", "#736F4C", "#526A83", "#625377", "#68855C", "#9C9C5E", "#A06177", "#8C785D", "#467378", "#7C7C7C"))
+pal_antique <- c("#855C75", "#D9AF6B", "#AF6458", "#736F4C", "#526A83", "#625377", "#68855C", "#9C9C5E", "#A06177", "#8C785D", "#467378", "#7C7C7C")
 
 nvessels_ts <- ggplot(nvessels_grouped %>% 
-                        mutate(regroup_length_ft = 
-                                 fct_relevel(regroup_length_ft, c("100+", "85-99", "85+", "65-84", "40-64", "25-39", "0-24"))))+
-  geom_bar(aes(x = year, y = nvessels_group_yr, fill = regroup_length_ft), 
+                        mutate(length_class_group = 
+                                 fct_relevel(length_class_group, c("85+", "65-84", "40-64", "25-39", "0-24"))))+
+  geom_bar(aes(x = year, y = nvessels_group_yr, fill = length_class_group), 
            stat = "identity")+
   theme_classic()+
   scale_y_continuous(expand = c(0, 0))+
@@ -337,4 +337,28 @@ nvessels_ts <- ggplot(nvessels_grouped %>%
        y = "Nº of Vessels")+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.1))
   
+##############################################################################
+
+##Saving data
+nvessels_save <- nvessels_complete %>% 
+  filter(!(year == "1970-71" & source == "FB 154")) ##removing the less detailed info for year 1970
+
+##saveRDS(nvessels_save, file = file.path(outdir, "CDFW_1934_1977_nvessels_by_length.Rds"))
+
+###############################################################################
+##Data questions
+## What happens with data on years 1936-1938? A: There is data by port not by lenght in FB57, Table 5
+## Is there any data for years before 1936? A: No, there is one graph with data from year 1928 but it contains averages and probably predicting numbers from the graph is not as accurate.
+## What happens with data after 1976
+
+## Plot notes
+## group 85-89 and 100+ in 85+ group? A:YES!
+## format years for them to be just the one year and add note that season goes from April 1st to March 31 of the following year?
+
+##Saving data
+## save complete table, where and what format? A: Save in outdir (see line 14) as a Rsd file
+## in complete table, what to do with year 1970, leave both fomrats? A: just leave the finner scale
+
+###################################################################################
+
 
