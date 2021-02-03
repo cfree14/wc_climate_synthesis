@@ -12,10 +12,32 @@ library(tidyverse)
 
 # Directories
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
+################################################################################
+# Read and format data for years 1936-1938 (by home port, no lenght)
 
+nvessels_36_38 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/raw/fb57/raw/Table5.xlsx") %>% 
+  pivot_longer(cols = 2:ncol(.),
+               names_to = "year",
+               values_to = "nvessels") %>% 
+  rename(region = "Region of home port") %>%
+  filter(!(region == "Totals" | region == "Total check"),
+         year != "1939-1940") %>% 
+  mutate(source = "FB 57",
+         region_type = "port complex",
+         region = recode(region,
+                         "Alaska Washington and Oregon" = "OR, WA, AK",
+                         "Mexico and Panama" = "Mexico",
+                         "Del Norte-Eureka" = "Del Norte Eureka"),
+         year = recode(year,
+                       "1936-1937" = "1936-37",
+                       "1937-1938" = "1937-38",
+                       "1938-1939" = "1938-39")) %>% 
+  select(source, year, nvessels, region_type, region)
+
+##Checked totals and sum matches to Total. All good!
 
 ################################################################################
-# Read and merge tables
+# Read and merge all tables by lenght
 
 ## Set 1: Table number varies. Data reported by port
 fbs_1 <- c(44, 49, 57, 58, 59, 59, 63, 63, 67, 67, 74, 80, 80, 86, 89, 95, 102, 102, 105, 105)
@@ -159,7 +181,7 @@ data_older <- data_orig_older %>%
          length_class_orig=gsub("- | -", "-", length_class_orig),
          length_class_orig=stringr::str_trim(length_class_orig),
          region = gsub("\\.|\\_|\\-", "", region),
-         length_class_orig=recode(length_class_orig, 
+         length_class_orig = recode(length_class_orig, 
                                 "Up to 24 feet"="0-24",
                                 "Up to 24'" = "0-24",
                                 "25 to 39 feet"="25-39",
@@ -343,7 +365,9 @@ nvessels_ts <- ggplot(nvessels_grouped %>%
 nvessels_save <- nvessels_complete %>% 
   filter(!(year == "1970-71" & source == "FB 154")) ##removing the less detailed info for year 1970
 
-##saveRDS(nvessels_save, file = file.path(outdir, "CDFW_1934_1977_nvessels_by_length.Rds"))
+#saveRDS(nvessels_save, file = file.path(outdir, "CDFW_1934_1977_nvessels_by_length.Rds"))
+
+#saveRDS(nvessels_36_38, file = file.path(outdir, "CDFW_1936_1938_nvessels_by_port.Rds"))
 
 ###############################################################################
 ##Data questions
