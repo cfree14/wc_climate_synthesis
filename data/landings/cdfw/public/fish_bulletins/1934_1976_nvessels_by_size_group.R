@@ -37,7 +37,7 @@ nvessels_36_38 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/r
 ##Checked totals and sum matches to Total. All good!
 
 ################################################################################
-# Read and merge all tables by lenght
+# Read and merge all tables by length
 
 ## Set 1: Table number varies. Data reported by port
 fbs_1 <- c(44, 49, 57, 58, 59, 59, 63, 63, 67, 67, 74, 80, 80, 86, 89, 95, 102, 102, 105, 105)
