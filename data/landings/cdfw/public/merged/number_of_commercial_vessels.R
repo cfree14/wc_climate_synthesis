@@ -221,6 +221,14 @@ data_tots_port <- bind_rows(data_fb1_tots_port, data_fb2_tots_port) %>%
   arrange(season, year, port_complex)
   
 # Plot
+g <-  ggplot(data_tots_port, aes(x=year, y=port_complex, fill=nvessels)) +
+  geom_raster() +
+  labs(x="", y="") +
+  scale_x_continuous(breaks=1934:1956) +
+  theme_bw()
+g
+
+# Plot
 g <- ggplot(data_tots_port, aes(x=year, y=nvessels, fill=port_complex)) +
   geom_bar(stat="identity") +
   # Labels
