@@ -29,11 +29,12 @@ colnames(data_fb_orig)
 colnames(data_web_orig)
 
 # Goal dataset
-# source, table, port_complex, port_orig, port, type, year, comm_name_orig, landings_lb, landings_kg, value_usd
+# source, table, port_complex, port_orig, port, type, year, 
+# comm_name_orig, comm_name, sci_name, presentation, landings_lb, landings_kg, value_usd
 
 # Format web data
 data_web <- data_web_orig %>% 
-  # Remove some columns
+  # Remove unnecessary columns
   select(-c(sci_name, level, taxa_group1, taxa_group2, environment)) %>% 
   # Rename
   rename(port_complex=area) %>% 
@@ -56,13 +57,23 @@ data_web <- data_web_orig %>%
   mutate(port_orig=port) %>% 
   # Fix presentation
   mutate(presentation=recode(presentation, "whole"="not specified")) %>% 
+  # Fix common names
+  rename(comm_name_temp=comm_name) %>% 
+  mutate(comm_name_temp=recode(comm_name_temp, 
+                               "Arrowtooth rockfish"="Arrowtooth flounder", 
+                               'True smelts'='True smelt')) %>% 
+  # Harmonize common names and scientific names
+  mutate(comm_name=wcfish::harmonize_names(comm_name_temp, "comm", "comm")) %>% 
+  mutate(sci_name=wcfish::harmonize_names(x=comm_name, from="comm", to="sci")) %>%
   # Arrange
   select(source, table, port_complex, port_orig, port, type, year, 
-         comm_name_orig, comm_name, presentation, value_usd, landings_lb, landings_kg, everything()) %>% 
-  select(-filename)
+         comm_name_orig, comm_name, sci_name, presentation, value_usd, landings_lb, landings_kg, everything()) %>% 
+  # Remove unnecessary columns
+  select(-c(filename, comm_name_temp))
 
-# Check common names
-wcfish::check_names(data_web$comm_name)
+# Inspect
+freeR::complete(data_web) # some values are missing, everything else MUST be zero
+
 
 # Format Fish Bulletin data
 data_fb <- data_fb_orig %>%
@@ -72,10 +83,15 @@ data_fb <- data_fb_orig %>%
   mutate(landings_kg=measurements::conv_unit(landings_lb, "lbs", "kg")) %>% 
   # Add presentation
   mutate(presentation="not specified") %>% 
+  # Harmonize common names and scientific names
+  mutate(comm_name=wcfish::harmonize_names(comm_name_orig, "comm", "comm")) %>% 
+  mutate(sci_name=wcfish::harmonize_names(x=comm_name, from="comm", to="sci")) %>%
   # Arrange
   select(source, table, port_complex, port_orig, port, type, year, 
-         comm_name_orig, value_usd, landings_lb, landings_kg, everything())
-  
+         comm_name_orig, comm_name, sci_name, presentation, value_usd, landings_lb, landings_kg, everything())
+
+# Inspect 
+freeR::complete(data_fb) # many landings are missing, everything else MUST be zero
 
 # Merge data
 data <- bind_rows(data_fb, data_web) %>% 
@@ -84,15 +100,13 @@ data <- bind_rows(data_fb, data_web) %>%
 
 # Inspect data
 str(data)
-freeR::complete(data) # a few missing values in web, many missing landings in FB
+freeR::complete(data) # a few missing values in web, many missing landings in FB, everything else ZERO
 range(data$year)
 table(data$port_complex)
 table(data$port)
-table(data$comm_name)
+table(data$type)
 table(data$presentation)
 
-sdata <- data %>% 
-  filter(comm_name=="Crayfish" | comm_name_orig=="Crayfish")
 
 # Plot data
 ################################################################################
@@ -103,7 +117,7 @@ sdata <- data %>%
 # Export data
 ################################################################################
 
-
-
-
+# Export data
+saveRDS(data, file=file.path(outdir, "CDFW_1941_2019_landings_by_port_species.Rds"))
+write.csv(data, file=file.path(outdir, "CDFW_1941_2019_landings_by_port_species.csv"), row.names=F)
 

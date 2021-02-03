@@ -30,10 +30,10 @@ data_orig <- purrr::map_df(files2merge, function(x){
   
   # Set column names
   if(ncol(df1)==4){
-    col_names <- c("port", "species", "pounds", "values")
+    col_names <- c("port", "species", "values", "pounds")
   }
   if(ncol(df1)==5){
-    col_names <- c("port", "type", "species", "pounds", "values")
+    col_names <- c("port", "type", "species", "values", "pounds")
   }
   
   # Format data
