@@ -25,13 +25,13 @@ table_name <- c("Table30", "Table141", "Table6", "Table12", "Table18", "Table19"
 year <- c("1934", "1935", "1939-40", "1940- 41", "1941-42", "1942-43", "1943-44", "1944-45", "1945-46", "1946-47", "1947-48", "1948-49", "1949-50", "1950-51", "1951-52", "1952-53", "1953-54", "1954-55", "1955-56", "1956-57")
 
 ##Data frame with path to read each table and corresponding year
-fb_table <- tibble(fbs_1, table_name, year) %>% 
+fb_table_key <- tibble(fbs_1, table_name, year) %>% 
   mutate(source = paste("FB", fbs_1), 
          path = paste0("fb", fbs_1, "/", "raw", "/", table_name, ".xlsx"))
 
 
 ## Merging
-data_orig_older <- purrr::map_df(fb_table$path, function(x){ 
+data_orig_older <- purrr::map_df(fb_table_key$path, function(x){ 
 
   # Read data
   indir <- file.path("data/landings/cdfw/public/fish_bulletins/raw", x)
@@ -49,7 +49,7 @@ data_orig_older <- purrr::map_df(fb_table$path, function(x){
            path = x) %>% 
     # Convert to character
     mutate_all(as.character) %>% 
-    left_join(fb_table, by = "path") %>% 
+    left_join(fb_table_key, by = "path") %>% 
     select(source, year, length_group_ft, nvessels, region_type, region)
 
 })
@@ -132,13 +132,17 @@ data_orig_tb5 <- rbind(data_orig_tb5, nvessels_fb129)
 # Set 1: Totals for each season/yr
 totals_older <- data_orig_older %>% 
   filter(grepl("number", tolower(length_group_ft)),
-         grepl("number", tolower(region)))
+         grepl("number", tolower(region))) %>% 
+  mutate(nvessels_total = as.numeric(nvessels)) %>% 
+  select(source, year, nvessels_total)
 
 
 # Set 2 + fb120: Total by season/yr
 totals_tb5 <- data_orig_tb5 %>% 
   filter(length_group_ft == "Total") %>% 
-  select(source, year, nvessels_toal = nvessels)
+  mutate(year = gsub("\\.|\\_|\\,", "", year),
+         nvessels_total = as.numeric(nvessels)) %>% 
+  select(source, year, nvessels_total)
 
 ################################################################################
 
@@ -155,6 +159,7 @@ data_older <- data_orig_older %>%
   mutate(length_group_ft=gsub("\\.|\\_|\\,", "", length_group_ft),
          length_group_ft=gsub("- | -", "-", length_group_ft),
          length_group_ft=stringr::str_trim(length_group_ft),
+         region = gsub("\\.|\\_|\\-", "", region),
          length_group_ft=recode(length_group_ft, 
                                 "Up to 24 feet"="0-24",
                                 "Up to 24'" = "0-24",
@@ -184,10 +189,11 @@ data_tb5 <- data_orig_tb5 %>%
   # Format nvessels
   mutate(nvessels=as.numeric(nvessels)) %>% 
   # Format length group
-  mutate(length_group_ft=gsub("\\.|\\_|\\,", "", length_group_ft),
-         length_group_ft=gsub("- | -", "-", length_group_ft),
-         length_group_ft=stringr::str_trim(length_group_ft),
-         length_group_ft=recode(length_group_ft, 
+  mutate(length_group_ft = gsub("\\.|\\_|\\,", "", length_group_ft),
+         length_group_ft = gsub("- | -", "-", length_group_ft),
+         length_group_ft = stringr::str_trim(length_group_ft),
+         year = gsub("\\.|\\_|\\,", "", year),
+         length_group_ft = recode(length_group_ft, 
                                 "Up to 24 fcet"="0-24",
                                 "Up to 24 feet"="0-24",
                                 "25 to 39 feet"="25-39",
@@ -206,10 +212,129 @@ data_tb5 <- data_orig_tb5 %>%
 unique(data_tb5$length_group_ft)
 unique(data_older$length_group_ft)
 
-# Check Total
 #################################################################################
+# Check Totals
+total_check_older <- data_older %>% 
+  group_by(source, year) %>% 
+  summarise(total_sum = sum(nvessels, na.rm = T)) %>% 
+  left_join(totals_older, by = c("source", "year")) %>% 
+  mutate(check_diff = total_sum - nvessels_total) ## All 0! Totals match
 
-# Plot coverage
+total_check_tb5 <- data_tb5 %>% 
+  group_by(source, year) %>% 
+  summarise(total_sum = sum(nvessels, na.rm = T)) %>% 
+  left_join(totals_tb5, by = c("source", "year")) %>% 
+  mutate(check_diff = total_sum - nvessels_total) ## All 0! Totals match
+
+##################################################################################
+## Combining all data and removing duplicate years
+
+nvessels_complete <- rbind(data_older, data_tb5) %>% 
+  mutate(region = recode(region,
+                         "Oregon Washington and Alaska boats fishing in California" = "OR, WA, AK",
+                         "Alaska Washington and Oregon" = "OR, WA, AK",
+                         "Alaska Oregon and Washington" = "OR, WA, AK",
+                         "Alaska Oregon and Washington" = "OR, WA, AK",
+                         "Kureka" = "Eureka",
+                         "Del Norte Eurecka" = "Del Norte Eureka",
+                         "i/os Angeles" = "Los Angeles",
+                         "Saciamento" = "Sacramento"),
+         regroup_length_ft = recode(length_group_ft,
+                                           "0-10" = "0-24" ,
+                                           "11-15" = "0-24",
+                                           "16-20" = "0-24",
+                                           "21-25" = "0-24",
+                                           "26-30" = "25-39",
+                                           "31-35" = "25-39",
+                                           "36-40" = "25-39",
+                                           "41-45" ="40-64",
+                                           "46-50" = "40-64",
+                                           "51-55" = "40-64",
+                                           "56-60" ="40-64",
+                                           "61-65" = "40-64",
+                                           "66-70" = "65-84",
+                                           "71-75" ="65-84",
+                                           "76-80" ="65-84",
+                                           "81-85" = "65-84",
+                                           "86-90" ="85-99",
+                                           "91-95" ="85-99",
+                                           "96-100" = "85-99",
+                                           "101-105" = "100+",
+                                           "106-110" = "100+",
+                                           "111-115" = "100+",
+                                           "116-120" = "100+",
+                                           "121-125" = "100+",
+                                           "126-130" ="100+",
+                                           "131-135" = "100+",
+                                           "136-140" ="100+",
+                                           "141-145" = "100+", 
+                                           "146-150" = "100+",
+                                           "151-155" = "100+", 
+                                           "156-160" = "100+",
+                                           "161-165" = "100+",
+                                           "166-170" = "100+",
+                                           "171-175" = "100+",
+                                           "176-180" = "100+",
+                                           "181+" = "100+"),
+         year = recode(year,
+                       "1957-1958"= "1957-58",
+                       "1958-1959" = "1958-59",
+                       "1959-1960" = "1959-60",
+                       "1960-1961" = "1960-61",
+                       "1961-1962" = "1961-62",
+                       "1962-1963" = "1962-63",
+                       "1963-1964" = "1963-64",
+                       "1964-1965" = "1964-65",
+                       "1965-1966" = "1965-66")) %>% 
+  distinct(year, length_group_ft, nvessels, region_type, region, .keep_all = T)
+
+###?? Reduce all 100+ to 85+ to be consistent with earlier years? Data up untill 1947-48 only reports up to the lenght group 85+
+
 ################################################################################
+## Testing group with year 1970-71
 
+nvessels_grouped_test <- nvessels_complete %>%
+  filter(source == "FB 159",
+         year == "1970-71") %>% 
+  group_by(regroup_length_ft) %>% 
+  summarise(nvessels_group_fb159 = sum(nvessels))
+
+
+test_compare <- nvessels_complete %>% 
+  filter(source == "FB 154",
+         year == "1970-71") %>% 
+  left_join(nvessels_grouped) %>% 
+  select(-region, -region_type)
+
+################################################################################
+## Grouped df to plot
+
+nvessels_grouped <- nvessels_complete %>% 
+  filter(!(year == "1970-71" & source == "FB 159")) %>% 
+  group_by(year, regroup_length_ft) %>% 
+  summarise(nvessels_group_yr = sum(nvessels, na.rm = T)) %>% 
+  mutate(regroup_length_ft = as_factor(regroup_length_ft))
+
+#mutate(iso3_code = fct_relevel(iso3_code, rev(c("CHN", "RUS"
+
+
+################################################################################
+# Plot
+
+pal_antique <- rev(c("#855C75", "#D9AF6B", "#AF6458", "#736F4C", "#526A83", "#625377", "#68855C", "#9C9C5E", "#A06177", "#8C785D", "#467378", "#7C7C7C"))
+
+nvessels_ts <- ggplot(nvessels_grouped %>% 
+                        mutate(regroup_length_ft = 
+                                 fct_relevel(regroup_length_ft, c("100+", "85-99", "85+", "65-84", "40-64", "25-39", "0-24"))))+
+  geom_bar(aes(x = year, y = nvessels_group_yr, fill = regroup_length_ft), 
+           stat = "identity")+
+  theme_classic()+
+  scale_y_continuous(expand = c(0, 0))+
+  scale_fill_manual(values = pal_antique)+
+  labs(fill = element_text("Vessel Length Group (ft)"),
+       title = "Commercial Fishing Vessels registered in CA",
+       x= "Year",
+       y = "Nº of Vessels")+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.1))
+  
 
