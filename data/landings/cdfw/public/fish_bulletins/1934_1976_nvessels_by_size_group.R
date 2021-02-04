@@ -24,6 +24,7 @@ nvessels_36_38 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/r
          year != "1939-1940") %>% 
   mutate(source = "FB 57",
          region_type = "port complex",
+         table_name = "Table5",
          region = recode(region,
                          "Alaska Washington and Oregon" = "OR, WA, AK",
                          "Mexico and Panama" = "Mexico",
@@ -32,12 +33,12 @@ nvessels_36_38 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/r
                        "1936-1937" = "1936-37",
                        "1937-1938" = "1937-38",
                        "1938-1939" = "1938-39")) %>% 
-  select(source, year, nvessels, region_type, region)
+  select(source, table_name, year, nvessels, region_type, region)
 
 ##Checked totals and sum matches to Total. All good!
 
 ################################################################################
-# Read and merge all tables by lenght
+# Read and merge all tables by length
 
 ## Set 1: Table number varies. Data reported by port
 fbs_1 <- c(44, 49, 57, 58, 59, 59, 63, 63, 67, 67, 74, 80, 80, 86, 89, 95, 102, 102, 105, 105)
@@ -72,7 +73,7 @@ data_orig_older <- purrr::map_df(fb_table_key$path, function(x){
     # Convert to character
     mutate_all(as.character) %>% 
     left_join(fb_table_key, by = "path") %>% 
-    select(source, year, length_class_orig, nvessels, region_type, region)
+    select(source, table_name, year, length_class_orig, nvessels, region_type, region)
 
 })
 
@@ -99,10 +100,11 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
       setNames(c("length_class_orig", "year", "nvessels")) %>% 
       # Add and arrange source
       mutate(source=paste("FB", x),
+             table_name = "Table5",
              region_type = "state",
              region = "statewide",
              length_class_orig = str_remove(length_class_orig, "//.")) %>% 
-      select(source, everything()) %>% 
+      select(source, table_name, everything()) %>% 
       # Convert to character
       mutate_all(as.character)
   }
@@ -119,9 +121,10 @@ data_orig_tb5 <- purrr::map_df(fbs_2, function(x){
       mutate_all(as.character) %>% 
       # Add and arrange source
       mutate(source=paste("FB", x),
+             table_name = "Table5",
              region_type = "state",
              region = "statewide") %>% 
-      select(source, everything())
+      select(source, table_name, everything())
      
   }
   
@@ -139,9 +142,10 @@ nvessels_fb129 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/r
   setNames(c("year", "length_class_orig", "nvessels")) %>% 
   # Add and arrange source
   mutate(source= "FB 129",
+         table_name = "Table6",
          region_type = "state",
          region = "statewide") %>% 
-  select(source, everything()) %>% 
+  select(source, table_name, everything()) %>% 
   # Convert to character
   mutate_all(as.character)
 
@@ -158,7 +162,7 @@ totals_older <- data_orig_older %>%
   select(source, year, nvessels_total)
 
 
-# Set 2 + fb120: Total by season/yr
+# Set 2 + fb129: Total by season/yr
 totals_tb5 <- data_orig_tb5 %>% 
   filter(length_class_orig == "Total") %>% 
   mutate(year = gsub("\\.|\\_|\\,", "", year),
