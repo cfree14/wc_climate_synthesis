@@ -111,8 +111,11 @@ table(data$presentation)
 # Plot data
 ################################################################################
 
-
-
+ports <- data %>% 
+  group_by(port) %>% 
+  summarize(regions=paste(sort(unique(port_complex)), collapse=", ")) %>% 
+  arrange(port)
+write.csv(ports, file="~/Desktop/california_port_key.csv")
 
 # Export data
 ################################################################################
