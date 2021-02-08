@@ -79,6 +79,7 @@ data_full <- data_orig %>%
                           "Lone Beach"="Long Beach",
                           "Los Anqeles"="Los Angeles",
                           "Mcrro Bay"="Morro Bay",
+                          "Mcnears Point"="McNears Point",
                           "Oxnard And Ventura"="Oxnard/Ventura",
                           "Playa Del Ray"="Playa Del Rey",
                           "Point Reyes Drakes Bay"="Point Reyes/Drakes Bay",
@@ -86,8 +87,8 @@ data_full <- data_orig %>%
                           # Princeton
                           "Halfmoon Bay"="Half Moon Bay",
                           "Princetonbythesea"="Princeton-by-the-sea",
-                          "Princeton Halfmoon Bay"='Princeton (Half Moon Bay)',
-                          "Princeton By The Sea Halfmoon Bay"="Princeton-by-the-sea (Half Moon Bay)",
+                          "Princeton Halfmoon Bay"='Princeton/Half Moon Bay',
+                          "Princeton By The Sea Halfmoon Bay"="Princeton-by-the-sea/Half Moon Bay",
                           # Port San Luis
                           "Port San Luis Avila Grover City"="Port San Luis/Avila/Grover City",
                           "Port San Luis Avila Drover City"="Port San Luis/Avila/Grover City",
@@ -96,9 +97,9 @@ data_full <- data_orig %>%
                           "Sausalilo"="Sausalito",
                           "Saiisalito"="Sausalito",
                           # Tomales Bay
-                          "Tomalcs Bay Marshall"="Tomales Bay (Marshall)",
-                          "Tomalea Bay Marshall"="Tomales Bay (Marshall)",
-                          "Tomales Bay Marshall"="Tomales Bay (Marshall)",
+                          "Tomalcs Bay Marshall"="Tomales Bay/Marshall",
+                          "Tomalea Bay Marshall"="Tomales Bay/Marshall",
+                          "Tomales Bay Marshall"="Tomales Bay/Marshall",
                           "San Diego Point Loma"="San Diego/Point Loma")) %>% 
   # Harmonize ports
   mutate(port=recode(port_orig, 
@@ -115,11 +116,13 @@ data_full <- data_orig %>%
                      "Santa Catalina Island"="Avalon (Catalina Island)",
                      # Princeton 
                      "Princeton-by-the-sea"="Princeton",
-                     "Princeton-by-the-sea (Half Moon Bay)"="Princeton (Half Moon Bay)",
+                     "Princeton-by-the-sea/Half Moon Bay"="Princeton/Half Moon Bay",
                      # Avila
                      "Avila"="Avila/Port San Luis/Grover City",
                      "Port San Luis/Avila/Grover City"="Avila/Port San Luis/Grover City",
                      "Port San Luis/Avila"="Avila/Port San Luis/Grover City")) %>% 
+  # Fix "All Other Ports"
+  mutate(port=ifelse(port=="All Other Ports", paste("Other", port_complex, "Ports"), port)) %>% 
   # Make port complex a factor
   mutate(port_complex=factor(port_complex, levels=port_complexes)) %>% 
   # Arrange
@@ -147,6 +150,45 @@ table(data_full$type)
 # Inspect common names
 names2check <- data_full$species[!grepl("total", tolower(data_full$species))]
 wcfish::check_names(names2check)
+
+
+# Inspect coverage
+################################################################################
+
+# Theme
+my_theme <-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+                   axis.text=element_text(size=6),
+                   axis.title=element_text(size=8),
+                   legend.text=element_text(size=6),
+                   legend.title=element_text(size=8),
+                   strip.text=element_text(size=7),
+                   plot.title=element_text(size=9),
+                   # Gridlines
+                   # panel.grid.major = element_blank(), 
+                   # panel.grid.minor = element_blank(),
+                   # panel.background = element_blank(), 
+                   # axis.line = element_line(colour = "black"),
+                   # Legend
+                   legend.position="bottom")
+
+# Coverage
+coverage <- data_full %>% 
+  # Remove totals
+  filter(species!="Totals") %>% 
+  # Summarize
+  group_by(port_complex, port, year) %>% 
+  summarize(landings_lb=sum(landings_lb))
+
+# Plot coverage
+g <- ggplot(coverage, aes(x=year, y=port)) +
+  facet_grid(port_complex~., scales="free_y", space="free_y") +
+  geom_tile() +
+  # Labels
+  labs(x="Year", y="") +
+  scale_x_continuous(breaks=seq(1940,1980,5)) +
+  # Theme
+  theme_bw() + my_theme
+g
 
 
 # QA/QC checks
@@ -182,21 +224,7 @@ tots <- tot_obs %>%
   mutate(value_tot_diff = value_tot_obs - value_tot_rep,
          landings_tot_diff = landings_tot_obs - landings_tot_rep)
 
-# Theme
-my_theme <-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
-                   axis.text=element_text(size=6),
-                   axis.title=element_text(size=8),
-                   legend.text=element_text(size=6),
-                   legend.title=element_text(size=8),
-                   strip.text=element_text(size=7),
-                   plot.title=element_text(size=9),
-                   # Gridlines
-                   # panel.grid.major = element_blank(), 
-                   # panel.grid.minor = element_blank(),
-                   # panel.background = element_blank(), 
-                   # axis.line = element_line(colour = "black"),
-                   # Legend
-                   legend.position="bottom")
+
 
 # Plot difference in values
 g1 <- ggplot(tots, aes(x=year, y=port, fill=value_tot_diff)) +
@@ -237,27 +265,6 @@ ggsave(g2, filename=file.path(plotdir, "qaqc_port_landings_volume.png"),
        width=5, height=8.5, units="in", dpi=600)
   
 
-# Inspect coverage
-################################################################################
-
-# Coverage
-coverage <- data_full %>% 
-  # Remove totals
-  filter(species!="Totals") %>% 
-  # Summarize
-  group_by(port_complex, port, year) %>% 
-  summarize(landings_lb=sum(landings_lb))
-
-# Plot coverage
-g <- ggplot(coverage, aes(x=year, y=port)) +
-  facet_grid(port_complex~., scales="free_y", space="free_y") +
-  geom_tile() +
-  # Labels
-  labs(x="Year", y="") +
-  scale_x_continuous(breaks=seq(1940,1980,5)) +
-  # Theme
-  theme_bw() + my_theme
-g
 
 
 # Export data

@@ -10,12 +10,12 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-inputdir <- "data/landings/cdfw/public/approach3/intermediate"
-outputdir <- "data/landings/cdfw/public/processed"
-plotdir <- "data/landings/cdfw/public/figures"
+inputdir <- "data/landings/cdfw/public/website/by_port/approach3/intermediate"
+outputdir <- "data/landings/cdfw/public/website/by_port/processed"
+plotdir <- "data/landings/cdfw/public/website/by_port/figures"
 
 # Read port key
-port_key <- readxl::read_excel("data/landings/cdfw/public/port_key/port_key_v1.xlsx")
+port_key <- readxl::read_excel("data/landings/cdfw/public/website/by_port/port_key/port_key_v1.xlsx")
 
 
 # Build data

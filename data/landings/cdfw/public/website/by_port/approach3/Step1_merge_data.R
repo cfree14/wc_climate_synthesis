@@ -10,8 +10,8 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-basedir <- "data/landings/cdfw/public/raw"
-outputdir <- "data/landings/cdfw/public/approach3/intermediate"
+basedir <- "data/landings/cdfw/public/website/raw"
+outputdir <- "data/landings/cdfw/public/website/by_port/approach3/intermediate"
 
 
 # Merge data
@@ -21,7 +21,7 @@ outputdir <- "data/landings/cdfw/public/approach3/intermediate"
 merge_year_data <- function(year){
   
   # Files to merge
-  yeardir <- file.path(basedir, year)
+  yeardir <- file.path(basedir, year, "by_port")
   files2merge <- list.files(yeardir, pattern="clean|copy")
   
   # Merge data
