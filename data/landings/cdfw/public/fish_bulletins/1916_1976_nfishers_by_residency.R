@@ -12,12 +12,13 @@ library(tidyverse)
 
 # Directories
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
+indir <- "data/landings/cdfw/public/fish_bulletins/raw/"
 
 ################################################################################
 # Read and merge tables of older issues
 
 ##Historic data only by season (1916-1936)
-nfishers_16_36 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/raw/fb49/raw/Table144b.xlsx") %>% 
+nfishers_16_35 <- readxl::read_excel(paste0(indir,"fb49/raw/Table144b.xlsx")) %>% 
   rename(season = "License Year", nfishers = "No. of Fishermen") %>% 
   mutate(season = recode(season,
                          "1924—25" = "1924-25",
@@ -29,10 +30,35 @@ nfishers_16_36 <- readxl::read_excel("data/landings/cdfw/public/fish_bulletins/r
          year = str_extract(season, "\\d{4}") %>% as.numeric(.))
 
 # Inspect
-str(nfishers_16_36)
-freeR::complete(nfishers_16_36)
-table(nfishers_16_36$season)
+str(nfishers_16_35)
+freeR::complete(nfishers_16_35)
+table(nfishers_16_35$season)
 
+
+## Mising data years 1936, 1937, 1938
+nfishers_36_38_raw <- readxl::read_excel(paste0(indir, "fb57/raw/Table4.xlsx")) %>% 
+  rename(nat = "Country of birth")
+
+totals_nfisher_36_38 <- nfishers_36_38_raw %>% 
+  filter(nat == "Total") %>% 
+  rename(nfishers_total = nfishers)
+
+nfishers_36_38 <- nfishers_36_38_raw %>% 
+  filter(!str_detect(nat, "Total")) %>% 
+  group_by(season) %>% 
+  summarise(nfishers = sum(nfishers)) %>% 
+  ungroup()
+
+total_check_36_38 <- nfishers_36_38 %>% 
+  left_join(totals_nfisher_36_38, by = "season") %>% 
+  mutate(dif = nfishers - nfishers_total) ## All 0! Check ok
+
+nfishers_36_38 <- nfishers_36_38 %>% 
+  mutate(source = "FB 57",
+         table_name = "Table4",
+         year = str_extract(season, "\\d{4}") %>% as.numeric(.),
+         region = "Statewide",
+         region_type = "state")
 
 
 ## Set 1: Data by nationality and area of residence. Years: 1935-1955
@@ -133,7 +159,7 @@ check_set1 <- data_orig_set1 %>%
   group_by(season, source) %>% 
   summarise(total_sum = sum(nfishers, na.rm = T)) %>% 
   left_join(totals_set1, by = c("season", "source")) %>% 
-  mutate(dif_check = total_sum - total_nfisher) ##No differences! All good.
+  mutate(dif_check = total_sum - total_nfisher) ##No differences! All good. FB 49 does not provide totals that is why is shows NA
 
 ## Set 2
 totals_set2 <- data_orig_set2 %>% 
@@ -176,7 +202,9 @@ data_set1 <- data_orig_set1 %>%
   # Remove nationality, sum by residence region
   group_by(region, region_type, table_name, season, year, source) %>% 
   summarise(nfishers = sum(nfishers, na.rm = T)) %>% 
-  ungroup()
+  ungroup() %>% 
+  ## Adding missing values for year 1953 (see note at the end)
+  add_row(region = "not specified", region_type = "area of residence", table_name = "Table144", season = "1935-36", year = 1935, source = "FB 49", nfishers = 631)
                          
 # Inspect
 str(data_set1)
@@ -211,11 +239,15 @@ data_set2 <- data_orig_set2 %>%
                          "Other registry" = "Other",
                          "Others" = "Other",
                          "San Francisco—" = "San Francisco"),
-         season = str_remove(season, "\\D+") %>% stringr::str_trim(.), ##removes all letters
-         year = str_extract(season, "(\\d{4})") %>% as.numeric(.),  ##extracts the fist 4 digits
+         ##removes all letters
+         season = str_remove(season, "\\D+") %>% stringr::str_trim(.),
+         ##extracts the fist 4 digits
+         year = str_extract(season, "(\\d{4})") %>% as.numeric(.), 
+         ##extracts the last 2 digits
          test =  str_sub(season, -2,-1)) %>% 
   unite(season, year, test, sep = "-", remove = FALSE) %>% 
   select(source, table_name = table_name_set2, season, year, nfishers, region, region_type) %>% 
+  ## Gets rid of duplicates. When values are provided in two FBs then it keeps just one of them
   distinct(region, season, nfishers, region_type, .keep_all = T)
 
 # Inspect
@@ -243,7 +275,9 @@ double_check_set2 <- data_set2 %>%
 #################################################################################
 ## Merge the all data sets
 
-nfishers_complete <- bind_rows(nfishers_16_36, data_set1, data_set2) %>% 
+nfishers_complete <- bind_rows(nfishers_16_35, nfishers_36_38, data_set1, data_set2) %>% 
+  ##remove the statewide value for year 1935 (we keep the values by area of residency)
+  filter(!(year == 1935 & region == "Statewide")) %>% 
   ## Arrange
   select(source, table_name, season, year, nfishers, region, region_type) %>% 
   arrange(season, year, region)
@@ -262,13 +296,12 @@ table(nfishers_complete$region)
 
 pal_antique <- c("#855C75", "#D9AF6B", "#AF6458", "#736F4C", "#526A83", "#625377", "#68855C", "#9C9C5E", "#A06177", "#8C785D", "#467378", "#7C7C7C")
 
-area_cols <- 14
+area_cols <- 15
 my_colors <- colorRampPalette(brewer.pal(8, "Set2"))(area_cols)
 my_colors_2 <- colorRampPalette(brewer.pal(12, "Paired"))(area_cols)
 my_colors_3 <- colorRampPalette(pal_antique)(area_cols)
 
-nfishers_ts <- ggplot(nfishers_complete %>%
-                        filter(!(year == 1935 & region == "Statewide")))+
+nfishers_ts <- ggplot(nfishers_complete)+
   geom_bar(aes(x = year, y = nfishers, fill = region), 
            stat = "identity")+
   theme_classic()+
@@ -285,8 +318,7 @@ nfishers_ts <- ggplot(nfishers_complete %>%
 # saveRDS(nfishers_complete, file = file.path(outdir, "CDFW_1916_1976_nfishers_by_residency.Rds"))
 
 #################################################################################
-##TO DO
-# Filter out the statewise data for year 1935 and add a "not specified" category unde region to add the 631 pople missing in the table reported by residence area
-# Digitalize and incorporate data for missing years (1936-1938) See FB 57 tabl4 4
+##Note
+## Table144b in FB 49 reports 6007 registered commercial fisheres. This contradicts with the 5376 fishers resported in Table144a. The 6007 fishers match with what is reported latter in FB 74 Table33. Within the text in FB49 pg 144 says: "The records show that 209 commercial fishermen from Oregon, Washington and Alaska came south during the 1935–1936 license year and secured California commercial fishing licenses". We included the list the piece of the table that indicates the nationality of fishers comming from AK/WA/OR and added an "Other" row to make sure the total sum 209 as indicated in the text.Additionally, we added a "not speciefied" category under the region column to include the missing 631 fishers. This way match the numbers in both tables.
 
 
