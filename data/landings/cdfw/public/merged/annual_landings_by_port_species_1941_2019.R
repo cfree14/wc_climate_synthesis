@@ -20,6 +20,8 @@ data_fb_orig <- readRDS("data/landings/cdfw/public/fish_bulletins/processed/CDFW
 # data_web_orig <- readRDS("data/landings/cdfw/public/website/by_port/processed/CDFW_2000_2019_landings_by_port.Rds")
 data_web_orig <- read.csv("data/landings/cdfw/public/website/by_port/processed/CDFW_2000_2019_landings_by_port_expanded.csv", as.is=T)
 
+# Get port info
+ports <- wcfish::ports
 
 # Build data
 ################################################################################
@@ -66,8 +68,8 @@ data_web <- data_web_orig %>%
   mutate(comm_name=wcfish::harmonize_names(comm_name_temp, "comm", "comm")) %>% 
   mutate(sci_name=wcfish::harmonize_names(x=comm_name, from="comm", to="sci")) %>%
   # Arrange
-  select(source, table, port_complex, port_orig, port, type, year, 
-         comm_name_orig, comm_name, sci_name, presentation, value_usd, landings_lb, landings_kg, everything()) %>% 
+  select(source, table, port_complex, port, port_orig, type, year, 
+         comm_name, comm_name_orig, sci_name, presentation, value_usd, landings_lb, landings_kg, everything()) %>% 
   # Remove unnecessary columns
   select(-c(filename, comm_name_temp))
 
@@ -87,15 +89,29 @@ data_fb <- data_fb_orig %>%
   mutate(comm_name=wcfish::harmonize_names(comm_name_orig, "comm", "comm")) %>% 
   mutate(sci_name=wcfish::harmonize_names(x=comm_name, from="comm", to="sci")) %>%
   # Arrange
-  select(source, table, port_complex, port_orig, port, type, year, 
-         comm_name_orig, comm_name, sci_name, presentation, value_usd, landings_lb, landings_kg, everything())
+  select(source, table, port_complex, port, port_orig, type, year, 
+         comm_name, comm_name_orig, sci_name, presentation, value_usd, landings_lb, landings_kg, everything())
 
 # Inspect 
 freeR::complete(data_fb) # many landings are missing, everything else MUST be zero
 
 # Merge data
 data <- bind_rows(data_fb, data_web) %>% 
+  # Add source type
+  mutate(source_type=ifelse(grepl("FB", source), "Fish Bulletins", "Website")) %>% 
+  # Format some ports
+  mutate(port=recode(port, 
+                     "Santa Barbara Harbor"="Santa Barbara",
+                     "Mission Beach"="Mission Bay",
+                     "Gaviota"="Gaviota Beach",
+                     "Avila/Port San Luis/Grover City"="Avila/Port San Luis",
+                     "Avalon"="Avalon (Catalina Island)")) %>% 
+  # Add harmonized port complex
+  rename(port_complex_orig=port_complex) %>% 
+  left_join(ports %>% select(port, port_complex1), by="port") %>% 
+  rename(port_complex=port_complex1) %>% 
   # Arrange
+  select(source_type, source, table, port_complex, port_complex_orig, port, port_orig, everything()) %>% 
   arrange(year, port_complex, port, comm_name_orig)
 
 # Inspect data
@@ -108,14 +124,34 @@ table(data$type)
 table(data$presentation)
 
 
-# Plot data
+# Inspect port coverage
 ################################################################################
 
-ports <- data %>% 
-  group_by(port) %>% 
-  summarize(regions=paste(sort(unique(port_complex)), collapse=", ")) %>% 
-  arrange(port)
-write.csv(ports, file="~/Desktop/california_port_key.csv")
+# Calculate coverage
+coverage_ports <- data %>% 
+  group_by(source_type, port_complex, port, year) %>% 
+  summarize(n=n())
+
+# Plot coverage
+g1 <- ggplot(coverage_ports, aes(x=year, y=port)) +
+  facet_grid(port_complex~source_type, scales="free", space="free") +
+  geom_tile() +
+  labs(x="", y="") +
+  theme_bw()
+g1
+
+
+# Inspect species coverage
+################################################################################
+
+# Confirm that species only occurs once per year-port
+# Shark actually occurs twice in 1945 San Diego
+# Copper rockfish appears as whitebelly rocksfish in 2001 ML / 2004 SB
+spp_check <- data %>% 
+  group_by(year, port, type, comm_name, presentation) %>% 
+  summarize(n=n()) %>% 
+  filter(n!=1)
+
 
 # Export data
 ################################################################################

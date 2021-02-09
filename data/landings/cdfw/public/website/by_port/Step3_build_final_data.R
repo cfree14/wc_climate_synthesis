@@ -10,9 +10,9 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-outputdir <- "data/landings/cdfw/public/processed"
-sppkeydir <- "data/landings/cdfw/public/species_key"
-plotdir <- "data/landings/cdfw/public/figures"
+outputdir <- "data/landings/cdfw/public/website/by_port/processed"
+sppkeydir <- "data/landings/cdfw/public/website/by_port/species_key"
+plotdir <- "data/landings/cdfw/public/website/by_port/figures"
 
 # Read data
 data_orig <- readRDS(file.path(outputdir, "CDFW_2000_2019_landings_by_port.Rds"))

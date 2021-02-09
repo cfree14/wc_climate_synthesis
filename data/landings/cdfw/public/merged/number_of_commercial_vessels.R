@@ -41,7 +41,9 @@ data_fb3_orig <- read.csv("data/landings/cdfw/public/fish_bulletins/raw/fb181/pr
 # Format 1934-1976
 data_fb1 <- data_fb1_orig %>% 
   # Rename columns
-  rename(season=year, length_class=length_class_orig) %>% 
+  rename(season=year, length_class=length_class_orig, table=table_name) %>% 
+  # Format table
+  mutate(table=gsub("Table", "Table ", table)) %>% 
   # Format number of vessels
   # I inspected the raw data and confirmed that blank entries are true zeros
   mutate(nvessels=ifelse(is.na(nvessels), 0, nvessels)) %>% 
@@ -65,7 +67,7 @@ data_fb1 <- data_fb1_orig %>%
   mutate(length_class_floor=length_class %>% 
            gsub("(^[^-]+)-.*", "\\1", .) %>% gsub("\\+", "", .) %>% as.numeric()) %>% 
   # Arrange
-  select(source, season, year, region_type, region, 
+  select(source, table, season, year, region_type, region, 
          length_class_system, length_class_group, length_class, length_class_floor,
          nvessels, everything()) %>% 
   arrange(season, year, region, length_class_group, length_class)
@@ -73,6 +75,7 @@ data_fb1 <- data_fb1_orig %>%
 # Inspect data
 freeR::complete(data_fb1) # must all be 0
 table(data_fb1$source)
+table(data_fb1$table)
 range(data_fb1$year)
 table(data_fb1$season)
 table(data_fb1$year)
@@ -126,19 +129,21 @@ saveRDS(data_fb1, file=file.path(outdir, "CDFW_1934_1976_n_comm_vessels_by_lengt
 
 # Format 1934-1976
 data_fb2 <- data_fb2_orig %>% 
+  # Rename
+  rename(table=table_name) %>% 
+  mutate(table=gsub("Table", "Table ", table)) %>% 
   # Format season/year
   rename(season=year) %>% 
   mutate(year=substr(season, 1, 4) %>% as.numeric()) %>% 
   # Format region
   mutate(region=recode(region, "Del Norte Eureka"= "Del Norte/Eureka")) %>% 
   # Arrange
-  select(source, season, year, region_type, region, nvessels, everything()) %>% 
+  select(source, table, season, year, region_type, region, nvessels, everything()) %>% 
   arrange(season, year, region)
 
 
 # Format FB 181 data (1976-1999)
 #############################################
-
 
 # Format 1976-1999
 data_fb3 <- data_fb3_orig %>% 
@@ -164,14 +169,14 @@ data_fb3 <- data_fb3_orig %>%
 
 # Format 1934-1976
 data_fb1_tots <- data_fb1 %>% 
-  group_by(source, season, year) %>% 
+  group_by(source, table, season, year) %>% 
   summarize(nvessels=sum(nvessels)) %>% 
   ungroup() %>% 
   arrange(year)
 
 # Format 1936-1938
 data_fb2_tots <- data_fb2 %>% 
-  group_by(source, season, year) %>% 
+  group_by(source, table, season, year) %>% 
   summarize(nvessels=sum(nvessels)) %>% 
   ungroup() %>% 
   arrange(year)
@@ -179,7 +184,7 @@ data_fb2_tots <- data_fb2 %>%
 # Format 1936-1938
 data_fb3_tots <- data_fb3 %>% 
   # Select columns of interest
-  select(source, season, year, nvessels)
+  select(source, table,season, year, nvessels)
 
 # Merge
 data_tots <- bind_rows(data_fb1_tots, data_fb2_tots, data_fb3_tots) %>% 
@@ -201,14 +206,14 @@ write.csv(data_tots, file=file.path(outdir, "CDFW_1934_1999_n_comm_vessels.csv")
 # Build totals by port (1934-1976, but missing 1936-1938)
 data_fb1_tots_port <- data_fb1 %>% 
   filter(region_type=="port complex") %>% 
-  group_by(source, season, year, region) %>% 
+  group_by(source, table, season, year, region) %>% 
   summarize(nvessels=sum(nvessels)) %>% 
   ungroup() %>% 
   arrange(season, year, region)
 
 # Build totals by port (1936-1938)
 data_fb2_tots_port <- data_fb2 %>% 
-  select(source, season, year, region, nvessels)
+  select(source, table, season, year, region, nvessels)
 
 # Merge
 data_tots_port <- bind_rows(data_fb1_tots_port, data_fb2_tots_port) %>% 
