@@ -72,7 +72,7 @@ totals_sum <- data_orig %>%
   summarise(total_sum = sum(nfish_catch, na.rm = T)) %>% 
   left_join(totals, by = c("year", "source")) %>% 
   mutate(dif = total_sum - nfish_total)
-## Theara are 3 year that totals don't match: 
+## There are 3 year that totals don't match: 
 ## 1977 difference = -360
 ## 1979 difference = -9
 ## 1980 difference = 10000
@@ -86,35 +86,88 @@ catch_data <- data_orig %>%
   mutate(nfish_catch = as.numeric(nfish_catch)) %>% 
   # Format species
   mutate(species = gsub("\\.|\\_|\\_|\\-|\\,|\\’", "", species) %>% stringr::str_trim(.),
-         species = str_to_sentence(species),
-         species = recode(species,
-                "Baas kdp and sand" = "Bass kelp and sand",
-                "All other" = "All others",
-                "Barracuda gdfotua" = "Barracuda california",
-                "Bofuto pacific" = "Bonito pacific",
-                "Booito acific" = "Bonito pacific",
-                "Booito pacific" = "Bonito pacific",
-                "Lins cod" = "Lingcod",
-                "Mackarel jack" = "Mackerel jack",
-                "Mackerel ndfie" = "Mackerel pacific",
-                "Rock fish" = "Rockfish",
-                "Seabaas white" = "Seabass white",      
-                "Seabasa white" = "Seabass white",
-                "Seabass white——" = "Seabass white",
-                "Seaton while" = "Seabass white",
-                "Sheep head california" = "Sheephead california",
-                "Sheepbead california" = "Sheephead california",
-                "Tun bluefin" = "Tuna bluefin",
-                "Tuna blue fin" = "Tuna bluefin",
-                "Tuna albaeorc" = "Tuna albacore",
-                "Whitcfisb ocean" = "Whitefish ocean",
-                "Whitefah ocean" = "Whitefish ocean",
-                "Yefiowtail" = "Yellowtail",
-                "Yeliowtnil" = "Yellowtail",
-                "Yellowtail california" = "Yellowtail")) %>% 
+         #counting all sequences on non-space characters
+         word_count = str_count(species, "\\S+")) %>% 
+  separate(species, c("w1", "w2"), remove = F) %>% 
+  unite(species_2, w1, w2, sep = ", ") %>% 
+  mutate(species = case_when(str_detect(species, "Rock") ~ species,
+                             word_count == 2 ~ species_2,
+                             T ~ species),
+         comm_name_reg = wcfish::convert_names(species, to="regular"),
+         comm_name_reg = recode(comm_name_reg,
+                                "Baas kdp and sand" = "Kelp/sand bass",
+                                'Bass kelp and sand' = "Kelp/sand bass",
+                                "Cod lins" = "Lingcod",
+                                "Gdfotua barracuda" = "California barracuda",
+                                "Ndfie mackerel" = "Pacific mackerel",
+                                "Other all" = "All other species",
+                                "Others all" = "All other species",
+                                "Sheep head California" = "California sheephead",
+                                "Tuna blue fin" = "Bluefin tuna",
+                                "While seaton" = "White seabass",
+                                "Yefiowtail" = "Yellowtail",
+                                "Yeliowtnil" = "Yellowtail",
+                                'Albacore'='Albacore tuna', 
+                                'Albaeorc tuna'='Albacore tuna',
+                                'All Other species'='All other species', 
+                                'Bluefin tun'='Bluefin tuna', 
+                                'California Barracuda'='California barracuda',
+                                'California sheepbead'='California sheephead', 
+                                'Fish rock'='Rosefish rockfish group', 
+                                'Jack mackarel'='Jack mackerel', 
+                                'Ocean whitcfisb'='Ocean whitefish', 
+                                'Ocean whitefah'='Ocean whitefish',
+                                'Pacific bofuto'='Pacific bonito', 
+                                'Pacific booito'='Pacific bonito',
+                                'Rock fish'='Rockfish',
+                                'White seabaas'='White seabass', 
+                                'White seabasa'='White seabass'),
+         comm_name= wcfish::harmonize_names(comm_name_reg, from="comm", to="comm"),
+         comm_name = case_when(is.na(comm_name) ~ comm_name_reg,
+                               comm_name_reg == "Rock bass" ~ "Kelp/sand bass",
+                               T ~ comm_name)) %>% 
+  select(source, table_name, year, comm_name, comm_name_reg, nfish_catch, region, region_type) %>% 
   ## Gets rid of duplicates. When values are provided in two FBs then it keeps just one of them
-  distinct(species, nfish_catch, region, region_type, .keep_all = T)
+  distinct(comm_name, year, nfish_catch, region, region_type, .keep_all = T) %>% 
+  ##fitering out duplicates that were not removed above
+  filter(!(source == "FB102" & year == 1954 & comm_name == "All other species"))
 
+## Inspect
+freeR::complete(catch_data) # must all be 0
+table(catch_data$source)
+range(catch_data$year)
+table(catch_data$year)
+table(catch_data$region_type)
+table(catch_data$region)
+str(catch_data)
 
+######################################################################################
+## Double check total
+double_check_totals <- catch_data %>% 
+  group_by(year, source) %>% 
+  summarise(total_sum = sum(nfish_catch, na.rm = T)) %>% 
+  left_join(totals, by = c("year", "source")) %>% 
+  mutate(dif = total_sum - nfish_total) 
+## Same discrepancy than above. Note year 1954 sums to the corresponding total considering both FB. FB 129 has more detailed fishe species information.
+table(double_check_totals$year)
 
+#####################################################################################
+
+pal_antique <- c("#855C75", "#D9AF6B", "#AF6458", "#736F4C", "#526A83", "#625377", "#68855C", "#9C9C5E", "#A06177", "#8C785D", "#467378", "#7C7C7C")
+
+area_cols <- 18
+my_colors <- colorRampPalette(brewer.pal(8, "Set2"))(area_cols)
+my_colors_2 <- colorRampPalette(brewer.pal(12, "Paired"))(area_cols)
+my_colors_3 <- colorRampPalette(pal_antique)(area_cols)
+
+party_vessels_ts <- ggplot(catch_data)+
+  geom_bar(aes(x = year, y = nfish_catch/1000000, fill = comm_name), 
+           stat = "identity")+
+  theme_classic()+
+  scale_x_continuous(breaks=seq(1936,1986,5)) +
+  scale_fill_manual(values = rev(my_colors))+
+  labs(fill = element_text("Fish Species"),
+       title = "Party Vessels Catch",
+       x= "Year",
+       y = expression("Nº of Fish"~(~10^{6})))
 
