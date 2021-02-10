@@ -21,7 +21,7 @@ outdir <- "data/landings/cdfw/public/website/by_month/raw"
 ################################################################################
 
 # Years to merge
-years <- 2019:2000
+years <- 2000:2019
 
 # Merge data
 data_orig <- purrr::map_df(years, function(x){
@@ -67,10 +67,13 @@ data <- data_orig %>%
   # Rename
   rename(comm_name_orig=Species) %>% 
   # Format common names
-  mutate(comm_name_orig=gsub("\\.", "", comm_name_orig))
+  mutate(rowid=1:n(), 
+         comm_name_orig=gsub("\\.", "", comm_name_orig)) %>% 
+  # Arrange
+  select(rowid, everything())
 
 # Export
-write.csv(data, file.path(outdir, "2000_2019_landings_by_month_messy.csv"), row.names=F)
+write.csv(data, file.path(outdir, "2000_2019_landings_by_month_messy_v2.csv"), row.names=F)
 
   
 

@@ -25,7 +25,9 @@ data_orig <- readxl::read_excel(file.path(indir, "2000_2019_landings_by_month_me
 # Format data
 data_full <- data_orig %>% 
   # Remove total check
-  select(-c("Total check")) %>% 
+  select(-c("Total check", rowid)) %>% 
+  # Remove empty rows
+  filter(January!="") %>% 
   # Format names
   mutate(comm_name_orig=gsub("[[:digit:]]+", "", comm_name_orig) %>% stringr::str_trim()) %>% 
   mutate(comm_name_orig=gsub(" ,", ",", comm_name_orig)) %>% 
@@ -138,12 +140,12 @@ data_full <- data_orig %>%
   # Gather
   gather(key="month", value="landings_lb", 8:ncol(.)) %>% 
   # Convert units
-  mutate(landings_kg=measurements::conv_unit(landings_lb, "lbs", "kg")) %>% 
+  mutate(landings_kg=measurements::conv_unit(landings_lb, "lbs", "kg")) %>%
   # Arrange
   arrange(year, comm_name)
 
 # Inspect
-freeR::complete(data)
+freeR::complete(data_full)
 
 # QA/QC data
 ################################################################################
@@ -153,12 +155,13 @@ check_yr <- data_full %>%
   group_by(year, month) %>% 
   summarize(tot_rep=landings_lb[comm_name_orig=="Total Pounds:"],
             tot_obs=sum(landings_lb[comm_name_orig!="Total Pounds:"])) %>% 
-  mutate(tot_diff=tot_obs-tot_rep) 
+  mutate(tot_diff=tot_obs-tot_rep) %>% 
+  mutate(month=factor(month, levels=c(month.name, "Landings")))
 
 # Plot 
-g <- ggplot(check_yr, aes(x=year, y=month, fill=tot_diff)) +
-  geom_raster() +
-  scale_fill_gradient2() +
+g <- ggplot(check_yr, aes(x=year, y=month, fill=tot_diff/1e6)) +
+  geom_tile() +
+  scale_fill_gradient2(name="Difference", high="navy", low="darkred", mid="grey90", na.value="grey30") +
   theme_bw()
 g
 

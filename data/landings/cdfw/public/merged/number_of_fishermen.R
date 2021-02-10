@@ -74,10 +74,19 @@ data_fb2 <- data_fb2_orig %>%
 
 # Merge data
 data <- bind_rows(data_fb1, data_fb2) %>% 
-  arrange(season, year, region)
+  # Add region group
+  # Aggregate regions
+  mutate(region_group=recode(region, 
+                             "AK/WA/OR"="AK/WA/OR/Other",
+                             "Other"="AK/WA/OR/Other",
+                             "Del Norte"="Eureka",
+                             "Del Norte/Eureka"="Eureka",
+                             "Sacramento"="Sacramento Delta")) %>% 
+  # Arrange
+  arrange(season, year, region_group, region)
 
 # Plot data
-g <- ggplot(data, aes(x=year, y=nfishers, fill=region)) +
+g <- ggplot(data, aes(x=year, y=nfishers, fill=region_group)) +
   geom_bar(stat="identity") +
   theme_bw()
 g
