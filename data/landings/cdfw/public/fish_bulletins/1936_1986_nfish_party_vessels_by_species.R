@@ -152,7 +152,27 @@ double_check_totals <- catch_data %>%
 table(double_check_totals$year)
 
 #####################################################################################
+## Angler data
+angler_data <- data_orig %>% 
+  filter(str_detect(species, "angler")) %>% 
+  mutate(species = str_remove(species, "Total") %>% str_trim(.) %>% str_to_lower(.),
+         nfish_catch = str_remove(nfish_catch, "\\-") %>% as.numeric(.)) %>%
+  distinct(species, year, nfish_catch, .keep_all = T) %>% 
+  select(source, table_name, year, data_type = species, value = nfish_catch, region, region_type)
 
+##Note:
+##1936-1959 - N of days
+##1960 -1961 - N of days and N of anglers
+##1962-1964 - N of anglers
+##1965-1976 - N of anglres and N angles hours
+##1977-1986 - N of angles
+
+table(angler_data$year)
+
+#####################################################################################
+##Plot
+
+##Color pallets options
 pal_antique <- c("#855C75", "#D9AF6B", "#AF6458", "#736F4C", "#526A83", "#625377", "#68855C", "#9C9C5E", "#A06177", "#8C785D", "#467378", "#7C7C7C")
 
 area_cols <- 18
@@ -160,6 +180,7 @@ my_colors <- colorRampPalette(brewer.pal(8, "Set2"))(area_cols)
 my_colors_2 <- colorRampPalette(brewer.pal(12, "Paired"))(area_cols)
 my_colors_3 <- colorRampPalette(pal_antique)(area_cols)
 
+## plotting
 party_vessels_ts <- ggplot(catch_data)+
   geom_bar(aes(x = year, y = nfish_catch/1000000, fill = comm_name), 
            stat = "identity")+
@@ -170,4 +191,12 @@ party_vessels_ts <- ggplot(catch_data)+
        title = "Party Vessels Catch",
        x= "Year",
        y = expression("Nº of Fish"~(~10^{6})))
+
+####################################################################################
+## Save
+##Party vessel catch data
+# saveRDS(catch_data, file = file.path(outdir, "CPFV_1936_1986_nfish_by_species.Rds"))
+
+
+
 
