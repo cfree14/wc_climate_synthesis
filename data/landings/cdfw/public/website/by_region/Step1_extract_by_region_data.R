@@ -38,7 +38,7 @@ table15_orig <- purrr::map_df(years, function(x){
   
     # Column names
     col_names <- c("Species", "Eureka", "Fort Bragg", 
-                   "Bodega Bay", "San Francisco", "Monterey", "Morry Bay", 
+                   "Bodega Bay", "San Francisco", "Monterey", "Morro Bay", 
                    "Santa Barbara", "Los Angeles", "San Diego", "Total")
     
     # Extract table
@@ -239,7 +239,7 @@ check_cols <- table15a %>%
 # Merge data
 data <- bind_rows(table15, table15a) %>% 
   # Remove totals
-  filter(comm_name_orig!="Totals" & port_complex!="Totals") %>% 
+  filter(comm_name_orig!="Totals" & port_complex!="Total") %>% 
   # Add presentation
   mutate(presentation="not specified",
          presentation=ifelse(grepl("roe on kelp", tolower(comm_name_orig)), "roe on kelp",

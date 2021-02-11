@@ -10,7 +10,7 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-datadir <- "data/landings/pacfin/raw/ALL005"
+datadir <- "data/landings/pacfin/raw/ALL/ALL005"
 outputdir <- "data/landings/pacfin/processed"
 
 # Read data
@@ -190,6 +190,6 @@ ports <- data2 %>%
 ################################################################################
 
 # Export data
-saveRDS(data2, file.path(outputdir, "PACFIN_1980_2020_all_species_landings_by_port.Rds"))
+saveRDS(data2, file.path(outputdir, "PACFIN_ALL005_1980_2020_all_species_landings_by_port.Rds"))
 
 

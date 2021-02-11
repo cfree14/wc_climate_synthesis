@@ -10,7 +10,7 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-datadir <- "data/landings/pacfin/raw"
+datadir <- "data/landings/pacfin/raw/GMT"
 outputdir <- "data/landings/pacfin/processed"
 
 # Read data

@@ -10,13 +10,11 @@ rm(list = ls())
 library(tidyverse)
 
 # Directories
-datadir <- "data/landings/pacfin/raw/ALL002"
+datadir <- "data/landings/pacfin/raw/ALL/ALL002"
 outputdir <- "data/landings/pacfin/processed"
 
 # Read data
-# Manually converted the XLS to an XLSX
-ca1_orig <- readxl::read_excel(file.path(datadir, "ALL002-CDFG-1980---2021-All-Views.xlsx"), sheet=2) # landed units
-ca2_orig <- readxl::read_excel(file.path(datadir, "ALL002-CDFG-1980---2021-All-Views.xlsx"), sheet=4) # all units
+wa_orig <- read.csv(file.path(datadir, "ALL001-Washington-1980---2021.csv"), as.is=T)
 
 # Read codes
 port_key <- read.csv(file.path(outputdir, "pacfin_port_codes_clean.csv"), as.is=T)
