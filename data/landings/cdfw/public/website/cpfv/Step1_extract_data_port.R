@@ -13,8 +13,8 @@ library(tabulizer)
 library(pdftools)
 
 # Directories
-outputdir <- "data/landings/cdfw/public/cpfv/processed"
-plotdir <- "data/landings/cdfw/public/cpfv/figures"
+outputdir <- "data/landings/cdfw/public/website/cpfv/processed"
+plotdir <- "data/landings/cdfw/public/website/cpfv/figures"
 
 # Build file key
 ################################################################################
@@ -23,7 +23,7 @@ plotdir <- "data/landings/cdfw/public/cpfv/figures"
 file_key <- purrr::map_df(2000:2019, function(x){
   
   # Get files
-  basedir <- "data/landings/cdfw/public/raw"
+  basedir <- "data/landings/cdfw/public/website/raw"
   datadir <- file.path(basedir, x, "cpfv")
   yfiles <- list.files(datadir, pattern=".pdf")
   
@@ -112,7 +112,7 @@ if(F){
 pdata_orig <- purrr::map_df(2000:2019, function(x) {
   
   # Read data
-  basedir <- "data/landings/cdfw/public/raw"
+  basedir <- "data/landings/cdfw/public/website/raw"
   datadir <- file.path(basedir, x, "cpfv")
   ydata <- readxl::read_excel(file.path(datadir, paste0(x, "_port_messy.xlsx"))) %>% 
     mutate(year=x)
@@ -146,6 +146,8 @@ pdata_full <- pdata_orig %>%
                         "Reporting CPFVs:"="Number of reporting CPFVs:",
                         "Total Landings:"="Total landings:",
                         "TOTALS:"="Total landings:")) %>% 
+  # Clean port names
+  mutate(port_complex=recode(port_complex, "Monterey-Moss Land-Santa Cruz"="Monterey-Moss Landing-Santa Cruz")) %>% 
   # Add filename (b/c you forgot to export it)
   left_join(file_key %>% filter(type=="port") %>% select(-type), by="year") %>% 
   # Arrange
@@ -258,16 +260,50 @@ g
 # Export plot
 ggsave(g, filename=file.path(plotdir, "CPFV_port_total_qaqc.png"), 
        width=5.5, height=2, units="in", dpi=600)
+
+# Add species info
+################################################################################
+
+# Format more
+pdata1 <- pdata %>% 
+  # Rename
+  rename(comm_name_orig=species) %>% 
+  # Format common names
+  mutate(comm_name_reg=wcfish::convert_names(comm_name_orig, to="regular"),
+         comm_name_reg=recode(comm_name_reg,
+                              'Kelp (calico) bass'='Kelp bass', 
+                              'King (chinook) salmon'='Chinook salmon', 
+                              'Other highly migratory spp'='Other highly migratory species', 
+                              'Silver (coho) salmon'='Coho salmon', 
+                              'Unspecified fishes'='Unspecified fish', 
+                              'Unspecified flatfishes'='Unspecified flatfish', 
+                              'Unspecified invertebrates'='Unspecified invertebrate', 
+                              'Unspecified rockfishes'='Unspecified rockfish', 
+                              'Unspecified sturgeon'='Sturgeon')) %>% 
+  # Hamronize names
+  mutate(comm_name=wcfish::harmonize_names(comm_name_reg, "comm", "comm"),
+         sci_name=wcfish::harmonize_names(comm_name, "comm", "sci")) %>% 
+  # Arrange
+  select(-comm_name_reg) %>% 
+  select(year:comm_name_orig, comm_name, sci_name, landings_n, everything())
+  
+# Check species names
+# wcfish::check_names(pdata1$comm_name_reg)
+
+# Inspect
+str(pdata1)
+freeR::complete(pdata1)
+table(pdata1$region)
+table(pdata1$port_complex)
+table(pdata1$comm_name)
+
   
 # Export port-level data
 ################################################################################
 
 # Export data
-write.csv(pdata, file=file.path(outputdir, "CDFW_2000_2019_cpfv_landings_by_port_complex_species.csv"), row.names = F)
+write.csv(pdata1, file=file.path(outputdir, "CDFW_2000_2019_cpfv_landings_by_port_complex_species.csv"), row.names = F)
 write.csv(pdata_tots, file=file.path(outputdir, "CDFW_2000_2019_cpfvs_anglers_landings_by_port_complex.csv"), row.names = F)
-
-
-
 
 
 
