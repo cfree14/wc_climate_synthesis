@@ -15,6 +15,9 @@ drafts/
 # Hide Google Maps API key
 data/landings/pacfin/ggmap_api_key.R
 
+# Ignore large data
+data/environmental/
+
 # Ignore large raw data
 data/landings/cdfw/public/raw
 data/landings/cdfw/public/intermediate
