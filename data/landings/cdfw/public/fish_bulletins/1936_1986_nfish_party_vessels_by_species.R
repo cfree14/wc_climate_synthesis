@@ -197,6 +197,7 @@ party_vessels_ts <- ggplot(catch_data)+
 ##Party vessel catch data
 # saveRDS(catch_data, file = file.path(outdir, "CPFV_1936_1986_nfish_by_species.Rds"))
 
-
+##Anglers data (first take)
+saveRDS(catch_data, file = file.path(outdir, "CPFV_1936_1986_anglers.Rds"))
 
 
