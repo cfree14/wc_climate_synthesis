@@ -17,9 +17,11 @@ indir <- "data/landings/cdfw/public/fish_bulletins/raw/"
 ################################################################################
 
 ##Information to import all necesary tables
-fbs <- c(95, 102, 129, 161, 163, 166, 168, 170, 173)
+fbs <- c(95, 102, 105, 108, 111, 117, 121, 125, 129, 161, 163, 166, 168, 170, 173)
 
-table_name <- c("Table28", "Table47", "Table23", "Table22", "Table22", "Table22", "Table22", "Table22", "Table14")
+
+table_name <- c("Table28", "Table47", "Table50", "Table40", "Table22", "Table22", "Table22", "Table22", "Table23", "Table22", "Table22", "Table22", "Table22", "Table22", "Table14")
+
 
 fb_table_key <- tibble(fbs, table_name) %>% 
   mutate(source = paste0("FB", fbs), 
@@ -72,6 +74,9 @@ totals_sum <- data_orig %>%
   summarise(total_sum = sum(nfish_catch, na.rm = T)) %>% 
   left_join(totals, by = c("year", "source")) %>% 
   mutate(dif = total_sum - nfish_total)
+
+##Check years that totals do not match!!!!!!!
+
 ## There are 3 year that totals don't match: 
 ## 1977 difference = -360
 ## 1979 difference = -9
