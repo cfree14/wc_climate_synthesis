@@ -13,9 +13,9 @@ library(tabulizer)
 library(pdftools)
 
 # Directories
-indir <- "data/landings/cdfw/public/fish_bulletins/fb181/raw"
-outdir <- "data/landings/cdfw/public/fish_bulletins/fb181/processed"
-plotdir <- "data/landings/cdfw/public/fish_bulletins/fb181/figures"
+indir <- "data/landings/cdfw/public/fish_bulletins/raw/fb181/raw"
+outdir <- "data/landings/cdfw/public/fish_bulletins/raw/fb181/processed"
+plotdir <- "data/landings/cdfw/public/fish_bulletins/raw/fb181/figures"
 
 # Read data
 data_orig <- read.csv(file.path(indir, "tabula-FB181_Table4_annual_landings_by_species_statewide.csv"), as.is=T)
@@ -69,7 +69,7 @@ data1 <- data_orig %>%
 table(data1$table)
 
 # Export for manual editing
-write.csv(data1, file=file.path(indir, "tabula-FB181_Table4_annual_landings_by_species_statewide_imperfect.csv"), row.names=F)
+# write.csv(data1, file=file.path(indir, "tabula-FB181_Table4_annual_landings_by_species_statewide_imperfect.csv"), row.names=F)
 
 # Read manually editted (highlighted in yellow)
 data2_orig <- readxl::read_excel(file.path(indir, "tabula-FB181_Table4_annual_landings_by_species_statewide_imperfect.xlsx"))
@@ -125,11 +125,76 @@ range(tots_check$landings_diff)
 range(tots_check$value_diff)
 
 
+# Final formatting
+################################################################################
+
+# Format data
+data4 <- data3 %>% 
+  # Harmonize names
+  rename(comm_name_orig=species) %>% 
+  mutate(comm_name_reg=wcfish::convert_names(comm_name_orig, to="regular"),
+         comm_name_reg=recode(comm_name_reg,
+                              'Black tuna skipjack'='Black skipjack tuna', 
+                              'C-o turbot'='C-O sole', 
+                              'Claws crab'='Crab', 
+                              'Curlfin turbot'='Curlfin sole', 
+                              'Dolphin (fish)'='Dolphinfish', 
+                              'Group black/blue rockfish'='Black/blue rockfish group', 
+                              'Group bocaccio/chilipepper rockfish'='Bocaccio/chilipepper rockfish group', 
+                              'Group bolina rockfish'='Bolina rockfish group', 
+                              'Group canary/vermilion rockfish'='Canary/vermilion rockfish group', 
+                              'Group deepwater reds rockfish'='Deepwater reds rockfish group', 
+                              'Group gopher rockfish'='Gopher rockfish group', 
+                              'Group nearshore rockfish'='Nearshore rockfish group', 
+                              'Group red rockfish'='Red rockfish group', 
+                              'Group rosefish rockfish'='Rosefish rockfish group', 
+                              'Group small rockfish'='Small rockfish group', 
+                              'Hagfish'='Unspecified hagfish', 
+                              'Herring roe on kelp'='Pacific herring', 
+                              'Red urchin'='Red sea urchin', 
+                              'Rock unspecified crab'='Rock crab', 
+                              'Roe (chinook and coho) salmon'='Chinook/coho salmon', 
+                              'Roe herring'='Pacific herring', 
+                              'Snapper -Mexico-'='Snapper', 
+                              'Spotted cusk- eel'='Spotted cusk-eel', 
+                              'Sturgeons'='Sturgeon', 
+                              'Thornyheads (unspecified)'='Thornyheads', 
+                              'Trawled fish for animal food'='Miscellaneous (animal food)', 
+                              'True smelts'='True smelt', 
+                              'Unspecified croaker'='Unspecifed croaker', 
+                              'Unspecified jacks'='Unspecified jack', 
+                              'Unspecified species'='Unspecified fish', 
+                              'White urchin'='White sea urchin', 
+                              'Wolf (wolf-eel) eel'='Wolf eel'),
+         comm_name=wcfish::harmonize_names(comm_name_reg, "comm", "comm"),
+         sci_name=wcfish::harmonize_names(comm_name, "comm", "sci")) %>% 
+  # Add presentation
+  mutate(presentation=ifelse(grepl("roe on kelp", comm_name_orig), "roe on kelp", 
+                             ifelse(grepl("roe", comm_name_orig), "roe", 
+                                    ifelse(grepl("claws", comm_name_orig), "claws", "not specified")))) %>% 
+  # Convert units
+  mutate(landings_kg=measurements::conv_unit(landings_lb, "lbs", "kg")) %>% 
+  # Arrange
+  select(-comm_name_reg) %>% 
+  select(source, table, category, comm_name_orig, comm_name, sci_name, year, presentation, landings_lb, landings_kg, value_usd, everything()) %>% 
+  arrange(year, category, comm_name)
+
+# Common names
+# wcfish::check_names(data4$comm_name_reg)
+
+# Inspect
+str(data4)
+freeR::complete(data4)
+table(data4$source)
+table(data4$table)
+table(data4$category)
+
+
 # Export data
 ################################################################################
 
 # Export
-write.csv(data3, file=file.path(outdir, "FB181_Table4_1987_1999_landings_by_species.csv"), row.names=F)
+write.csv(data4, file=file.path(outdir, "FB181_Table4_1987_1999_landings_by_species.csv"), row.names=F)
 
 
 
