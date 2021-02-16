@@ -11,6 +11,7 @@ rm(list = ls())
 library(tidyverse)
 library(freeR)
 library(wcfish)
+library(RColorBrewer)
 
 # Directories
 outdir <- "data/landings/cdfw/public/fish_bulletins/processed"
@@ -88,7 +89,7 @@ totals_sum <- data_orig %>%
 
 ###############################################################################
 
-## Note FB95 Table28, Rock bass included two species of kelp bass Paralabrax clathratus and sand bass P.nebulifer
+## Cleaning data and removign duplicates
 catch_data <- data_orig %>% 
   filter(!source %in% fb_exclude,
          !str_detect(species, "angler"),
@@ -144,10 +145,8 @@ catch_data <- data_orig %>%
                                T ~ comm_name)) %>% 
   select(source, table_name, year, comm_name, comm_name_reg, nfish_catch, region, region_type) %>%
   ## Gets rid of duplicates. When values are provided in two FBs then it keeps just one of them
-  distinct(comm_name, year, nfish_catch, region, region_type, .keep_all = T) %>% 
-  ##fitering out duplicates that were not removed above
-  filter(!(source == "FB102" & year == 1954 & comm_name == "All other species"))
-
+  distinct(comm_name, year, nfish_catch, region, region_type, .keep_all = T)
+  
 ## Inspect
 freeR::complete(catch_data) # must all be 0
 table(catch_data$source)
@@ -170,18 +169,19 @@ table(double_check_totals$year)
 #####################################################################################
 ## Angler data
 angler_data <- data_orig %>% 
-  filter(!source %in% fb_exclude,
+  filter(#!source %in% fb_exclude,
+         #source != "FB163", ## this fb does not provide full infomation about anglers, FB166 does
          str_detect(species, "angler")) %>% 
   mutate(species = str_remove(species, "Total") %>% str_trim(.) %>% str_to_lower(.),
          nfish_catch = str_remove(nfish_catch, "\\-") %>% as.numeric(.),
+         ## Remove last word of string
          effort_unit = word(species, -1),
-         effort_hours_calc = nfish_catch*24,
          effort_hours = case_when(effort_unit == "days" ~ effort_hours_calc,
                                   effort_unit == "anglers" ~ NA_real_,
                                   T ~ nfish_catch)) %>%
-  distinct(species, year, nfish_catch, .keep_all = T) %>% 
-  ##fitering out duplicates that were not removed above
-  filter(!(source == "FB125" & year == 1961)) %>% 
+  # distinct(species, year, nfish_catch, .keep_all = T) %>% 
+  # ##fitering out duplicates that were not removed above
+  # filter(!(source == "FB125" & year == 1961)) %>% 
   select(source, table_name, year, effort_org = nfish_catch, effort_unit, effort_hours, region, region_type)
 
 ##Note:
@@ -195,12 +195,31 @@ table(angler_data$year)
 
 ##anglers data wide to match with catch data
 angler_data_wide <- angler_data %>% 
-  pivot_wider(names_from = effort_unit,
+  pivot_wider(id_cols = c(source,table_name, year), ## add source and creates a two rows for years 1965:1973 becasue FB163 reports anglesd and FB166 reports hours
+              names_from = effort_unit,
               names_prefix = "n_",
-              values_from = effort_org) %>% 
-  filter(!(is.na(effort_hours) & is.na(n_anglers))) %>% 
-  relocate(effort_hours, .after = last_col())
+              values_from = effort_org)
 
+##Moves effort_hours col to the end  
+#relocate(effort_hours, .after = last_col())
+
+
+##distinct totals
+totals_dist <- data_orig %>% 
+  filter(#source != "FB163",
+         str_detect(species, "fish"),
+         str_detect(species, "Total")) %>% 
+  dplyr::mutate(nfish_total = as.numeric(nfish_catch)) %>%  
+  dplyr::select(source, table_name, year, nfish_total)
+
+
+
+anglers_complete <- angler_data_wide %>% 
+  left_join(totals_dist, by = c("source", "table_name", "year")) %>% 
+  distinct(year, n_days,n_anglers, n_hours, nfish_total, .keep_all = T) %>% 
+  mutate(effort_hours_calc = n_days*24,
+         effort_hours_calc = case_when(is.na(effort_hours_calc) ~ n_hours,
+                                       T ~ effort_hours_calc))
 
 
 #####################################################################################
@@ -224,7 +243,9 @@ party_vessels_ts <- ggplot(catch_data)+
   labs(fill = element_text("Fish Species"),
        title = "Party Vessels Catch",
        x= "Year",
-       y = expression("Nº of Fish"~(~10^{6})))
+       y = "N of fish (millions)")
+
+party_vessels_effort <- 
 
 ####################################################################################
 ## Save
@@ -232,6 +253,6 @@ party_vessels_ts <- ggplot(catch_data)+
 # saveRDS(catch_data, file = file.path(outdir, "CPFV_1936_1986_nfish_by_species.Rds"))
 
 ##Anglers data (first take)
-saveRDS(catch_data, file = file.path(outdir, "CPFV_1936_1986_anglers.Rds"))
+##saveRDS(anglers_complete, file = file.path(outdir, "CPFV_1936_1986_anglers.Rds"))
 
 
