@@ -13,6 +13,7 @@ library(tidyverse)
 outdir <- "data/landings/cdfw/public/merged/data"
 plotdir <- "data/landings/cdfw/public/merged/figures"
 
+# Read website data
 
 
 # Format data

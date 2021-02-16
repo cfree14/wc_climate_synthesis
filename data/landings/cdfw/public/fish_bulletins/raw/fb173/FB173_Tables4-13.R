@@ -217,8 +217,37 @@ data <- data_full %>%
   rename(landings_lb=Landings, value_usd=Value) %>% 
   # Add more weights
   mutate(landings_kg=measurements::conv_unit(landings_lb, "lbs", "kg")) %>% 
-  select(source:landings_lb, landings_kg, value_usd) %>% 
-  arrange(year, type, port_complex, category, species)
+  # Harmonize names
+  rename(comm_name_orig=species) %>% 
+  mutate(comm_name_reg=wcfish::convert_names(comm_name_orig, to="regular"),
+         comm_name_reg=recode(comm_name_reg,
+                              'Black tuna skipjack'='Black skipjack tuna', 
+                              'Boccaccio/chilipepper rockfish group'='Bocaccio/chilipepper rockfish group', 
+                              'Mackerel'='Unspecified mackerel', 
+                              'Miscellaneous abalone'='Abalone', 
+                              'Miscellaneous croaker'='Unspecified croaker', 
+                              'Miscellaneous flounder'='Unspecified flounder', 
+                              'Miscellaneous ray'='Unspecified ray', 
+                              'Miscellaneous rockfish'='Rockfish', 
+                              'Miscellaneous shark'='Unspecified shark', 
+                              'Miscellaneous shrimp'='Unspecified shrimp', 
+                              'Miscellaneous tuna'='Unspecified tuna', 
+                              'Sea cucumber'='Unspecified sea cucumber', 
+                              'Surfperch'='Unspecified surfperch', 
+                              'Thornyhead'='Thornyheads')) %>% 
+  mutate(comm_name=wcfish::harmonize_names(comm_name_reg, "comm", "comm"),
+         sci_name=wcfish::harmonize_names(comm_name, "comm", "sci")) %>% 
+  # Arrange
+  select(-comm_name_reg) %>%
+  select(source, table, year, port_complex,  
+         category, type, comm_name_orig, comm_name, sci_name,
+         landings_lb, landings_kg, value_usd, everything()) %>% 
+  arrange(year, type, port_complex, category, comm_name_orig) %>% 
+  # Eliminate 1984 which is super messed up
+  filter(year!=1984)
+
+# Check names
+# wcfish::check_names(data$comm_name_reg)
 
 # Inspect
 freeR::complete(data)
