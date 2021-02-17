@@ -245,7 +245,7 @@ party_vessels_ts <- ggplot(catch_data)+
        x= "Year",
        y = "N of fish (millions)")
 
-party_vessels_effort <- 
+
 
 ####################################################################################
 ## Save
@@ -253,6 +253,6 @@ party_vessels_effort <-
 # saveRDS(catch_data, file = file.path(outdir, "CPFV_1936_1986_nfish_by_species.Rds"))
 
 ##Anglers data (first take)
-##saveRDS(anglers_complete, file = file.path(outdir, "CPFV_1936_1986_anglers.Rds"))
+# saveRDS(anglers_complete, file = file.path(outdir, "CPFV_1936_1986_anglers.Rds"))
 
 
