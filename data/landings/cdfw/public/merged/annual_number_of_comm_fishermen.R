@@ -17,7 +17,10 @@ plotdir <- "data/landings/cdfw/public/merged/figures"
 data_fb1_orig <- readRDS("data/landings/cdfw/public/fish_bulletins/processed/CDFW_1916_1976_nfishers_by_residency.Rds")
 
 # Read FB 181 data (1976-1999)
-data_fb2_orig <- read.csv("data/landings/cdfw/public/fish_bulletins/raw/fb181/processed/FB181_Table3_licenced_fishermen_vessels.csv")
+data_fb2_orig <- read.csv("data/landings/cdfw/public/fish_bulletins/raw/fb181/processed/FB181_Table3_licenced_fishermen_vessels.csv", as.is=T)
+
+# Read web data (2000-2020)
+data_web_orig <- read.csv("data/landings/cdfw/public/website_licenses/commercial/processed/CDFW_1970_2020_n_licensed_comm_fishers.csv", as.is=T)
 
 
 # Build data
@@ -72,8 +75,23 @@ data_fb2 <- data_fb2_orig %>%
   select(source, table, season, year, region_type, region, nfishers, everything()) %>% 
   arrange(season, year)
 
+# Format web data
+data_web <- data_web_orig %>% 
+  # Reduce 
+  filter(year>=2000) %>% 
+  # Add source/table
+  mutate(source="CDFW 2001",
+         table="N/A",
+         season=paste(year, year+1-2000, sep="-"),
+         region_type="state",
+         region="Statewide") %>% 
+  # Arrange
+  select(source, table, season, year, region_type, region, nfishers, everything()) %>% 
+  arrange(season, year)
+
+
 # Merge data
-data <- bind_rows(data_fb1, data_fb2) %>% 
+data <- bind_rows(data_fb1, data_fb2, data_web) %>% 
   # Add region group
   # Aggregate regions
   mutate(region_group=recode(region, 
@@ -92,5 +110,5 @@ g <- ggplot(data, aes(x=year, y=nfishers, fill=region_group)) +
 g
 
 # Export data
-write.csv(data, file=file.path(outdir, "CDFW_1916_1999_n_fishers_by_area_of_residence.csv"), row.names = F)
-saveRDS(data, file=file.path(outdir, "CDFW_1916_1999_n_fishers_by_area_of_residence.Rds"))
+write.csv(data, file=file.path(outdir, "CDFW_1916_2020_n_fishers_by_area_of_residence.csv"), row.names = F)
+saveRDS(data, file=file.path(outdir, "CDFW_1916_2020_n_fishers_by_area_of_residence.Rds"))

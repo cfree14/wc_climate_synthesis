@@ -18,11 +18,9 @@ plotdir <- "data/environmental/cobe/figures"
 # Read data
 cobe <- raster::brick(file.path(outdir, "COBE_1891_2021_annual_sst_mean.grd"))
 
-# Read GEBCO depth contours
-gebco <- sf::st_read(dsn="/Users/cfree/Dropbox/Chris/UCSB/data/bathymetry/gebco_2019_contours", layer="gebco_2019_contours")
+# Readfishing grounds
+fg <- readRDS(file="data/environmental/cobe/fishing_grounds/west_coast_fishing_grounds.Rds")
 
-# Read NaturalEarth 200m polygons
-poly_200m <- sf::st_read("/Users/cfree/Dropbox/Chris/UCSB/data/bathymetry/ne_10m_bathymetry_K_200/ne_10m_bathymetry_K_200.shp")
 
 # Build data
 ################################################################################
@@ -39,9 +37,6 @@ cobe_use <- cobe[["X2020"]] %>%
   # Set names
   setNames(c("x", "y", "sst_c"))
 
-# 100 m depth contour
-gebco_100m <- gebco %>% 
-  filter(DEPTH==-100)
 
 # Plot data
 ################################################################################
@@ -73,10 +68,10 @@ g <- ggplot() +
   # Plot land
   geom_sf(data=all_countries, fill="grey90", col="white", lwd=0.2) +
   geom_sf(data=us_states, fill="grey90", col="white", lwd=0.2) +
-  # Plot depth contour
-  geom_sf(data=poly_200m, color="grey30", fill=NA, lwd=0.2) +
+  # Plot fishing grounds
+  geom_sf(data=fg, color="grey30", fill=NA, lwd=0.2) +
   # Crop
-  coord_sf(xlim=c(-130, -90), ylim=c(10, 50)) +
+  coord_sf(xlim=c(-126, -92), ylim=c(12, 48)) +
   # Labs
   labs(x="", y="") +
   # Legend

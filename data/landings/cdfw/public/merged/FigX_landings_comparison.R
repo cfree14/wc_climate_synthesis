@@ -33,7 +33,7 @@ noaa_ca <- noaa %>%
   # Source
   mutate(source="NOAA")
 
-# NOAA
+# PACFIN
 pacfin_ca <- pacfin %>% 
   # California
   filter(state=="California") %>% 

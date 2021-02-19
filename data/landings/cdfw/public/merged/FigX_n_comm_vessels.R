@@ -16,7 +16,7 @@ plotdir <- "data/landings/cdfw/public/merged/figures"
 # Read data
 data1_orig <- readRDS(file=file.path(outdir, "CDFW_1934_1976_n_comm_vessels_by_length_class.Rds"))
 data2_orig <- readRDS(file=file.path(outdir, "CDFW_1934_1956_n_comm_vessels_by_port_complex.Rds"))
-data3_orig <- read.csv(file=file.path(outdir, "CDFW_1934_1999_n_comm_vessels.csv"), as.is=T)
+data3_orig <- read.csv(file=file.path(outdir, "CDFW_1934_2020_n_comm_vessels.csv"), as.is=T)
 
 
 # Build data
@@ -38,7 +38,7 @@ data2 <- data3_orig %>%
          length_class=NA,
          length_class_floor=NA)
 
-# Format 1977-1999 data
+# Format 1977-2020 data
 data3 <- data3_orig %>% 
   filter(year>=1977) %>% 
   mutate(region_type="state",
@@ -106,7 +106,7 @@ g1 <- ggplot(data_plot, aes(x=year, y=nvessels, fill=length_class_floor)) +
   annotate(geom="text", x=1956.6, y=7000, label="Port complex-level\ndata ends here", adj=1.07, size=1.8) +
   # Labels
   labs(x="Year", y="Number of vessels") +
-  scale_x_continuous(breaks=seq(1930,2000,5)) +
+  scale_x_continuous(breaks=seq(1930,2020,10)) +
   # Legend
   scale_fill_gradientn(name="Length\nclass (ft)", 
                        colors=RColorBrewer::brewer.pal(9, "YlOrRd"), na.value="grey90") +
@@ -122,7 +122,7 @@ g2 <- ggplot(data_std, aes(x=year, y=nvessels, fill=length_class_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Number of vessels") +
-  scale_x_continuous(breaks=seq(1930,2000,5)) +
+  scale_x_continuous(breaks=seq(1930,2020,10)) +
   # Legend
   scale_fill_discrete(name="Length\nclass (ft)", na.value="grey90") +
   # Theme
@@ -136,7 +136,7 @@ g3 <- ggplot(data_std, aes(x=year, y=pvessels, fill=length_class_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Proportion of vessels") +
-  scale_x_continuous(breaks=seq(1930,2000,5)) +
+  scale_x_continuous(breaks=seq(1930,2020,10)) +
   # Legend
   scale_fill_discrete(name="Length\nclass (ft)", na.value="grey90") +
   # Theme

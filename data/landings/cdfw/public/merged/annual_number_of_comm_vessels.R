@@ -20,7 +20,11 @@ data_fb1_orig <- readRDS("data/landings/cdfw/public/fish_bulletins/processed/CDF
 data_fb2_orig <- readRDS("data/landings/cdfw/public/fish_bulletins/processed/CDFW_1936_1938_nvessels_by_port.Rds")
 
 # Read FB 181 data (1976-1999)
-data_fb3_orig <- read.csv("data/landings/cdfw/public/fish_bulletins/raw/fb181/processed/FB181_Table3_licenced_fishermen_vessels.csv")
+data_fb3_orig <- read.csv("data/landings/cdfw/public/fish_bulletins/raw/fb181/processed/FB181_Table3_licenced_fishermen_vessels.csv", as.is=T)
+
+# Read website data (2000-2020)
+data_web <- read.csv("data/landings/cdfw/public/website_licenses/commercial/processed/CDFW_1970_2020_n_licensed_comm_vessels.csv", as.is=T)
+
 
 
 # Build annual totals by group
@@ -172,7 +176,8 @@ data_fb1_tots <- data_fb1 %>%
   group_by(source, table, season, year) %>% 
   summarize(nvessels=sum(nvessels)) %>% 
   ungroup() %>% 
-  arrange(year)
+  arrange(year) %>% 
+  filter(year!=1976)
 
 # Format 1936-1938
 data_fb2_tots <- data_fb2 %>% 
@@ -181,13 +186,25 @@ data_fb2_tots <- data_fb2 %>%
   ungroup() %>% 
   arrange(year)
 
-# Format 1936-1938
+# Format 1976-1999
 data_fb3_tots <- data_fb3 %>% 
   # Select columns of interest
-  select(source, table,season, year, nvessels)
+  select(source, table, season, year, nvessels)
+
+# Format 2000-2020
+data_web_tots <- data_web %>% 
+  # Reduce
+  filter(year>=2000) %>% 
+  select(-c(nvessels_r, nvessels_nr)) %>% 
+  # Add columns
+  mutate(source="CDFW 2021",
+         table="NA",
+         season=paste(year, year+1, sep="-")) %>% 
+  # Arrange
+  select(source, table, season, year, nvessels)
 
 # Merge
-data_tots <- bind_rows(data_fb1_tots, data_fb2_tots, data_fb3_tots) %>% 
+data_tots <- bind_rows(data_fb1_tots, data_fb2_tots, data_fb3_tots, data_web_tots) %>% 
   arrange(year)
 
 # Plot
@@ -197,7 +214,7 @@ g <- ggplot(data_tots, aes(x=year, y=nvessels)) +
 g
 
 # Export data
-write.csv(data_tots, file=file.path(outdir, "CDFW_1934_1999_n_comm_vessels.csv"), row.names = F)
+write.csv(data_tots, file=file.path(outdir, "CDFW_1934_2020_n_comm_vessels.csv"), row.names = F)
 
 
 # Build totals by port complex

@@ -14,7 +14,7 @@ outdir <- "data/landings/cdfw/public/merged/data"
 plotdir <- "data/landings/cdfw/public/merged/figures"
 
 # Read data
-data_orig <- readRDS(file=file.path(outdir, "CDFW_1916_1999_n_fishers_by_area_of_residence.Rds"))
+data_orig <- readRDS(file=file.path(outdir, "CDFW_1916_2020_n_fishers_by_area_of_residence.Rds"))
 
 
 # Build data
@@ -60,7 +60,7 @@ g1 <- ggplot(data_plot, aes(x=year, y=nfishers, fill=region_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Number of fishers") +
-  scale_x_continuous(breaks=seq(1910,2000,10)) +
+  scale_x_continuous(breaks=seq(1910,2020,10)) +
   # Legend
   scale_fill_discrete(name="Area of residence\n(north to south)", na.value="grey90") +
   # Theme
@@ -74,7 +74,7 @@ g2 <- ggplot(data_plot, aes(x=year, y=pfishers, fill=region_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Proportion of fishers") +
-  scale_x_continuous(breaks=seq(1910,2000,10)) +
+  scale_x_continuous(breaks=seq(1910,2020,10)) +
   # Legend
   scale_fill_discrete(name="Area of residence", na.value="grey90") +
   # Theme

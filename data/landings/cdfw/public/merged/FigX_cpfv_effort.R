@@ -14,7 +14,7 @@ outdir <- "data/landings/cdfw/public/merged/data"
 plotdir <- "data/landings/cdfw/public/merged/figures"
 
 # Read data
-data_orig <- readRDS(file=file.path(outdir, "CDFW_1946_2019_annual_cpfv_effort_by_port_complex.Rds"))
+data_orig <- readRDS(file=file.path(outdir, "CDFW_1936_2019_annual_cpfv_effort_by_port_complex.Rds"))
 
 
 # Build data
@@ -60,7 +60,7 @@ g1 <- ggplot(data_plot, aes(x=year, y=nvessels, fill=port_complex_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Number\nof CPFVs") +
-  scale_x_continuous(breaks=seq(1910,2020,10), limits=c(1930,2020)) +
+  scale_x_continuous(breaks=seq(1940,2020,10), limits=c(1940,2020)) +
   # Legend
   scale_fill_discrete(name="Port complex\n(north to south)", na.value="grey90") +
   # Theme
@@ -74,7 +74,7 @@ g2 <- ggplot(data_plot, aes(x=year, y=pvessels, fill=port_complex_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Proportion\nof CPFVs") +
-  scale_x_continuous(breaks=seq(1910,2020,10), limits=c(1930,2020)) +
+  scale_x_continuous(breaks=seq(1940,2020,10), limits=c(1940,2020)) +
   # Legend
   scale_fill_discrete(name="Port complex\n(north to south)", na.value="grey90") +
   # Theme
@@ -87,7 +87,7 @@ g3 <- ggplot(data_plot, aes(x=year, y=nanglers/1e3, fill=port_complex_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Thousands\nof CPFV anglers") +
-  scale_x_continuous(breaks=seq(1910,2020,10), limits=c(1930,2020)) +
+  scale_x_continuous(breaks=seq(1940,2020,10), limits=c(1940,2020)) +
   # Legend
   scale_fill_discrete(name="Port complex\n(north to south)", na.value="grey90") +
   # Theme
@@ -101,7 +101,7 @@ g4 <- ggplot(data_plot, aes(x=year, y=panglers, fill=port_complex_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Proportion\nof CPFV anglers") +
-  scale_x_continuous(breaks=seq(1910,2020,10), limits=c(1930,2020)) +
+  scale_x_continuous(breaks=seq(1940,2020,10), limits=c(1940,2020)) +
   # Legend
   scale_fill_discrete(name="Port complex\n(north to south)", na.value="grey90") +
   # Theme
