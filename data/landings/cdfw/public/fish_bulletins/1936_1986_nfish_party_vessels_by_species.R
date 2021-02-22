@@ -175,14 +175,8 @@ angler_data <- data_orig %>%
   mutate(species = str_remove(species, "Total") %>% str_trim(.) %>% str_to_lower(.),
          nfish_catch = str_remove(nfish_catch, "\\-") %>% as.numeric(.),
          ## Remove last word of string
-         effort_unit = word(species, -1),
-         effort_hours = case_when(effort_unit == "days" ~ effort_hours_calc,
-                                  effort_unit == "anglers" ~ NA_real_,
-                                  T ~ nfish_catch)) %>%
-  # distinct(species, year, nfish_catch, .keep_all = T) %>% 
-  # ##fitering out duplicates that were not removed above
-  # filter(!(source == "FB125" & year == 1961)) %>% 
-  select(source, table_name, year, effort_org = nfish_catch, effort_unit, effort_hours, region, region_type)
+         effort_unit = word(species, -1)) %>%
+  select(source, table_name, year, effort_org = nfish_catch, effort_unit, region, region_type)
 
 ##Note:
 ##1936-1959 - N of days
