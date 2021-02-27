@@ -14,6 +14,7 @@ outdir <- "data/landings/cdfw/public/merged/data"
 plotdir <- "data/landings/cdfw/public/merged/figures"
 
 # Read data
+# data_orig <- wcfish::cdfw_cpfv_effort
 data_orig <- readRDS(file=file.path(outdir, "CDFW_1936_2019_annual_cpfv_effort_by_port_complex.Rds"))
 
 
@@ -59,14 +60,13 @@ my_theme <-  theme(axis.text=element_text(size=6),
 g1 <- ggplot(data_plot, aes(x=year, y=nvessels, fill=port_complex_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
-  labs(x="Year", y="Number\nof CPFVs") +
+  labs(x="Year", y="Number\nof CPFVs", tag='A') +
   scale_x_continuous(breaks=seq(1940,2020,10), limits=c(1940,2020)) +
   # Legend
   scale_fill_discrete(name="Port complex\n(north to south)", na.value="grey90") +
   # Theme
   theme_bw() + my_theme +
-  theme(legend.position=c(0.07, 0.66),
-        legend.key.size = unit(0.3, "cm"))
+  theme(legend.position="none")
 g1
 
 # Plot proportions
@@ -85,14 +85,21 @@ g2
 # Plot data
 g3 <- ggplot(data_plot, aes(x=year, y=nanglers/1e3, fill=port_complex_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
+  # Mark hour/day data
+  # Days: 1936-1940, 1946-1961, hours; 1965-1976
+  lims(y=c(0,920)) +
+  geom_segment(mapping=aes(x=1946, xend=1961, y=900, yend=900), lwd=0.3) +
+  annotate(geom="text", x=mean(c(1946, 1961)), y=900, hjust=0.5, vjust=-0.5, label="Days of fishing", size=2) +
+  geom_segment(mapping=aes(x=1965, xend=1976, y=900, yend=900), lwd=0.3) +
+  annotate(geom="text", x=mean(c(1965,1976)), y=900, hjust=0.5, vjust=-0.5, label="Hours of fishing", size=2) +
   # Labels
-  labs(x="Year", y="Thousands\nof CPFV anglers") +
+  labs(x="Year", y="Thousands\nof CPFV anglers", tag="B") +
   scale_x_continuous(breaks=seq(1940,2020,10), limits=c(1940,2020)) +
   # Legend
   scale_fill_discrete(name="Port complex\n(north to south)", na.value="grey90") +
   # Theme
   theme_bw() + my_theme +
-  theme(legend.position="none",
+  theme(legend.position=c(0.07, 0.50),
         legend.key.size = unit(0.3, "cm"))
 g3
 

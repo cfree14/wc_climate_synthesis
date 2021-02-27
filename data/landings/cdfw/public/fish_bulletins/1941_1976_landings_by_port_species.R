@@ -125,6 +125,8 @@ data_full <- data_orig %>%
   mutate(port=ifelse(port=="All Other Ports", paste("Other", port_complex, "Ports"), port)) %>% 
   # Make port complex a factor
   mutate(port_complex=factor(port_complex, levels=port_complexes)) %>% 
+  # Format type
+  mutate(type=ifelse(year %in% 1950:1965 & port_complex %in% c("San Francisco", "Los Angeles", "San Diego"), "Landings/Shipments", type)) %>% 
   # Arrange
   select(source:port_orig, port, type, species, value_usd, landings_lb, everything()) %>% 
   arrange(year, source, table, port_complex, port, type, species)
@@ -200,7 +202,7 @@ g
 # Calculate observed totals
 tot_obs <- data_full %>% 
   # Remove totals
-  filter(!species%in%c("Totals", "Port totals") & type=="Landings") %>% 
+  filter(!species%in%c("Totals", "Port totals") & type%in%c("Landings", "Landings/Shipments")) %>% 
   # Calculate totals
   group_by(port_complex, port, year) %>% 
   summarize(value_tot_obs=sum(value_usd, na.rm=T),
@@ -210,7 +212,7 @@ tot_obs <- data_full %>%
 # Extract reported totals
 tot_rep <- data_full %>% 
   # Extract totals
-  filter(!species%in%c("Totals", "Port totals") & type=="Landings") %>% 
+  filter(species%in%c("Totals", "Port totals") & type%in%c("Landings", "Landings/Shipments")) %>% 
   # Simplify
   select(port_complex, port, year, value_usd, landings_lb) %>% 
   # Rename
@@ -224,7 +226,8 @@ tots <- tot_obs %>%
   mutate(value_tot_diff = value_tot_obs - value_tot_rep,
          landings_tot_diff = landings_tot_obs - landings_tot_rep)
 
-
+# There are only 3 mismatches and they can't be fixed (typos by CDFW)
+# 1973-Moss Landing, 1951-Bodega Bay, 1976-San Pedro, 
 
 # Plot difference in values
 g1 <- ggplot(tots, aes(x=year, y=port, fill=value_tot_diff)) +
@@ -276,6 +279,39 @@ data <- data_full %>%
 
 # Export
 saveRDS(data, file=file.path(outdir, "CDFW_1941_1976_landings_by_port_species.Rds"))
+
+
+
+# Extract port complex totals
+################################################################################
+
+# Annual totals by port complex
+data_tots <- data_full %>% 
+  # Reduce to port complex totals
+  filter(species=="Totals" & grepl("region", tolower(port))) %>% 
+  # Simplify columns
+  select(source, table, year, port_complex, type, value_usd, landings_lb)
+
+# Plot data
+g <- ggplot(data_tots, aes(x=year, y=port_complex)) +
+  geom_tile() +
+  theme_bw()
+g
+
+# Plot data
+g <- ggplot(data_tots, aes(x=year, y=landings_lb, fill=port_complex)) +
+  geom_bar(stat="identity") +
+  theme_bw()
+g
+
+# Export data
+saveRDS(data_tots, file=file.path(outdir, "CDFW_1941_1956_landings_by_port_complex.Rds"))
+
+
+
+
+
+
 
 
 

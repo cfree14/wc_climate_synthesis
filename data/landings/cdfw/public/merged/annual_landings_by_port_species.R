@@ -63,7 +63,9 @@ data_web <- data_web_orig %>%
   rename(comm_name_temp=comm_name) %>% 
   mutate(comm_name_temp=recode(comm_name_temp, 
                                "Arrowtooth rockfish"="Arrowtooth flounder", 
-                               'True smelts'='True smelt')) %>% 
+                               'True smelts'='True smelt',
+                               'Bocaccio/chili rockfish group'='Bocaccio/chilipepper rockfish group', 
+                               'Unspecifed croaker'='Unspecified croaker')) %>% 
   # Harmonize common names and scientific names
   mutate(comm_name=wcfish::harmonize_names(comm_name_temp, "comm", "comm")) %>% 
   mutate(sci_name=wcfish::harmonize_names(x=comm_name, from="comm", to="sci")) %>%
@@ -74,6 +76,7 @@ data_web <- data_web_orig %>%
   select(-c(filename, comm_name_temp))
 
 # Inspect
+wcfish::check_names(data_web$comm_name_temp)
 freeR::complete(data_web) # some values are missing, everything else MUST be zero
 
 

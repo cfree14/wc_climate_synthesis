@@ -18,6 +18,25 @@ waters_orig <- readRDS(file=file.path(outdir, "CDFW_1936_2019_landings_by_waters
 totals_orig <- readRDS(file=file.path(outdir, "CDFW_1916_1999_total_landings_shipments.Rds"))
 
 
+# Taxonomoic resolutions
+################################################################################
+
+# Taxa key
+taxa_key <- wcfish::taxa
+
+# Species in data
+spp <- waters_orig %>% 
+  select(comm_name) %>% 
+  unique() %>% 
+  arrange() %>% 
+  left_join(taxa_key)
+
+n_distinct(spp$phylum)
+n_distinct(spp$class)
+n_distinct(spp$order)
+n_distinct(spp$family)
+n_distinct(spp$genus)
+
 # Build data
 ################################################################################
 

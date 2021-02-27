@@ -67,13 +67,15 @@ my_theme <-  theme(axis.text=element_text(size=6),
 g1 <- ggplot(data_plot1, aes(x=year, y=nlandings/1e6, fill=category)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
-  labs(x="Year", y="Number of landed fish\n(millions)") +
+  labs(x="Year", y="Number of landed fish\n(millions)", tag="A") +
   scale_x_continuous(breaks=seq(1910,2020,10)) +
+  # Label World War 2
+  annotate(geom="text", x=mean(1941:1946), y=0, vjust=-0.5, label="World\nWar II", color="grey40", size=2) +
   # Legend
   scale_fill_discrete(name="Species group", na.value="grey90") + # Taxonomic group
   # Theme
   theme_bw() + my_theme +
-  theme(legend.position=c(0.1, 0.7),
+  theme(legend.position=c(0.09, 0.74),
         legend.key.size = unit(0.3, "cm"))
 g1
 
@@ -83,6 +85,8 @@ g2 <- ggplot(data_plot1, aes(x=year, y=plandings, fill=category)) +
   # Labels
   labs(x="Year", y="Proportion of\nlanded fish") +
   scale_x_continuous(breaks=seq(1910,2020,10)) +
+  # Label World War 2
+  annotate(geom="text", x=mean(1941:1946), y=0, vjust=-0.5, label="World\nWar II", color="grey40", size=2) +
   # Legend
   scale_fill_discrete(name="Area of residence", na.value="grey90") +
   # Theme
@@ -94,13 +98,15 @@ g2
 g3 <- ggplot(data_plot2, aes(x=year, y=nlandings/1e6, fill=port_complex_group)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
-  labs(x="Year", y="Number of landed fish\n(millions)") +
+  labs(x="Year", y="Number of landed fish\n(millions)", tag="B") +
   scale_x_continuous(breaks=seq(1910,2020,10)) +
+  # Label World War 2
+  annotate(geom="text", x=mean(1941:1946), y=0, vjust=-0.5, label="World\nWar II", color="grey40", size=2) +
   # Legend
   scale_fill_discrete(name="Port complex\n(north to south)", na.value="grey90") +
   # Theme
   theme_bw() + my_theme +
-  theme(legend.position=c(0.1, 0.6),
+  theme(legend.position=c(0.065, 0.62),
         legend.key.size = unit(0.3, "cm"))
 g3
 
@@ -110,6 +116,8 @@ g4 <- ggplot(data_plot2, aes(x=year, y=plandings, fill=port_complex_group)) +
   # Labels
   labs(x="Year", y="Proportion of\nlanded fish") +
   scale_x_continuous(breaks=seq(1910,2020,10)) +
+  # Label World War 2
+  annotate(geom="text", x=mean(1941:1946), y=0, vjust=-0.5, label="World\nWar II", color="grey40", size=2) +
   # Legend
   scale_fill_discrete(name="Area of residence", na.value="grey90") +
   # Theme

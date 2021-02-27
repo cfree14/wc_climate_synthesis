@@ -1,5 +1,5 @@
 "source","table","year","port_complex","port","type","species","landings_lb","value_usd"
-"FB 67","Table 12",1946,"Eureka","Eureka Region","Landings","Totals",3129100,32392178
+"FB 67","Table 12",1946,"Eureka","Eureka Region","Landings","Totals",32392178,3129100
 "FB 67","Table 12",1946,"Eureka","Eureka","Landings","Salmon",NA,282900
 "FB 67","Table 12",1946,"Eureka","Eureka","Landings","Sole",NA,252400
 "FB 67","Table 12",1946,"Eureka","Eureka","Landings","Rockfish",NA,236900
@@ -61,7 +61,7 @@
 "FB 67","Table 12",1946,"Eureka","Areata","Landings","Totals",NA,6900
 "FB 67","Table 12",1946,"Eureka","Mendocino","Landings","Totals",NA,100
 "FB 67","Table 12",1946,"Eureka","Mendocino","Landings","Totals",NA,100
-"FB 67","Table 13",1946,"Sacramento Delta","Sacramento Region","Landings","Totals",1082300,8050966
+"FB 67","Table 13",1946,"Sacramento Delta","Sacramento Region","Landings","Totals",8050966,1082300
 "FB 67","Table 13",1946,"Sacramento Delta","Pittsburg","Landings","Salmon",NA,554200
 "FB 67","Table 13",1946,"Sacramento Delta","Pittsburg","Landings","Catfish",NA,63800
 "FB 67","Table 13",1946,"Sacramento Delta","Pittsburg","Landings","Shad",NA,36900
@@ -86,7 +86,7 @@
 "FB 67","Table 13",1946,"Sacramento Delta","Benicia","Landings","Totals",NA,9200
 "FB 67","Table 13",1946,"Sacramento Delta","All Other Ports","Landings","All species",NA,1800
 "FB 67","Table 13",1946,"Sacramento Delta","All Other Ports","Landings","Totals",NA,1800
-"FB 67","Table 14",1946,"San Francisco","San Francisco Region","Landings","Totals",2295900,17690225
+"FB 67","Table 14",1946,"San Francisco","San Francisco Region","Landings","Totals",17690225,2295900
 "FB 67","Table 14",1946,"San Francisco","San Francisco","Landings","Shark",NA,740000
 "FB 67","Table 14",1946,"San Francisco","San Francisco","Landings","Crab",NA,313900
 "FB 67","Table 14",1946,"San Francisco","San Francisco","Landings","Sardine",NA,72200
@@ -142,7 +142,7 @@
 "FB 67","Table 14",1946,"San Francisco","Mcnears Point","Landings","Totals",NA,4300
 "FB 67","Table 14",1946,"San Francisco","All Other Ports","Landings","All species",NA,3400
 "FB 67","Table 14",1946,"San Francisco","All Other Ports","Landings","Totals",NA,3400
-"FB 67","Table 15",1946,"Monterey","Monterey Region","Landings","Totals",3009500,123111509
+"FB 67","Table 15",1946,"Monterey","Monterey Region","Landings","Totals",123111509,3009500
 "FB 67","Table 15",1946,"Monterey","Monterey","Landings","Squid",NA,1210500
 "FB 67","Table 15",1946,"Monterey","Monterey","Landings","Sardine",NA,1103400
 "FB 67","Table 15",1946,"Monterey","Monterey","Landings","Jack mackerel",NA,145000
@@ -177,7 +177,7 @@
 "FB 67","Table 15",1946,"Monterey","Moss Landing","Landings","Totals",NA,43300
 "FB 67","Table 15",1946,"Monterey","All Other Ports","Landings","All species",NA,100
 "FB 67","Table 15",1946,"Monterey","All Other Ports","Landings","Totals",NA,100
-"FB 67","Table 16",1946,"Santa Barbara","Santa Barbara Region","Landings","Totals",734000,3918557
+"FB 67","Table 16",1946,"Santa Barbara","Santa Barbara Region","Landings","Totals",3918557,734000
 "FB 67","Table 16",1946,"Santa Barbara","Santa Barbara","Landings","Shark",NA,190300
 "FB 67","Table 16",1946,"Santa Barbara","Santa Barbara","Landings","Abalone",NA,76100
 "FB 67","Table 16",1946,"Santa Barbara","Santa Barbara","Landings","California halibut",NA,74900
@@ -212,7 +212,7 @@
 "FB 67","Table 16",1946,"Santa Barbara","Pismo Beach","Landings","Totals",NA,5500
 "FB 67","Table 16",1946,"Santa Barbara","All Other Ports","Landings","All species",NA,6200
 "FB 67","Table 16",1946,"Santa Barbara","All Other Ports","Landings","Totals",NA,6200
-"FB 67","Table 17",1946,"Los Angeles","Los Angeles Region","Landings","Totals",18662400,593113985
+"FB 67","Table 17",1946,"Los Angeles","Los Angeles Region","Landings","Totals",593113985,18662400
 "FB 67","Table 17",1946,"Los Angeles","Terminal Island","Landings","Sardine",NA,3876600
 "FB 67","Table 17",1946,"Los Angeles","Terminal Island","Landings","Yellowfin tuna",NA,3043000
 "FB 67","Table 17",1946,"Los Angeles","Terminal Island","Landings","Bluefin tuna",NA,1222900
@@ -313,7 +313,7 @@
 "FB 67","Table 17",1946,"Los Angeles","Avalon","Landings","Totals",NA,12700
 "FB 67","Table 17",1946,"Los Angeles","All Other Ports","Landings","All species",NA,7400
 "FB 67","Table 17",1946,"Los Angeles","All Other Ports","Landings","Totals",NA,7400
-"FB 67","Table 18",1946,"San Diego","San Diego Region","Landings","Totals",16433100,141056723
+"FB 67","Table 18",1946,"San Diego","San Diego Region","Landings","Totals",141056723,16433100
 "FB 67","Table 18",1946,"San Diego","San Diego","Landings","Yellowfin tuna",NA,8036500
 "FB 67","Table 18",1946,"San Diego","San Diego","Landings","Skipjack tuna",NA,2281100
 "FB 67","Table 18",1946,"San Diego","San Diego","Landings","Albacore tuna",NA,1624500

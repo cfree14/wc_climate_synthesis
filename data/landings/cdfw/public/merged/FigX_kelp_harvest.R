@@ -14,30 +14,37 @@ outdir <- "data/landings/cdfw/public/merged/data"
 plotdir <- "data/landings/cdfw/public/merged/figures"
 
 # Read data
-data <- read.csv(file=file.path(outdir, "CDFW_1916_1976_annual_kelp_harvest_by_bed_type.csv"), as.is=T)
+data <- wcfish::cdfw_kelp
+data_tots <- wcfish::cdfw_kelp_tots
 
-# Read NOAA data
-data_noaa <- readRDS("data/landings/noaa/processed/NOAA_1950_2019_usa_landings_by_state_species.Rds") %>% 
-  filter(state=="California" & sci_name=="Macrocystis spp.") %>% 
-  # Summarize
-  group_by(year) %>% 
-  summarize(harvest_lb=sum(landings_lb),
-            harvest_t=harvest_lb/2000)
 
-# Plot data
+# Format for plotting
 ################################################################################
 
-# Reshape
-data_plot <- data %>% 
+# Format by bed
+data1 <- data %>% 
   # Reshape
   select(-total_t) %>% 
   gather(key="bed_type", value="harvest_t", 4:5) %>% 
-  # Add 0s for NAs for plotting
-  mutate(harvest_t=ifelse(is.na(harvest_t), 0, harvest_t)) %>% 
   # Recode
   mutate(bed_type=recode(bed_type, 
                          "open_bed_t"="Open",
-                         "leased_bed_t"="Leased"))
+                         "leased_bed_t"="Leased")) %>% 
+  select(source, year, bed_type, harvest_t)
+
+# Format totals
+data2 <- data_tots %>% 
+  filter(year>1976) %>% 
+  mutate(bed_type=NA) %>% 
+  select(source, year, bed_type, harvest_t)
+
+# Merge
+data_plot <- bind_rows(data1, data2) %>% 
+  filter(!is.na(harvest_t))
+
+
+# Plot data
+################################################################################
 
 # Base theme
 my_theme <-  theme(axis.text=element_text(size=5),
@@ -51,18 +58,15 @@ my_theme <-  theme(axis.text=element_text(size=5),
                    panel.background = element_blank(), 
                    axis.line = element_line(colour = "black"),
                    legend.background = element_rect(fill=alpha('blue', 0)),
-                   legend.key.size=unit(0.5, units="cm"))
+                   legend.key.size=unit(0.3, units="cm"))
 
 # Plot data
 g <- ggplot(data_plot, aes(x=year, y=harvest_t/1000, fill=bed_type)) +
-  geom_area(na.rm = T) +
-  # Plot line
-  geom_line(data=data_noaa, mapping=aes(x=year, y=harvest_t/1000), inherit.aes = F, 
-            color="black", size=0.2, linetype="solid") +
+  geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
   labs(x="Year", y="Kelp harvest\n(1000s of tons, wet weight)") +
-  scale_fill_discrete(name="Bed type") +
-  scale_x_continuous(breaks=seq(1920, 2010, 10)) +
+  scale_fill_discrete(name="Bed type", na.value="grey80") +
+  scale_x_continuous(breaks=seq(1910, 2020, 10)) +
   # Theme
   theme_bw() + my_theme +
   theme(legend.position = c(0.85,0.8))

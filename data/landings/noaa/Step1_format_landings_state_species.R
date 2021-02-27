@@ -17,6 +17,8 @@ plotdir <- "data/landings/noaa/figures"
 # Read data
 data_orig <- read.csv(file.path(inputdir, "foss_landings.csv"), as.is=T, na.strings="")
 
+# The common/scientific names could be formatted way more rigourously.
+
 # Source: https://www.fisheries.noaa.gov/national/sustainable-fisheries/commercial-fisheries-landings
 # Asterisks indcate groups that are not species-specific
 
@@ -30,10 +32,11 @@ data <- data_orig %>%
   rename(comm_name_orig=nmfs_name, 
          sci_name_orig=scientific_name,
          landings_lb=pounds,
-         value_usd=dollars) %>% 
+         value_usd=dollars,
+         fishery=collection) %>% 
   # Arrange columns
-  select(region, source, state, comm_name_orig, sci_name_orig, year, landings_lb, value_usd, confidentiality) %>% 
-  arrange(region, state, comm_name_orig, year) %>% 
+  select(region, source, state, fishery, tsn, comm_name_orig, sci_name_orig, year, landings_lb, value_usd, confidentiality, everything()) %>% 
+  arrange(region, state, fishery, year, comm_name_orig) %>% 
   # Format state
   mutate(state=stringr::str_to_title(state)) %>% 
   # Format numeric values
@@ -45,10 +48,10 @@ data <- data_orig %>%
   
 # Inspect data
 str(data)
+freeR::complete(data)
 range(data$year)
 table(data$state)
-table(data$state)
-table(data$collection) 
+table(data$fishery) 
 table(data$confidentiality)
 table(data$summary_type)
 
@@ -58,6 +61,7 @@ table(data$summary_type)
 # Build species key
 spp_key <- data %>%
   # Unique species
+  filter(!is.na(sci_name_orig)) %>% 
   select(comm_name_orig, sci_name_orig) %>% 
   unique() %>% 
   arrange(comm_name_orig) %>% 
@@ -114,18 +118,24 @@ spp_key <- data %>%
                          "Zenopsis conchifera"="Zenopsis conchifer"))
 
 # Check species
-species <- spp_key$sci_name[spp_key$level=="species"] %>% unique() %>% sort()
-freeR::suggest_names(species)
+# species <- spp_key$sci_name[spp_key$level=="species"] %>% unique() %>% sort()
+# freeR::suggest_names(species)
 
 # Final formatting
 ################################################################################
 
+data_out <- data
+
 # Format data
-data_out <- data %>% 
-  # Add species info
-  left_join(spp_key %>% select(comm_name_orig, comm_name, sci_name, level)) %>% 
-  # Arrange
-  select(region:sci_name_orig, comm_name, sci_name, level, everything())
+# data_out <- data %>% 
+#   # Add species info
+#   left_join(spp_key %>% select(comm_name_orig, comm_name, sci_name, level)) %>% 
+#   # Arrange
+#   select(region:sci_name_orig, comm_name, sci_name, level, everything())
+# 
+# # Inspect
+# freeR::complete(data_out)
+
 
 # Export data
 ################################################################################

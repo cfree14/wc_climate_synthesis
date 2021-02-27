@@ -16,6 +16,20 @@ plotdir <- "data/landings/cdfw/public/merged/figures"
 # Read data
 data_orig <- readRDS(file=file.path(outdir, "CDFW_1941_2019_landings_by_port_species.Rds"))
 
+# Read port complex lines
+complex_lines_orig <- readxl::read_excel(file.path(outdir, "port_complex_lines.xlsx"))
+complex_lines_hi <- complex_lines_orig %>% 
+  filter(system_id=="D") %>% 
+  select(lat_dd_hi_name, lat_dd_hi, long_dd_hi) %>% 
+  rename(line_name=lat_dd_hi_name, lat_dd=lat_dd_hi, long_dd=long_dd_hi)
+complex_lines_lo <- complex_lines_orig %>% 
+  filter(system_id=="D") %>% 
+  arrange(lat_dd_lo) %>% 
+  slice(1) %>% 
+  select(lat_dd_lo_name, lat_dd_lo, long_dd_lo) %>% 
+  rename(line_name=lat_dd_lo_name, lat_dd=lat_dd_lo, long_dd=long_dd_lo)
+complex_lines <- bind_rows(complex_lines_hi, complex_lines_lo)
+
 # Projections
 wgs84 <- sp::CRS("+proj=longlat +datum=WGS84")
 
@@ -26,7 +40,8 @@ ca_counties <- tigris::counties(state="California", cb=T) %>% sf::st_transform(w
 
 # Get WCFISH data
 ports <- wcfish::ports
-blocks <- wcfish::blocks
+blocks <- wcfish::blocks %>% 
+  filter(block_state=="California")
 
 
 # Build data
@@ -93,16 +108,18 @@ g <- ggplot() +
   geom_sf(data=mexico, fill="grey85", col="white", size=0.2) +
   geom_sf(data=usa, fill="grey85", col="white", size=0.2) +
   geom_sf(data=ca_counties, fill="grey85", col="white", size=0.2) +
+  # Plot county lines
+  geom_segment(data=complex_lines, mapping = aes(x=long_dd, xend=long_dd-1, y=lat_dd, yend=lat_dd), color="black", linetype="solid") +
   # Plot ports (old)
   geom_point(data=data %>% filter(is.na(landings_mt)), 
              mapping=aes(x=long_dd, y=lat_dd, color=port_complex), pch=1, show.legend = F) +
   # Plot ports (recent)
   geom_point(data=data %>% filter(!is.na(landings_mt)), 
-             mapping=aes(x=long_dd, y=lat_dd, fill=port_complex, size=landings_mt), pch=21) +
+             mapping=aes(x=long_dd, y=lat_dd, fill=port_complex, size=landings_mt), pch=21, color="grey30") +
   # Port labels
   ggrepel::geom_text_repel(data_labels %>% filter(type=="full"), 
                            mapping=aes(x=long_dd, lat_dd, label=port), size=2, show.legend = F, 
-                           min.segment.length = 0, segment.color="black") +
+                           min.segment.length = 0, segment.color="grey30", max.overlaps = 100, force=5) +
   # Labels
   labs(x="", y="") +
   # Legend

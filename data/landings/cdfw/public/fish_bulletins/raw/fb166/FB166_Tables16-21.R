@@ -94,6 +94,7 @@ data_full <- data_orig %>%
                         'Kook fish'='Rockfish', 
                         'Opal eye'='Opaleye', 
                         'Pacific butter fish'='Pacific butterfish', 
+                        'Pacific Ocean shrimp'='Pacific ocean shrimp',
                         'Pctralc sole'='Petrale sole', 
                         'Pet rale sole'='Petrale sole', 
                         'Pink aba lone'='Pink abalone', 
