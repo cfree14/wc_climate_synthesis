@@ -1,0 +1,434 @@
+year,filename,species,type,January,Feburary,March,April,May,June,July,August,September,October,November,December,Total,flag
+2010,10.pdf,FISH:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,INSERTED
+2010,10.pdf,Cabezon,landings,0,0,0,0,0,0,0,0,0,0,42,0,42,DONE
+2010,10.pdf,"Rockfish, black",landings,0,0,0,0,0,0,0,0,0,0,113,0,113,
+2010,10.pdf,"Rockfish, blue",landings,0,0,0,0,0,0,0,0,0,0,2,0,2,
+2010,10.pdf,"Rockfish, Nearshore",landings,0,0,0,0,0,0,0,0,0,0,27,0,27,
+2010,10.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,10.pdf,"Shrimp, mud",landings,1076,1693,240,0,0,0,0,0,0,0,0,0,3009,
+2010,10.pdf,TOTAL,landings,1076,1693,240,0,0,0,0,0,0,0,184,0,3193,INSERTED
+2010,11.pdf,FISH:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,11.pdf,Cabezon,landings,0,0,0,21,74,70,315,185,47,6,0,0,718,DONE
+2010,11.pdf,Greenling sp,landings,0,0,0,5,4,13,9,0,0,0,0,0,31,
+2010,11.pdf,"Halibut, Pacific",landings,0,0,0,0,0,173,0,0,0,0,0,0,173,
+2010,11.pdf,Lingcod,landings,0,0,0,0,1520,1757,1865,1402,1474,463,0,0,8481,
+2010,11.pdf,"Rockfish, black",landings,742,1394,369,4054,5891,6485,5670,2819,2136,564,190,0,30314,
+2010,11.pdf,"Rockfish, blue",landings,0,70,0,536,203,0,619,0,165,0,147,0,1740,
+2010,11.pdf,"Rockfish, vermillion",landings,0,0,0,0,13,0,28,14,21,3,0,0,79,
+2010,11.pdf,"Rockfish, yellowtail",landings,72,100,45,138,135,0,5,9,30,0,118,0,652,
+2010,11.pdf,"Rockfish, Nearshore",landings,0,2,0,0,0,16,9,10,0,0,0,0,37,
+2010,11.pdf,"Salmon, chinook",landings,0,0,895,0,1711,6452,0,0,2410,89,0,0,11557,
+2010,11.pdf,"Tuna, albacore",landings,0,0,0,0,0,0,1172,0,0,0,0,0,1172,
+2010,11.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,11.pdf,"Crab, Dungeness, ocean",landings,667,512,455,272,966,852,1446,393,0,0,0,0,5563,
+2010,11.pdf,"Shrimp, ghost",landings,310,420,440,150,370,1025,305,280,680,1170,330,170,5650,
+2010,11.pdf,TOTAL,landings,1791,2498,2204,5176,10887,16843,11443,5112,6963,2295,785,170,66167,INSERTED
+2010,11A.pdf,TOTAL,landings,0,0,0,0,0,0,0,0,0,0,0,0,0,DONE
+2008,12.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2009,12.pdf,"Shrimp, ghost",landings,0,0,0,0,0,0,0,0,50,0,0,0,50,DONE
+2010,12.pdf,TOTAL,landings,0,0,0,0,0,0,0,0,50,0,0,0,50,DONE
+2010,13.pdf,FISH:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,13.pdf,"Halibut, Pacific",landings,0,0,0,0,0,52,0,0,0,0,0,0,52,DONE
+2010,13.pdf,Lingcod,landings,0,0,0,0,561,315,451,348,481,211,0,0,2367,
+2010,13.pdf,"Mackerel, jack",landings,0,0,0,0,0,4,0,0,0,0,0,0,4,
+2010,13.pdf,"Rockfish, black",landings,0,0,0,0,14,32,7,49,0,67,0,0,169,
+2010,13.pdf,"Rockfish, Nearshore",landings,0,0,0,0,0,0,3,16,0,0,0,0,19,
+2010,13.pdf,"Salmon, chinook",landings,0,0,67,0,819,5088,0,0,3306,620,0,0,9900,
+2010,13.pdf,"Shark, blue",landings,0,0,0,0,0,33,0,0,0,0,0,0,33,
+2010,13.pdf,"Tuna, albacore",landings,0,0,0,0,0,0,1410,295,1033,0,0,0,2738,
+2010,13.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,13.pdf,"Crab, Dungeness, ocean",landings,9828,8987,5154,2376,994,1020,1025,427,0,0,0,0,29811,
+2010,13.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,13.pdf,Octopus,landings,0,0,55,0,0,0,48,0,0,0,0,0,103,
+2010,13.pdf,"Scallops, rock",landings,0,0,0,0,0,182,0,0,0,0,0,0,182,
+2010,13.pdf,OTHER INVERTEBRATES:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,13.pdf,"Sea urchin, red",landings,0,5021,8212,1501,4281,14684,5083,1499,0,0,0,0,40281,
+2010,13.pdf,TOTAL,landings,9828,14008,13488,3877,6669,21410,8027,2634,4820,898,0,0,85659,TOTAL
+2009,14.pdf,FISH:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,DONE
+2010,14.pdf,"Cod, Pacific",landings,0,0,263,2985,421,313,25,563,6,0,0,0,4576,DONE
+2010,14.pdf,Dolphinfish,landings,0,0,0,0,0,0,0,0,110,0,0,0,110,DONE
+2010,14.pdf,"Flounder, arrowtooth",landings,26444,30623,5922,41422,34550,27395,24903,105559,99395,27402,22622,6471,452708,DONE
+2010,14.pdf,"Flounder, starry",landings,0,0,0,0,2076,3256,314,127,14,0,0,0,5787,DONE
+2010,14.pdf,Grenadier,landings,0,0,0,0,0,,40,229,0,0,0,0,269,DONE
+2010,14.pdf,Hagfish sp,landings,0,0,0,0,0,0,0,0,0,0,0,91402,91402,DONE
+2010,14.pdf,"Halibut, Pacific",landings,0,0,0,0,1871,46651,59792,29364,0,0,0,0,137678,DONE
+2010,14.pdf,"Herring, Pacific",landings,0,0,0,0,13095,1482,1640,0,0,0,0,0,16217,DONE
+2010,14.pdf,Lingcod,landings,557,1008,290,1513,5539,4185,8096,6421,4395,243,0,0,32247,DONE
+2010,14.pdf,"Mackerel, jack",landings,0,0,0,0,0,7113,21774,82550,0,0,0,0,111437,DONE
+2010,14.pdf,"Mackerel, Pacific",landings,0,0,0,0,0,78,747,2226,0,0,0,0,3051,DONE
+2010,14.pdf,Opah,landings,0,0,0,0,0,0,0,0,25,0,0,0,25,DONE
+2010,14.pdf,Ratfish,landings,0,0,0,0,0,0,4,0,0,0,0,0,4,DONE
+2010,14.pdf,Pacific Ocean perch,landings,1364,1072,578,1383,2342485,422,3722,NA,4282,2949,3589,80722995,,CHECK
+2010,14.pdf,"Rockfish, black75",landings,NA,983,594,1327,8152406,931,1374,NA,748,138,302,1099802,,CHECK
+2010,14.pdf,"Rockfish, canary0",landings,NA,0,0,52,431,926,1917,NA,70,0,0,3396,,CHECK
+2010,14.pdf,"Rockfish, darkblotched2397",landings,NA,3641,2053,3028,47991065,4461,3666,NA,4389,5559,1291,36349,,CHECK
+2010,14.pdf,"Rockfish, widow0",landings,NA,0,3,0,50310341,26147,60140,NA,0,0,0,97134,,CHECK
+2010,14.pdf,"Rockfish, yelloweye0",landings,NA,0,0,0,0,60,28,NA,0,0,0,88,,CHECK
+2010,14.pdf,"Rockfish, yellowtail0",landings,NA,0,313,212,15776042,30800,22159,NA,344,21,0,61468,,CHECK
+2010,14.pdf,"Rockfish, Shelf0",landings,NA,0,0,10,62,411,875,NA,332,0,0,1690,,CHECK
+2010,14.pdf,"Rockfish, Slope2301",landings,NA,1575,1236,4823,64825282,4606,5454,NA,5170,5691,4768,2047408,,CHECK
+2010,14.pdf,"Thornyhead, longspine194",landings,NA,380,165,3391,33435158,0,1660,NA,4023,5888,6152,7430428,,CHECK
+2010,14.pdf,"Thornyhead, shortspine6519",landings,NA,7507,5656,20738,3229315563,4909,17465,NA,17696,21502,16676,4195170719,,CHECK
+2010,14.pdf,Sablefish26963,landings,NA,25892,34484,75831,1.64839E+11,338990,292530,NA,187836,100869,72145,3.07502E+11,,CHECK
+2010,14.pdf,"Salmon, chinook0",landings,NA,0,57274,22981,2.24046E+11,5548,1271,NA,388408,88599,0,1199816,,CHECK
+2010,14.pdf,"Salmon, coho0",landings,NA,0,0,0,6,0,9,NA,0,0,0,15,,CHECK
+2010,14.pdf,"Sanddab, Pacific0",landings,NA,0,492,704,5301520,2290,1658,NA,176,0,0,7370,,CHECK
+2010,14.pdf,"Sardine, Pacific0",landings,NA,0,0,66232,11554913270,4386,2,NA,0,0,0,199439,,CHECK
+2010,14.pdf,"Shad, American0",landings,NA,0,0,0,70448,119943,1698,NA,0,0,0,192089,,CHECK
+2010,14.pdf,"Shark, blue0",landings,NA,0,0,0,788,438,0,NA,0,0,0,1226,,CHECK
+2010,14.pdf,"Shark, spiny dogfish0",landings,NA,0,383,0,0,1331,244,NA,0,0,0,1958,,CHECK
+2010,14.pdf,"Shark, other sp0",landings,NA,0,0,0,669,0,0,NA,0,0,0,669,,CHECK
+2010,14.pdf,Skates and rays10665,landings,NA,29899,14134,49786,1.16828E+11,63912,123230,NA,80330,12978,10938,6304654532,,CHECK
+2010,14.pdf,"Sole, curlfin (turbot)0",landings,NA,0,0,4,80242,59,372,NA,59,0,0,816,,CHECK
+2010,14.pdf,"Sole, Dover74498",landings,NA,38066,79342,148368,1.17747E+11,20247,183870,NA,161990,65401,99330,3.65191E+11,,CHECK
+2010,14.pdf,"Sole, English50",landings,NA,990,1959,17873,2456528752,14981,20331,NA,14739,108,740,125088,,CHECK
+2010,14.pdf,"Sole, petrale80515",landings,NA,62418,6231,29974,7501181284,51955,67555,NA,34715,726,1899,22492305,,CHECK
+2010,14.pdf,"Sole, rex1572",landings,NA,3953,1847,5921,81747127,486,6981,NA,7962,6701,3577,168555986,,CHECK
+2010,14.pdf,"Sole, rock0",landings,NA,0,0,8,86124,16,266,NA,141,0,0,641,,CHECK
+2010,14.pdf,"Sole, sand0",landings,NA,0,0,0,13773338,4317,3860,NA,1062,0,0,13954,,CHECK
+2010,14.pdf,"Sunfish, ocean0",landings,NA,0,0,0,0,0,54,NA,0,0,0,54,,CHECK
+2010,14.pdf,"Tuna, albacore0",landings,NA,0,0,0,23083,544304,1369010,NA,581000,480669,17256,3015322,,CHECK
+2010,14.pdf,"Whiting, Pac (hake)0",landings,NA,0,0,0,0  22361496  43615967  24307378,NA,NA,NA,0,0,0,0  90284841,,CHECK
+2010,14.pdf,Wolf-eel0,landings,NA,0,0,30,200,0,0,NA,0,0,0,50,,CHECK
+2010,14.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,,NA,NA,NA,NA,NA,NA,,,CHECK
+2010,14.pdf,"Crab, Dungeness, bay0",landings,NA,0,0,0,0,0,0,NA,380,946,1571,2897,,CHECK
+2010,14.pdf,"Crab, Dungeness, ocean  2135692",landings,NA,1258154,388797,363628,22538577316,27708,9798,NA,0,0,1642,4488120,,CHECK
+2010,14.pdf,"Crab, rock0",landings,NA,0,728,140,132359,525,451,NA,940,405,150,2134043,,CHECK
+2010,14.pdf,Shrimp..pink..........,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,14.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,14.pdf,"Mussels, ocean",landings,0,0,0,100,0,100,0,0,0,0,0,0,200,
+2010,14.pdf,Octopus,landings,239,222,222,56,33,49,45,0,0,0,0,0,866,
+2010,14.pdf,"Squid, Market",landings,0,0,0,0,0,353,969,5924,0,80,0,0,7326,
+2010,14.pdf,OTHER INVERTEBRATES:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,14.pdf,Sea stars,landings,0,1,0,0,0,0,0,0,0,0,0,0,1,
+2010,14.pdf,"Sea urchin, red",landings,0,0,0,128,0,1682,0,0,0,0,0,0,1810,
+2010,15.pdf,CHECK,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2010,15A.pdf,CHECK,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2010,16.pdf,Halibut..Pacific......,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,16.pdf,"Rockfish, yellowtail",landings,0,0,0,0,153,0,0,0,0,0,0,0,153,
+2010,16.pdf,"Salmon, chinook",landings,0,0,224,0,1028,449,0,0,406,0,0,0,2107,
+2010,16.pdf,"Tuna, albacore",landings,0,0,0,0,0,0,4536,12777,5497,0,0,0,22810,
+2010,16.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,16.pdf,"Crab, Dungeness, bay",landings,0,0,0,0,0,0,0,0,0,68,0,0,68,
+2010,16.pdf,"Crab, Dungeness, ocean",landings,0,100,221,964,1817,1794,4335,4242,0,0,0,0,13473,
+2010,16.pdf,"Shrimp, ghost",landings,0,0,0,0,0,0,0,0,74,0,0,0,74,
+2010,17.pdf,Flounder..arrowtooth..,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,17.pdf,"Halibut, Pacific",landings,0,0,0,0,0,3755,1249,437,0,0,0,0,5441,
+2010,17.pdf,"Herring, Pacific",landings,0,0,0,0,0,0,0,100,0,0,0,0,100,
+2010,17.pdf,Lingcod,landings,0,0,0,0,0,0,84,963,28,0,0,0,1075,
+2010,17.pdf,"Rockfish, black",landings,0,0,0,0,31,0,0,0,0,0,0,0,31,
+2010,17.pdf,"Rockfish, yellowtail",landings,0,0,0,0,84,92,0,0,0,0,0,0,176,
+2010,17.pdf,"Rockfish, Slope",landings,0,0,0,0,0,0,235,24,0,0,0,0,259,
+2010,17.pdf,Sablefish,landings,0,0,0,899,0,6272,816,751,880,0,0,0,9618,
+2010,17.pdf,"Salmon, chinook",landings,0,0,5979,1077,33005,14809,97,0,11102,553,0,0,66622,
+2010,17.pdf,"Sanddab, Pacific",landings,0,0,0,0,0,0,0,400,0,0,0,0,400,
+2010,17.pdf,"Sardine, Pacific",landings,0,0,0,0,0,0,3000,2800,0,0,0,0,5800,
+2010,17.pdf,Skates and rays,landings,0,0,0,0,0,0,0,1137,0,0,0,0,1137,
+2010,17.pdf,"Sole, Dover",landings,0,0,0,0,0,0,0,100,0,0,0,0,100,
+2010,17.pdf,"Sole, English",landings,0,0,0,0,0,0,0,247,0,0,0,0,247,
+2010,17.pdf,"Sole, petrale",landings,0,0,0,0,0,0,3,1643,0,0,0,0,1646,
+2010,17.pdf,"Sole, rex",landings,0,0,0,0,0,0,0,62,0,0,0,0,62,
+2010,17.pdf,Surfperch spp,landings,0,0,0,22,605,247,0,0,0,0,0,0,874,
+2010,17.pdf,"Tuna, albacore",landings,0,0,0,0,0,559,15153,113309,27022,354,0,0,156397,
+2010,17.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,17.pdf,"Crab, Dungeness, bay",landings,0,0,0,0,0,0,0,0,0,588,1604,0,2192,
+2010,17.pdf,"Crab, Dungeness, ocean",landings,165506,143024,141283,123083,55997,8053,7373,2650,0,0,0,0,646969,
+2010,17.pdf,"Shrimp, ghost",landings,0,30,98,177,347,155,58,58,98,220,0,0,1241,
+2010,18.pdf,Cabezon...............0,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,18.pdf,"Cod, Pacific0",landings,NA,0,0,0,0,2,0,135,0,0,0,0,137,
+2010,18.pdf,"Flounder, arrowtooth58591",landings,NA,82443,29742,14854,10706,18060,13721,31920,22505,17225,19352,3317,322436,
+2010,18.pdf,"Flounder, starry0",landings,NA,0,0,0,0,0,0,390,78,0,0,0,468,
+2010,18.pdf,Greenling sp0,landings,NA,0,38,0,140,0,0,0,0,0,0,0,178,
+2010,18.pdf,Grenadier0,landings,NA,3073,814,3466,0,11832,6787,4849,5222,11539,3854,3799,55235,
+2010,18.pdf,Hagfish sp67658,landings,NA,57959,33381,108331,148991,109039,147253,126918,72637,89559,138493,18658,1118877,
+2010,18.pdf,"Halibut, Pacific0",landings,NA,0,0,0,740,5241,11430,15662,0,0,0,0,33073,
+2010,18.pdf,Lingcod829,landings,NA,1478,723,80,3366,4960,3972,7288,6308,1996,222,0,31222,
+2010,18.pdf,"Mackerel, jack0",landings,NA,0,0,0,0,0,34,12718,0,0,0,0,12752,
+2010,18.pdf,"Pomfret, Pacific0",landings,NA,0,0,0,0,0,0,0,5,0,0,0,5,
+2010,18.pdf,Pacific Ocean perch1393,landings,NA,1580,62,176,104,11,0,119,151,2113,44,0,5753,
+2010,18.pdf,"Rockfish, black0",landings,NA,10,7,116,176,7,22,162,670,510,524,186,2390,
+2010,18.pdf,"Rockfish, canary0",landings,NA,0,13,14,22,335,301,992,160,14,0,0,1851,
+2010,18.pdf,"Rockfish, darkblotched16460",landings,NA,14404,669,1207,2129,3573,3791,2262,6586,2057,169,716,54023,
+2010,18.pdf,"Rockfish, tiger0",landings,NA,0,0,0,0,0,0,2,0,0,0,0,2,
+2010,18.pdf,"Rockfish, vermillion0",landings,NA,0,0,0,0,0,16,0,69,9,0,0,94,
+2010,18.pdf,"Rockfish, widow0",landings,NA,0,0,0,277,1261,7066,17115,2,99,0,0,25820,
+2010,18.pdf,"Rockfish, yelloweye0",landings,NA,0,12,0,17,8,0,255,0,0,0,0,292,
+2010,18.pdf,"Rockfish, yellowtail0",landings,NA,0,96,52,2859,1331,2425,6049,426,145,0,0,13383,
+2010,18.pdf,"Rockfish, Nearshore0",landings,NA,0,3,0,81,31,35,138,8,0,0,0,296,
+2010,18.pdf,"Rockfish, Shelf0",landings,NA,0,306,173,421,163,223,1241,1441,100,0,0,4068,
+2010,18.pdf,"Rockfish, Slope2190",landings,NA,2400,163,1267,1107,2184,627,1497,1045,2499,2809,304,18092,
+2010,18.pdf,"Thornyhead, longspine1218",landings,NA,38639,5450,17960,6115,19586,6419,23144,7033,29913,27397,8895,191769,
+2010,18.pdf,"Thornyhead, shortspine1685",landings,NA,18710,6776,17039,17495,12640,5780,20306,12818,21155,17856,8473,160733,
+2010,18.pdf,Sablefish30784,landings,NA,64288,34287,61542,60796,108456,210398,338715,210268,148720,132782,74657,1475693,
+2010,18.pdf,"Salmon, chinook0",landings,NA,0,140662,11472,276759,29452,473,59,574283,107831,677,0,1141668,
+2010,18.pdf,"Salmon, chum0",landings,NA,0,0,0,0,0,0,0,14,0,0,0,14,
+2010,18.pdf,"Salmon, coho0",landings,NA,0,0,0,0,0,5,0,95,0,0,0,100,
+2010,18.pdf,"Sanddab, Pacific0",landings,NA,0,88,0,188,637,5295,8538,91,0,0,0,14837,
+2010,18.pdf,"Shark, blue0",landings,NA,0,0,0,38,0,0,0,0,48,0,0,86,
+2010,18.pdf,"Shark, shortfin mako0",landings,NA,0,0,0,0,0,0,84,0,0,0,0,84,
+2010,18.pdf,"Shark, spiny dogfish0",landings,NA,0,4,0,0,86,8,77,0,0,0,0,175,
+2010,18.pdf,Skates and rays71913,landings,NA,80105,18904,28828,25449,29314,29061,74570,42966,22149,11209,2666,437134,
+2010,18.pdf,"Sole, curlfin (turbot)0",landings,NA,0,0,0,0,0,0,553,0,0,0,0,553,
+2010,18.pdf,"Sole, Dover179939",landings,NA,399139,299107,249906,140281,99496,91053,189113,163789,162701,186605,52836,2213965,
+2010,18.pdf,"Sole, English74170",landings,NA,72599,8076,11473,6849,13326,7519,22833,17493,2825,504,0,237667,
+2010,18.pdf,"Sole, petrale286109",landings,NA,155419,5370,12050,25499,40088,17808,51132,18474,8051,3465,0,623465,
+2010,18.pdf,"Sole, rex46595",landings,NA,48338,7308,16162,17248,14809,8768,22519,14373,18454,9267,2643,226484,
+2010,18.pdf,"Sole, rock0",landings,NA,0,0,0,0,200,81,449,456,0,0,0,1186,
+2010,18.pdf,"Sole, sand0",landings,NA,0,0,0,0,111,1513,8015,3241,0,0,0,12880,
+2010,18.pdf,Surfperch spp0,landings,NA,10,55,1442,421,0,51,0,0,0,0,0,1979,
+2010,18.pdf,"Tuna, albacore0",landings,NA,0,0,0,0,14035,207505,665763,728039,253369,0,0,1868711,
+2010,18.pdf,"Whiting, Pac (hake)0",landings,NA,0,0,0,0,1651612,4293320,1578075,0,0,0,2183,7525190,
+2010,18.pdf,Wolf-eel0,landings,NA,0,32,9,150,21,8,54,12,0,0,0,286,
+2010,18.pdf,"Wrymouth, giant0",landings,NA,0,0,0,0,11,0,21,0,0,0,0,32,
+2010,18.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,18.pdf,"Crab, Dungeness, bay0",landings,NA,0,0,0,0,0,0,0,0,1401,5770,0,7171,
+2010,18.pdf,"Crab, Dungeness, ocean  1420923",landings,NA,897236,517662,381192,227861,84202,25526,12193,0,1695,1553,0,3570043,
+2010,18.pdf,Shrimp..ghost.........,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,18.pdf,"Shrimp, pink",landings,0,0,0,575309,976624,588959,253195,618119,1030059,79799,0,0,4122064,
+2010,18.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,18.pdf,"Abalone, flat",landings,0,0,0,0,0,267,0,0,0,0,0,0,267,
+2010,18.pdf,"Clams, butter",landings,0,0,0,0,0,0,0,0,0,0,0,230,230,
+2010,18.pdf,"Clams, cockle",landings,2524,3470,2287,3821,2128,1047,759,198,262,1621,1794,1412,21323,
+2010,18.pdf,"Clams, gaper",landings,0,0,0,0,0,0,0,0,567,0,726,1432,2725,
+2010,18.pdf,Octopus,landings,70,0,117,35,36,12,0,0,0,0,0,0,270,
+2010,18.pdf,"Squid, Market",landings,4513,1366,0,0,9,1,165,1447,607,0,2660,362,11130,
+2010,18.pdf,OTHER INVERTEBRATES:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,18.pdf,"Sea urchin, red",landings,0,0,0,0,17147,50282,45928,40646,0,0,0,0,154003,
+2010,19.pdf,Lingcod...............,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,19.pdf,"Rockfish, black",landings,0,0,0,0,235,0,531,346,0,0,0,70,1182,
+2010,19.pdf,"Rockfish, blue",landings,0,0,0,0,0,0,33,0,0,0,0,0,33,
+2010,19.pdf,"Rockfish, vermillion",landings,0,0,0,0,0,0,0,2,0,0,0,0,2,
+2010,19.pdf,"Rockfish, Nearshore",landings,0,0,0,0,6,0,2,3,0,0,0,0,11,
+2010,19.pdf,"Rockfish, Slope",landings,0,0,0,0,0,0,0,0,0,12,0,0,12,
+2010,19.pdf,"Salmon, chinook",landings,0,0,454,87,599,0,0,0,740,249,0,0,2129,
+2010,19.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,19.pdf,"Crab, Dungeness, ocean",landings,0,0,0,0,0,0,139,0,0,0,0,0,139,
+2010,20.pdf,Cabezon...............,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,20.pdf,"Flounder, arrowtooth",landings,0,12,5,32,22,102,137,104,10,149,50,46,669,
+2010,20.pdf,Greenling sp,landings,2257,4364,2420,3497,3016,1724,1983,1227,1042,639,607,879,23655,
+2010,20.pdf,"Halibut, Pacific",landings,0,0,0,0,0,837,838,661,0,0,0,0,2336,
+2010,20.pdf,Lingcod,landings,0,0,0,0,4318,4089,2495,3785,1985,2531,0,0,19203,
+2010,20.pdf,Opah,landings,0,0,0,0,0,0,0,0,30,0,0,0,30,
+2010,20.pdf,Pacific Ocean perch,landings,0,0,0,0,0,10,2,1,11,233,253,94,604,
+2010,20.pdf,"Rockfish, black",landings,2953,9437,5189,9327,13692,10819,9570,7260,5052,3014,2512,2054,80879,
+2010,20.pdf,"Rockfish, blue",landings,0,108,10,37,433,212,84,41,356,266,15,12,1574,
+2010,20.pdf,"Rockfish, darkblotched",landings,0,5,21,107,18,342,11,18,164,1750,2427,763,5626,
+2010,20.pdf,"Rockfish, tiger",landings,0,0,0,3,3,0,3,2,5,6,0,0,22,
+2010,20.pdf,"Rockfish, vermillion",landings,22,259,72,78,215,190,166,329,229,155,22,66,1803,
+2010,20.pdf,"Rockfish, widow",landings,0,0,122,216,205,0,0,0,0,10,0,0,553,
+2010,20.pdf,"Rockfish, yellowtail",landings,0,20,684,848,1121,9,2,20,41,37,0,0,2782,
+2010,20.pdf,"Rockfish, Nearshore",landings,437,1147,440,431,860,1095,678,904,831,591,376,320,8110,
+2010,20.pdf,"Rockfish, Shelf",landings,0,2,0,0,0,20,10,46,0,1,2,0,81,
+2010,20.pdf,"Rockfish, Slope",landings,0,44,113,635,839,579,50,568,66,2445,1715,1373,8427,
+2010,20.pdf,"Thornyhead, longspine",landings,0,0,0,0,0,0,0,0,0,0,6,0,6,
+2010,20.pdf,"Thornyhead, shortspine",landings,0,0,0,0,0,0,0,45,0,0,0,0,45,
+2010,20.pdf,Sablefish,landings,1465,5418,7884,54904,23617,41499,50665,49683,15085,127624,98063,64307,540214,
+2010,20.pdf,"Salmon, chinook",landings,0,0,10332,9091,48283,0,0,0,80257,16632,13599,4448,182642,
+2010,20.pdf,"Shark, blue",landings,0,0,0,0,0,54,0,0,14,0,23,0,91,
+2010,20.pdf,"Shark, shortfin mako",landings,0,0,0,0,0,0,0,80,0,0,0,0,80,
+2010,20.pdf,"Shark, soupfin",landings,0,21,0,0,29,0,0,0,0,22,0,53,125,
+2010,20.pdf,"Shark, spiny dogfish",landings,0,0,0,0,0,0,0,0,0,644,0,277,921,
+2010,20.pdf,"Shark, other sp",landings,0,0,0,0,0,0,0,0,0,0,0,23,23,
+2010,20.pdf,Skates and rays,landings,161,458,156,105,49,213,227,981,352,231,1293,1979,6205,
+2010,20.pdf,"Sole, Dover",landings,0,0,2,25,10,89,43,54,8,23,55,9,318,
+2010,20.pdf,"Sole, petrale",landings,0,0,0,0,0,0,3,0,0,0,3,12,18,
+2010,20.pdf,"Sole, sand",landings,0,0,0,0,0,0,0,0,0,4,0,0,4,
+2010,20.pdf,"Tuna, albacore",landings,0,0,0,0,0,0,1628,2891,0,0,0,0,4519,
+2010,20.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,20.pdf,"Crab, Dungeness, ocean",landings,200678,138692,56042,40780,64675,53431,31786,16983,0,1173,2257,0,606497,
+2010,20.pdf,"Shrimp, spot",landings,0,0,0,0,0,0,187,360,707,138,0,0,1392,
+2010,20.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,20.pdf,"Abalone, flat",landings,0,301,35,0,86,0,0,57,76,0,0,0,555,
+2010,20.pdf,Octopus,landings,135,227,240,104,0,48,57,0,0,0,0,0,811,
+2010,20.pdf,OTHER INVERTEBRATES:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,20.pdf,Sea cucumber,landings,0,0,0,0,0,0,890,0,0,0,0,0,890,
+2010,20.pdf,"Sea urchin, red",landings,53913,58876,52676,11369,9355,0,5475,0,4456,9233,27789,47399,280541,
+2010,21.pdf,Cabezon...............,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,21.pdf,Greenling sp,landings,592,2126,2176,2916,2814,1374,1704,905,1208,662,914,719,18110,
+2010,21.pdf,"Irish Lord, brown",landings,1,0,0,0,0,0,0,0,0,0,0,0,1,
+2010,21.pdf,"Irish Lord, red",landings,7,11,0,0,0,0,0,0,0,0,0,0,18,
+2010,21.pdf,Lingcod,landings,0,0,0,0,3008,2657,1578,2354,2237,1874,0,0,13708,
+2010,21.pdf,"Rockfish, black",landings,281,2385,2893,4718,8504,10469,7630,2985,2489,1281,2881,902,47418,
+2010,21.pdf,"Rockfish, blue",landings,4,64,71,124,184,38,37,56,19,34,0,7,638,
+2010,21.pdf,"Rockfish, tiger",landings,0,0,0,0,0,13,0,5,0,6,0,5,29,
+2010,21.pdf,"Rockfish, vermillion",landings,41,65,36,106,297,157,164,241,118,132,36,128,1521,
+2010,21.pdf,"Rockfish, widow",landings,0,0,0,0,114,0,0,0,0,0,0,0,114,
+2010,21.pdf,"Rockfish, yellowtail",landings,0,0,0,6,250,19,2,0,0,0,7,0,284,
+2010,21.pdf,"Rockfish, Nearshore",landings,123,266,239,303,531,506,523,573,804,388,273,333,4862,
+2010,21.pdf,Sablefish,landings,0,0,0,0,0,558,214,0,0,0,0,0,772,
+2010,21.pdf,"Salmon, chinook",landings,0,0,0,0,16136,494,0,0,2553,217,0,0,19400,
+2010,21.pdf,"Sculpin, buffalo",landings,1,0,0,0,0,0,0,0,0,0,0,0,1,
+2010,21.pdf,Surfperch spp,landings,0,0,0,20,0,0,0,0,0,0,0,0,20,
+2010,21.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,21.pdf,"Crab, Dungeness, ocean",landings,1102,707,270,4188,2183,1526,2177,1737,0,0,0,0,13890,
+2010,21.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,21.pdf,"Abalone, flat",landings,0,0,160,214,184,83,0,52,578,311,0,0,1582,
+2010,21.pdf,OTHER INVERTEBRATES:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,21.pdf,"Sea urchin, red",landings,0,0,0,3154,9428,0,0,0,0,0,0,0,12582,
+2010,22.pdf,Cabezon...............,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,22.pdf,"Flounder, arrowtooth",landings,0,8347,7263,1761,0,1522,1840,9470,2609,400,267,0,33479,
+2010,22.pdf,"Flounder, starry",landings,0,0,0,0,0,0,0,17,0,0,0,0,17,
+2010,22.pdf,Greenling sp,landings,61,511,336,554,254,522,583,504,500,53,79,118,4075,
+2010,22.pdf,Grenadier,landings,0,1517,874,0,0,2413,0,1100,0,0,0,530,6434,
+2010,22.pdf,"Halibut, Pacific",landings,0,0,0,0,0,0,0,430,0,0,0,0,430,
+2010,22.pdf,"Irish Lord, red",landings,0,0,0,0,0,0,0,0,0,0,0,4,4,
+2010,22.pdf,Lingcod,landings,0,500,983,406,1133,1153,883,1256,840,593,0,0,7747,
+2010,22.pdf,"Rockfish, black",landings,686,1757,1616,3239,3147,4134,2845,2848,2607,556,556,562,24553,
+2010,22.pdf,"Rockfish, blue",landings,20,26,21,9,45,67,131,100,22,0,211,0,652,
+2010,22.pdf,"Rockfish, canary",landings,0,0,0,0,0,0,0,12,0,0,0,0,12,
+2010,22.pdf,"Rockfish, darkblotched",landings,91,726,227,0,379,83,35,477,23,0,343,0,2384,
+2010,22.pdf,"Rockfish, vermillion",landings,15,21,3,11,0,5,22,3,7,0,6,6,99,
+2010,22.pdf,"Rockfish, yelloweye",landings,0,0,0,0,0,0,0,127,0,0,0,0,127,
+2010,22.pdf,"Rockfish, Nearshore",landings,69,44,52,88,223,417,494,414,437,28,92,51,2409,
+2010,22.pdf,"Rockfish, Slope",landings,392,1149,125,252,0,71,50,381,341,756,508,0,4025,
+2010,22.pdf,"Thornyhead, longspine",landings,0,14170,9844,0,1577,12163,1061,2008,2778,8562,1453,3667,57283,
+2010,22.pdf,"Thornyhead, shortspine",landings,90,5625,3171,1160,3946,7616,411,5007,3220,11216,3775,5398,50635,
+2010,22.pdf,Sablefish,landings,3656,28329,25905,9489,23746,42412,8670,47551,15118,90765,19456,20732,335829,
+2010,22.pdf,"Salmon, chinook",landings,0,0,4545,326,17535,6048,1170,0,25876,16305,2113,0,73918,
+2010,22.pdf,"Sanddab, Pacific",landings,0,0,0,0,0,0,25,85,120,0,0,0,230,
+2010,22.pdf,"Sculpin, buffalo",landings,0,0,0,0,0,0,0,0,0,0,0,2,2,
+2010,22.pdf,Skates and rays,landings,0,355,770,1133,0,1640,0,3684,3831,2150,0,0,13563,
+2010,22.pdf,"Sole, curlfin (turbot)",landings,0,0,0,0,0,0,0,10,75,0,0,0,85,
+2010,22.pdf,"Sole, Dover",landings,683,213908,169440,41839,39113,64569,15678,70185,51839,82507,48442,39244,837447,
+2010,22.pdf,"Sole, English",landings,5276,14262,4004,175,142,0,4260,2010,617,51,0,0,30797,
+2010,22.pdf,"Sole, petrale",landings,16439,36046,20365,200,0,0,2810,478,671,519,740,0,78268,
+2010,22.pdf,"Sole, rex",landings,2811,22444,13612,2745,13768,7902,1850,7625,5125,11309,10373,5837,105401,
+2010,22.pdf,"Sole, sand",landings,0,0,0,0,0,0,0,0,25,0,0,0,25,
+2010,22.pdf,Surfperch spp,landings,0,0,0,0,0,0,0,0,0,0,0,2,2,
+2010,22.pdf,"Tuna, albacore",landings,0,0,0,0,0,1353,4651,12004,8907,11834,0,0,38749,
+2010,22.pdf,Wolf-eel,landings,0,0,0,0,0,0,0,0,0,0,10,0,10,
+2010,22.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,22.pdf,"Crab, Dungeness, ocean",landings,726401,216252,76933,77091,43909,16959,6104,2098,0,2680,2217,3339,1173983,
+2010,22.pdf,"Shrimp, pink",landings,0,0,0,345659,319583,17825,9695,0,0,0,0,0,692762,
+2010,22.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,22.pdf,"Abalone, flat",landings,0,0,207,311,78,0,0,0,0,0,0,0,596,
+2010,22.pdf,Octopus,landings,0,33,0,0,0,0,20,0,0,0,0,0,53,
+2010,6.pdf,FISH.,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,6.pdf,"Flounder, starry00",landings,0,0,7,21,22,187,15,2,0,0,254,,,CHECK
+2010,6.pdf,"Salmon, chinook20825",landings,30135,14197,26125,20818,10004,162316,208427,24027,0,0,496894,,,CHECK
+2010,6.pdf,"Salmon, chum00",landings,0,0,0,0,0,0,0,45,0,0,45,,,CHECK
+2010,6.pdf,"Salmon, coho00",landings,6,0,0,0,0,27387,680121,82317,0,0,789831,,,CHECK
+2010,6.pdf,"Salmon, pink00",landings,0,0,0,0,0,0,5,0,0,0,5,,,CHECK
+2010,6.pdf,"Shad, American00",landings,0,0,41223,90515,0,0,0,0,0,0,131738,,,CHECK
+2010,6.pdf,Smelt (eulachon)630,landings,27,0,0,0,0,0,0,0,0,114,204,,,CHECK
+2010,6.pdf,"Sturgeon, green00",landings,0,0,0,513,527,280,410,29,0,0,1759,,,CHECK
+2010,6.pdf,"Sturgeon, white17078791",landings,1074,135,3717,18534,21357,46354,37328,23426,0,0,162423,,,CHECK
+2010,6.pdf,--------------------------------------------------------------------------------------------------------------------------------,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,CHECK
+2010,6.pdf,TOTAL17909616,landings,31242,14332,71072,130401,31910,236524,926306,129846,0,114,1583153,,,CHECK
+2010,6.pdf,--------------------------------------------------------------------------------------------------------------------------------------------------------,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,CHECK
+2010,6.pdf,ABOVE BONNEVILLE DAM____________________,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,CHECK
+2010,6.pdf,FISH:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,,,CHECK
+2010,6.pdf,"Salmon, chinook00",landings,0,0,0,0,780,32053,230687,3441,0,0,266961,,,CHECK
+2010,6.pdf,"Salmon, chum00",landings,0,0,0,0,0,26,27,0,0,0,53,,,CHECK
+2010,6.pdf,"Salmon, coho00",landings,0,0,0,0,0,20,504,0,0,0,524,,,CHECK
+2010,6.pdf,Steelhead022,landings,0,0,0,0,0,685,5862,0,0,0,6569,,,CHECK
+2010,6.pdf,"Sturgeon, white07116",landings,17516,0,0,0,0,0,0,0,0,0,24632,,,CHECK
+2010,7.pdf,Anchovy..northern.....,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,7.pdf,Cabezon,landings,0,0,0,0,0,0,93,0,NA,0,0,93,,CHECK
+2010,7.pdf,"Cod, Pacific",landings,18441,3211,27583,20118,101523,2.4204E+11,62921,29988,NA,382,379,621382,,CHECK
+2010,7.pdf,"Flounder, arrowtooth",landings,113540,211916,233531,88313,203837,2.71487E+11,388825,264468,NA,20909,53305,5.84922E+11,,CHECK
+2010,7.pdf,"Flounder, starry",landings,1082,1124,351,6,997,9046383,16843,3898,NA,0,0,31588,,CHECK
+2010,7.pdf,Hagfish sp,landings,0,0,0,1650,0,0,0,0,NA,0,0,1650,,CHECK
+2010,7.pdf,"Halibut, Pacific",landings,0,0,0,0,14,2861364301,81531,0,NA,0,0,174459,,CHECK
+2010,7.pdf,"Herring, Pacific",landings,0,0,0,0,0,161,0,0,NA,0,0,161,,CHECK
+2010,7.pdf,Lingcod,landings,3152,2217,3333,1128,6440,1026912879,7322,13763,NA,385,1552,1862458,,CHECK
+2010,7.pdf,"Mackerel, jack",landings,0,0,0,0,0,119417547,10569,0,NA,0,0,29310,,CHECK
+2010,7.pdf,"Mackerel, Pacific",landings,0,0,0,0,0,8083402940,79097,166613,NA,40800,0,697533,,CHECK
+2010,7.pdf,Pacific Ocean perch,landings,6626,18570,9221,4793,5652,50024432,7213,8181,NA,4608,6786,212683210,,CHECK
+2010,7.pdf,"Rockfish, black",landings,42,89,7,0,4,216,369,24,NA,0,0,751,,CHECK
+2010,7.pdf,"Rockfish, canary",landings,0,0,81,0,231,8201359,640,537,NA,0,0,3668,,CHECK
+2010,7.pdf,"Rockfish, darkblotched",landings,3367,6412,5139,623,2553,32085425,9479,6782,NA,3294,6622,52904,,CHECK
+2010,7.pdf,"Rockfish, widow",landings,32,19,157,6,1,3035461,2664,11,NA,0,12,8666,,CHECK
+2010,7.pdf,"Rockfish, yelloweye",landings,0,0,0,0,47,9695,84,24,NA,0,0,859,,CHECK
+2010,7.pdf,"Rockfish, yellowtail",landings,1089,2308,1133,1557,1947,3452467333,26539,8222,NA,0,0,144652,,CHECK
+2010,7.pdf,"Rockfish, Nearshore",landings,1,0,0,0,20,26102,20,62,NA,0,0,231,,CHECK
+2010,7.pdf,"Rockfish, Shelf",landings,248,278,204,23,437,9201562,880,2794,NA,0,0,7346,,CHECK
+2010,7.pdf,"Rockfish, Slope",landings,10301,16138,13450,16051,12134,1368416150,4643,11159,NA,1991,8457,319124477,,CHECK
+2010,7.pdf,"Thornyhead, longspine",landings,2468,516,5249,677,1867,28154642,3322,970,NA,1921,5375,525635078,,CHECK
+2010,7.pdf,"Thornyhead, shortspine",landings,11864,20715,31930,14700,20680,1642515603,14125,15419,NA,5619,29937,11774208791,,CHECK
+2010,7.pdf,Sablefish,landings,50534,68878,96059,57025,94161,1.44818E+11,213388,561000,NA,68124,111815,7.64562E+11,,CHECK
+2010,7.pdf,"Salmon, chinook",landings,0,0,25077,897,61271,265823984,14764,17752,NA,1257,0,151584,,CHECK
+2010,7.pdf,"Salmon, chum",landings,0,0,0,0,0,10,0,0,NA,0,0,1,,CHECK
+2010,7.pdf,"Salmon, coho",landings,0,0,0,0,0,431,7266,0,NA,0,0,7697,,CHECK
+2010,7.pdf,"Salmon, pink",landings,0,0,0,0,2,2,0,0,NA,0,0,4,,CHECK
+2010,7.pdf,"Sanddab, Pacific",landings,2698,2012,13511,5772,19618,5429434714,80717,13347,NA,0,0,226683,,CHECK
+2010,7.pdf,"Sardine, Pacific",landings,0,0,0,0,0,1330336  23659087  36559995  31116009,NA,NA,NA,6579048,0,0  99244475,,CHECK
+2010,7.pdf,"Shad, American",landings,0,0,0,0,0,2238575434,17745,0,NA,0,0,115564,,CHECK
+2010,7.pdf,"Shark, blue",landings,0,0,0,0,0,142,85,0,NA,0,0,227,,CHECK
+2010,7.pdf,"Shark, soupfin",landings,0,0,0,0,0,41,0,0,NA,0,0,41,,CHECK
+2010,7.pdf,"Shark, spiny dogfish",landings,0,0,0,5171,0,6775,241,0,NA,0,0,5554,,CHECK
+2010,7.pdf,"Shark, thresher",landings,0,0,0,0,0,158,0,795,NA,174,0,1127,,CHECK
+2010,7.pdf,"Shark, other sp",landings,0,0,0,0,0,10301539,33,0,NA,0,0,2602,,CHECK
+2010,7.pdf,Skates and rays,landings,4040,17270,14991,15402,65763,6081773788,57248,38342,NA,7547,9529,1865366602,,CHECK
+2010,7.pdf,"Sole, butter",landings,0,0,0,0,0,0,0,63,NA,0,0,63,,CHECK
+2010,7.pdf,"Sole, curlfin (turbot)",landings,2,9,0,1,53,1110,0,102,NA,0,0,278,,CHECK
+2010,7.pdf,"Sole, Dover",landings,371052,637082,866565,377855,262023,3.59098E+11,318597,576683,NA,35878,273890,8.77865E+11,,CHECK
+2010,7.pdf,"Sole, English",landings,38323,30751,12421,11668,38301,8589692798,88179,55573,NA,1873,1940,67457790,,CHECK
+2010,7.pdf,"Sole, flathead",landings,354,20,4509,5074,9842,1068811201,16405,20242,NA,0,0,78335,,CHECK
+2010,7.pdf,"Sole, petrale",landings,385682,394425,125517,60535,158882,2.56566E+11,141433,207055,NA,3982,13490,1967098,,CHECK
+2010,7.pdf,"Sole, rex",landings,18969,21767,20149,14884,26294,4610439952,71083,65029,NA,1270,1941,533327975,,CHECK
+2010,7.pdf,"Sole, rock",landings,12,41,20,9,56,17086,473,335,NA,0,0,1202,,CHECK
+2010,7.pdf,"Sole, sand",landings,3620,1900,1041,6,7484,2011330345,47470,11048,NA,0,0,123027,,CHECK
+2010,7.pdf,"Sturgeon, green",landings,42,0,0,0,35,23958,98,26,NA,0,0,498,,CHECK
+2010,7.pdf,"Sturgeon, white",landings,0,0,0,0,0,330,0,0,NA,0,0,33,,CHECK
+2010,7.pdf,"Sunfish, ocean",landings,0,0,0,0,0,12,11,0,NA,0,0,23,,CHECK
+2010,7.pdf,"Tuna, albacore",landings,0,0,0,0,0,8567289671,1294463,506935,NA,677646,0,2777282,,CHECK
+2010,7.pdf,"Whiting, Pac (hake)",landings,0,0,0,0,0,9718746  18652472,9321272,0,NA,0,0,0  37692490,,CHECK
+2010,7.pdf,Wolf.eel..............0,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,7.pdf,"Wrymouth, giant0",landings,NA,9,7,15,47,57,259,378,568,0,0,0,1340,
+2010,7.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,7.pdf,"Crab, Dungeness, ocean  3753088",landings,NA,1502672,431655,262302,125342,37343,24952,6512,0,1793,2527,0,6148186,
+2010,7.pdf,"Shrimp, pink0",landings,NA,0,0,339721,870257,615353,194519,748315,991317,401727,0,0,4161209,
+2010,7.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,7.pdf,"Clams, razor0",landings,NA,0,0,27,0,0,0,0,0,0,0,0,27,
+2010,7.pdf,Octopus250,landings,NA,40,388,517,1377,2773,1387,978,368,0,0,0,8078,
+2010,7.pdf,"Squid, Market0",landings,NA,0,0,0,0,0,12134,28,23,0,1120,165,13470,
+2010,7A.pdf,Salmon..chinook.......,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,7A.pdf,"Salmon, coho",landings,0,0,0,0,0,0,0,1366,0,0,0,0,1366,
+2010,7A.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,7A.pdf,"Shrimp, ghost",landings,16,4,0,0,0,0,0,0,0,0,0,0,20,
+2010,7A.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,7A.pdf,"Clams, razor",landings,203,2691,3512,7056,0,0,0,0,0,3514,5115,5266,27357,
+2010,7B.pdf,CHECK,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2010,8.pdf,Crab..Dungeness..bay..,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,8.pdf,"Crab, Dungeness, ocean",landings,0,0,0,0,0,0,0,529,0,0,0,0,529,
+2010,8.pdf,"Shrimp, ghost",landings,0,0,0,0,230,445,0,0,0,0,0,0,675,
+2010,8.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,8.pdf,"Clams, littleneck",landings,0,0,0,0,0,0,0,0,419,100,0,0,519,
+2010,9.pdf,Cabezon...............,landings,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK,CHECK
+2010,9.pdf,"Cod, Pacific",landings,0,0,0,0,0,0,0,7,20,0,0,0,27,
+2010,9.pdf,"Flounder, starry",landings,0,0,0,0,10,0,0,404,116,0,0,0,530,
+2010,9.pdf,Greenling sp,landings,8,21,5,9,11,8,2,11,11,0,3,0,89,
+2010,9.pdf,"Halibut, Pacific",landings,0,0,0,0,336,2545,778,38,0,0,0,0,3697,
+2010,9.pdf,"Irish Lord, red",landings,0,0,0,0,0,0,0,0,0,0,4,0,4,
+2010,9.pdf,Lingcod,landings,0,0,0,0,922,887,499,476,913,364,0,0,4061,
+2010,9.pdf,"Rockfish, black",landings,647,1431,1179,3770,3927,5231,4612,1732,4082,170,174,10,26965,
+2010,9.pdf,"Rockfish, blue",landings,16,91,179,318,429,1270,6,30,102,8,241,44,2734,
+2010,9.pdf,"Rockfish, vermillion",landings,0,0,0,0,5,5,3,6,0,0,3,0,22,
+2010,9.pdf,"Rockfish, widow",landings,0,0,0,0,0,0,0,0,0,0,4,0,4,
+2010,9.pdf,"Rockfish, yellowtail",landings,235,67,244,345,500,179,316,617,460,147,94,300,3504,
+2010,9.pdf,"Rockfish, Nearshore",landings,0,2,0,6,20,7,35,19,9,0,10,0,108,
+2010,9.pdf,Sablefish,landings,1211,0,0,0,0,967,1341,268,0,0,1472,1475,6734,
+2010,9.pdf,"Salmon, chinook",landings,0,0,30961,1859,59317,77163,2497,28379,27936,7025,59,0,235196,
+2010,9.pdf,"Salmon, coho",landings,0,0,0,0,0,0,771,11842,0,0,0,0,12613,
+2010,9.pdf,"Salmon, pink",landings,0,0,0,0,0,0,0,5,0,0,0,0,5,
+2010,9.pdf,"Sanddab, Pacific",landings,0,0,0,0,303,0,0,144,0,0,0,0,447,
+2010,9.pdf,Skates and rays,landings,0,0,0,0,86,0,0,81,42,0,0,0,209,
+2010,9.pdf,"Sole, butter",landings,0,0,0,0,0,0,0,0,197,0,0,0,197,
+2010,9.pdf,"Sole, Dover",landings,0,0,0,0,18,2,0,101,0,0,0,0,121,
+2010,9.pdf,"Sole, English",landings,0,0,0,0,78,0,0,221,2291,0,0,0,2590,
+2010,9.pdf,"Sole, petrale",landings,0,0,0,0,389,0,123,3373,51,0,0,0,3936,
+2010,9.pdf,"Sole, rex",landings,0,0,0,0,10,0,0,197,0,0,0,0,207,
+2010,9.pdf,"Sole, sand",landings,0,0,0,0,49,0,0,2975,2243,0,0,0,5267,
+2010,9.pdf,"Tuna, albacore",landings,0,0,0,0,0,5795,34551,84486,32421,41296,0,0,198549,
+2010,9.pdf,CRUSTACEANS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,9.pdf,"Crab, Dungeness, ocean",landings,551938,214805,70291,61590,45558,39995,20371,6134,0,0,0,0,1010682,
+2010,9.pdf,"Shrimp, ghost",landings,63,48,16,19,140,226,594,645,429,202,162,95,2639,
+2010,9.pdf,"Shrimp, pink",landings,0,0,0,51917,200568,320793,248455,352343,489736,93878,0,0,1757690,
+2010,9.pdf,MOLLUSKS:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,9.pdf,"Clams, butter",landings,350,1300,750,325,425,2710,3125,1425,3321,870,1125,1800,17526,
+2010,9.pdf,"Clams, cockle",landings,3090,5384,1329,2975,3024,3906,10138,2661,5721,6980,5302,11395,61905,
+2010,9.pdf,"Clams, gaper",landings,40,250,0,0,0,50,2505,1410,600,170,295,905,6225,
+2010,9.pdf,Octopus,landings,0,0,0,0,215,10,0,0,0,0,0,0,225,
+2010,9.pdf,OTHER INVERTEBRATES:,landings,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2010,9.pdf,"Sea urchin, red",landings,0,0,0,0,0,0,4410,395,0,0,0,0,4805,

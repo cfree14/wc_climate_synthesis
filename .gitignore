@@ -11,6 +11,7 @@
 # Ignore some folders
 admin/
 drafts/
+presentations/
 
 # Hide Google Maps API key
 data/landings/pacfin/ggmap_api_key.R
@@ -22,7 +23,6 @@ data/environmental/cobe/raw
 data/landings/cdfw/public/raw
 data/landings/cdfw/public/intermediate
 data/landings/swfsc/raw
-data/landings/odfw/public
 
 # Ignore confidential data
 data/landings/cdfw/confidential

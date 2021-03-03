@@ -20,6 +20,10 @@ plotdir <- "data/ramldb/figures/trimming"
 data_orig <- readRDS(file=file.path(datadir, "RAM_WC_production_data.Rds")) 
 
 
+# Sample size
+n_distinct(data_orig$stockid)
+n_distinct(data_orig$species)
+
 # Setup trim key
 ################################################################################
 
