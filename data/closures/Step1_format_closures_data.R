@@ -16,6 +16,9 @@ plotdir <- "data/closures/figures"
 # Read data
 data_orig <- readxl::read_excel(file.path(datadir, "PSMFC Dungeness Crab closure.xlsx"), sheet=1, na="NA")
 
+# Read season key
+season_key <- readxl::read_excel(file.path(datadir, "dcrab_season_key.xlsx"))
+
 
 # Format data
 ################################################################################
@@ -30,11 +33,16 @@ data1 <- data_orig %>%
   setNames(cols) %>%
   rename(comm_name=species_parts) %>% 
   # Format date
-  mutate(date=ymd(date))
+  mutate(date=ymd(date)) %>% 
+  # TEMPORARY
+  filter(!is.na(reason)) %>% 
+  filter(!reason %in% c("season", "summer season", "summer extension")) %>% 
+  filter(year!="CHECK INFO") %>% 
+  mutate(year=as.numeric(year))
 
 # Inspect data
 str(data1)
-range(data1$date)
+range(data1$date, na.rm=T)
 range(data1$lat_s, na.rm=T)
 range(data1$lat_n, na.rm=T)
 sum(data1$lat_n <= data1$lat_s, na.rm=T)
@@ -87,36 +95,38 @@ events <- data2 %>%
 # Build season keys
 ################################################################################
 
-# Dungeness commercial season key
-years <- 2004:2012
-seasons <- paste(years, years+1-2000, sep="-")
-open_wa <- paste0(years, "-12-01") %>% ymd()
-close_wa <-  paste0(years+1, "-09-15") %>% ymd()
-dcrab_comm_wa <- tibble(comm_name="Dungeness crab", 
-                     fishery="Commercial",
-                     state="Washington",
-                     season=seasons,
-                     open=open_wa,
-                     close=close_wa)
-dcrab_rec_wa <- tibble(comm_name="Dungeness crab", 
-                        fishery="Recreational",
-                        state="Washington",
-                        season=seasons,
-                        open=open_wa,
-                        close=close_wa)
-dcrab_trib_wa <- tibble(comm_name="Dungeness crab", 
-                        fishery="Tribal",
-                        state="Washington",
-                        season=seasons,
-                        open=open_wa,
-                        close=close_wa)
+# Years
+years <- 2004:2018
+
+# Build annual open/close date
+season_key1 <- purrr::map_df(years, function(x){
+  season_key %>% 
+    mutate(year1=x)
+})
+
+# Format annual open/close date
+season_key2 <- season_key1 %>% 
+  mutate(year2=year1+1) %>% 
+  select(year1, year2, everything()) %>% 
+  # Format open date
+  mutate(open=paste(year1, open_short, sep="-"),
+         open=ifelse(grepl("NA", open), NA, open),
+         open=ymd(open)) %>% 
+  # Format close date
+  mutate(close=ifelse(state_region!="Oregon (bay)", paste(year2, close_short, sep="-"), paste(year1, close_short, sep="-")),
+         close=ifelse(grepl("NA", close), NA, close),
+         close=ymd(close)) %>% 
+  # Simplify
+  select(type, state_region, state, region, lat_n, lat_s, year1, open, close)
+
+
 
 
 # Function to build data
 ################################################################################
 
 # Function to build grid
-# data <- data3; species <- "Dungeness crab"; fishery <- "Commercial"; season_key <- dcrab_comm_wa
+# data <- data3; species <- "Dungeness crab"; fishery <- "Commercial"; season_key <- season_key2
 build_closure_grid <- function(data, species, fishery, season_key){
   
   # Subset data
@@ -126,12 +136,12 @@ build_closure_grid <- function(data, species, fishery, season_key){
     mutate(action_use=ifelse(action=="close", reason, action))
   
   # Build empty grid
-  date1 <- ymd("2003-01-01")
-  date2 <- ymd("2012-09-30")
+  date1 <- ymd("2004-09-30")
+  date2 <- ymd("2018-09-30")
   dates <- seq(date1, date2, by="1 day")
-  lat1 <- 46.25
-  lat2 <- 48.5
-  lats <- seq(lat1, lat2, 0.01)
+  lat1 <- 32.5 # CA/Mexico
+  lat2 <- 48.5 # WA/Canada
+  lats <- seq(lat1, lat2, 0.1)
   closure_grid <- expand.grid(date=dates, lat_dd=lats) %>% 
     as.data.frame() %>% 
     mutate(status="open",
@@ -144,6 +154,7 @@ build_closure_grid <- function(data, species, fishery, season_key){
   for(i in 1:nrow(sdata)){
     
     # Get announcement
+    print(i)
     date1 <- sdata %>% slice(i) %>% pull(date)
     lat_s <- sdata %>% slice(i) %>% pull(lat_s)
     lat_n <- sdata %>% slice(i) %>% pull(lat_n)
@@ -156,77 +167,67 @@ build_closure_grid <- function(data, species, fishery, season_key){
   }
   
   # Apply out-of-season label
-  if(species=="Dungeness crab"){
-  
-    # Subset fishery
-    n_key <- season_key %>% 
-      filter(fishery==fishery_do & region=="Northern")
-    closed_dates_n <- purrr::map_df(2:nrow(n_key), function(x) {
-      date1 <- n_key$close[x-1]+1
-      date2 <- n_key$open[x]-1
-      dates <- tibble(date=seq(date1, date2, by="day"))
+  closure_grid2 <- closure_grid
+  regions_do <- c("Washington", "Oregon (ocean)", "California (northern)", "California (central)")
+  for(i in 1:length(regions_do)){
+    
+    region_do <- regions_do[i]
+    region_key <- season_key %>% 
+      filter(type==fishery_do, state_region==region_do)
+    
+    dates_in <- purrr::map_df(1:nrow(region_key), function(x){
+      dates_in_yr <- seq(region_key$open[x], region_key$close[x], by="1 day")
+      df <- tibble(date=dates_in_yr)
     })
-    c_key <- season_key %>% 
-      filter(fishery==fishery_do & region=="Central")
-    closed_dates_c <- purrr::map_df(2:nrow(c_key), function(x) {
-      date1 <- c_key$close[x-1]+1
-      date2 <- c_key$open[x]-1
-      dates <- tibble(date=seq(date1, date2, by="day"))
-    })
-      
-    # Apply out-of-season closures
-    closure_grid <- closure_grid %>% 
-      # Northern closures
-      mutate(status=ifelse(lat_dd >= 38.766488 & date %in% closed_dates_n$date, "out-of-season", status)) %>% 
-      # Central closures
-      mutate(status=ifelse(lat_dd < 38.766488 & date %in% closed_dates_c$date, "out-of-season", status))
+    
+    dates_out <- dates[!dates%in%dates_in$date]
+    
+    lat_n <- region_key$lat_n %>% unique()
+    lat_s <- region_key$lat_s %>% unique()
+    
+    closure_grid2 <- closure_grid2 %>% 
+      mutate(status=ifelse(lat_dd<=lat_n & lat_dd>lat_s & date %in% dates_out, "out-of-season", status))
     
   }
   
-  # Make factor
-  closure_grid <- closure_grid %>% 
-    mutate(status=recode_factor(status, 
-                                "open"="Season open",
-                                "out-of-season"="Out-of-season",
-                                "Body condition"="Body condition delay",
-                                "Domoic acid"="Domoic acid delay",
-                                "Whale entanglement"="Whale entanglement closure")) %>% 
-    mutate(status=factor(status, levels=c("Season open",
-                                          "Out-of-season",
-                                          "Body condition delay",
-                                          "Domoic acid delay",
-                                          "Whale entanglement closure")))
-  
   # Plot closure grid
-  title <- paste(species, tolower(fishery_do), "fishery")
-  g <- ggplot(closure_grid, aes(x=date, y=lat_dd, fill=status)) +
+  g <- ggplot(closure_grid2, aes(x=date, y=lat_dd, fill=status)) +
     # Plot raster
     geom_raster() +
     # Plot events
-    geom_segment(data=sdata, mapping=aes(x=date, xend=date, y=lat_s, yend=lat_n, linetype=action, ), inherit.aes = F) +
+    # geom_segment(data=sdata, mapping=aes(x=date, xend=date, y=lat_s, yend=lat_n, linetype=action, ), inherit.aes = F) +
+    # Plot state lines
+    geom_hline(yintercept=c(41.9981226, 46.15), size=1) +
     # Axis
     scale_x_date(date_breaks="1 year", date_labels = "%Y") +
-    scale_y_continuous(breaks=32:42) +
+    scale_y_continuous(breaks=seq(32, 50, 2)) +
     # Labels
-    labs(x="", y="Latitude (°N)", title=title) +
+    labs(x="", y="Latitude (°N)") +
     # Legends
-    scale_fill_manual(name="Season status", values=c("grey40", "grey80", "pink", "darkred", "navy"), drop=F) +
+    # scale_fill_manual(name="Season status", values=c("grey40", "grey80", "pink", "darkred", "navy"), drop=F) +
     # Theme
     theme_bw()
   print(g)
   
   # Return
-  return(closure_grid)
+  return(closure_grid2)
   
 }
-
 
 # Plot indidivually
 plot_closures <- function(data){
   
   # Species fishery
-  species <- unique(data$comm_name)
-  fishery <- unique(data$fishery)
+  # species <- unique(data$comm_name)
+  # fishery <- unique(data$fishery)
+  
+  # Factor statuses
+  status_all <- sort(unique(data$status))
+  status_other <- status_all[!status_all%in%c("open", "out-of-season")]
+  status_order <- c("open", "out-of-season", status_other)
+  data_plot <- data %>% 
+    mutate(status=factor(status, levels=status_order))
+  other_colors <- rainbow(length(status_other))
   
   # Setup theme
   my_theme <- theme(axis.text=element_text(size=6),
@@ -234,26 +235,28 @@ plot_closures <- function(data){
                     plot.title=element_text(size=10))
   
   # Plot data
-  title <- paste(species, tolower(fishery), "fishery")
-  g <- ggplot(data, aes(x=date, y=lat_dd, fill=status)) +
+  # title <- paste(species, tolower(fishery), "fishery")
+  g <- ggplot(data_plot, aes(x=date, y=lat_dd, fill=status)) +
     # Plot raster
     geom_raster() +
+    # Plot state lines
+    geom_hline(yintercept=c(41.9981226, 46.15), size=1) +
     # Axis
     scale_x_date(date_breaks="1 year", date_labels = "%Y") +
-    scale_y_continuous(breaks=32:42) +
+    scale_y_continuous(breaks=seq(32, 50, 2)) +
     # Labels
-    labs(x="", y="Latitude (°N)", title=title) +
+    labs(x="", y="Latitude (°N)") +
     # Legends
-    scale_fill_manual(name="Season status", values=c("grey40", "grey80", "pink", "darkred", "navy"), drop=F) +
+    scale_fill_manual(name="Season status", values=c("grey80", "white", other_colors), drop=F) +
     # Theme
     theme_bw() + my_theme 
   print(g)
   
-  # Export plot
-  outfig <- paste0(tolower(species) %>% gsub(" ", "_", .), "_",
-                   tolower(fishery), "_closures.png")
-  ggsave(g, filename=file.path(plotdir, outfig), 
-         width=6.5, height=3, units="in", dpi=600)
+  # # Export plot
+  # outfig <- paste0(tolower(species) %>% gsub(" ", "_", .), "_",
+  #                  tolower(fishery), "_closures.png")
+  # ggsave(g, filename=file.path(plotdir, outfig), 
+  #        width=6.5, height=3, units="in", dpi=600)
   
 }
 
@@ -261,28 +264,10 @@ plot_closures <- function(data){
 # Apply individually
 ################################################################################
 
-# Apply individually
-closures_dcrabs_comm <- build_closure_grid(data=data3, species="Dungeness crab", fishery="Commercial", season_key=dcrab_seasons)
-closures_dcrabs_rec <- build_closure_grid(data=data3, species="Dungeness crab", fishery="Recreational", season_key=dcrab_seasons)
-closures_rcrabs_comm <- build_closure_grid(data=data3, species="Rock crab", fishery="Commercial", season_key=dcrab_seasons)
-closures_rcrabs_rec <- build_closure_grid(data=data3, species="Rock crab", fishery="Recreational", season_key=dcrab_seasons)
 
-# Plot individually
-plot_closures(closures_dcrabs_comm)
-plot_closures(closures_dcrabs_rec)
-plot_closures(closures_rcrabs_comm)
-plot_closures(closures_rcrabs_rec)
+comm <- build_closure_grid(data=data3, species="Dungeness crab", fishery="Commercial", season_key=season_key2)
 
+g <- plot_closures(comm)
 
-# Merge and export
-################################################################################
-
-# Merge together
-data <- bind_rows(closures_dcrabs_rec, closures_dcrabs_comm,
-                  closures_rcrabs_rec, closures_rcrabs_comm)
-
-# Export data
-saveRDS(data, file=file.path(datadir, "CDFW_2015_2020_fishery_closures.Rds"))
-write.csv(events, file=file.path(datadir, "CDFW_2015_2020_fishery_closure_announcements.csv"))
 
 
