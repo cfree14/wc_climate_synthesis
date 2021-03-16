@@ -1,0 +1,15 @@
+------------------
+Order Details
+-----------------
+Order ID: 2125325
+Date: 20210305
+
+
+----------------------
+Feature Types
+-----------------------
+ - BC Ports and Terminals in directory PRT_TRMNAL
+
+----------------------------
+Packaged Products
+----------------------------
