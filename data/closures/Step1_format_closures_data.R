@@ -25,7 +25,7 @@ season_key <- readxl::read_excel(file.path(datadir, "dcrab_season_key.xlsx"))
 
 # Column names
 colnames(data_orig)
-cols <- c("release_date", "department", "year", "date", "species_parts", "fishery", "action", "reason", "where", "lat_s", "lat_n", "link", "notes")
+cols <- c("release_date", "department", "year", "date", "species_parts", "fishery", "action", "assuption", "reason", "where", "lat_s", "lat_n", "source", "link", "notes")
 
 # Step 1. Basic formatting
 data1 <- data_orig %>% 
@@ -96,7 +96,7 @@ events <- data2 %>%
 ################################################################################
 
 # Years
-years <- 2004:2018
+years <- 2004:2021
 
 # Build annual open/close date
 season_key1 <- purrr::map_df(years, function(x){
@@ -137,7 +137,7 @@ build_closure_grid <- function(data, species, fishery, season_key){
   
   # Build empty grid
   date1 <- ymd("2004-09-30")
-  date2 <- ymd("2018-09-30")
+  date2 <- ymd("2020-09-30")
   dates <- seq(date1, date2, by="1 day")
   lat1 <- 32.5 # CA/Mexico
   lat2 <- 48.5 # WA/Canada
