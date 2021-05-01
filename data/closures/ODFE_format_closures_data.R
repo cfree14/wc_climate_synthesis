@@ -1,3 +1,6 @@
+## Format closure data from ODFW news releases
+## April 9, 2021
+
 
 # Clear workspace
 rm(list = ls())
@@ -14,18 +17,16 @@ datadir <- "data/closures/data"
 plotdir <- "data/closures/figures"
 
 # Read data
-data_orig <- readxl::read_excel(file.path(datadir, "PSMFC Dungeness Crab closure.xlsx"), sheet=1, na="NA")
-
+data_orig <- readr::read_csv(file.path(datadir, "ODFW_DungenessCrab_closure.csv"))
 # Read season key
 season_key <- readxl::read_excel(file.path(datadir, "dcrab_season_key.xlsx"))
-
 
 # Format data
 ################################################################################
 
 # Column names
 colnames(data_orig)
-cols <- c("release_date", "department", "year", "date", "species_parts", "fishery", "action", "assuption", "reason", "where", "lat_s", "lat_n", "source", "link", "notes")
+cols <- c("release_date", "department", "year", "date", "species_parts", "fishery", "action", "assuption", "reason", "where", "region", "lat_s", "lat_n", "source", "link", "notes")
 
 # Step 1. Basic formatting
 data1 <- data_orig %>% 
@@ -33,24 +34,35 @@ data1 <- data_orig %>%
   setNames(cols) %>%
   rename(comm_name=species_parts) %>% 
   # Format date
-  mutate(date=ymd(date)) %>% 
+  mutate(date=mdy(date)) %>% 
   # TEMPORARY
   filter(!is.na(reason)) %>% 
   filter(!reason %in% c("season", "summer season", "summer extension")) %>% 
-  filter(year!="CHECK INFO") %>% 
-  mutate(year=as.numeric(year))
+  mutate(year=as.numeric(year),
+         region = recode(region,
+                       "bays" = "bay",
+                       "ocean, bay, estuaries" = "ocean, bay"),
+         region = ifelse(is.na(region) & fishery %in% c("commercial", "commercial/recreational"), "ocean", region), ## assuming that all commercial opening/closure are in the ocean
+         comm_name = recode(comm_name,
+                            "Crabs" = "Dungeness Crab",
+                            "Red rock crab, dungeness crab" = "Dungeness Crab"))
+  
 
 # Inspect data
 str(data1)
 range(data1$date, na.rm=T)
 range(data1$lat_s, na.rm=T)
 range(data1$lat_n, na.rm=T)
-sum(data1$lat_n <= data1$lat_s, na.rm=T)
+sum(data1$lat_n <= data1$lat_s, na.rm=T) ## ASK CHRIS
 table(data1$reason)
 table(data1$action)
 table(data1$fishery)
+table(data1$region)
+table(data1$comm_name)
 
-# Step 2. One row per fishery
+
+# Step 2. One row per fishery (commercial/recreational)
+
 data2 <- purrr::map_df(1:nrow(data1), function(x) {
   
   # Get row
@@ -73,35 +85,62 @@ data2 <- purrr::map_df(1:nrow(data1), function(x) {
   
 })
 
-# Step 3. Final formatting (for plotting)
-data3 <- data2 %>% 
+
+# Step 3. One row per area (ocean, bay)
+
+data3 <- purrr::map_df(1:nrow(data2), function(x) {
+  
+  # Get row
+  row <- data2 %>% slice(x)
+  
+  # Identify species represented in row
+ region_in_row_string <- row %>% pull(region)
+  region_in_row_list <- strsplit(region_in_row_string, split=",")
+  region_in_row_cvec <- unlist(region_in_row_list)
+  
+  # Duplicate row, if necessary
+  nregion <- length(region_in_row_cvec)
+  if(nregion>1){
+    row_out <- row %>% 
+      slice(rep(1:n(), each=nregion)) %>% 
+      mutate(region = region_in_row_cvec)
+  }else{
+    row_out <- row
+  }
+  
+})
+
+
+# Step 4. Final formatting (for plotting)
+data4 <- data3 %>% 
   # Format fishery
-  mutate(comm_name=stringr::str_to_sentence(comm_name),
-         fishery=stringr::str_to_sentence(fishery)) %>% 
+  mutate(comm_name = stringr::str_to_sentence(comm_name),
+         fishery = stringr::str_to_sentence(fishery),
+         region = stringr::str_to_sentence(region)) %>% 
   # Select and arrange columns
   arrange(comm_name, fishery, date) %>% 
-  select(comm_name, fishery, date, action, reason, lat_s, lat_n) %>% 
+  select(comm_name, fishery, date, action, reason, region, lat_s, lat_n) %>% 
   # Remove non-latitudinal closures (islands, bays, etc) 
   filter(!is.na(lat_s))
 
 # Format for export
-events <- data2 %>% 
-  # Select and arrange columns
-  arrange(comm_name, fishery, date) %>% 
-  select(comm_name, fishery, year, date, action, reason, lat_s, lat_n, where, link, notes)
-  
+# events <- data3 %>% 
+#   # Select and arrange columns
+#   arrange(comm_name, fishery, date) %>% 
+#   select(comm_name, fishery, year, date, action, reason, region, lat_s, lat_n, where, link, notes)
+
 
 
 # Build season keys
 ################################################################################
 
 # Years
-years <- 2004:2021
+years <- 2010:2021
 
 # Build annual open/close date
 season_key1 <- purrr::map_df(years, function(x){
   season_key %>% 
-    mutate(year1=x)
+    mutate(year1 = x)
 })
 
 # Format annual open/close date
@@ -126,28 +165,34 @@ season_key2 <- season_key1 %>%
 ################################################################################
 
 # Function to build grid
-# data <- data3; species <- "Dungeness crab"; fishery <- "Commercial"; season_key <- season_key2
-build_closure_grid <- function(data, species, fishery, season_key){
+# data <- data4; species <- "Dungeness crab"; fishery <- "Commercial"; season_key <- season_key2
+
+build_closure_grid <- function(data, species, fishery, region, season_key){
   
   # Subset data
   fishery_do <- fishery
+  region_do <- region
+  
   sdata <- data %>% 
-    filter(comm_name==species & fishery==fishery_do) %>% 
-    mutate(action_use=ifelse(action=="close", reason, action))
+    filter(comm_name == species & fishery == fishery_do,
+           region == region_do ) %>% 
+    mutate(action_use = ifelse(action =="close", reason, action))
   
   # Build empty grid
-  date1 <- ymd("2004-09-30")
-  date2 <- ymd("2020-09-30")
+  date1 <- ymd("2010-09-30")
+  date2 <- ymd("2021-09-30")
   dates <- seq(date1, date2, by="1 day")
-  lat1 <- 32.5 # CA/Mexico
-  lat2 <- 48.5 # WA/Canada
+  lat1 <- 42 # Point Arenas
+  lat2 <- 46.15 # WA/OR border
   lats <- seq(lat1, lat2, 0.1)
-  closure_grid <- expand.grid(date=dates, lat_dd=lats) %>% 
+  
+  closure_grid <- expand.grid(date = dates, lat_dd = lats) %>% 
     as.data.frame() %>% 
-    mutate(status="open",
-           comm_name=species,
-           fishery=fishery_do) %>% 
-    select(comm_name, fishery, date, lat_dd, status) %>% 
+    mutate(status ="open",
+           comm_name = species,
+           fishery = fishery_do,
+           region = region_do) %>% 
+    select(comm_name, fishery, date, lat_dd, status, region) %>% 
     arrange(date, lat_dd)
   
   # Loop through announcements
@@ -162,7 +207,7 @@ build_closure_grid <- function(data, species, fishery, season_key){
     
     # Apply announcement
     closure_grid <- closure_grid %>% 
-      mutate(status=ifelse(lat_dd>=lat_s & lat_dd <= lat_n & date>=date1, status_new, status))
+      mutate(status = ifelse(lat_dd >= lat_s & lat_dd <= lat_n & date >= date1, status_new, status))
     
   }
   
@@ -265,9 +310,20 @@ plot_closures <- function(data){
 ################################################################################
 
 
-comm <- build_closure_grid(data=data3, species="Dungeness crab", fishery="Commercial", season_key=season_key2)
+comm <- build_closure_grid(data = data4, species ="Dungeness crab", fishery = "Commercial", region = "Ocean", season_key = season_key2)
 
 g <- plot_closures(comm)
+
+##NEEDS A LOT OF CHECKS
+comm_bay <- build_closure_grid(data = data4, species ="Dungeness crab", fishery = "Commercial", region = "Bay", season_key = season_key2)
+
+com_bay_plot <- plot_closures(comm_bay)
+
+##Not working
+rec_bay <- build_closure_grid(data = data4, species ="Dungeness crab", fishery = "Recreational", region = "Bay", season_key = season_key2)
+
+rec_ocean <- build_closure_grid(data = data4, species ="Dungeness crab", fishery = "Recreational", region = "Ocean", season_key = season_key2)
+
 
 
 
