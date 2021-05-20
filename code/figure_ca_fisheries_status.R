@@ -19,7 +19,7 @@ plotdir <- "figures"
 ram_orig <- readRDS(file.path(ramdir, "RAM_WC_status_data.Rds"))
 
 # Read PACFIN landings data
-pacfin_orig <- readRDS(file.path(pacfindir, "PACFIN_1980_2020_all_species_landings_by_port.Rds"))
+pacfin_orig <- readRDS(file.path(pacfindir, "PACFIN_ALL005_1980_2020_all_species_landings_by_port.Rds"))
 
 
 # Setup
