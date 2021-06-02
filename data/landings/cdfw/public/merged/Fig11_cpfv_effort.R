@@ -36,7 +36,7 @@ data_plot <- data_orig %>%
   # Format port complex
   mutate(port_complex_group=ifelse(port_complex=="Statewide", NA, port_complex_group)) %>% 
   mutate(port_complex_group=factor(port_complex_group, 
-                                 levels=c("Fort Bragg", "Bodega Bay", "San Francisco", "Monterey", "Morro Bay", "Santa Barbara", "Los Angeles", "San Diego")))
+                                 levels=c("Eureka", "Bodega Bay", "San Francisco", "Monterey", "Morro Bay", "Santa Barbara", "Los Angeles", "San Diego")))
 
 # Plot data
 ################################################################################

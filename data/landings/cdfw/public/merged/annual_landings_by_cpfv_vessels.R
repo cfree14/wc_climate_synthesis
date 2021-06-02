@@ -81,7 +81,7 @@ data3 <- data3_orig %>%
   mutate(source=paste("CDFW", year+1)) %>% 
   # Add port complex group
   mutate(port_complex_group=recode(port_complex, 
-                                   "Fort Bragg-Eureka-Crescent City"="Fort Bragg",
+                                   "Fort Bragg-Eureka-Crescent City"="Eureka",
                                    "Princeton-Bodega Bay"="Bodega Bay",
                                    "San Francisco-SF Bay-Delta"="San Francisco",
                                    "Monterey-Moss Landing-Santa Cruz"="Monterey",
@@ -111,7 +111,8 @@ data <- bind_rows(data1, data2, data3) %>%
   left_join(spp_key, by="comm_name") %>% 
   # Factor port complex group
   mutate(port_complex_group=factor(port_complex_group, 
-                                   levels=c("Fort Bragg", "Bodega Bay", "San Francisco", "Monterey", "Morro Bay", "Santa Barbara", "Los Angeles", "San Diego", "Statewide"))) %>% 
+                                   levels=c("Eureka", "Bodega Bay", "San Francisco", "Monterey", 
+                                            "Morro Bay", "Santa Barbara", "Los Angeles", "San Diego", "Statewide"))) %>% 
   # Arrange
   select(source:year, category, everything()) %>% 
   arrange(year, region, port_complex_group, port_complex, category, comm_name)

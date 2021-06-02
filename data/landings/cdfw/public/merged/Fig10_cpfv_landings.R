@@ -42,7 +42,8 @@ data_plot2 <- data_orig %>%
   mutate(plandings=nlandings/sum(nlandings)) %>% 
   # Factor port complex groups
   mutate(port_complex_group=factor(port_complex_group, 
-                                   levels=c("Fort Bragg", "Bodega Bay", "San Francisco", "Monterey", "Morro Bay", "Santa Barbara", "Los Angeles", "San Diego")))
+                                   levels=c("Eureka", "Bodega Bay", "San Francisco", "Monterey", 
+                                            "Morro Bay", "Santa Barbara", "Los Angeles", "San Diego")))
 
 
 # Plot data
@@ -75,7 +76,7 @@ g1 <- ggplot(data_plot1, aes(x=year, y=nlandings/1e6, fill=category)) +
   scale_fill_discrete(name="Species group", na.value="grey90") + # Taxonomic group
   # Theme
   theme_bw() + my_theme +
-  theme(legend.position=c(0.09, 0.74),
+  theme(legend.position=c(0.09, 0.71),
         legend.key.size = unit(0.3, "cm"))
 g1
 

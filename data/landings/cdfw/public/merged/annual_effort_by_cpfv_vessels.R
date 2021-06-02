@@ -118,7 +118,7 @@ data_web <- data_web_orig %>%
   # Add port complex
   mutate(port_complex_group=recode(port_complex, 
          "Avila Beach-Morro Bay"="Morro Bay",
-         "Fort Bragg-Eureka-Crescent City"="Fort Bragg",
+         "Fort Bragg-Eureka-Crescent City"="Eureka",
          "Monterey-Moss Landing-Santa Cruz"="Monterey",
          "Newport Beach"="Los Angeles",
          "Oceanside-Dana Harbor"="Los Angeles",

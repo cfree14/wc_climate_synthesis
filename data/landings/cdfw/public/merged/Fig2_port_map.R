@@ -65,24 +65,34 @@ data <- data_orig %>%
   # Remove other
   filter(!grepl("Other", port))
 
-# Full number of years
-nfull <- length(c(1941:1976, 2000:2019)) -1
+# Original data labels: label ports with full data
+# Pr
+if(F){
+  # Full number of years
+  nfull <- length(c(1941:1976, 2000:2019)) -1
+  
+  # Build port labels
+  data_labels <- data_orig %>% 
+    group_by(port_complex, port) %>% 
+    summarize(nyr=n_distinct(year),
+              pyr=nyr/nfull) %>% 
+    ungroup() %>% 
+    mutate(type=cut(pyr, breaks=c(0,0.8,0.9, Inf), labels=c("bad", "good", "full"), right=F)) %>% 
+    # Add lat/long
+    left_join(ports %>% select(port, long_dd, lat_dd), by="port") %>% 
+    # Remove other
+    filter(!grepl("Other", port))
+  
+  # Inspect distribution
+  table(data_labels$type)
+  hist(data_labels$pyr, breaks=seq(0,1,0.05))
+}
 
-# Build port labels
-data_labels <- data_orig %>% 
-  group_by(port_complex, port) %>% 
-  summarize(nyr=n_distinct(year),
-            pyr=nyr/nfull) %>% 
-  ungroup() %>% 
-  mutate(type=cut(pyr, breaks=c(0,0.8,0.9, Inf), labels=c("bad", "good", "full"), right=F)) %>% 
-  # Add lat/long
-  left_join(ports %>% select(port, long_dd, lat_dd), by="port") %>% 
-  # Remove other
-  filter(!grepl("Other", port))
-
-# Inspect distribution
-table(data_labels$type)
-hist(data_labels$pyr, breaks=seq(0,1,0.05))
+data_labels <- data %>% 
+  group_by(port_complex) %>% 
+  arrange(desc(landings_mt)) %>% 
+  slice(1:3) %>% 
+  filter(!is.na(landings_mt))
 
 # Plot data
 ################################################################################
@@ -117,7 +127,7 @@ g <- ggplot() +
   geom_point(data=data %>% filter(!is.na(landings_mt)), 
              mapping=aes(x=long_dd, y=lat_dd, fill=port_complex, size=landings_mt), pch=21, color="grey30") +
   # Port labels
-  ggrepel::geom_text_repel(data_labels %>% filter(type=="full"), 
+  ggrepel::geom_text_repel(data_labels, # %>% filter(type=="full"), # when using original data labels method
                            mapping=aes(x=long_dd, lat_dd, label=port), size=2, show.legend = F, 
                            min.segment.length = 0, segment.color="grey30", max.overlaps = 100, force=5) +
   # Labels

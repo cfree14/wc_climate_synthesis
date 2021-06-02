@@ -80,7 +80,7 @@ data_web <- data_web_orig %>%
   # Reduce 
   filter(year>=2000) %>% 
   # Add source/table
-  mutate(source="CDFW 2001",
+  mutate(source="CDFW 2021",
          table="N/A",
          season=paste(year, year+1-2000, sep="-"),
          region_type="state",

@@ -64,7 +64,7 @@ my_theme <-  theme(axis.text=element_text(size=5),
 g <- ggplot(data_plot, aes(x=year, y=harvest_t/1000, fill=bed_type)) +
   geom_bar(stat="identity", color='grey10', lwd=0.1) +
   # Labels
-  labs(x="Year", y="Kelp harvest\n(1000s of tons, wet weight)") +
+  labs(x="Year", y="Kelp harvest\n(1000s of short tons, wet weight)") +
   scale_fill_discrete(name="Bed type", na.value="grey80") +
   scale_x_continuous(breaks=seq(1910, 2020, 10)) +
   # Theme
