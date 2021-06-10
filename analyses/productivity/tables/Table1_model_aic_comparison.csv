@@ -1,0 +1,7 @@
+model,k,nll,aic,daic
+SST-linked production (MSY@37%K) - fixed effects,368,-9891.427704,-19046.85541,0
+SST-linked production (MSY@37%K) - random effects,278,-9779.284734,-19002.56947,44.28593905
+Production (MSY@37%K),276,-9773.247145,-18994.49429,52.36111788
+Production (MSY@40%),276,-9769.814598,-18987.6292,59.22621241
+Production (MSY@45%),276,-9738.708715,-18925.41743,121.437977
+Production (MSY@50%),276,-9674.358267,-18796.71653,250.1388749

@@ -151,3 +151,23 @@ for(i in 1:nrow(trim_key)){
   plot_data(stockid = trim_key$stockid[i], export=T)
 }
 
+
+# Finalize data and export
+################################################################################
+
+# Finalize data
+data_out <- data1 %>% 
+  # Get rid of trim years
+  filter(use=="yes") %>% 
+  # Simplify
+  dplyr::select(stockid:sp)
+
+# Export data
+saveRDS(data_out, file=file.path(datadir, "RAM_WC_production_data_trimmed.Rds"))
+
+
+
+
+
+
+

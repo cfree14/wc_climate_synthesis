@@ -21,11 +21,56 @@ load("/Users/cfree/Dropbox/Chris/UCSB/data/ramldb/RAM v4.491 Files (1-14-20)/RAM
 # Build stock key
 ################################################################################
 
+# Identify most recent assessments
+assessments <- assessment %>% 
+  # Reduce to most recent
+  filter(mostrecent %in% c(999, -1)) %>% 
+  # Simplify
+  select(stockid, assessid, assessorid, assessmethod, assessyear) %>% 
+  # Rename
+  rename(assess_range=assessyear) %>% 
+  # Extract last year
+  mutate(assess_year=substr(assess_range, 6, 10) %>% as.numeric())
+
+# All unique? Yes!
+anyDuplicated(assessments$stockid)
+anyDuplicated(assessments$assessid)
+
+# Extract recruitment age
+rec_age_key <- bioparams %>% 
+  # Recruitment age
+  filter(bioid=="REC-AGE-yr") %>% 
+  # Simplify
+  select(stockid, assessid, biovalue) %>% 
+  arrange(stockid, assessid) %>% 
+  # Rename
+  rename(rec_age_yr=biovalue) %>% 
+  # Convert
+  mutate(rec_age_yr=recode(rec_age_yr,
+                           "3+"="3", 
+                           "13 to 28 years to 50% commercial selectivity"="20", 
+                           "1 to 70"="35"),
+         rec_age_yr=as.numeric(rec_age_yr)) %>% 
+  # Summarise
+  group_by(stockid) %>% 
+  summarize(n=sum(!is.na(rec_age_yr)),
+            nunique=n_distinct(rec_age_yr, na.rm=T),
+            rec_age_yr=mean(rec_age_yr, na.rm=T)) %>% 
+  ungroup()
+  
 # Build stock key
 stock_key <- stock %>% 
+  # Reduce to most recent assessment
+  filter(stockid %in% assessments$stockid) %>% 
+  # Elimintate useless columns
   select(-c(tsn, inmyersdb, myersstockid)) %>% 
   # Add area name
   left_join(select(area, areaid, country, areaname), by="areaid") %>% 
+  # Add assessment info
+  left_join(assessments, by="stockid") %>% 
+  rename(assessor_id=assessorid, assess_method=assessmethod) %>% 
+  # Add family name
+  left_join(taxonomy %>% select(family, scientificname)) %>% 
   # Rename columns
   rename(species=scientificname, comm_name=commonname, area=areaname) %>% 
   # Format columns
@@ -50,11 +95,20 @@ stock_key <- stock %>%
                         "Raja rhina"="Beringraja rhina",
                         "Theragra chalcogramma"="Gadus chalcogrammus")) %>% 
   # Rearrange columns
-  select(stockid, stocklong, country, region, area, species, comm_name)
+  select(stockid, stocklong, 
+         assessid, assessor_id, assess_method,
+         country, region, area, 
+         family, species, comm_name) %>% 
+  # Add recruitment age
+  left_join(rec_age_key %>% select(stockid, rec_age_yr), by="stockid") %>% 
+  filter(region%in%c("US West Coast", "Canada West Coast", "US Alaska"))
 
 # Check names
 freeR::check_names(stock_key$species)
 freeR::complete(stock_key)
+
+# Export stock key
+write.csv(stock_key, file=file.path(datadir, "RAM_stock_key.csv"))
 
 
 # West Coast stocks and data
@@ -139,7 +193,7 @@ data_sr1 <- wc_data %>%
   # Reduce to WC stocks
   filter(stockid %in% wc_stocks$stockid) %>% 
   # Select columns of interest
-  select(stockid:year, TBbest, TB, SSB, TN, R) %>% 
+  select(stockid:year, TBbest, TB, SSB, TN, R, TC, TL) %>% 
   # Remove years without recruitment
   filter(!is.na(R))
 
@@ -150,26 +204,32 @@ stats_sr <- data_sr1 %>%
   summarize(tb_best_n=sum(!is.na(TBbest)),
             tb_n=sum(!is.na(TB)), 
             ssb_n=sum(!is.na(SSB)),
-            tn_n=sum(!is.na(TN))) %>% 
+            tn_n=sum(!is.na(TN)),
+            tc_n=sum(!is.na(TC)),
+            tl_n=sum(!is.na(TL))) %>% 
   ungroup() %>% 
   # Add units
   left_join(timeseries_ids_views %>% select(stockid, TBbest)) %>% 
-  left_join(timeseries_units_views %>% select(stockid, TB, SSB, TN, R)) %>% 
+  left_join(timeseries_units_views %>% select(stockid, TB, SSB, TN, R, TC, TL)) %>% 
   # Rename
-  rename(tb_best_units=TBbest, tb_units=TB, ssb_units=SSB, tn_units=TN, r_units=R) %>% 
+  rename(tb_best_units=TBbest, tb_units=TB, ssb_units=SSB, tn_units=TN, r_units=R, tc_units=TC, tl_units=TL) %>% 
   # Select which to use
   mutate(b_use=ifelse(ssb_n>0 & ssb_units=="MT", "SSB", "TB"),
-         b_units=ifelse(b_use=="SSB", ssb_units, tb_units)) %>% 
+         b_units=ifelse(b_use=="SSB", ssb_units, tb_units), 
+         c_type=ifelse(tc_n>=(tl_n-10) & tc_units=="MT", "TC", "TL"),
+         c_units=ifelse(c_type=="TC", tc_units, tl_units),
+         c_n=ifelse(c_type=="TC", tc_n, tl_n)) %>% 
   select(stockid, stocklong, b_use, everything())
 
 # Finalize recruitment data
 data_sr2 <- data_sr1 %>% 
   # Add B use
-  left_join(stats_sr %>% select(stockid, b_use, b_units, r_units), by="stockid") %>% 
+  left_join(stats_sr %>% select(stockid, b_use, b_units, r_units, c_type, c_units), by="stockid") %>% 
   rename(b_type=b_use, r=R) %>% 
-  mutate(b=ifelse(b_type=="SSB", SSB, TB)) %>% 
+  mutate(b=ifelse(b_type=="SSB", SSB, TB), 
+         c=ifelse(c_type=='TC', TC, TL)) %>% 
   # Simplify
-  select(stockid:year, b_type, b_units, r_units, b, r) %>% 
+  select(stockid:year, b_type, b_units, r_units, b, r, c_type, c_units, c) %>% 
   # Drop missing values
   filter(!is.na(b) & !is.na(r))
 
