@@ -27,7 +27,6 @@ fao2000_wc <- fao_orig %>%
   pull(quantity) %>% sum()
   
 
-table(fao2000_wc$area)
 
 # Build RAM data
 ################################################################################

@@ -69,5 +69,5 @@ stockids_without <- sst_ram2 %>%
 ################################################################################
 
 # Export
-write.csv(sst_ram2, file=file.path(datadir, "COBE_1981_2020_by_ram_stocks.csv"), row.names=F)
+write.csv(sst_ram2, file=file.path(sstdir, "COBE_1981_2020_by_ram_stocks.csv"), row.names=F)
 

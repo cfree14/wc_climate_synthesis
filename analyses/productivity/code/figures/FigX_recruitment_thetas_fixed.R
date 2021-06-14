@@ -17,7 +17,7 @@ tabledir <- "analyses/productivity/tables"
 plotdir <- "analyses/productivity/figures"
 
 # Read data
-output <- readRDS(file.path(datadir, "production_0.01p_sst_fixed.Rds"))
+output <- readRDS(file.path(datadir, "recruitment_ricker_sst_fixed.Rds"))
 
 
 # Build data
@@ -39,10 +39,6 @@ data <- results %>%
   arrange(desc(est)) %>% 
   mutate(stockid=factor(stockid, levels=stockid)) 
 
-# Example plots
-################################################################################
-
-stockids_ex <- 
 
 
 # Plot data
@@ -73,7 +69,6 @@ g1 <- ggplot() +
   # Lines
   geom_errorbar(data=data, mapping=aes(y=stockid, xmin=est_lo, xmax=est_hi, color=est_inf), width=0, alpha=0.4) +
   geom_point(data=data, mapping=aes(y=stockid, x=est, color=est_inf)) +
-  xlim(c(-10,20)) +
   # Labels
   labs(x="Temperature effect", y="") +
   # Legend
@@ -84,6 +79,6 @@ g1 <- ggplot() +
 g1
 
 # Export figure
-ggsave(g1, filename=file.path(plotdir, "FigX_theta_estimates_fixed.png"), 
+ggsave(g1, filename=file.path(plotdir, "FigX_recruitment_thetas_fixed.png"), 
        width=6, height=8, units="in", dpi=600)
 
