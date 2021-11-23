@@ -13,9 +13,9 @@ ramdir <- "data/ramldb/processed"
 plotdir <- "analyses/productivity/figures"
 
 # Read data
-data_rec <- readRDS(file.path(ramdir, "RAM_WC_recruitment_data_prepped.Rds")) %>% 
+data_rec <- readRDS(file.path(ramdir, "RAM_WC_recruitment_data_prepped_final.Rds")) %>% 
   mutate(dataset="Recruitment")
-data_prod <- readRDS(file.path(ramdir, "RAM_WC_production_data_prepped.Rds")) %>% 
+data_prod <- readRDS(file.path(ramdir, "RAM_WC_production_data_prepped_final.Rds")) %>% 
   mutate(dataset="Surplus production")
 
 # Build data
@@ -30,6 +30,12 @@ data <- bind_rows(data_rec, data_prod) %>%
   # Standardize SST
   group_by(stockid) %>% 
   mutate(sst_c_sd=scale(sst_c, center=T)) %>% 
+  ungroup()
+
+# Sample size
+nyr <- data %>% 
+  group_by(dataset, stockid) %>% 
+  summarize(nyr=n()) %>% 
   ungroup()
 
 # Determine sort order

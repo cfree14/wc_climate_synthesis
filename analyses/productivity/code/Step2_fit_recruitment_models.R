@@ -22,6 +22,19 @@ plotdir <- "analyses/productivity/figures"
 # Read data
 data_orig <- readRDS(file.path(datadir, "RAM_WC_recruitment_data_prepped.Rds"))
 
+
+# Format data
+################################################################################
+
+# Sample size
+nyr_req <- 20
+stock_2few_yrs <- data_orig %>% 
+  group_by(stockid) %>% 
+  summarize(nyr=n()) %>%
+  ungroup() %>% 
+  filter(nyr<nyr_req) %>% 
+  pull(stockid)
+
 # Problem stocks (in order removed)
 perfect_srs <- c("BGROCKPCOAST", "GRSPROCKNCAL", "GRSPROCKSCAL", "LNOSESKAPCOAST", "SPSDOGPCOAST", "YEYEROCKPCOAST")
 large_alphas <- c("YSOLEBSAI", "FLSOLEBSAI")
@@ -29,11 +42,14 @@ se_fail <- c("ALPLAICBSAI", "DSOLEGA")
 bad_fit <- c("CALSCORPSCAL")
 no_peak <- c("PCOD5AB", "SARDPCOAST", "SABLEFPCOAST", "PCODHS") # no peak?
 crazy <- "REYEROCKGA"
-stocks_ignore <- c(perfect_srs, large_alphas, se_fail, bad_fit, no_peak, crazy)
+stocks_ignore <- c(perfect_srs, large_alphas, se_fail, bad_fit, no_peak, crazy, stock_2few_yrs)
 
-# Eliminate problem stocks
+# Finalize data (remove problem stocks)
 data <- data_orig %>% 
   filter(!stockid %in% stocks_ignore)
+
+# Export finalized data
+saveRDS(data, file.path(datadir, "RAM_WC_recruitment_data_prepped_final.Rds"))
   
 
 # Fit and examine models

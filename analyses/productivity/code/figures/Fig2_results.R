@@ -17,38 +17,22 @@ outputdir <- "analyses/productivity/output"
 stock_key_orig <- read.csv(file=file.path(ramdir, "RAM_stock_key.csv"), as.is=T)
 
 # Read data
-sp_fixed_output <- readRDS(file=file.path(outputdir, "production_0.01p_sst_fixed.Rds"))
-sp_random_output <- readRDS(file=file.path(outputdir, "production_0.01p_sst_random.Rds"))
-sr_fixed_output <- readRDS(file=file.path(outputdir, "recruitment_ricker_sst_fixed.Rds"))
-sr_random_output <- readRDS(file=file.path(outputdir, "recruitment_ricker_sst_random.Rds"))
+data_orig <- readRDS(file=file.path(outputdir, "RAM_WC_sr_sp_sst_influence_results.Rds"))
 
 
 # Build data
 ################################################################################
 
-sp_fixed_results <- splink::get_results(sp_fixed_output)
-sp_fixed <- sp_fixed_results %>% 
-  filter(param=="theta") %>% 
-  mutate(prod_type="Production",
-         model_type="Fixed")
-
-sp_random_results <- splink::get_results(sp_random_output)
-sp_random <- sp_random_results$stock %>% 
-  filter(param=="theta") %>% 
-  mutate(prod_type="Production",
-         model_type="Random")
-
-# Merge data
-data <- bind_rows(sp_fixed, sp_random) %>% 
-  # Arrange
-  select(prod_type, model_type, stockid, everything()) %>% 
-  # Standardize 
+# Format data
+data <- data_orig %>% 
+  # Standardize effect
   group_by(prod_type, model_type) %>% 
-  mutate(est_scaled=est/sd(est))
+  mutate(est_scaled=est/sd(est)) %>% 
+  ungroup()
 
 # Stats
 stats <- data %>% 
-  group_by(prod_type, stockid) %>% 
+  group_by(stockid) %>% 
   summarize(est_avg=mean(est_scaled)) %>% 
   ungroup() %>% 
   arrange(est_avg)
@@ -56,24 +40,51 @@ stats <- data %>%
 # ORder data
 data_ordered <- data %>% 
   mutate(stockid=factor(stockid, levels=stats$stockid),
-         model_type=recode_factor(model_type, "Fixed"="Fixed\neffects\nanalysis", "Random"="Random\neffect\nanalysis"))
+         model_type=recode_factor(model_type, 
+                                  "Fixed"="Fixed\neffects\nanalysis", 
+                                  "Random"="Random\neffect\nanalysis",
+                                  "Correlation"="Corr.\nanalysis"))
 
 
 
 # Plot data
 ################################################################################
 
+# Setup theme
+my_theme <-  theme(axis.text.y=element_text(size=4.75),
+                   axis.text.x=element_text(size=6),
+                   axis.title=element_text(size=8),
+                   legend.text=element_text(size=6),
+                   legend.title=element_text(size=8),
+                   strip.text=element_text(size=8),
+                   plot.title=element_text(size=10),
+                   # Gridlines
+                   panel.grid.major = element_blank(), 
+                   panel.grid.minor = element_blank(),
+                   panel.background = element_blank(), 
+                   axis.line = element_line(colour = "black"),
+                   # Legend
+                   legend.position="bottom")
+
+
 # Plot data
-ggplot(data_ordered, aes(y=stockid, x=model_type, fill=est_scaled)) +
+g1 <- ggplot(data_ordered, aes(y=stockid, x=model_type, fill=est_scaled)) +
   facet_wrap(~prod_type) +
   geom_tile(color="grey30", lwd=0.05) +
   # Labels
   labs(x="Approach", y="") + 
   # Legend
-  scale_fill_gradient2(name="Relative\neffect") +
+  scale_fill_gradient2(name="Relative effect\nof warming") +
   guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
   # Theme
-  theme_bw()
+  theme_bw() + my_theme
+g1
+
+# Export plot
+ggsave(g1, filename=file.path(plotdir, "Fig2_results.png"), 
+       width=3.75, height=6.5, units="in", dpi=600)
+
+
 
 
 

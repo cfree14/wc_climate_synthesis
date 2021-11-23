@@ -20,14 +20,34 @@ outputdir <- "analyses/productivity/output"
 plotdir <- "analyses/productivity/figures"
 
 # Read data
-data_orig <- readRDS(file.path(datadir, "RAM_WC_production_data_prepped.Rds")) %>% 
-  rename(b_sd=b_scaled, sp_sd=sp_scaled)
+data_orig <- readRDS(file.path(datadir, "RAM_WC_production_data_prepped.Rds"))
 
-# Remove problem stocks
+
+# Format data
+################################################################################
+
+# Sample size
+nyr_req <- 20
+stock_2few_yrs <- data_orig %>% 
+  group_by(stockid) %>% 
+  summarize(nyr=n()) %>%
+  ungroup() %>% 
+  filter(nyr<nyr_req) %>% 
+  pull(stockid)
+  
+# Problem stocks
 large_theta <- "STFLOUNSPCOAST"
-problem_stocks <- large_theta
+problem_stocks <- c(large_theta, stock_2few_yrs)
+
+# Finalize data (remove problem stocks)
 data <- data_orig %>% 
+  # Rename a few columns
+  rename(b_sd=b_scaled, sp_sd=sp_scaled) %>% 
+  # Remove problem stocks
   filter(!stockid %in% problem_stocks)
+
+# Export finalized data
+saveRDS(data, file.path(datadir, "RAM_WC_production_data_prepped_final.Rds"))
 
 
 # Fit and examine models

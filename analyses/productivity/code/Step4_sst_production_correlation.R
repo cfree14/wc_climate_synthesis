@@ -20,7 +20,7 @@ outputdir <- "analyses/productivity/output"
 plotdir <- "analyses/productivity/figures"
 
 # Read data
-data <- readRDS(file.path(datadir, "RAM_WC_recruitment_data_prepped_final.Rds"))
+data <- readRDS(file.path(datadir, "RAM_WC_production_data_prepped_final.Rds"))
 
 
 # Calculate correlation coefficients
@@ -36,10 +36,10 @@ stats <- purrr::map_df(stockids, function(x){
     filter(stockid==x)
   
   # Plot data
-  plot(r_scaled ~ sst_c_scaled, sdata)
+  # plot(sp_sd ~ sst_c_scaled, sdata)
   
   # Calculate correlation
-  corr <- cor(sdata$r_scaled, sdata$sst_c_scaled)
+  corr <- cor(sdata$sp_sd, sdata$sst_c_scaled)
   
   # Record data
   df <- tibble(stockid=x,
@@ -51,20 +51,8 @@ stats <- purrr::map_df(stockids, function(x){
 hist(stats$corr)
 
 # Export data
-saveRDS(stats, file=file.path(outputdir, "RAM_WC_recruitment_sst_correlation.Rds"))
+saveRDS(stats, file=file.path(outputdir, "RAM_WC_production_sst_correlation.Rds"))
 
 
 
 
-# Plot correlations (come back to this)
-################################################################################
-
-ggplot(data, aes(x=sst_c_scaled, y=r_scaled)) +
-  facet_wrap(~stockid, ncol=8, scales="free") +
-  geom_smooth(method="lm") +
-  geom_point() +
-  theme_bw()
-
-
-
-  
