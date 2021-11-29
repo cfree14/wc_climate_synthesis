@@ -119,6 +119,9 @@ sort(unique(stock_key1$area))
 # Build LH data?
 build_lh <- F
 
+# Taxa key
+taxa_key <- freeR::taxa(species=stock_key1$species)
+
 # Build or read LH data
 if(build_lh){
   
@@ -196,7 +199,17 @@ if(build_lh){
 
 # Add LH to stock key
 stock_key2 <- stock_key1 %>% 
-  left_join(lh_use, by="species")
+  # Add taxomy
+  left_join(taxa_key %>% select(type, class, order, genus, sciname), by=c("species"="sciname")) %>% 
+  rename(taxa_type=type) %>% 
+  # Add life history
+  left_join(lh_use, by="species") %>% 
+  # Arrange
+  select(stockid:area, 
+         taxa_type, class, order, family, genus, species, comm_name, everything())
+
+# Inspect
+freeR::complete(stock_key2)
 
 
 # Export data

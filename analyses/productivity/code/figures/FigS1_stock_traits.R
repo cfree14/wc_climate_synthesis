@@ -25,7 +25,8 @@ sum(!is.na(stock_key_orig$nyr_prod))
 
 # Number of species
 n_distinct(stock_key_orig$species)
-
+n_distinct(stock_key_orig$family)
+n_distinct(stock_key_orig$order)
 
 # Family stats
 stats <- stock_key_orig %>% 

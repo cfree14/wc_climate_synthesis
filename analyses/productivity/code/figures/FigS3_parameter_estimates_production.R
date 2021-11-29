@@ -7,6 +7,7 @@ rm(list = ls())
 ################################################################################
 
 # Packages
+library(TMB)
 library(splink)
 library(tidyverse)
 library(RColorBrewer)
@@ -54,6 +55,15 @@ data <- bind_rows(sp_fixed, sp_random) %>%
                              "theta"="Effect of warming\non productivity, θ"))
 
 
+
+# Stats for manuscript
+################################################################################
+
+# How often is the K likelihood penalty invoked?
+data %>% 
+  filter(grepl("capacity", param)) %>% 
+  group_by(approach) %>% 
+  summarize(n=sum(est>=5))
 
 # Plot data
 ################################################################################
