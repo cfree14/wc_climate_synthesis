@@ -24,6 +24,9 @@ data_prod <- readRDS(file.path(datadir, "RAM_WC_production_data_prepped_final.Rd
   mutate(dataset="Surplus production")
 data <- bind_rows(data_rec, data_prod)
 
+# Read status data
+data_status <- readRDS(file.path(datadir, "RAM_WC_status_data.Rds"))
+
 
 # Data stats
 ################################################################################
@@ -36,22 +39,58 @@ get_sst_trend <- function(sst, year){
   return(slope)
 }
 
-# Build dataset stats
+# Production dataset stats
 stats_prod <- data %>% 
+  rename(catch=c) %>% 
   filter(dataset=="Surplus production") %>% 
   group_by(stockid) %>% 
   summarize(yrs_prod=paste(min(year), max(year), sep="-"), 
             nyr_prod=n(),
             sst_c_avg_prod=mean(sst_c),
-            sst_c_trend_prod=get_sst_trend(sst_c, year)) %>% 
-  ungroup()
+            sst_c_trend_prod=get_sst_trend(sst_c, year),
+            yr2=max(year),
+            yr1=yr2-9,
+            catch_mt_prod=mean(catch[year %in% yr1:yr2])) %>% 
+  ungroup() %>% 
+  select(-c(yr1, yr2))
+
+# Recruitment dataset status
 stats_rec <- data %>% 
+  rename(catch=c) %>% 
   filter(dataset=="Recruitment") %>% 
   group_by(stockid) %>% 
   summarize(yrs_rec=paste(min(year), max(year), sep="-"), 
             nyr_rec=n(),
             sst_c_avg_rec=mean(sst_c),
-            sst_c_trend_rec=get_sst_trend(sst_c, year)) %>% 
+            sst_c_trend_rec=get_sst_trend(sst_c, year),
+            yr2=max(year),
+            yr1=yr2-9,
+            catch_mt_rec=mean(catch[year %in% yr1:yr2], na.rm=T)) %>% 
+  ungroup() %>% 
+  select(-c(yr1, yr2))
+
+# Status stats - production dataset
+status_prod <- data_status %>% 
+  # Mark years w/ prod data
+  left_join(data_prod %>% select(stockid, year, sp)) %>% 
+  # Reduce to years w/ prod data
+  filter(!is.na(sp)) %>% 
+  # Average status
+  group_by(stockid) %>% 
+  summarize(bbmsy_prod=mean(bbmsy, na.rm=T),
+            ffmsy_prod=mean(uumsy, na.rm=T)) %>% 
+  ungroup()
+
+# Status stats - recruitment dataset
+status_rec <- data_status %>% 
+  # Mark years w/ rec data
+  left_join(data_rec %>% select(stockid, year, r)) %>% 
+  # Reduce to years w/ rec data
+  filter(!is.na(r)) %>% 
+  # Average status
+  group_by(stockid) %>% 
+  summarize(bbmsy_rec=mean(bbmsy, na.rm=T),
+            ffmsy_rec=mean(uumsy, na.rm=T)) %>% 
   ungroup()
 
 # Analyzed stocks
@@ -64,8 +103,13 @@ stock_key1 <- stock_key_orig %>%
   # Add production stats
   left_join(stats_prod, by="stockid") %>% 
   # Add recruitment stats
-  left_join(stats_rec, by="stockid")
+  left_join(stats_rec, by="stockid") %>% 
+  # Add production status
+  left_join(status_prod, by="stockid") %>% 
+  # Add production status
+  left_join(status_rec, by="stockid")
   
+# Inspect areas - combine?  
 sort(unique(stock_key1$area))
 
 
@@ -160,13 +204,6 @@ stock_key2 <- stock_key1 %>%
 
 # Export
 saveRDS(stock_key2, file=file.path(outputdir, "RAM_WC_stock_key.Rds"))
-
-
-
-
-
-
-
 
 
 

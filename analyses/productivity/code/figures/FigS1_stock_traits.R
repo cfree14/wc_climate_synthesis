@@ -19,9 +19,12 @@ stock_key_orig <- readRDS(file=file.path(outputdir, "RAM_WC_stock_key.Rds"))
 # Setup
 ################################################################################
 
-# Sample size
+# Number of stocks
 sum(!is.na(stock_key_orig$nyr_rec))
 sum(!is.na(stock_key_orig$nyr_prod))
+
+# Number of species
+n_distinct(stock_key_orig$species)
 
 
 # Family stats

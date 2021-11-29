@@ -31,7 +31,8 @@ data <- data_orig %>%
   # Calculate mean SST and trend
   rowwise() %>% 
   mutate(sst_c_avg=mean(sst_c_avg_prod, sst_c_avg_rec, na.rm=T),
-         sst_c_decade=mean(sst_c_trend_prod, sst_c_trend_rec, na.rm=T)*10) %>% 
+         sst_c_decade=mean(sst_c_trend_prod, sst_c_trend_rec, na.rm=T)*10,
+         catch_mt=pmax(catch_mt_prod, catch_mt_rec)) %>% 
   ungroup()
 
 
@@ -67,7 +68,7 @@ my_theme <-  theme(axis.text=element_text(size=7),
                    legend.background = element_rect(fill=alpha('blue', 0)))
 
 # Plot data
-g <- ggplot(data, aes(x=theta_rec, y=theta_prod)) +
+g <- ggplot(data, aes(x=theta_rec, y=theta_prod, size=catch_mt/1e3)) +
   # Reference lines
   geom_hline(yintercept = 0) +
   geom_vline(xintercept = 0) +
@@ -83,7 +84,7 @@ g <- ggplot(data, aes(x=theta_rec, y=theta_prod)) +
   scale_x_continuous(breaks=seq(-2,1.5,0.5), lim=c(NA,1.5)) +
   scale_y_continuous(breaks=seq(-5,3,0.5)) +
   # Legend
-  # scale_size_continuous(name="Max age (yr)") +
+  scale_size_continuous(name="Average annual\ncatch (1000s mt)") +
   # Theme
   theme_bw() + my_theme
 g

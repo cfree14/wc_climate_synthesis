@@ -57,6 +57,22 @@ rec_age_key <- bioparams %>%
             nunique=n_distinct(rec_age_yr, na.rm=T),
             rec_age_yr=mean(rec_age_yr, na.rm=T)) %>% 
   ungroup()
+
+# Reference point key
+ref_key <- bioparams_values_views %>% 
+  # MSY values
+  select(stockid, MSY, Nmsy, MSYbest) %>% 
+  rename(msy=MSY, nmsy=Nmsy, msy_best=MSYbest) %>% 
+  # MSY units
+  left_join(bioparams_units_views %>% select(stockid, MSY, Nmsy, MSYbest)) %>% 
+  rename(msy_units=MSY, nmsy_units=Nmsy, msy_best_units=MSYbest) %>% 
+  # MSY to use (MSY > NMSY) 
+  mutate(msy_use=ifelse(!is.na(msy), msy, nmsy),
+         msy_units_use=ifelse(!is.na(msy), msy_units, nmsy_units)) %>% 
+  # Simplify
+  select(stockid, msy_use, msy_units_use) %>% 
+  rename(msy=msy_use, msy_units=msy_units_use) %>% 
+  filter(!is.na(msy))
   
 # Build stock key
 stock_key <- stock %>% 
@@ -94,21 +110,24 @@ stock_key <- stock %>%
                         "Raja binoculata"="Beringraja binoculata",
                         "Raja rhina"="Beringraja rhina",
                         "Theragra chalcogramma"="Gadus chalcogrammus")) %>% 
+  # Add MSY reference points
+  left_join(ref_key, by="stockid") %>% 
   # Rearrange columns
   select(stockid, stocklong, 
          assessid, assessor_id, assess_method,
          country, region, area, 
-         family, species, comm_name) %>% 
+         family, species, comm_name, msy, msy_units) %>% 
   # Add recruitment age
   left_join(rec_age_key %>% select(stockid, rec_age_yr), by="stockid") %>% 
   filter(region%in%c("US West Coast", "Canada West Coast", "US Alaska"))
 
 # Check names
 freeR::check_names(stock_key$species)
+freeR::suggest_names(stock_key$species)
 freeR::complete(stock_key)
 
 # Export stock key
-write.csv(stock_key, file=file.path(datadir, "RAM_stock_key.csv"))
+write.csv(stock_key, file=file.path(datadir, "RAM_stock_key.csv"), row.names=F)
 
 
 # West Coast stocks and data
