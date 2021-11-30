@@ -54,6 +54,16 @@ data <- bind_rows(sp_fixed, sp_random) %>%
                              "sigmaP"="Residual process\nvariability, σ",
                              "theta"="Effect of warming\non productivity, θ"))
 
+# Vertical line dataset
+vlines <- tibble(param=c("B0", "theta"),
+                 vline=c(5,0)) %>% 
+  # Relabel parameter
+  mutate(param=recode_factor(param, 
+                             "B0"="Carrying capacity, K\n(prop of max biomass)",
+                             "r"="Intrinsic growth rate, r",
+                             "sigmaP"="Residual process\nvariability, σ",
+                             "theta"="Effect of warming\non productivity, θ"))
+
 
 
 # Stats for manuscript
@@ -90,6 +100,8 @@ g1 <- ggplot(data, aes(y=order, x=est, color=approach)) +
   geom_segment(data=data, mapping=aes(y=order, yend=order, x=est_lo, xend=est_hi_cap), alpha=0.5, lwd=0.2) +
   # Points
   geom_point(size=0.4) +
+  # Vertical lines
+  geom_vline(data=vlines, mapping=aes(xintercept=vline), linetype="dotted") +
   # Labels
   labs(y="Stock", x="Parameter estimate") +
   # Theme
@@ -102,7 +114,10 @@ g1
 # Plot histograms
 g2 <- ggplot(data, aes(x=est, fill=approach)) +
   facet_wrap(~param, ncol=4, scale="free") +
+  # Density
   geom_density(alpha=0.5) +
+  # Vertical lines
+  geom_vline(data=vlines, mapping=aes(xintercept=vline), linetype="dotted") +
   # Labels
   labs(x="Parameter estimate", y="Density") +
   # Legend
