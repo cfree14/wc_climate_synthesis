@@ -36,7 +36,7 @@ stock_2few_yrs <- data_orig %>%
   pull(stockid)
   
 # Problem stocks
-large_theta <- "STFLOUNSPCOAST"
+large_theta <- c("STFLOUNSPCOAST")
 problem_stocks <- c(large_theta, stock_2few_yrs)
 
 # Finalize data (remove problem stocks)
@@ -54,10 +54,10 @@ saveRDS(data, file.path(datadir, "RAM_WC_production_data_prepped_final.Rds"))
 ################################################################################
 
 # Fit models
-base1 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=1)
-base2 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=0.55)
-base3 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=0.20)
-base4 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=0.01)
+base1 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=1) # 50%
+base2 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=0.55) # 45%
+base3 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=0.20) # 40%
+base4 <- splink::fit_sp(data=data, b_col="b_sd", sp_col="sp_sd", p=0.01) # 37%
 
 # Compare models
 splink::compare_models(models=list(base1, base2, base3, base4), 

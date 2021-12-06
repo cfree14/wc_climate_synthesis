@@ -14,7 +14,8 @@ outdir <- "data/disasters/processed"
 plotdir <- "data/disasters/figures"
 
 # Read data
-data_orig <- readxl::read_excel(file.path(indir, "Bellquist_etal_TableS4.xlsx"),  na="N/A")
+# data_orig <- readxl::read_excel(file.path(indir, "FisheryDisasters_1989-2021.xlsx"), col_types = "text")
+data_orig <- read.csv(file.path(indir, "FisheryDisasters_1989-2021.csv"), as.is=T)
 
 
 # Format data
@@ -22,91 +23,142 @@ data_orig <- readxl::read_excel(file.path(indir, "Bellquist_etal_TableS4.xlsx"),
 
 # Format data
 data <- data_orig %>% 
-  # Column names
+  # Rename columns
   janitor::clean_names("snake") %>% 
   rename(disaster_id=disaster_number, 
-         fisheries=fishery_ies,
-         mgmt_zone=management_zone, 
-         year=determination_year, 
-         cause=disaster_cause, 
-         appropriation_usd=appropriation_2019_usd,
-         revenue_change_usd=net_revenue_change_2019_usd, 
-         revenue_change_confidence=confidence_in_revenue_data,
-         revenue_change_notes=revenue_data_source_s_notes) %>% 
-  # Format cause
-  mutate(cause=recode_factor(cause, 
-                             "Anthro"="Anthropogenic", 
-                             "Envr"="Environmental",
-                             "Combo"="Combination"),
-         revenue_change_confidence=ifelse(is.na(revenue_change_confidence), 
-                                          "Low", revenue_change_confidence),
-         revenue_change_confidence=factor(revenue_change_confidence,
-                                          levels=c("Low", "Medium", "High"))) %>% 
-  # Assign groups
-  mutate(fisheries=recode(fisheries, "Coho and Chinook"="Coho and Chinook Salmon"), 
-         fishery_type=ifelse(grepl("Salmon", fisheries), "Salmon", NA),
-         fishery_type=ifelse(fisheries %in% c("Groundfish (Multi spp)", "Pacific Cod"), 
-                             "Grounfish", fishery_type),
-         fishery_type=ifelse(grepl("Crab", fisheries), "Crab", fishery_type),
-         fishery_type=ifelse(fisheries=="Multi spp", "Multi-species", fishery_type),
-         fishery_type=ifelse(grepl("Shrimp", fisheries), "Shrimp", fishery_type),
-         fishery_type=ifelse(fisheries%in%c("Pacific Sardine", "Red Sea Urchin",
-                                            "Oyster", "American Lobster", "Shellfish (Multi spp)"), "Other", fishery_type)) %>% 
+         disaster_years=year,
+         disaster_year1_orig=year_1,
+         region=management_zone, 
+         area_season=area_season_affected, 
+         fishery_type1=state_federal, 
+         fishery_type2=comm_rec_tribal,
+         requesters=requester_s,
+         request_dates=request_date,
+         request_year_lag_yrs=request_year_disaster_year,
+         determination=secretary_of_commerce_determination, 
+         determination_dates=determination_date,
+         determination_dates_lag_days=determination_lag_d,
+         determination_year_lag_yrs=state_years,
+         appropriation_amount_usd=appropriation_amount,
+         appropriation_amount_usd_2019=appropriation_amount_2019_usd,
+         correction_factor_2019usd=us_bls_correction_factor_jan_oct_2019,
+         cause=formal_federally_stated_cause,
+         cause_simple=cause_of_disaster,
+         cause_catg=cause_simplified,
+         cause_catg_simple=cause_more_simplified,
+         damages_est_usd=total_est_damages) %>% 
+  # Remove useless columns
+  select(-freq) %>% 
+  # Remove useless rows
+  filter(state!="REPEAT OF NO. 110") %>% 
+  # Format region
+  mutate(region=gsub(" Region", "", region)) %>% 
+  # Format state
+  mutate(state=stringr::str_trim(state),
+         state=recode(state, 
+                      "Alaska"="AK",
+                      "American Samoa"="AS",
+                      "California"="CA",
+                      "Florida"="FL",
+                      "Florida, USVI, Puerto Rico"="FL, VI, PR",
+                      "Georgia"="GA",
+                      "Georgia and South Carolina"="GA, SC",
+                      "Guam and Northern Mariana Islands"="GU, MP",
+                      "Hawaii"="HI",
+                      "Louisiana"="LA",
+                      "Louisiana, Mississippi, Alabama"="LA, MS, AL",
+                      "LA, MS, AL, and FL"="LA, MS, AL, FL",
+                      "MA, ME, NH, CT, RI, and NY"="MA, ME, NH, CT, RI, NY",
+                      "Maine"="ME",
+                      "Massachusetts"="MA",
+                      "Mississippi"="MS", 
+                      "New Hampshire"="NH",
+                      "New Jersey and New York"="NJ, NY", 
+                      "New York"="NY",
+                      "North Carolina"="NC", 
+                      "Oregon"="OR", 
+                      "Oregon and California"="OR, CA",
+                      "Rhode Island"="RI",
+                      "Texas"="TX",
+                      "Virginia"="VA", 
+                      "Washington"="WA")) %>% 
+  # Format fishery type,
+  mutate(fishery_type1=recode(fishery_type1, 
+                              "Both"="Federal/State",
+                              "Federal and State"="Federal/State", 
+                              "Federal, State"="Federal/State", 
+                              "Federal, Tribal"="Federal/Tribal")) %>% 
+  # Add taxa group
+  mutate(taxa_group=ifelse(grepl("salmon|chum|coho|chinook", tolower(fishery)), "Salmon",
+                           ifelse(grepl("crab|urchin", tolower(fishery)), "Invertebrate", "Other"))) %>% 
+  # Format disaster year
+  mutate(disaster_year1=substr(disaster_year1_orig, 1, 4) %>% as.numeric(.)) %>% 
+  # Format request date
+  # mutat
+  # Format request year
+  mutate(request_year=as.numeric(request_year)) %>% 
+  # Convert appropriation amounts
+  mutate(appropriation_amount_usd=appropriation_amount_usd %>% gsub("\\(cont. from 2008-2009\\)", "", .) %>% stringr::str_trim(), 
+         appropriation_amount_usd=appropriation_amount_usd %>% gsub("\\$", "", .) %>% gsub(",", "", .) %>% as.numeric(),
+         appropriation_amount_usd_2019=appropriation_amount_usd_2019 %>% gsub("\\$", "", .) %>% gsub(",", "", .) %>% as.numeric()) %>% 
   # Arrange
-  select(disaster_id, fishery_type, fisheries, everything()) %>% 
-  arrange(fishery_type)
+  select(disaster_id, 
+         disaster_years, disaster_year1_orig, disaster_year1,
+         region, state, area_season,
+         fishery_type1, fishery_type2, 
+         fishery, 
+         requesters, request_year, request_dates, request_year_lag_yrs, request_letter, 
+         determination, determination_year, determination_dates, determination_dates_lag_days, determination_year_lag_yrs,
+         determination_authority, determination_letter, press_release,
+         funding_authority, correction_factor_2019usd, appropriation_amount_usd, appropriation_amount_usd_2019, damages_est_usd,
+         cause, cause_simple, cause_catg, cause_catg_simple,
+         notes, extra_notes,
+         everything()) %>% 
+  # Arrange
+  arrange(disaster_id)
 
-# Inspect
-table(data$mgmt_zone)
-table(data$cause)
+# Is ID unique?
+anyDuplicated(data$disaster_id)
+
+# Inspect data
+str(data)
+colnames(data)
+table(data$region)
+table(data$state)
+table(data$fishery_type1)
+table(data$fishery_type2)
+table(data$determination)
+table(data$determination_authority)
+table(data$funding_authority)
+sort(unique(data$cause_simple))
+sort(unique(data$cause_simple))
+table(data$cause_catg) # could be majorly improved
+table(data$cause_catg_simple)
 
 
 # Export data
+saveRDS(data, file=file.path(outdir, "1989_2021_federal_disaster_database.Rds"))
+
+# Subset data
 ################################################################################
 
-# Export data
-saveRDS(data, file=file.path(outdir, "US_federal_fishery_disasters_summary.Rds"))
+sdata <- data #%>%
+  # filter(region %in% c("Alaska", "West Coast")) 
+nfisheries <- n_distinct(sdata$fishery)
 
-
-# Plot data
-################################################################################
-
-# West Coast data
-wc_data <- data %>% 
-  filter(mgmt_zone %in% c("Alaska", "West Coast"))
-
-# Plot data
-g <- ggplot(wc_data, aes(x=year, y=fisheries, fill=revenue_change_usd/1e6)) +
-  facet_grid(fishery_type~., space="free", scales = "free_y") +
-  geom_tile(color="grey30") +
-  # Add points for type and confidence
-  geom_point(mapping=aes(x=year, y=fisheries, 
-                          shape=cause, alpha=revenue_change_confidence)) +
+g <- ggplot(sdata, aes(x=disaster_year1, y=fishery, fill=cause_catg_simple)) +
+  # Facet
+  facet_grid(taxa_group~., space="free", scales="free_y") +
+  # Plot MHW years
+  geom_rect(xmin=2014.5, xmax=2018.5, ymin=1, ymax=nfisheries, fill="grey90", alpha=0.1) +
+  # Plot disasters
+  geom_tile() +
+  # Axis
+  scale_x_continuous(breaks=seq(1990,2020,5)) +
   # Labels
-  labs(x="", y="", title="West Coast Federal fisheries disasters") +
-  # Axes
-  scale_x_continuous(breaks=seq(1995, 2020, 5)) +
-  # Legends
-  scale_fill_gradient2(name="Change in revenue\n(2019 $US millions)") +
-  guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
-  scale_shape_discrete(name="Disaster cause") +
-  scale_alpha_discrete(name="Confidence in revenue change") +
+  labs(x="Year", y="") +
+  scale_fill_discrete(name="") +
   # Theme
-  theme_bw() +
-  theme(legend.position = "right",
-        axis.text=element_text(size=8),
-        axis.title=element_blank(),
-        strip.text = element_text(size=8),
-        legend.text=element_text(size=6),
-        legend.title=element_text(size=8),
-        plot.title=element_text(size=12),
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(),
-        panel.background = element_blank(), 
-        axis.line = element_line(colour = "black"),)
+  theme_bw()+
+  theme(legend.position = "bottom")
 g
-
-# Export plot
-ggsave(g, filename=file.path(plotdir, "wc_federal_fisheries_disasters.png"), 
-       width=6.5, height=4, units="in", dpi=600)
-
