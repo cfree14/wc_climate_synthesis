@@ -66,9 +66,9 @@ data_prod <- output_prod$data %>%
   filter(stockid %in% stocks_use) %>% 
   # Add label
   mutate(stockid_label=recode_factor(stockid, 
-                                     "PERCHEBSAI"="PERCHEBSAI\n(warming loser)",
-                                     "PCODWCVANI"="PCODWCVANI\n(warming winner)",
-                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)"))
+                                     "PERCHEBSAI"="PERCHEBSAI\n(warming winner)",
+                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)",
+                                     "PCODWCVANI"="PCODWCVANI\n(warming loser)"))
 
 # Extract results
 results_prod <- splink::get_results(output_prod) %>% 
@@ -76,9 +76,9 @@ results_prod <- splink::get_results(output_prod) %>%
   filter(stockid %in% stocks_use) %>% 
   # Add label
   mutate(stockid_label=recode_factor(stockid, 
-                                     "PERCHEBSAI"="PERCHEBSAI\n(warming loser)",
-                                     "PCODWCVANI"="PCODWCVANI\n(warming winner)",
-                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)"))
+                                     "PERCHEBSAI"="PERCHEBSAI\n(warming winner)",
+                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)",
+                                     "PCODWCVANI"="PCODWCVANI\n(warming loser)"))
 
 # Params
 spfits <- results_prod %>%
@@ -130,9 +130,9 @@ data_rec <- output_rec$data %>%
   filter(stockid %in% stocks_use) %>% 
   # Add label
   mutate(stockid_label=recode_factor(stockid, 
-                                     "PERCHEBSAI"="PERCHEBSAI\n(warming loser)",
-                                     "PCODWCVANI"="PCODWCVANI\n(warming winner)",
-                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)"))
+                                     "PERCHEBSAI"="PERCHEBSAI\n(warming winner)",
+                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)",
+                                     "PCODWCVANI"="PCODWCVANI\n(warming loser)"))
 
 # Extract results
 results_rec <- splink::get_results(output_rec) %>% 
@@ -140,9 +140,9 @@ results_rec <- splink::get_results(output_rec) %>%
   filter(stockid %in% stocks_use) %>% 
   # Add label
   mutate(stockid_label=recode_factor(stockid, 
-                                     "PERCHEBSAI"="PERCHEBSAI\n(warming loser)",
-                                     "PCODWCVANI"="PCODWCVANI\n(warming winner)",
-                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)"))
+                                     "PERCHEBSAI"="PERCHEBSAI\n(warming winner)",
+                                     "PHAKEPCOAST"="PHAKEPCOAST\n(warming neutral)",
+                                     "PCODWCVANI"="PCODWCVANI\n(warming loser)"))
 
 # Params
 srfits <- results_rec %>%
@@ -188,6 +188,14 @@ sr_lines <- purrr::map_df(1:nrow(srfits), function(x){
   
 })
 
+# Build key for stockid color
+stockid_key <- tibble(stockid=levels(data_ordered$stockid)) %>% 
+  # Mark example ids
+  mutate(example_yn=ifelse(stockid %in% stocks_use, "yes", "no")) %>% 
+  # Mark font face
+  mutate(face=ifelse(example_yn=="yes", "bold", "plain"),
+         color=ifelse(example_yn=="yes", "black", "grey40"))
+
 
 # Plot data
 ################################################################################
@@ -221,7 +229,8 @@ g1 <- ggplot(data_ordered, aes(y=stockid, x=model_type, fill=est_scaled)) +
   scale_fill_gradient2(name="Relative effect\nof SST warming") +
   guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
   # Theme
-  theme_bw() + my_theme
+  theme_bw() + my_theme +
+  theme(axis.text.y=element_text(face=stockid_key$face, color=stockid_key$color))
 g1
 
 # Plot production data
@@ -238,8 +247,8 @@ g2 <- ggplot(data_prod, aes(x=b_sd, y=sp_sd, fill=sst_c_scaled)) +
        x="Biomass\n(scaled to max biomass)", 
        y="Surplus production\n(scaled to max biomass)") +
   # Legend
-  scale_fill_gradient2(name="SST\nanomaly", midpoint=0, low="darkred", high="navy", mid="white") +
-  scale_color_gradient2(name="SST\nanomaly", midpoint=0, low="darkred", high="navy", mid="grey60", guide="none") +
+  scale_fill_gradient2(name="SST (°C)\nanomaly", midpoint=0, low="navy", high="darkred", mid="white") +
+  scale_color_gradient2(name="SST (°C)\nanomaly", midpoint=0, low="navy", high="darkred", mid="grey60", guide="none") +
   guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
   # Theme
   theme_bw() + my_theme +
@@ -258,8 +267,8 @@ g3 <- ggplot(data_rec, aes(x=b_scaled, y=r_scaled, fill=sst_c_scaled)) +
        x="Biomass\n(scaled to max biomass)", 
        y="Recruitment\n(scaled to max recruitment)") +
   # Legend
-  scale_fill_gradient2(name="SST\nanomaly", midpoint=0, low="darkred", high="navy", mid="white") +
-  scale_color_gradient2(name="SST\nanomaly", midpoint=0, low="darkred", high="navy", mid="grey60", guide="none") +
+  scale_fill_gradient2(name="SST (°C)\nanomaly", midpoint=0, low="navy", high="darkred", mid="white") +
+  scale_color_gradient2(name="SST (°C)\nanomaly", midpoint=0, low="navy", high="darkred", mid="grey60", guide="none") +
   guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
   # Theme
   theme_bw() + my_theme +

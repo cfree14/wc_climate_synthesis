@@ -74,10 +74,10 @@ my_theme <-  theme(axis.text=element_text(size=6),
 
 # Plot data
 g <- ggplot(data_ordered, aes(x=year, y=stockid)) +
+  # Plot heatwave period
+  geom_rect(xmin=2013, xmax=2016, ymin=0, ymax=nrow(stocks)+0.5, fill="grey90", alpha=0.05, inherit.aes = F) +
   facet_wrap(~dataset) +
   geom_raster() + 
-  # Plot heatwave period
-  # geom_rect(xmin=2015, xmax=2018, ymin=0, ymax=nrow(stocks)+0.5, fill="grey90", alpha=0.05, inherit.aes = F) +
   # Labels
   labs(x="", y="") +
   scale_x_continuous(breaks=seq(1920, 2020, 10)) +
