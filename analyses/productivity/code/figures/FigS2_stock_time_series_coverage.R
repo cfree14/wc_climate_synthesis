@@ -54,6 +54,12 @@ stocks <- data %>%
 data_ordered <- data %>% 
   mutate(stockid=factor(stockid, levels=stocks$stockid),
          stocklong=factor(stocklong, levels=stocks$stocklong))
+
+# Terminal years
+term_yrs <- data %>% 
+  group_by(dataset, stockid) %>% 
+  summarize(last_year=max(year)) %>% 
+  ungroup()
   
 
 # Plot data
@@ -73,10 +79,12 @@ my_theme <-  theme(axis.text=element_text(size=6),
                    axis.line = element_line(colour = "black"))
 
 # Plot data
-g <- ggplot(data_ordered, aes(x=year, y=stockid)) +
+g1 <- ggplot(data_ordered, aes(x=year, y=stockid)) +
+  # Facet
+  facet_wrap(~dataset) +
   # Plot heatwave period
   geom_rect(xmin=2013, xmax=2016, ymin=0, ymax=nrow(stocks)+0.5, fill="grey90", alpha=0.05, inherit.aes = F) +
-  facet_wrap(~dataset) +
+  # Plot coverage
   geom_raster() + 
   # Labels
   labs(x="", y="") +
@@ -86,10 +94,26 @@ g <- ggplot(data_ordered, aes(x=year, y=stockid)) +
   # guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
   # Theme
   theme_bw() + my_theme
+g1
+
+# Plot terminal years
+g2 <- ggplot(term_yrs, aes(x=last_year)) +
+  # Facet
+  facet_wrap(~dataset, ncol=1) +
+  # Histogram
+  geom_histogram(binwidth=1) +
+  # Labels
+  labs(x="Last year of time series", y="Number of stocks") +
+  # Theme
+  theme_bw() + my_theme
+g2
+
+# Merge
+g <- gridExtra::grid.arrange(g1, g2, ncol=2, widths=c(0.75, 0.25))
 g
 
 # Export plot
-ggsave(g, filename=file.path(plotdir, "FigS2_stock_time_series_coverage.png"), 
+ggsave(g1, filename=file.path(plotdir, "FigS2_stock_time_series_coverage.png"), 
        width=6.5, height=7, units="in", dpi=600)
 
 
