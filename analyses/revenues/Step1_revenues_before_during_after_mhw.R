@@ -19,10 +19,6 @@ data_orig <- readRDS("data/landings/pacfin/processed/PACFIN_ALL001_1980_2021_all
 # Build data
 ################################################################################
 
-# 
-# Chillipepper vs. Chilipepper rockfish
-
-
 # Year range
 range(data_orig$year)
 
@@ -43,7 +39,8 @@ data <- data_orig %>%
                           "Nom. Vermillion rockfish"="Nom. Vermilion rockfish",
                           "Nom. Squarespot"="Nom. Squarespot rockfish",
                           "Nom. Chilipepper"="Nom. Chilipepper rockfish",
-                          "Nom. Pop"="Nom. Pacific ocean perch")) %>% 
+                          "Nom. Pop"="Nom. Pacific ocean perch",
+                          "Nom. Rougheye + blackspotted"="Nom. Rougheye + blackspotted rockfish")) %>% 
   # Mark nominal / not nominal
   mutate(nominal=ifelse(grepl("nom.", tolower(comm_name)), "yes", "no")) %>% 
   # Mark parent species (to merge nominal and true)
@@ -127,6 +124,12 @@ stats_mgmt <- data %>%
                                 "MHW (2014-2016)"="During", 
                                 "Post-MHW (2017-2019)"="After"))
 
+# Case studies
+case_spp <- c("Dungeness crab", "Market squid", "Chinook salmon", 
+              "Northern anchovy", "Pacific sardine", 
+              "Pacific hake", "Pacific cod", "Shortbelly rockfish",
+              "Red sea urchin", "Bluefin tuna")
+
 # Summarize by state-management group
 stats_spp <- data %>% 
   # Annual totals
@@ -164,7 +167,35 @@ stats_spp <- data %>%
                            "Crabs"="Crabs/shrimp",
                            "Shrimp"="Crabs/shrimp",
                            "Coastal Pelagics"="CPS",
-                           "Highly Migratory Species"="HMS"))
+                           "Highly Migratory Species"="HMS")) %>% 
+  # Remove ones you aren't interested in
+  filter(state!="At-Sea" & mgmt_group!="Not specified" & 
+           !grepl("unsp.|mixed|other|misc", tolower(comm_name_parent))) %>% 
+  # Remove ones with NAs in all three states 
+  group_by(comm_name_parent) %>% 
+  mutate(all3_na=ifelse(sum(is.na(value_pdiff[year_catg=="MHW (2014-2016)"]))==3, "yes", "no")) %>% 
+  filter(all3_na=="no") %>% 
+  # Mark case stuides
+  mutate(comm_name_parent=ifelse(comm_name_parent %in% case_spp, paste0(comm_name_parent, "***"), comm_name_parent))
+
+# Determine order
+spp_order <- stats_spp %>%
+  # During MHW
+  filter(year_catg=="MHW (2014-2016)") %>% 
+  # Average across states
+  group_by(mgmt_group, comm_name_parent) %>% 
+  summarize(value_pdiff_avg=mean(value_pdiff, na.rm=T)) %>% 
+  ungroup() %>% 
+  # Order
+  arrange(mgmt_group, desc(value_pdiff_avg)) %>% 
+  # Mark case studies
+  mutate(case_yn=ifelse(comm_name_parent %in% case_spp, "yes", "no"),
+         color=ifelse(case_yn=="yes", "black", "grey60"))
+
+# Order species
+stats_spp_ordered <- stats_spp %>% 
+  mutate(comm_name_parent=factor(comm_name_parent, levels=spp_order$comm_name_parent))
+
 
 # Plot data
 ################################################################################
@@ -225,18 +256,18 @@ g2 <- ggplot(stats_mgmt, mapping=aes(x=mhw_catg, y=mgmt_group, fill=value_pdiff)
 g2
 
 # Plot species specific values
-g3 <- ggplot(stats_spp %>% filter(state!="At-Sea" & mgmt_group!="Not specified" & 
-                                    !grepl("unsp.|mixed|other|misc", tolower(comm_name_parent))), 
+g3 <- ggplot(stats_spp_ordered, 
              mapping=aes(x=mhw_catg, y=comm_name_parent, fill=value_pdiff_cap)) +
   facet_grid(mgmt_group~state, scales="free_y", space="free_y") +
   geom_tile() +
   # Plot points
-  # geom_point(data=stats_mgmt %>% filter(mhw_catg=="Before" & value_usd>0), 
-  #            mapping=aes(x=mhw_catg, y=mgmt_group, size=value_usd/1e6), inherit.aes = F) +
+  geom_point(data=stats_spp_ordered %>% filter(mhw_catg=="Before" & value_usd>0),
+             mapping=aes(x=mhw_catg, y=comm_name_parent, size=value_usd/1e6), inherit.aes = F) +
   # Labels
   labs(x="", y="") +
   # Legend
-  # scale_size_continuous(name="Mean annual\nrevenues (USD millions)") +
+  scale_size_continuous(name="Mean annual\nrevenues (USD millions)",
+                        breaks=c(1, 5, 10, 20, 40, 60)) +
   scale_fill_gradient2(name="% difference\nfrom pre-MHW\nrevenues", 
                        high="navy", low="darkred", mid="white", midpoint = 0, na.value = "grey90") +
   guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
@@ -247,7 +278,7 @@ g3
 
 # Export
 ggsave(g3, filename=file.path(plotdir, "FigX_revenue_change_by_state_spp.pdf"), 
-       width=5.5, height=18, units="in", dpi=600)
+       width=5.75, height=18, units="in", dpi=600)
 
 
 
