@@ -201,12 +201,44 @@ g <- ggplot(data_reg, aes(x=date, y=value, color=lat_dd, group=lat_dd)) +
                breaks=seq(ymd("1960-01-01"), ymd("2022-01-01"), by="10 years"),
                date_labels="%Y") +
   # Theme
-  theme_bw() + my_theme
+  theme_bw() + my_theme +
+  theme(legend.position = c(0.8,0.25))
 g
 
 # Export
 ggsave(g, filename=file.path(plotdir, "figure_indices_latidudinal.png"), 
-       width=6.5, height=3.75, units="in", dpi=600)
+       width=6.5, height=4, units="in", dpi=600)
 
+
+# Plot data
+################################################################################
+
+# Plot
+g <- ggplot(hci, aes(x=date, y=hci, color=region, group=region)) +
+  # MHW years
+  geom_rect(xmin=ymd("2014-01-01"),
+            xmax=ymd("2017-01-01"),
+            ymin=-Inf,
+            ymax=Inf, 
+            fill="grey90", color=NA) +
+  # Lines
+  geom_line(size=0.1) +
+  # Reference line
+  geom_hline(yintercept = 0) +
+  # Labels
+  labs(x="", y="Habitat Compression Index (HCI)") +
+  # Legend
+  scale_color_discrete(name="Region") +
+  # Axis
+  scale_x_date(lim=c(ymd("1980-01-01"), ymd("2022-01-01")),
+               breaks=seq(ymd("1980-01-01"), ymd("2022-01-01"), by="10 years"),
+               date_labels="%Y") +
+  # Theme
+  theme_bw() + my_theme
+g
+
+# Export
+ggsave(g, filename=file.path(plotdir, "figure_indices_hci.png"), 
+       width=4.5, height=2.5, units="in", dpi=600)
 
 
