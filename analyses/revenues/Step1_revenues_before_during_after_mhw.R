@@ -86,7 +86,12 @@ stats_state_yr <- data %>%
   group_by(state, year_catg, year) %>% 
   summarize(landings_mt=sum(landings_mt, na.rm=T), 
             value_usd=sum(value_usd, na.rm=T)) %>% 
-  ungroup()
+  ungroup() %>% 
+  # Recode state
+  mutate(state=recode(state, 
+                      "Washington"="WA",
+                      "Oregon"="OR",
+                      "California"="CA"))
 
 # Summarize by state-period
 stats_state_period <- stats_state_yr %>% 
@@ -122,7 +127,16 @@ stats_mgmt <- data %>%
   mutate(mhw_catg=recode_factor(year_catg,
                                 "Pre-MHW (2011-2013)"="Before",
                                 "MHW (2014-2016)"="During", 
-                                "Post-MHW (2017-2019)"="After"))
+                                "Post-MHW (2017-2019)"="After")) %>% 
+  # Recode state
+  mutate(state=recode(state, 
+                      "Washington"="WA",
+                      "Oregon"="OR",
+                      "California"="CA")) %>% 
+  # Recode mgmt groupg
+  mutate(mgmt_group=recode(mgmt_group,
+                           "Highly Migratory Species"="HMS",
+                           "Coastal Pelagics"="CPS"))
 
 # Case studies
 case_spp <- c("Dungeness crab", "Market squid", "Chinook salmon", 
@@ -201,12 +215,12 @@ stats_spp_ordered <- stats_spp %>%
 ################################################################################
 
 # Theme
-my_theme <-  theme(axis.text=element_text(size=7),
-                   axis.title=element_text(size=8),
-                   legend.text=element_text(size=6),
-                   legend.title=element_text(size=8),
-                   strip.text=element_text(size=8),
-                   plot.title=element_text(size=10),
+my_theme1 <-  theme(axis.text=element_text(size=6),
+                   axis.title=element_text(size=7),
+                   legend.text=element_text(size=5),
+                   legend.title=element_text(size=7),
+                   strip.text=element_text(size=7),
+                   plot.title=element_blank(),
                    # Gridlines
                    panel.grid.major = element_blank(), 
                    panel.grid.minor = element_blank(),
@@ -227,13 +241,17 @@ g1 <- ggplot(stats_state_yr, aes(x=year, y=value_usd/1e6, color=state)) +
                mapping=aes(x=yr1, xend=yr2, y=value_usd/1e6, yend=value_usd/1e6),
                linetype="dotted", lwd=1) +
   # Labels
-  labs(x="", y="Revenues (USD millions)") +
+  labs(x="", y="Revenues (USD millions)", tag="A") +
   # Axis
   scale_x_continuous(breaks=2011:2019) +
   # Legend
-  scale_color_discrete(name="State") +
+  scale_color_discrete(name="") +
+  guides(color=guide_legend(title.position="top")) +
   # Theme
-  theme_bw() + my_theme
+  theme_bw() + my_theme1 +
+  theme(legend.position = "bottom",
+        axis.title.x=element_blank(),
+        legend.title=element_blank())
 g1
 
 # Plot stage-mgmt group data
@@ -244,16 +262,45 @@ g2 <- ggplot(stats_mgmt, mapping=aes(x=mhw_catg, y=mgmt_group, fill=value_pdiff)
   geom_point(data=stats_mgmt %>% filter(mhw_catg=="Before" & value_usd>0), 
              mapping=aes(x=mhw_catg, y=mgmt_group, size=value_usd/1e6), inherit.aes = F) +
   # Labels
-  labs(x="", y="") +
+  labs(x="", y="", tag="B") +
   # Legend
-  scale_size_continuous(name="Mean annual\nrevenues (USD millions)") +
+  scale_size_continuous(name="Mean annual\npre-MHW revenues\n(USD millions)") +
   scale_fill_gradient2(name="% difference\nfrom pre-MHW\nrevenues", 
                        high="navy", low="darkred", mid="white", midpoint = 0, na.value = "grey90") +
-  guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
+  guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black", title.position = "top"),
+         size=guide_legend(title.position="top")) +
   # Theme
-  theme_bw() + my_theme +
-  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+  theme_bw() + my_theme1 +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  theme(legend.position = "right",
+        legend.key.size = unit(0.3, "cm"),
+        axis.title.x=element_blank())
 g2
+
+# Merge
+g <- gridExtra::grid.arrange(g1, g2, nrow=1, widths=c(0.4, 0.6))
+
+# Export
+ggsave(g, filename=file.path(plotdir, "FigX_revenue_change_by_state_and_group.png"), 
+       width=6.5, height=3, units="in", dpi=600)
+
+# By species - long
+################################################################################
+
+# Theme
+my_theme2 <-  theme(axis.text=element_text(size=7),
+                    axis.title=element_text(size=8),
+                    legend.text=element_text(size=6),
+                    legend.title=element_text(size=8),
+                    strip.text=element_text(size=8),
+                    plot.title=element_text(size=10),
+                    # Gridlines
+                    panel.grid.major = element_blank(), 
+                    panel.grid.minor = element_blank(),
+                    panel.background = element_blank(), 
+                    axis.line = element_line(colour = "black"),
+                    # Legend
+                    legend.background = element_rect(fill=alpha('blue', 0)))
 
 # Plot species specific values
 g3 <- ggplot(stats_spp_ordered, 
@@ -272,7 +319,7 @@ g3 <- ggplot(stats_spp_ordered,
                        high="navy", low="darkred", mid="white", midpoint = 0, na.value = "grey90") +
   guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
   # Theme
-  theme_bw() + my_theme +
+  theme_bw() + my_theme2 +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 g3
 
@@ -282,4 +329,70 @@ ggsave(g3, filename=file.path(plotdir, "FigX_revenue_change_by_state_spp.pdf"),
 
 
 
+# By species - merged
+################################################################################
+
+stats_spp_ordered_gf <- stats_spp_ordered %>% 
+  filter(mgmt_group=="Groundfish") %>% 
+  mutate(state=recode(state, 
+                      "Washington"="WA",
+                      "Oregon"="OR",
+                      "California"="CA"))
+stats_spp_ordered_other <- stats_spp_ordered %>% 
+  filter(mgmt_group!="Groundfish") %>% 
+  mutate(state=recode(state, 
+                      "Washington"="WA",
+                      "Oregon"="OR",
+                      "California"="CA"))
+
+# Plot groundfish
+g1 <- ggplot(stats_spp_ordered_gf, 
+             mapping=aes(x=mhw_catg, y=comm_name_parent, fill=value_pdiff_cap)) +
+  facet_grid(mgmt_group~state, scales="free_y", space="free_y") +
+  geom_tile() +
+  # Plot points
+  geom_point(data=stats_spp_ordered_gf %>% filter(mhw_catg=="Before" & value_usd>0),
+             mapping=aes(x=mhw_catg, y=comm_name_parent, size=value_usd/1e6), inherit.aes = F) +
+  # Labels
+  labs(x="", y="") +
+  # Legend
+  scale_size_continuous(name="Mean annual\nrevenues (USD millions)",
+                        breaks=c(1, 5, 10, 20, 40, 60)) +
+  scale_fill_gradient2(name="% difference\nfrom pre-MHW\nrevenues", 
+                       high="navy", low="darkred", mid="white", midpoint = 0, na.value = "grey90") +
+  guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
+  # Theme
+  theme_bw() + my_theme2 +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "none")
+g1
+
+# Plot other
+g2 <- ggplot(stats_spp_ordered_other, 
+             mapping=aes(x=mhw_catg, y=comm_name_parent, fill=value_pdiff_cap)) +
+  facet_grid(mgmt_group~state, scales="free_y", space="free_y") +
+  geom_tile() +
+  # Plot points
+  geom_point(data=stats_spp_ordered_other %>% filter(mhw_catg=="Before" & value_usd>0),
+             mapping=aes(x=mhw_catg, y=comm_name_parent, size=value_usd/1e6), inherit.aes = F) +
+  # Labels
+  labs(x="", y="") +
+  # Legend
+  scale_size_continuous(name="Mean annual\npre-MHW revenues\n(USD millions)",
+                        breaks=c(1, 5, 10, 20, 40, 60)) +
+  scale_fill_gradient2(name="% difference\nfrom pre-MHW\nrevenues", 
+                       high="navy", low="darkred", mid="white", midpoint = 0, na.value = "grey90") +
+  guides(fill = guide_colorbar(ticks.colour = "black", frame.colour = "black")) +
+  # Theme
+  theme_bw() + my_theme2 +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+g2
+
+# Merge
+g <- gridExtra::grid.arrange(g1, g2, nrow=1, widths=c(0.45, 0.55))
+g
+
+# Export
+ggsave(g, filename=file.path(plotdir, "FigX_revenue_change_by_state_spp_merged.png"), 
+       width=8, height=8, units="in", dpi=600)
 
