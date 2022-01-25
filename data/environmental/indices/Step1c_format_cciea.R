@@ -99,31 +99,17 @@ data_orig <- tabledap(x=data_info)
 
 # Format data
 data <- data_orig %>% 
-  # Arrange and gather
-  select(time, everything()) %>% 
-  gather(key="variable", value="value", 2:ncol(.)) %>% 
-  # Add variable type
-  mutate(variable_type=ifelse(grepl("intensity", variable), "intensity", "area")) %>% 
-  # Extract feature number
-  mutate(feature=gsub("intensity_|area_", "", variable) %>% as.numeric()) %>% 
-  # Simplify
-  select(-variable) %>% 
-  # Convert values
-  mutate(value=ifelse(value=="-999.0", NA, value), 
-         value=as.numeric(value)) %>% 
-  # Spread
-  spread(key="variable_type", value="value") %>% 
-  # Convert intensity
-  mutate(intensity=ifelse(is.nan(intensity), NA, intensity)) %>% 
+  # Rename
+  rename(area_km2=sum_area, intensity_c=intensity, perc_cover=heatwave_cover) %>% 
+  # Convert to numeric
+  mutate(across(area_km2:perc_cover, .fns=as.numeric)) %>% 
   # Extact date info
   mutate(year=year(time),
          month=month(time),
          date=date(time)) %>% 
   # Arrange
-  select(year, month, date, feature, area, intensity, everything()) %>% 
+  select(year, month, date, everything()) %>% 
   select(-time) %>% 
-  # Rename
-  rename(area_km2=area) %>% 
   # Convert to tibble
   as_tibble()
 

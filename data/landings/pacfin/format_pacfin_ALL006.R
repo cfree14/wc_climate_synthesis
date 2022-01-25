@@ -76,7 +76,8 @@ data <- data_orig %>%
   filter(!is.na(landings_mt) | !is.na(price_usd_lb) | !is.na(value_usd)) %>% 
   # Add date
   mutate(month=stringr::str_to_title(month),
-         date=lubridate::mdy(paste(month, "1,", year))) %>% 
+         date=lubridate::mdy(paste(month, "1,", year)),
+         month_num=lubridate::month(date)) %>% 
   # Format common name
   mutate(spp_type=ifelse(grepl("NOM.", comm_name), "nominal", "actual"),
          comm_name_parent=gsub("NOM. ", "", comm_name),
@@ -86,7 +87,7 @@ data <- data_orig %>%
   mutate(mgmt_group_code=recode(mgmt_group_code, 
                                 "XXXX SUBTOTAL"="Unknown")) %>% 
   # Arrange
-  select(state, mgmt_group_code, complex, comm_name_parent, comm_name, spp_code, spp_type, year, month, date, 
+  select(state, mgmt_group_code, complex, comm_name_parent, comm_name, spp_code, spp_type, year, month, month_num, date, 
          landings_mt, landings_kg, landings_lb, price_usd_lb, value_usd, confidential, everything()) %>% 
   arrange(state, mgmt_group_code, complex, comm_name_parent, comm_name, spp_code, year, date)
 
