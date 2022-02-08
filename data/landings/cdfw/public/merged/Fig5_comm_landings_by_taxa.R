@@ -118,3 +118,40 @@ ggsave(g, filename=file.path(plotdir, "FigX_comm_landings_by_taxa.png"),
        width=6.5, height=4, units="in", dpi=600)
 
 
+# For reviewer
+################################################################################
+
+
+# 
+stats <- data_orig %>% 
+  filter(comm_name %in% c("Market squid")) %>% 
+  group_by(year, comm_name) %>% 
+  summarize(landings_kg=sum(landings_kg)) %>% 
+  mutate(landings_mt=landings_kg/1e3)
+
+# Plot
+g <- ggplot(stats, aes(x=year, y=landings_mt/1000)) +
+  # Reference line
+  geom_hline(yintercept=20, linetype="dotted", color="grey50") +
+  geom_line() +
+  # Labels
+  labs(x="", y="Landings (1000s mt)") +
+  # Axes
+  scale_y_continuous(breaks=seq(0, 140, 20)) +
+  scale_x_continuous(breaks=seq(1930, 2020, 5)) +
+  # Theme
+  theme_bw() + 
+  theme(
+    axis.text=element_text(size=6),
+    axis.title=element_text(size=8),
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+    # Gridlines
+    panel.grid.major = element_blank(), 
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(), 
+    axis.line = element_line(colour = "black"))
+g
+
+ggsave(g, filename="~/Desktop/market_squid.png", 
+       width=4.5, height=2.5, units="in", dpi=600)
+

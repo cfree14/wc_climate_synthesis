@@ -78,7 +78,7 @@ cdfw1 <- cdfw_waters %>%
   summarise(landings_lb=sum(landings_lb, na.rm=T)) %>% 
   ungroup() %>% 
   # Add source
-  mutate(source="CDFW (by source)")
+  mutate(source="CALFISH (by source)")
 
 # CDFW ports
 cdfw2 <- cdfw_ports %>% 
@@ -89,7 +89,7 @@ cdfw2 <- cdfw_ports %>%
   summarise(landings_lb=sum(landings_lb, na.rm=T)) %>% 
   ungroup() %>% 
   # Add source
-  mutate(source="CDFW (by port)")
+  mutate(source="CALFISH (by port)")
 
 # Merge
 data <- bind_rows(noaa_ca, pacfin_ca, cdfw1, cdfw2, swfsc, calcom) %>% 
